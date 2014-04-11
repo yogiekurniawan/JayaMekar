@@ -2,7 +2,7 @@
 
 angular.module('jayaMekarApp', [
   'ui.bootstrap',
-  'ui.select2',
+ // 'ui.select2',
   'ui.router',
   'ngTable'
 ])
