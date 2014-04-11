@@ -5,19 +5,17 @@ angular.module('jayaMekarApp')
     return {
       templateUrl:'views/element/jm-nav.html',
       restrict: 'E',
-      controller: 'MainCtrl'
+      controller: 'NavbarCtrl as nav'
     };
   })
-  .controller('MainCtrl', function ($scope) {
-  	$scope.rumusGaji = [
-      {link:'karyawan-harian', menu:'Harian'},
-      {link:'karyawan-tenun', menu:'Borongan'}
-    ];
-    $scope.transaksi = [
-      {link:'karyawan-tenun', menu:'Transaksi Karyawan Tenun'},
-      {link:'karyawan-harian', menu:'Transaksi Karyawan Harian'}
-    ];
-    $scope.option = [
+  .controller('NavbarCtrl', function (menu, indexeddb) {
+    
+    /* include factory menu */
+    this.perusahaan = menu.namaAplikasi;
+    this.rumusGaji = menu.rumusGaji;
+    this.transaksi = menu.transaksi;
+
+    /*this.option = [
       {icon:'glyphicon glyphicon-trash', link:'recycle', des:'Recycle'},
       {icon:'glyphicon glyphicon-user', link:'about-me', des:'About Me'},
       {icon:'fa fa-laptop', link:'about-app', des:'About App'},
@@ -25,6 +23,9 @@ angular.module('jayaMekarApp')
       {icon:'fa fa-arrows', aksi:'', des:'Maximize'},
       {icon:'glyphicon glyphicon-fullscreen', aksi:'', des:'Full screen'},
       {icon:'glyphicon glyphicon-remove', aksi:'', des:'Close'}
-  	];
+    ];*/
+
+
   });
+
 

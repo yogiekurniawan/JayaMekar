@@ -17,4 +17,6 @@ angular.module('jayaMekarApp')
         nilai.a;
       })();
     return nilai;
-  })
+  });
+
+  

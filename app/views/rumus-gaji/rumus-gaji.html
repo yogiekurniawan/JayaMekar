@@ -1,5 +1,22 @@
 <div class="container-fluid margin">
 	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 page-header">
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h3>Mengelola Rumus Gaji</h3>
+			</div>
+			<div class="col-xs-6 col-sm-4 col-sm-offset-2 col-md-2 col-md-offset-4 col-lg-2 col-lg-offset-4 margin-top-20">
+				<div class="input-group">
+				    <div class="btn-group">
+				        <a ng-repeat="item in rg.menu" ui-sref-active="active" ui-sref="rumus-gaji.{{item.link}}" class="btn btn-primary">{{item.menu}}</a>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ui-view>
+		<!-- Sementara -->
+			<div class="container-fluid margin">
+	<div class="row">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				Rumus Gaji Karyawan Tenun
@@ -282,4 +299,7 @@
 			</div>
 		</div>
 	</div>
+</div>
+		<!-- Sementara -->
+	</ui-view>
 </div>

@@ -4,6 +4,7 @@
 
 html {
 	overflow-y: auto;
+	min-width: 699px;
 }
 
 .navbar-nav.navbar-right:last-child {

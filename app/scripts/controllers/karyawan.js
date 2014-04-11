@@ -1,17 +1,28 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-  .controller('KaryawanCtrl', ['$scope', '$http', function ($scope, $http) {
+  .controller('KaryawanCtrl', ['$scope', 'layananData', 'ngTableParams', '$filter', function ($scope, layananData, ngTableParams, $filter){
     $scope.search2 = 'Kerja';
 
-  	$http.get('json/karyawan.json')
-  		.then(function(res){
-  			$scope.karyawan = res.data;
-  		});
+  	layananData.getJabatan().then(function(data){
+      $scope.jabatan = data;
+    });
 
-    $http.get('json/jabatan.json')
-      .then(function(res){
-        $scope.jabatan = res.data;
+    layananData.getKaryawan().then(function(data){
+      var karyawan = data;
+
+      $scope.tableKaryawan = new  ngTableParams({
+      	page: 1,
+      	count: 10
+      },{
+      	total: karyawan.length,
+      	getData: function($defer, params){
+      		var orderedData = params.sorting() ? $filter('orderBy')(karyawan, params.orderBy()) : data;
+
+      		params.total(orderedData.length);
+      		$defer.resolve(orderedData.slice((params.page - 1) * params.count(), params.page() * params.count()));
+      	}
       });
+    });
+    
   }]);
-

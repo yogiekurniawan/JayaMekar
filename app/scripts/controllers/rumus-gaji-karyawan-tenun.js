@@ -2,12 +2,12 @@
 
 angular.module('jayaMekarApp')
   .controller('RumusGajiKaryawanTenunCtrl',
-        ['$scope', '$http', '$filter', 'ngTableParams', 
-            function ($scope, $http, $filter, ngTableParams) {
+        ['$scope', 'layananData', '$filter', 'ngTableParams', 
+            function ($scope, layananData, $filter, ngTableParams) {
 
-        $http.get('json/rumusGaji.json')
-            .then(function(res){
-                var rumusGaji = res.data;
+        layananData.getRumusGaji()
+            .then(function(data){
+                var rumusGaji = data;
 
                 $scope.tableRGKaryawanTenun = new ngTableParams({
                     page: 1,        // tampilan halaman pertama
@@ -31,8 +31,7 @@ angular.module('jayaMekarApp')
                 });  
             });
         
-        $http.get('json/jabatan.json')
-            .then(function(res){
-                $scope.jabatan = res.data;
-            });
+        layananData.getJabatan().then(function(data){
+            $scope.jabatan = data;
+        });
   }]);

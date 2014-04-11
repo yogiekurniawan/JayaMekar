@@ -1,0 +1,15 @@
+<div class="container-fluid margin">
+	<div class="row">
+		<table ng-table="tableRGKaryawanTenun" class="table table-bordered table-striped">
+			<tr ng-repeat="rg in $data">
+				<td data-title="'No'" class="text-center">{{$index | noTable:tableRGKaryawanTenun.page()}}</td>
+				<td data-title="'Jabatan'" sortable="'idJabatan'" ng-repeat="j in jabatan | filter:rg.idJabatan">{{j.namaJabatan}}</td>
+				<td data-title="'Shift'" sortable="'shift'" class="text-center">{{rg.shift}}</td>
+				<td data-title="'H. Normal'" sortable="'harga'" class="text-center">{{rg.harga | number: 0}}</td>
+				<td data-title="'U. Hadir'" sortable="'uangHadir'" class="text-center">{{rg.uangHadir}}</td>
+				<td data-title="'Status'" class="text-center">{{rg.status}}</td>
+				<td data-title="'A'" class="col-aksi"><a class="glyphicon glyphicon-edit" href="/#/karyawan/edit/{{k.nip}}" tooltip='edit'></a></td>
+			</tr>
+		</table>
+	</div>
+</div>
