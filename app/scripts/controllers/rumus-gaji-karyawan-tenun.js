@@ -1,5 +1,6 @@
 'use strict';
 
+<<<<<<< HEAD
 /**********************************************************************************
 * 
 * @author : Yogie Kurniawan - yogie.jm@gmail.com
@@ -16,15 +17,21 @@ angular.module('jayaMekarApp')
 *
 ***********************************************************************************/
 
+=======
+angular.module('jayaMekarApp')
+>>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
   .controller('RumusGajiKaryawanTenunCtrl',
         ['$scope', 'layananData', '$filter', 'ngTableParams', 
             function ($scope, layananData, $filter, ngTableParams) {
 
+<<<<<<< HEAD
 
 /*********************************** S:StokKomen ***********************************/
 /*********************************** E:StokKomen ***********************************/
 
 
+=======
+>>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
         layananData.getRumusGaji()
             .then(function(data){
                 var rumusGaji = data;
@@ -54,6 +61,7 @@ angular.module('jayaMekarApp')
         layananData.getJabatan().then(function(data){
             $scope.jabatan = data;
         });
+<<<<<<< HEAD
 
         
   }]);
@@ -62,3 +70,6 @@ angular.module('jayaMekarApp')
 * @ E:RumusGajiKaryawanTenunCtrl
 *
 ***********************************************************************************/
+=======
+  }]);
+>>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
