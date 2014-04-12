@@ -1,6 +1,5 @@
 'use strict';
 
-<<<<<<< HEAD
 /**********************************************************************************
 * 
 * @author : Yogie Kurniawan - yogie.jm@gmail.com
@@ -22,16 +21,12 @@ angular.module('jayaMekarApp')
 /*********************************** S:StokKomen ***********************************/
 /*********************************** E:StokKomen ***********************************/
 
-=======
-angular.module('jayaMekarApp')
-  .controller('AboutMeCtrl', function ($scope) {
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
+
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-<<<<<<< HEAD
 
 
   });
@@ -40,6 +35,3 @@ angular.module('jayaMekarApp')
 * @ E:AboutMeCtrl
 *
 ***********************************************************************************/
-=======
-  });
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
