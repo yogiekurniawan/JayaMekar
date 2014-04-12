@@ -64,7 +64,6 @@ angular.module('jayaMekarApp')
     }
 
     $scope.edit = function(key){
-<<<<<<< HEAD
         $scope.key = true;
         return console.log("function edit click " + !key);
     };

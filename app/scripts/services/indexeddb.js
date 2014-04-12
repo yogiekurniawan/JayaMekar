@@ -1,7 +1,5 @@
 'use strict';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /**********************************************************************************
 * 
 * @author : Yogie Kurniawan - yogie.jm@gmail.com
@@ -20,12 +18,7 @@ angular.module('jayaMekarApp')
 ***********************************************************************************/
 
 /*********************************** S:indexeddb ***********************************/
-=======
-angular.module('jayaMekarApp')
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
-angular.module('jayaMekarApp')
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
+
   .factory('indexeddb', function ($q) {
     
     var setUp = false;
@@ -43,43 +36,21 @@ angular.module('jayaMekarApp')
         return defer.promise;
       }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       /* membuat dan membuka indexedDB */
       var openRequest = window.indexedDB.open( namaDB, versi);
 
       /* fungsi di panggil jika error */
-=======
-      var openRequest = window.indexedDB.open( namaDB, versi);
-
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
-      var openRequest = window.indexedDB.open( namaDB, versi);
-
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
       openRequest.onerror = function(e){
         console.log("init() : Kesalahan membuka DB");
         console.dir(e);
         defer.reject(e.toString());
       };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       /* fungsi di panggil jika upgrade DB */
       openRequest.onupgradeneeded = function(e){
         db = e.target.result;
 
         /* membuat object store jabatan jika object store jabatan belum dibuat */
-=======
-      openRequest.onupgradeneeded = function(e){
-        db = e.target.result;
-
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
-      openRequest.onupgradeneeded = function(e){
-        db = e.target.result;
-
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
         if(!db.objectStoreNames.contains("jabatan")){
           var objectStore = db.createObjectStore("jabatan", {keyPath: "idJabatan", autoIncrement: true});
           objectStore.createIndex("namaJabatan", "namaJabatan", {unique: false});
@@ -87,13 +58,7 @@ angular.module('jayaMekarApp')
         console.log('init() :Pemberitahuan saat upgrade db');
       };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       /* fungsi di panggil jika success */
-=======
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
       openRequest.onsuccess = function(e){
         db = e.target.result;
 
@@ -109,8 +74,7 @@ angular.module('jayaMekarApp')
     }
     /* E:init */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 /**********************************************************************************
 * 
 * @ S:Jabatan
@@ -118,12 +82,7 @@ angular.module('jayaMekarApp')
 ***********************************************************************************/
 
 /*********************************** S:getAllJabatan ***********************************/
-=======
-    /* S:getAllJabatan */
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
-    /* S:getAllJabatan */
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
+
     var getAllJabatan = function(){
 
       var defer = $q.defer();
@@ -163,21 +122,11 @@ angular.module('jayaMekarApp')
       /*console.log(defer.promise);*/
       return defer.promise;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 /*********************************** E:getAllJabatan ***********************************/
 
 /*********************************** S:saveJabatan dan editJabatan ***********************************/
-=======
-    /* E:getAllJabatan */
 
-    /* S:saveJabatan */
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
-    /* E:getAllJabatan */
-
-    /* S:saveJabatan */
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
     var saveJabatan = function(data){
 
       var defer = $q.defer();
@@ -186,63 +135,28 @@ angular.module('jayaMekarApp')
 
       var t = db.transaction(["jabatan"], "readwrite");
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       if (data.id === ""){ /* menambah data baru jika id = "" */
-=======
-      if (data.id === ""){
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
-      if (data.id === ""){
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
         t.objectStore("jabatan")
           .add({
             namaJabatan: data.namaJabatan,
             type: data.type,
-<<<<<<< HEAD
-<<<<<<< HEAD
             time: {
               create: data.timeCreate,
               update: data.timeUpdate
-=======
-            time: { create: data.timeCreate,
-                    update: data.timeUpdate
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
-            time: { create: data.timeCreate,
-                    update: data.timeUpdate
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
             },
             namaStatus: data.namaStatus
           });
           console.log("saveJabatan() : add : untuk menambah jabatan");
-<<<<<<< HEAD
-<<<<<<< HEAD
       } else { /* merubah data jabatan yang sudah ada dengan kunci id */
-=======
-      } else {
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
-      } else {
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
         t.objectStore("jabatan")
           .put({
             idJabatan:number(data.id),
             namaJabatan: data.namaJabatan,
             type: data.type,
-<<<<<<< HEAD
-<<<<<<< HEAD
             time: { 
               create: data.timeCreate,
               update: data.timeUpdate
-=======
-            time: { create: data.timeCreate,
-                    update: data.timeUpdate
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
-            time: { create: data.timeCreate,
-                    update: data.timeUpdate
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
             },
             namaStatus: data.namaStatus
           });
@@ -258,8 +172,6 @@ angular.module('jayaMekarApp')
       return defer.promise;
 
     };
-<<<<<<< HEAD
-<<<<<<< HEAD
 /*********************************** E:saveJabatan dan editJabatan ***********************************/
 
 /**********************************************************************************
@@ -297,29 +209,13 @@ angular.module('jayaMekarApp')
 
 /*********************************** S:return ***********************************/
     /* digunakan untuk mengenalkan fungsi yang sudah dibuat ke services */
-=======
-=======
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-    /* E:saveJabatan */
-
-    /* S:Support IDB */
-    var idbOK = function (){
-      return ("indexedDB" in window);
-    };
-    /* E:Support IDB */
-
-<<<<<<< HEAD
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
     return {
       init:init,
       getAllJabatan:getAllJabatan,
       saveJabatan:saveJabatan,
       idbOK:idbOK
     };
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 /*********************************** E:return ***********************************/
 
   });
@@ -328,9 +224,3 @@ angular.module('jayaMekarApp')
 * @ E:indexeddb
 *
 ***********************************************************************************/
-=======
-  });
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
-=======
-  });
->>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
