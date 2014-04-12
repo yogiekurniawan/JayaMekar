@@ -1,0 +1,59 @@
+[
+      { 
+      	"nip": "P001",
+		"namaDepan": "Yogie",
+		"namaBelakang": "Kurniawan",
+      	"kelompokKerja": "-",
+      	"idJabatan": "J001",
+		"timeCreate": "27 Maret 2014",
+		"timeUpdate": "27 Maret 2014",
+      	"status": "Kerja"
+      },
+      { 
+            "nip": "P002",
+            "namaDepan": "Ujang",
+            "namaBelakang": "Mara",
+            "kelompokKerja": "Kel-UM",
+            "idJabatan": "J002",
+            "timeCreate": "27 Maret 2014",
+            "timeUpdate": "27 Maret 2014",
+            "status": "Keluar"
+      },
+      { 
+            "nip": "P003",
+            "namaDepan": "Uje",
+            "kelompokKerja": "Kel-UJ",
+            "idJabatan": "J002",
+            "timeCreate": "27 Maret 2014",
+            "timeUpdate": "27 Maret 2014",
+            "status": "Kerja"
+      },
+      { 
+            "nip": "P004",
+            "namaDepan": "Buyak",
+            "kelompokKerja": "Kel-UM",
+            "idJabatan": "J002",
+            "timeCreate": "27 Maret 2014",
+            "timeUpdate": "27 Maret 2014",
+            "status": "Keluar"
+      },
+      { 
+            "nip": "P005",
+            "namaDepan": "Novi",
+            "kelompokKerja": "Kel-UJ",
+            "idJabatan": "J003",
+            "timeCreate": "27 Maret 2014",
+            "timeUpdate": "27 Maret 2014",
+            "status": "Kerja"
+      },
+      { 
+      	"nip": "P006",
+		"namaDepan": "Ceu",
+            "namaBelakang": "Ai",
+      	"kelompokKerja": "Kel-UJ",
+      	"idJabatan": "J004",
+		"timeCreate": "27 Maret 2014",
+		"timeUpdate": "27 Maret 2014",
+      	"status": "Kerja"
+      }
+]

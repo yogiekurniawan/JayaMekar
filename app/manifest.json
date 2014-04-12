@@ -1,0 +1,22 @@
+{
+  "name": "WA Jaya Mekar",
+  "description": "Sistem Informasi Penggajian Karyawan",
+  "version": "1",
+  "app": {
+    "background": {
+      "scripts": [
+      	"main.js"
+      ]
+    }
+  },
+  "permissions": [
+    "app.runtime",
+    "app.window",
+    "fullscreen",
+    "notifications",
+    "unlimitedStorage",
+    "<all_urls>"
+  ],
+  "icons": { "128": "icon.png" },
+  "content_security_policy": "style-src 'self' data: chrome-extension-resource: 'unsafe-inline'"
+}

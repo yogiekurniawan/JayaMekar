@@ -1,0 +1,72 @@
+<h1>Waktu</h1>
+<h1>Waktu edit</h1>
+{{date}} <br/>
+{{time.now}} <br/>
+{{ nilai.a }}<br/>
+{{ nilai.b }}<br/>
+{{ nilai.a + nilai.b }}</br>
+
+<input type="number" class="form-control" ng-model="a">
+<input type="number" class="form-control" ng-model="b">
+<input type="number" class="form-control" ng-model="c">
+<input type="number" class="form-control" value="{{a+b}}" disabled>
+<input type="number" class="form-control" value="{{a+b+c}}" disabled>
+<input type="text" class="form-control" value="{{date | bulan}}" disabled>
+
+<!-- <script type='text/javascript'>
+//<![CDATA[
+
+// Week of the year script - By Ada Shimar (ada@chalktv.com)
+
+function weekNo() {
+	var totalDays = 0;
+	now = new Date();
+	years=now.getYear();
+var days = new Array(12); // Array to hold the total days in a month
+days[0] = 31;
+days[2] = 31;
+days[3] = 30;
+days[4] = 31;
+days[5] = 30;
+days[6] = 31;
+days[7] = 31;
+days[8] = 30;
+days[9] = 31;
+days[10] = 30;
+days[11] = 31;
+
+// Check to see if this is a leap year
+if (Math.round(now.getYear()/4) == now.getYear()/4) {
+	days[1] = 29
+}else{
+	days[1] = 28
+}
+
+// If this is January no need for any fancy calculation otherwise figure out the
+// total number of days to date and then determine what week
+if (now.getMonth() == 0) { 
+	totalDays = totalDays + now.getDate();
+}else{
+	var curMonth = now.getMonth();
+	for (var count = 1; count <= curMonth; count++) {
+		totalDays = totalDays + days[count - 1];
+	}
+	totalDays = totalDays + now.getDate();
+}
+// Here is the modification: considering when start the 1st week of year.
+// Originally was only: var week = Math.round(totalDays/7)
+// Check if browser is "Microsoft Internet Explorer" or not and apply the right var
+var agt=navigator.userAgent.toLowerCase();
+if ((agt.indexOf("msie") != -1) && (agt.indexOf("opera") == -1)) {
+	var firstday=new Date("01/01/"+String(now.getYear())).getDay();
+}
+else {
+	var firstday=new Date("01/01/"+String(1900+now.getYear())).getDay();
+}
+var diff=7-firstday+1;
+var week = Math.round((totalDays+diff-firstday)/7); return week;
+}
+
+document.write("Welcome to <b>week "+weekNo()+"<\/b> of "+years+"!")
+//]]>
+</script> -->

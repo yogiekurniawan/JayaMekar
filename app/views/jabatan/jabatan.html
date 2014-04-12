@@ -1,0 +1,119 @@
+<!-- <div class="container-fluid margin">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 page-header">
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h3>Mengelola Jabatan</h3>
+			</div>
+			<div class="col-xs-6 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 margin-top-20">
+				<a href="#{{add}}" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-pencil margin-span"></span>Tambah Jabatan</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row margin-top-20">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="j in jabatan2">
+					<div class="panel panel-{{j.namaStatus | panelStatus}} jabatan">
+						<div class="panel-heading">
+							<h4 class="text-center">{{j.namaJabatan}}</h4>
+						</div>
+						<div class="panel-body">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td><span class=""></span>Jenis</td>
+										<td>:</td>
+										<td>{{j.type}}</td>
+									</tr>
+									<tr>
+										<td><span class="glyphicon glyphicon-time margin-span"></span>Dibuat</td>
+										<td>:</td>
+										<td>{{j.timeCreate}}</td>
+									</tr>
+									<tr>
+										<td><span class="glyphicon glyphicon-time margin-span"></span>Dirubah</td>
+										<td class="col-number">:</td>
+										<td>{{j.timeUpdate}}</td>
+									</tr>
+									<tr>
+										<td>
+										<span class="glyphicon glyphicon-{{j.namaStatus | status}} margin-span green"></span>Status</td>
+										<td>:</td>
+										<td>{{j.namaStatus}}</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="">
+								<small class="text-center gray"><span class="glyphicon glyphicon-edit margin-span"></span>Double Klik untuk ubah data</small><br/>
+							</p>
+							<p class="text-right"><a href="" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit margin-span"></span>Edit</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<h1>Tampilan baru dengan indexedDB</h1>
+ -->
+<div class="container-fluid margin">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 page-header">
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h3>Mengelola Jabatan</h3>
+			</div>
+			<div class="col-xs-6 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 margin-top-20">
+				<a ng-click="saveJabatan()" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-pencil margin-span"></span>Tambah Jabatan</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row margin-top-20">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="j in jabatan">
+					<div class="panel jabatan" ng-class='{"panel-success": j.namaStatus == "Aktif", "panel-danger": j.namaStatus == "Tidak aktif" }'>
+						<div class="panel-heading">
+							<h4 class="text-center">{{j.key}} - {{j.namaJabatan}}</h4>
+						</div>
+						<div class="panel-body">
+							<table class="table">
+								<tbody>
+									<tr ng-if="ngIfView(j.key)">
+										<td><span class=""></span>Jenis</td>
+										<td>:</td>
+										<td>{{j.type}}</td>
+									</tr>
+									<tr ng-if="ngIfEdit(j.key)">
+										<td><span class=""></span>Mode edit</td>
+									</tr>
+									<tr tooltip="{{j.timeCreate | date: 'dd MMMM yyyy'}} pukul {{j.timeCreate | date: 'H:mm'}}" >
+										<td><span class="glyphicon glyphicon-time margin-span"></span>Dibuat</td>
+										<td>:</td>
+										<td>{{j.time.create | date: 'dd MMMM'}}</td>
+									</tr>
+									<tr tooltip="{{j.timeUpdate | date: 'dd MMMM yyyy'}} pukul {{j.timeUpdate | date: 'H:mm'}}">
+										<td><span class="glyphicon glyphicon-time margin-span"></span>Dirubah</td>
+										<td class="col-number">:</td>
+										<td>{{j.time.update | date: 'dd MMMM'}}</td>
+									</tr>
+									<tr>
+										<td>
+										<span class="glyphicon glyphicon-{{j.namaStatus | status}} margin-span green"></span>Status</td>
+										<td>:</td>
+										<td>{{j.namaStatus}}</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- <p class=""> -->
+								<small ng-click="edit(j.key)" ng-if="!template" class="text-center gray"><span class="glyphicon glyphicon-edit margin-span"></span>Double Klik untuk ubah data</small>
+								<small ng-click="save()" ng-if="template" class="text-center gray"><span class="glyphicon glyphicon-edit margin-span"></span>Klik untuk simpan data</small><br/>
+							<!-- </p> -->
+							<!-- <p class="text-right"><a href="" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit margin-span"></span>Edit</a></p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{jabatan}}

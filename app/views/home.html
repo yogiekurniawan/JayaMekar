@@ -1,0 +1,27 @@
+<div class="container-fluid margin">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 page-header">
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h3>Mengelola Home</h3>
+			</div>
+			<div class="col-xs-6 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 margin-top-20">
+				<a ng-click="saveJabatan()" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-pencil margin-span"></span>Tambah Jabatan</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div ng-repeat="message in data.messages" ng-class="message.type">
+			<hr>
+			<div my-Ng-if="showFrom(message)">
+				<div>From: {{message.from.name}}</div>
+			</div>    
+			<div my-Ng-if="showCreatedBy(message)">
+				<div>Created by: {{message.createdBy.name}}</div>
+			</div>    
+			<div my-Ng-if="showTo(message)">
+				<div>To: {{message.to.name}}</div>
+			</div>    
+		</div>
+	</div>
+</div>
