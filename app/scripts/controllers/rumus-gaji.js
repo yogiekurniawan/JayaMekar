@@ -1,6 +1,7 @@
 'use strict';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**********************************************************************************
 * 
 * @author : Yogie Kurniawan - yogie.jm@gmail.com
@@ -32,8 +33,13 @@ angular.module('jayaMekarApp')
 *
 ***********************************************************************************/
 =======
+=======
+>>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
 angular.module('jayaMekarApp')
   .controller('RumusGajiCtrl', function (menu) {
     this.menu = menu.rumusGaji;
   });
+<<<<<<< HEAD
+>>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
+=======
 >>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46

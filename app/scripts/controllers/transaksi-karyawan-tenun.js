@@ -1,6 +1,7 @@
 'use strict';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**********************************************************************************
 * 
 * @author : Yogie Kurniawan - yogie.jm@gmail.com
@@ -26,11 +27,16 @@ angular.module('jayaMekarApp')
 angular.module('jayaMekarApp')
   .controller('TransaksiKaryawanTenunCtrl', function ($scope) {
 >>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
+=======
+angular.module('jayaMekarApp')
+  .controller('TransaksiKaryawanTenunCtrl', function ($scope) {
+>>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     
@@ -40,6 +46,9 @@ angular.module('jayaMekarApp')
 * @ E:TransaksiKaryawanTenunCtrl
 *
 ***********************************************************************************/
+=======
+  });
+>>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
 =======
   });
 >>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46

@@ -1,5 +1,6 @@
 'use strict';
 
+<<<<<<< HEAD
 /**********************************************************************************
 * 
 * @author : Yogie Kurniawan - yogie.jm@gmail.com
@@ -25,6 +26,10 @@ angular.module('jayaMekarApp')
 /*********************************** E:StokKomen ***********************************/
 
 
+=======
+angular.module('jayaMekarApp')
+  .controller('KaryawanCtrl', ['$scope', 'layananData', 'ngTableParams', '$filter', function ($scope, layananData, ngTableParams, $filter){
+>>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
     $scope.search2 = 'Kerja';
 
   	layananData.getJabatan().then(function(data){
@@ -48,9 +53,13 @@ angular.module('jayaMekarApp')
       });
     });
     
+<<<<<<< HEAD
   }]);
 /**********************************************************************************
 * 
 * @ E:KaryawanCtrl
 *
 ***********************************************************************************/
+=======
+  }]);
+>>>>>>> 2355092096ad6d992284b467f5bd6dbeb4815d46
