@@ -1,6 +1,9 @@
 <div class="container-fluid margin">
 	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 page-header">
+		<div class="col-xs-1 col-sm-1 col-md-3 col-lg-2 page-header">
+			<h3>Sub Menu</h3>
+		</div>
+		<div class="col-xs-11 col-sm-1 col-md-9 col-lg-10 page-header">
 			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 				<h3>Mengelola Home</h3>
 			</div>
@@ -11,17 +14,52 @@
 	</div>
 
 	<div class="container">
-		<div ng-repeat="message in data.messages" ng-class="message.type">
-			<hr>
-			<div my-Ng-if="showFrom(message)">
-				<div>From: {{message.from.name}}</div>
-			</div>    
-			<div my-Ng-if="showCreatedBy(message)">
-				<div>Created by: {{message.createdBy.name}}</div>
-			</div>    
-			<div my-Ng-if="showTo(message)">
-				<div>To: {{message.to.name}}</div>
-			</div>    
-		</div>
+
+		{{home}}
+		
+<!-- S:TEST -->
+<!-- <h4>Select2</h4>-->
+<input
+    type="hidden"
+    ui-select2="select2Options"
+    ng-model="list_of_string"
+    >
+
+    <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+
+    <h4>Inline</h4>
+    <div style="display:inline-block; min-height:290px;">
+      <div class="well well-sm" ng-model="dt">
+          <datepicker min="minDate" show-weeks="showWeeks"></datepicker>
+      </div>
+    </div>
+
+    <h4>Popup</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <p class="input-group">
+              <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min="minDate" max="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label>Format:</label> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
+        </div>
+    </div>
+
+    <hr />
+    <button class="btn btn-sm btn-info" ng-click="today()">Today</button>
+    <button class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24</button>
+    <button class="btn btn-sm btn-success" ng-click="toggleWeeks()" tooltip="For inline datepicker">Toggle Weeks</button>
+    <button class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
+    <button class="btn btn-sm btn-default" ng-click="toggleMin()" tooltip="After today restriction">Min date</button>
+
+
+<!-- E:TEST -->
+
 	</div>
 </div>

@@ -20,3 +20,6 @@ describe('Controller: HomeCtrl', function () {
     expect(scope.awesomeThings.length).toBe(3);
   });
 });
+
+
+

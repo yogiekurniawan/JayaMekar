@@ -7,71 +7,51 @@ angular.module('jayaMekarApp')
 		$scope.model = data;
 	});
 
+      $scope.today = function() {
+        $scope.dt = new Date();
+      };
+      $scope.today();
 
-    $scope.data = {}
-    $scope.showFrom = function(message) {
-        return message.hasOwnProperty('from')
-    }
-    $scope.showCreatedBy= function(message) {
-        return message.hasOwnProperty('createdBy')
-    }
-    $scope.showTo= function(message) {
-        return message.hasOwnProperty('to')
-    }
-    $scope.data.messages = [
-        {
-        "type": "phone",
-        "date": "25/12/2012",
-        "time": "11.34",
-        "createdBy": {
-            "name": "Jenny Forster1",
-            "avatarFileName": "jenny-forster.jpg"
-        },
-        "from": {
-            "name": "Jenny Forster1",
-            "avatarFileName": "jenny-forster.jpg"
-        },
-        "to": {
-            "name": "Daniel Craig1",
-            "avatarFileName": "daniel-craig.jpg"
-        },
-        "title": "This is the title of a phone call"},
-    {
-        "type": "email",
-        "date": "25/12/2012",
-        "time": "11.34",
-        "createdBy": {
-            "name": "Jenny Forster2",
-            "avatarFileName": "jenny-forster.jpg"
-        },
-        "from": {
-            "name": "Daniel Craig2",
-            "avatarFileName": "daniel-craig.jpg"
-        },
-        "to": {
-            "name": "Jenny Forster2",
-            "avatarFileName": "jenny-forster.jpg"
-        },
-        "title": "This is the title of an email"},
-    {
-        "type": "meeting",
-        "date": "25/12/2012",
-        "time": "11.34",
-        "createdBy": {
-            "name": "Jenny Forster3",
-            "avatarFileName": "jenny-forster.jpg"
-        },
-        "title": "This is the title of a meeting"},
-    {
-        "type": "note",
-        "date": "25/12/2012",
-        "time": "11.34",
-        "createdBy": {
-            "name": "Jenny Forster4",
-            "avatarFileName": "jenny-forster.jpg"
-        },
-        "title": "This is the title of a note"}
-    ]
+      $scope.showWeeks = true;
+      $scope.toggleWeeks = function () {
+        $scope.showWeeks = ! $scope.showWeeks;
+      };
+
+      $scope.clear = function () {
+        $scope.dt = null;
+      };
+
+      // Disable weekend selection
+      $scope.disabled = function(date, mode) {
+        return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
+      };
+
+      $scope.toggleMin = function() {
+        $scope.minDate = ( $scope.minDate ) ? null : new Date();
+      };
+      $scope.toggleMin();
+
+      $scope.open = function($event) {
+        $event.preventDefault();
+        $event.stopPropagation();
+
+        $scope.opened = true;
+      };
+
+      $scope.dateOptions = {
+        'year-format': "'yy'",
+        'starting-day': 1
+      };
+
+      $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'shortDate'];
+      $scope.format = $scope.formats[0];
+
+     $scope.list_of_string = ['tag1', 'tag2']
+    $scope.select2Options = {
+        'multiple': true,
+        'simple_tags': true,
+        'tags': ['tag1', 'tag2', 'tag3', 'tag4']  // Can be empty list.
+    };
 
 })
 

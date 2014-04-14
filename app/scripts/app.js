@@ -2,10 +2,24 @@
 
 angular.module('jayaMekarApp', [
   'ui.bootstrap',
- // 'ui.select2',
+  'ui.select2',
   'ui.router',
   'ngTable'
 ])
+
+  .run(
+    [          '$rootScope', '$state', '$stateParams',
+      function ($rootScope,   $state,   $stateParams) {
+
+      // It's very handy to add references to $state and $stateParams to the $rootScope
+      // so that you can access them from any scope within your applications.For example,
+      // <li ui-sref-active="active }"> will set the <li> // to active whenever
+      // 'contacts.list' or one of its decendents is active.
+      $rootScope.$state = $state;
+      $rootScope.$stateParams = $stateParams;
+      }
+    ]
+  )
 
   .config( [
       '$compileProvider',
@@ -65,17 +79,21 @@ angular.module('jayaMekarApp', [
         templateUrl: "views/transaksi/karyawan-harian/transaksi-karyawan-harian.html",
         controller: "TransaksiKaryawanHarianCtrl"
       })
-      .state('recycle', {
+      .state('info', {
+        url: "/info",
+        template: "<ui-view></ui-view>"
+      })
+      .state('info.recycle', {
         url: "/recycle",
         templateUrl: "views/recycle.html",
         controller: "RecycleCtrl"
       })
-      .state('about-me', {
+      .state('info.about-me', {
         url: "/about-me",
         templateUrl: "views/about-me.html",
         controller: "AboutMeCtrl"
       })
-      .state('about-app', {
+      .state('info.about-app', {
         url: "/about-app",
         templateUrl: "views/about-app.html",
         controller: "AboutAppCtrl"

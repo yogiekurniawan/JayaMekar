@@ -16,14 +16,14 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
-			<select ui-select2="" ng-model="search.idJabatan" data-placeholder="Pilih Jabatan Karyawan..." class="text-center width-200">
+			<select ui-select2="" ng-model="search.idJabatan" data-placeholder="Pilih Jabatan Karyawan..." class="form-control text-center width-200">
 				<option value=""></option>
 				<option value="">Tampilkan Semua</option>
 				<option ng-repeat="j in jabatan" value="{{j._id}}">{{j.namaJabatan}}</option>
 			</select>
 		</div>
 		<div class="col-xs-3 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-2">
-			<select ui-select2="" ng-model="search2" data-placeholder="Pilih Status Pekerjaan..." class="text-center width-200">
+			<select ui-select2="" ng-model="search2" data-placeholder="Pilih Status Pekerjaan..." class="form-control text-center width-200">
 				<option value=""></option>
 				<option value="">Tampilkan Semua</option>
 				<option value="Kerja">Sedang Bekerja</option>

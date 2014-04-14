@@ -4,7 +4,10 @@
 
 html {
 	overflow-y: auto;
-	min-width: 699px;
+}
+
+body {
+	min-width: 670px;
 }
 
 .navbar-nav.navbar-right:last-child {
@@ -40,11 +43,31 @@ th.col-aksi {
 	overflow-y:scroll;
 }*/
 
-.thumbnail.jabatan {
-	min-width: 240px;
-	max-width: 320px;
+div.panel.jabatan {
+	min-width: 200px;
+	max-width: 260px;
 	margin: auto;
 	margin-bottom: 20px;
+}
+
+div.panel-body > table.table {
+	margin-bottom: 5px;
+}
+
+div.panel-heading > h4 {
+	margin-top: 6px;
+	margin-bottom: 7px;
+}
+
+table.table.jabatan > tbody > tr > td.jabatan {
+	padding: 15px 0;
+}
+
+div.panel.jabatan > div.panel-body > a:hover,
+div.panel.jabatan > div.panel-body > a:focus,
+div.panel.jabatan > div.panel-body > a.active {
+  color: #3c763d;
+  text-decoration: none;
 }
 
 /* custom ui-select2 */
@@ -65,9 +88,9 @@ label.control-label.normal {
 	color: #dddddd;
 }
 .green {
-	color: green;
+	color: #3c763d;
 }
 
 .red {
-	color: red;
+	color: #a94442;
 }

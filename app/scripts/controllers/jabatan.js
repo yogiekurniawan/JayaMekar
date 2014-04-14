@@ -35,11 +35,11 @@ angular.module('jayaMekarApp')
     $scope.saveJabatan = function(){
         var data = {};
         data.id = "";
-        data.namaJabatan = "Operator Penggajian";
+        data.namaJabatan = "Operator Malet";
         data.type = "Harian";
         data.timeCreate = new Date().getTime();
         data.timeUpdate = new Date().getTime();
-        data.namaStatus = "Aktif";
+        data.namaStatus = "Tidak aktif";
 
         /*  dari services indexeddb  */
         indexeddb.saveJabatan(data).then(function(){
@@ -64,21 +64,23 @@ angular.module('jayaMekarApp')
     }
 
     $scope.edit = function(key){
-        $scope.key = true;
-        return console.log("function edit click " + !key);
+        key = false;
+        console.log("function edit click "+  $scope.key);
     };
 
     $scope.save = function(key){
-        $scope.key = false;
-        console.log("function save click " + key);
+        this.j.key = true;
+        console.log("function save click "+ this.j.key);
     };
 
     $scope.ngIfView = function(key){
-        return "!"+key ;
+        return key;
+        console.log( key );
     }
 
     $scope.ngIfEdit = function(key){
-        return key ;
+        return "!"+key ;
+        console.log( key );
     }
 
   }]);

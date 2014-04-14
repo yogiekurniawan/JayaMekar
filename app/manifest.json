@@ -10,13 +10,11 @@
     }
   },
   "permissions": [
-    "app.runtime",
     "app.window",
     "fullscreen",
     "notifications",
     "unlimitedStorage",
     "<all_urls>"
   ],
-  "icons": { "128": "icon.png" },
-  "content_security_policy": "style-src 'self' data: chrome-extension-resource: 'unsafe-inline'"
+  "icons": { "128": "icon.png" }
 }

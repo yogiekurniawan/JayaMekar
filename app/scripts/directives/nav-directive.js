@@ -8,12 +8,13 @@ angular.module('jayaMekarApp')
       controller: 'NavbarCtrl as nav'
     };
   })
-  .controller('NavbarCtrl', function (menu, indexeddb) {
+  .controller('NavbarCtrl', function (menu) {
     
     /* include factory menu */
     this.perusahaan = menu.namaAplikasi;
     this.rumusGaji = menu.rumusGaji;
     this.transaksi = menu.transaksi;
+    this.menu = menu.menuNav;
 
     /*this.option = [
       {icon:'glyphicon glyphicon-trash', link:'recycle', des:'Recycle'},

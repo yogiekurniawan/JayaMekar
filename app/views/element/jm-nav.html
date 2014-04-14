@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -11,48 +11,14 @@
     </div> <!-- / .navbar-header -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home margin-span"></i>Home</a></li>
-        <li ui-sref-active="active"><a ui-sref="jabatan">Jabatan</a></li>
-        <li ui-sref-active="active"><a ui-sref="karyawan">Karyawan</a></li>
-        <li ui-sref-active="active">
-          <a href="#" class="dropdown-toggle">Rumus Gaji <b class="caret"></b></a>
+        <li ng-repeat="item in nav.menu" ng-if="!item.dropdown" ui-sref-active="active">
+          <a ui-sref="{{item.link}}"><i class="{{item.nClass}} margin-span"></i> {{item.menu}}</a>
+        </li>
+        <li ng-repeat="item in nav.menu" ng-if="item.dropdown" ng-class="{active: $state.includes('{{item.link}}')}">
+          <a href="#" class="{{item.nClass}} dropdown-toggle">{{item.menu}} <i class="{{item.nClassD}}"></i></a>
           <ul class="dropdown-menu" role="menu">
-            <li ui-sref-active="active" ng-repeat="item in nav.rumusGaji">
-              <a ui-sref="rumus-gaji.{{item.link}}">{{item.menu}}</a>
-            </li>
-          </ul>
-        </li>
-        <li ui-sref-active="active" class="dropdown">
-          <a  href="#" class="dropdown-toggle">Transaksi <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li ui-sref-active="active" ng-repeat="item in nav.transaksi">
-              <a ui-sref="transaksi.{{item.link}}">{{item.menu}}</a>
-            </li>
-          </ul>
-        </li>
-        <li ui-sref-active="active" class="dropdown">
-          <a href="#" class="dropdown-toggle"><span class="glyphicon glyphicon-off"></span></a>
-          <ul class="dropdown-menu">
-            <li ui-sref-active="active">
-              <a ui-sref="recycle"><i class="glyphicon glyphicon-trash margin-span"></i>Recycle</a>
-            </li>
-            <li ui-sref-active="active">
-              <a ui-sref="about-me"><i class="glyphicon glyphicon-user margin-span"></i>About Me</a>
-            </li>
-            <li ui-sref-active="active">
-              <a ui-sref="about-app"><i class="fa fa-laptop margin-span"></i>About App</a>
-            </li>
-            <li ui-sref-active="active">
-              <a><i class="fa fa-minus margin-span"></i>Minimize</a>
-            </li>
-            <li ui-sref-active="active">
-              <a><i class="fa fa-arrows margin-span"></i>Maximize</a>
-            </li>
-            <li ui-sref-active="active">
-              <a><i class="glyphicon glyphicon-fullscreen margin-span"></i>Full screen</a>
-            </li>
-            <li ui-sref-active="active">
-              <a><i class="glyphicon glyphicon-remove margin-span"></i>Close</a>
+            <li ui-sref-active="active" ng-repeat="sm in item.submenu">
+              <a ui-sref="{{sm.link}}"><i class="{{sm.nClass}} margin-span"></i> {{sm.submenu}}</a>
             </li>
           </ul>
         </li>

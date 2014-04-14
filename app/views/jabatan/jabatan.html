@@ -70,45 +70,51 @@
 	<div class="container">
 		<div class="row margin-top-20">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-				<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="j in jabatan">
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3" ng-repeat="j in jabatan">
 					<div class="panel jabatan" ng-class='{"panel-success": j.namaStatus == "Aktif", "panel-danger": j.namaStatus == "Tidak aktif" }'>
 						<div class="panel-heading">
-							<h4 class="text-center">{{j.key}} - {{j.namaJabatan}}</h4>
+							<h4 ng-if="j.key" class="text-center"><span class="glyphicon glyphicon-time margin-span" tooltip="Dibuat {{j.time.update | date: 'dd MMMM yyyy'}} pukul {{j.time.update | date: 'H:mm'}}"></span>{{j.namaJabatan}}</h4>
+							<!-- <h4 > --><input ng-if="!j.key" class="form-control" type="text" ng-model="j.namaJabatan"><!-- </h4> -->
 						</div>
 						<div class="panel-body">
-							<table class="table">
+							<table class="table jabatan">
 								<tbody>
-									<tr ng-if="ngIfView(j.key)">
-										<td><span class=""></span>Jenis</td>
-										<td>:</td>
-										<td>{{j.type}}</td>
+									<tr ng-if="j.key">
+										<td class="jabatan"><span></span>Jenis</td>
+										<td class="jabatan">:</td>
+										<td class="jabatan">{{j.type}}</td>
 									</tr>
-									<tr ng-if="ngIfEdit(j.key)">
-										<td><span class=""></span>Mode edit</td>
+									<tr ng-if="!j.key">
+										<td colspan="3">
+											<select class="form-control" ng-value="j.type">
+												<option value="Harian">Harian</option>
+												<option value="Borongan">Borongan</option>
+											</select>
+										</td>
+										<!-- <td colspan="3"><input class="form-control" type="text" ng-model="j.type"></td> -->
 									</tr>
-									<tr tooltip="{{j.timeCreate | date: 'dd MMMM yyyy'}} pukul {{j.timeCreate | date: 'H:mm'}}" >
-										<td><span class="glyphicon glyphicon-time margin-span"></span>Dibuat</td>
-										<td>:</td>
-										<td>{{j.time.create | date: 'dd MMMM'}}</td>
+									<tr ng-if="j.key">
+										<td class="jabatan">
+										<span class="glyphicon glyphicon-{{j.namaStatus | status}} margin-span"></span>Status</td>
+										<td class="jabatan">:</td>
+										<td class="jabatan">{{j.namaStatus}}</td>
 									</tr>
-									<tr tooltip="{{j.timeUpdate | date: 'dd MMMM yyyy'}} pukul {{j.timeUpdate | date: 'H:mm'}}">
-										<td><span class="glyphicon glyphicon-time margin-span"></span>Dirubah</td>
-										<td class="col-number">:</td>
-										<td>{{j.time.update | date: 'dd MMMM'}}</td>
-									</tr>
-									<tr>
-										<td>
-										<span class="glyphicon glyphicon-{{j.namaStatus | status}} margin-span green"></span>Status</td>
-										<td>:</td>
-										<td>{{j.namaStatus}}</td>
+									<tr ng-if="!j.key">
+										<td colspan="3">
+											<select class="form-control" value="j.namaStatus">
+												<option value="Aktif">Aktif</option>
+												<option value="Tidak aktif">Tidak aktif</option>
+											</select>
+										</td>
+										<!-- <td colspan="3"><input class="form-control" type="text" ng-model="j.namaStatus"></td> -->
 									</tr>
 								</tbody>
 							</table>
 							<!-- <p class=""> -->
-								<small ng-click="edit(j.key)" ng-if="!template" class="text-center gray"><span class="glyphicon glyphicon-edit margin-span"></span>Double Klik untuk ubah data</small>
-								<small ng-click="save()" ng-if="template" class="text-center gray"><span class="glyphicon glyphicon-edit margin-span"></span>Klik untuk simpan data</small><br/>
+								<a href="" ng-click="j.key = false" ng-if="j.key" class="text-center gray"><span class="glyphicon glyphicon-edit margin-span"></span>Ubah Data</a>
+								<a href="" ng-click="save(j.key)" ng-if="!j.key" class="text-center active"><span class="glyphicon glyphicon-edit margin-span"></span>Simpan Data</a><br/>
 							<!-- </p> -->
-							<!-- <p class="text-right"><a href="" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit margin-span"></span>Edit</a></p> -->
+							 <!-- <p class="text-right"><a href="" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit margin-span"></span>Edit</a></p> -->
 						</div>
 					</div>
 				</div>
@@ -116,4 +122,3 @@
 		</div>
 	</div>
 </div>
-{{jabatan}}
