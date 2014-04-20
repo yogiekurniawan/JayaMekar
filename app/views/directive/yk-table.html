@@ -1,0 +1,56 @@
+<div>
+	{{tes}}
+	Search :<input type="text" ng-model="myFilter" class="form-control" placeholder="Search nama" ng-change="start = 0">
+    Limit Data:<input type="number" ng-model="limit" class="form-control" placeholder="limit data">
+    Start array :<input type="number" ng-model="start" class="form-control" placeholder="start array">
+    <br/>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th class="text-center">#</th>
+				<th class="text-center">Column 1</th>
+				<th class="text-center">Column 2</th>
+				<th class="text-center">Column 3</th>
+				<th class="text-center">Column 4</th>
+				<th class="text-center">Column 5</th>
+				<th class="text-center">A</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in data | filter:myFilter | startArray:start | limitTo:limit">
+				<td class="text-center">{{$index + start + 1}}</td>
+				<td class="text-center">{{item.column1}}</td>
+				<td class="text-center">{{item.column2}}</td>
+				<td class="text-center">{{item.column3}}</td>
+				<td class="text-center">{{item.column4}}</td>
+				<td class="text-center">{{item.column5}}</td>
+				<td class="text-center">{{item.aksi}}</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan=4>Jumlah</th>
+				<th>{{ data | filter:myFilter | sumRp:'column4'}}</th>
+				<th>{{ data | filter:myFilter | sumRp:'column5'}}</th>
+				<th>Aksi</th>
+			</tr>
+		</tfoot>
+	</table>
+		<ul class="pagination pagination-sm">
+			<li><a href="#">&laquo;</a></li>
+			<li ng-repeat="item in nomorHalaman( data, myFilter, limit )" ng-click="setPage()">
+				<a href="" ng-bind="item + 1">1</a>
+			</li>
+			<li><a href="#">&raquo;</a></li>
+		</ul>
+	<!-- ui-bootstrap
+	<pagination total-items="data.length" items-per-page="limit" page="start" on-select-page="setPage()" on-select-page="setPage()" max-size="maxSize" class="pagination-sm" boundary-links="true"></pagination> -->
+	<br/>
+	<pre>
+		total items : {{TotalItems()}} / {{numberPage}}
+		SUM data : {{ data | sumRp:'column4'}}
+		{{limit}} dari {{ data | filter:myFilter | lengthArray }} baris data
+		Jumlah halaman {{ nomorHalaman( data, myFilter, limit ) | lengthArray }}
+		Array Nomor Halaman {{ nomorHalaman( data, myFilter, limit ) }}
+	</pre>
+</div>

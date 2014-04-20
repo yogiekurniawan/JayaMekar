@@ -16,12 +16,12 @@ angular.module('jayaMekarApp')
 *
 ***********************************************************************************/
 
-  .controller('RumusGajiCtrl', function (menu) {
+  .controller('RumusGajiCtrl', function () {
 
 /*********************************** S:StokKomen ***********************************/
 /*********************************** E:StokKomen ***********************************/
 
-    this.menu = menu.rumusGaji;
+
 
 
   });

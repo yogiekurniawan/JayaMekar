@@ -98,9 +98,33 @@ angular.module('jayaMekarApp', [
         templateUrl: "views/about-app.html",
         controller: "AboutAppCtrl"
       })
+      // S:yk-eksperimen
+      .state('yk-table', {
+        url: "/yk-table",
+        templateUrl: "views/eksperimen-yk-table.html",
+        controller: "EksperimenCtrl"
+      })
+      // E:yk-eksperimen
+      // S:ykLib
+      .state('jabatan2', {
+        url: "/jabatan2",
+        templateUrl: "views/jabatan/jabatan2.html",
+        controller: "JabatanCtrl2"
+      })
+      .state('jabatan3', {
+        url: "/jabatan3",
+        templateUrl: "views/jabatan/jabatan3.html",
+        controller: "JabatanCtrl2"
+      })
       .state('waktu', {
         url: "/waktu",
         templateUrl: "views/waktu.html",
-        controller: "WaktuCtrl"
+        controller: "WaktuCtrl as waktu"
       })
+      .state('input', {
+        url: "/input",
+        templateUrl: "views/input.html",
+        controller: "NumberCtrl"
+      })
+      // E:ykLib
   }]);

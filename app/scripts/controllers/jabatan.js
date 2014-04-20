@@ -21,7 +21,7 @@ angular.module('jayaMekarApp')
         function ($scope, layananData, indexeddb) {
 
 /*********************************** S:getAllJabatan ***********************************/
-  var getAllJabatan = function(){
+    var getAllJabatan = function(){
         /*  dari services indexeddb  */
         indexeddb.getAllJabatan().then(function(data){
             $scope.jabatan = data;
@@ -33,13 +33,21 @@ angular.module('jayaMekarApp')
 /*********************************** S:saveJabatan ***********************************/
 
     $scope.saveJabatan = function(){
-        var data = {};
-        data.id = "";
-        data.namaJabatan = "Operator Malet";
-        data.type = "Harian";
-        data.timeCreate = new Date().getTime();
-        data.timeUpdate = new Date().getTime();
-        data.namaStatus = "Tidak aktif";
+        var data = {
+            _id : "",
+            namaJabatan : "Operator Malet",
+            type : "Harian",
+            timeCreate : new Date().getTime(),
+            timeUpdate : new Date().getTime(),
+            namaStatus : "Tidak aktif"
+        };
+        
+        // data.id = "";
+        // data.namaJabatan = "Operator Malet";
+        // data.type = "Harian";
+        // data.timeCreate = new Date().getTime();
+        // data.timeUpdate = new Date().getTime();
+        // data.namaStatus = "Tidak aktif";
 
         /*  dari services indexeddb  */
         indexeddb.saveJabatan(data).then(function(){

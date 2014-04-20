@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-  .factory('menu', function(){
+  /*.factory('menu', function(){
     var menu = {};
       (function conf(){
         menu.logoAplikasi = '';
@@ -32,4 +32,4 @@ angular.module('jayaMekarApp')
         ];
       })();
     return menu;
-  });
+  });*/

@@ -19,12 +19,12 @@ angular.module('jayaMekarApp')
 
 /*********************************** S:indexeddb ***********************************/
 
-  .factory('indexeddb', function ($q) {
+  .factory('indexeddb2', function ($q) {
     
     var setUp = false;
     var db;
     var namaDB = "Penggajian";
-    var versi = 2;
+    var versi = 3;
 
     /* S:init */
     var init = function(){
@@ -53,6 +53,10 @@ angular.module('jayaMekarApp')
         /* membuat object store jabatan jika object store jabatan belum dibuat */
         if(!db.objectStoreNames.contains("jabatan")){
           var objectStore = db.createObjectStore("jabatan", {keyPath: "idJabatan", autoIncrement: true});
+          objectStore.createIndex("namaJabatan", "namaJabatan", {unique: false});
+        }
+        if(!db.objectStoreNames.contains("jabatan2")){
+          var objectStore = db.createObjectStore("jabatan2", {keyPath: "idJabatan", autoIncrement: true});
           objectStore.createIndex("namaJabatan", "namaJabatan", {unique: false});
         }
         console.log('init() :Pemberitahuan saat upgrade db');
@@ -105,11 +109,12 @@ angular.module('jayaMekarApp')
               namaStatus: cursor.value.namaStatus
             });
             cursor.continue();
+            console.log(cursor.value)
           }
         };
 
-        var t = db.transaction(["jabatan"], "readonly");
-        var objectStore = t.objectStore("jabatan");
+        var t = db.transaction(["jabatan","jabatan2"], "readonly");
+        var objectStore = t.objectStore("jabatan2");
         objectStore.openCursor().onsuccess = handleResult;
 
         t.oncomplete = function(e){
@@ -119,7 +124,7 @@ angular.module('jayaMekarApp')
         }
       });
 
-      console.log("indexeddb : getAllJabatan : defer.promise");
+      console.log("indexeddb2 : getAllJabatan : defer.promise");
       console.log(defer.promise);
       return defer.promise;
     }
@@ -132,27 +137,22 @@ angular.module('jayaMekarApp')
 
       var defer = $q.defer();
 
-      if(!data.id) data.id = "";
+      //if(!data.idJabatan) data.idJabatan = "J"+ new Date().getTime();
+      //if(!data.idJabatan) data.idJabatan = "";
+      if(!data.timeStamps.create) data.timeStamps.create = new Date().getTime();
+      if(!data.timeStamps.update) data.timeStamps.update = new Date().getTime();
 
-      var t = db.transaction(["jabatan"], "readwrite");
+      var t = db.transaction(["jabatan2"], "readwrite");
 
 
-      if (data.id === ""){ /* menambah data baru jika id = "" */
-        t.objectStore("jabatan")
-          .add({
-            namaJabatan: data.namaJabatan,
-            type: data.type,
-            timeStamps: {
-              create: data.timeCreate,
-              update: data.timeUpdate
-            },
-            namaStatus: data.namaStatus
-          });
+      if (!data.idJabatan){ /* menambah data baru jika id = "" */
+        t.objectStore("jabatan2")
+          .add(data);
           console.log("saveJabatan() : add : untuk menambah jabatan");
-      } else { /* merubah data jabatan yang sudah ada dengan kunci id */
-        t.objectStore("jabatan")
+      } else { /* merubah data jabatan yang sudah ada dengan kunci id jika id != "" */
+        t.objectStore("jabatan2")
           .put({
-            idJabatan:number(data.id),
+            idJabatan:data.idJabatan,
             namaJabatan: data.namaJabatan,
             type: data.type,
             timeStamps: { 
@@ -178,6 +178,33 @@ angular.module('jayaMekarApp')
 /**********************************************************************************
 * 
 * @ E:Jabatan
+*
+***********************************************************************************/
+
+
+
+
+/**********************************************************************************
+* 
+* @ S:Hapus
+*
+***********************************************************************************/
+
+/*********************************** S:Hapus ***********************************/
+    var hapus = function (key) {
+      var defer = $q.defer();
+      var t = db.transaction(["jabatan2"], "readwrite");
+      var request = t.objectStore("jabatan2").delete(key);
+      t.oncomplete = function (event) {
+        defer.resolve();
+      };
+      return defer.promise;
+    }
+/*********************************** E:Hapus ***********************************/
+
+/**********************************************************************************
+* 
+* @ E:Hapus
 *
 ***********************************************************************************/
 
@@ -214,6 +241,7 @@ angular.module('jayaMekarApp')
       init:init,
       getAllJabatan:getAllJabatan,
       saveJabatan:saveJabatan,
+      hapus:hapus,
       idbOK:idbOK
     };
 

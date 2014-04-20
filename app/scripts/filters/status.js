@@ -2,7 +2,7 @@
 
 angular.module('jayaMekarApp')
 
-  /* S:Status */
+  /* S:Status untuk Jabatan*/
   .filter('status', function () {
     var status ="";
     return function (data) {
@@ -16,7 +16,7 @@ angular.module('jayaMekarApp')
   })
   /* E:Status */
 
-  /* S:Panel Status */
+  /* S:Panel Status untuk Jabatan*/
   .filter('panelStatus', function(){
     var status ="";
     return function (data){
@@ -30,7 +30,7 @@ angular.module('jayaMekarApp')
   })
   /* E:Panel Status */
 
-  /* S:No Table*/
+  /* S:No Table untuk ngTable*/
   .filter('noTable', function(){
     var no;
     return function (data, key){
@@ -71,5 +71,27 @@ angular.module('jayaMekarApp')
 
       return bln;
     }
-  });
+  })
   /* E:Bulan */
+
+  /* S:Waktu */
+  .filter('waktu', function ($timeout) {
+    var wkt;
+    return function (data) {
+
+      var selisih = new Date().getTime() - data;
+
+      if(selisih < 60000){
+        var wkt = "baru saja";
+      } else {
+        wkt = ((selisih / (1000*60)) %60);
+      }
+      
+      //var wkt =  ((selisih / (1000*60)) %60);
+
+
+
+      return wkt;
+    }
+  })
+  /* E:Waktu */

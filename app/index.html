@@ -14,11 +14,12 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/ng-table/ng-table.css" />
-    <link rel="stylesheet" href="bower_components/select2/select2.css">
-    <link rel="stylesheet" href="bower_components/select2/select2-bootstrap.css">
+    <link rel="stylesheet" href="bower_components/select2/select2.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/select2/select2-bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular/angular-csp.css" />
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -29,7 +30,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <jm-nav></jm-nav>
+    <yk-nav></yk-nav>
     <div class="content">
         <ui-view></ui-view>
     </div>
@@ -62,12 +63,12 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/select2/select2.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/ng-table/ng-table.js"></script>
+    <script src="bower_components/select2/select2.js"></script>
     <script src="bower_components/angular-ui-select2/src/select2.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
@@ -93,6 +94,13 @@
         <script src="scripts/services/layanan-data.js"></script>
         <script src="scripts/controllers/transaksi.js"></script>
         <script src="scripts/services/indexeddb.js"></script>
+        <script src="scripts/services/ykValue.js"></script>
+        <script src="scripts/controllers/number.js"></script>
+        <script src="scripts/directives/number.js"></script>
+        <script src="scripts/services/indexeddb2.js"></script>
+        <script src="scripts/controllers/jabatan2.js"></script>
+        <script src="scripts/directives/yk-table.js"></script>
+        <script src="scripts/controllers/eksperimen.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -2,16 +2,34 @@
 <h1>Waktu edit</h1>
 {{date}} <br/>
 {{time.now}} <br/>
+{{time}} <br/>
 {{ nilai.a }}<br/>
 {{ nilai.b }}<br/>
 {{ nilai.a + nilai.b }}</br>
 
-<input type="number" class="form-control" ng-model="a">
-<input type="number" class="form-control" ng-model="b">
-<input type="number" class="form-control" ng-model="c">
-<input type="number" class="form-control" value="{{a+b}}" disabled>
-<input type="number" class="form-control" value="{{a+b+c}}" disabled>
-<input type="text" class="form-control" value="{{date | bulan}}" disabled>
+<!-- Menampilkan isi dari ykValue -->
+<pre>
+###------------------------------###
+##-- Objek Dari value aboutApp	--##
+###------------------------------###
+{{waktu.ykValue.aboutApp | json}}
+</pre>
+
+<pre>
+###----------------------------###
+##-- Objek Dari value aboutMe --##
+###----------------------------###
+{{waktu.ykValue.aboutMe | json}}
+</pre>
+
+<pre>
+###--------------------------------###
+##-- Objek Dari value menu.navTop --##
+###--------------------------------###
+{{waktu.ykValue.menu.navTop | json}}
+</pre>
+
+
 
 <!-- <script type='text/javascript'>
 //<![CDATA[
