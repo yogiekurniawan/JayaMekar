@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('jayaMekarApp')
+
   .directive('ykTable', function () {
     return {
       templateUrl: 'views/directive/yk-table.html',
@@ -8,15 +9,18 @@ angular.module('jayaMekarApp')
       replace: true,
       controller: function ($scope, $filter){
 
-
           $scope.data = [];
+          $scope.ykFiler = "";
+          $scope.limit = 5;
+          $scope.start = 0;
 
+          // membuat contoh data
           for (var i = 1; i <= 100; i++) {
             $scope.data.push({
               "_id": "id"+[i],
-              "column1": "column "+[i],
-              "column2": "column "+[i],
-              "column3": "column "+[i],
+              "column1": "column1 "+[i],
+              "column2": "column2 "+[i],
+              "column3": "column3 "+[i],
               "column4": 1+[i],
               "column5": 1+[i],
               "aksi": "edit "+[i]
@@ -24,26 +28,56 @@ angular.module('jayaMekarApp')
           }
 
 
-          $scope.limit = 5;
-          $scope.start = 0;
+          $scope.numPage = function (data, ykFilter, limit) {
 
-          $scope.nomorHalaman = function (data, myFilter, limit) {
+            var tempNumPage = [];
 
-            var tempNomorHalaman = [];
-
-            var temp = $filter('filter')(data, myFilter).length / limit;
+            var temp = $filter('filter')(data, ykFilter).length / limit;
 
             for (var i = 0; i < temp; i++) {
-              tempNomorHalaman.push(i);
+              tempNumPage.push(i);
             };
 
-            return tempNomorHalaman;
+            return tempNumPage;
 
           }
 
           $scope.setPage = function () {
             $scope.start = this.item * $scope.limit;
+            console.log("nextPage : "+ ($scope.start + 1))
           }
+
+          $scope.nextPage = function () {
+            if ($scope.start < ( $filter('filter')( $scope.data, $scope.ykFilter ).length - $scope.limit)) {
+              $scope.start = $scope.start + $scope.limit;
+            };
+            console.log("nextPage : "+ ($scope.start + 1))
+          }
+
+
+          $scope.prevPage = function () {
+            if ($scope.start > 0 ) {
+              $scope.start = $scope.start - $scope.limit;
+            };
+              console.log("prevPage : "+ ($scope.start + 1))
+          }
+
+/* S:Fungsi untuk disabled tombol pagination */
+          $scope.disabledPrevPage = function () {
+            // body...
+          }
+
+          $scope.disabledNextPage = function () {
+            var temp;
+            var tempLengthData = $filter('filter')( $scope.data, $scope.myFilter ).length - $scope.limit;
+            if($scope.start >= tempLengthData){
+              temp = true;
+            } else {
+              temp = false;
+            }
+            return temp;
+          }
+/* E:Fungsi untuk disabled tombol pagination */
 
         }
 
@@ -64,7 +98,7 @@ angular.module('jayaMekarApp')
     }
   })
 
-  .filter('sumRp',function () {
+  .filter('sum',function () {
     return function (data, key) {
         if (typeof (data) === 'undefined' || typeof (key) === 'undefined') {
             return 0;
@@ -74,8 +108,7 @@ angular.module('jayaMekarApp')
         for (var i = data.length - 1; i >= 0; i--) {
             temp += parseInt(data[i][key]);
         }
-        var Rp = "Rp " + temp; 
 
-        return Rp;
+        return temp;
     };
   })

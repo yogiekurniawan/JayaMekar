@@ -1,6 +1,5 @@
 <div>
-	{{tes}}
-	Search :<input type="text" ng-model="myFilter" class="form-control" placeholder="Search nama" ng-change="start = 0">
+	Search :<input type="text" ng-model="ykFilter" class="form-control" placeholder="Search nama" ng-change="start = 0">
     Limit Data:<input type="number" ng-model="limit" class="form-control" placeholder="limit data">
     Start array :<input type="number" ng-model="start" class="form-control" placeholder="start array">
     <br/>
@@ -17,7 +16,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr ng-repeat="item in data | filter:myFilter | startArray:start | limitTo:limit">
+			<tr ng-repeat="item in data | filter:ykFilter | startArray:start | limitTo:limit">
 				<td class="text-center">{{$index + start + 1}}</td>
 				<td class="text-center">{{item.column1}}</td>
 				<td class="text-center">{{item.column2}}</td>
@@ -30,27 +29,30 @@
 		<tfoot>
 			<tr>
 				<th colspan=4>Jumlah</th>
-				<th>{{ data | filter:myFilter | sumRp:'column4'}}</th>
-				<th>{{ data | filter:myFilter | sumRp:'column5'}}</th>
+				<th>{{ data | filter:ykFilter | sum:'column4'}}</th>
+				<th>{{ data | filter:ykFilter | sum:'column5'}}</th>
 				<th>Aksi</th>
 			</tr>
 		</tfoot>
 	</table>
 		<ul class="pagination pagination-sm">
-			<li><a href="#">&laquo;</a></li>
-			<li ng-repeat="item in nomorHalaman( data, myFilter, limit )" ng-click="setPage()">
+			<li ng-class="{disabled: (start == 0)}"><a href="" ng-click="prevPage()">&laquo;</a></li>
+			<li ng-class="{active: (item*limit)==start}" ng-repeat="item in numPage( data, ykFilter, limit )" ng-click="setPage()">
 				<a href="" ng-bind="item + 1">1</a>
 			</li>
-			<li><a href="#">&raquo;</a></li>
+			<li ng-class = "{disabled: disabledNextPage()}">
+				<!-- ng-class="{disabled: (start >= ((data | filter:ykFilter | lengthArray) - limit))}" -->
+			<a href="" ng-click="nextPage()">&raquo;</a></li>
 		</ul>
 	<!-- ui-bootstrap
 	<pagination total-items="data.length" items-per-page="limit" page="start" on-select-page="setPage()" on-select-page="setPage()" max-size="maxSize" class="pagination-sm" boundary-links="true"></pagination> -->
 	<br/>
 	<pre>
-		total items : {{TotalItems()}} / {{numberPage}}
-		SUM data : {{ data | sumRp:'column4'}}
-		{{limit}} dari {{ data | filter:myFilter | lengthArray }} baris data
-		Jumlah halaman {{ nomorHalaman( data, myFilter, limit ) | lengthArray }}
-		Array Nomor Halaman {{ nomorHalaman( data, myFilter, limit ) }}
+		disableNextPage : {{disabledNextPage()}}
+		SUM data : {{ data | sum:'column4'}}
+		{{limit}} dari {{ data | filter:ykFilter | lengthArray }} baris data
+		Jumlah halaman {{ numPage( data, ykFilter, limit ) | lengthArray }}
+		Array Nomor Halaman {{ numPage( data, myFilter, limit ) }}
+		{{(data | filter:ykFilter | lengthArray) -limit}}
 	</pre>
 </div>
