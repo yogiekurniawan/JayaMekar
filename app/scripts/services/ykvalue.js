@@ -40,6 +40,12 @@ angular.module('jayaMekarApp')
 			              {href:'transaksi.karyawan-tenun', submenu:'Karyawan Tenun', ngClass: ''}
 			            ]
 			          },
+			          {
+			          	href:'eksperimen', menu:'Eksperimen', ngClassD:'caret', dropdown:true,
+			          	submenu: [
+			          		{href:'eksperimen.yk-table', submenu:'yk-table', ngClass:'glyphicon glyphicon-wrench'}
+			          	]
+			          },
 			          { href:'info', menu:'', ngClassD:'glyphicon glyphicon-off', dropdown:true,
 			            submenu: [
 			              {href:'info.recycle', submenu:'Recyle', ngClass: 'glyphicon glyphicon-trash'},

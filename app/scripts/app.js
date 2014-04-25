@@ -99,7 +99,11 @@ angular.module('jayaMekarApp', [
         controller: "AboutAppCtrl"
       })
       // S:yk-eksperimen
-      .state('yk-table', {
+      .state('eksperimen', {
+        url: '/eksperimen',
+        template: "<ui-view></ui-view>"
+      })
+      .state('eksperimen.yk-table', {
         url: "/yk-table",
         templateUrl: "views/eksperimen-yk-table.html",
         controller: "EksperimenCtrl"
