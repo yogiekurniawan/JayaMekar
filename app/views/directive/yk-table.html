@@ -47,16 +47,25 @@
 		</tfoot>
 	</table>
 		<ul class="pagination pagination-sm">
-			<li><a href="">halaman {{noActive(start, limit)}} dari {{numPage( data, ykFilter, limit ) | lengthArray  | numberFormat:"":0}}</a></li>
-			<li><a href=""><i class="fa fa-backward"></i></a></li>
-			<li ng-class="{disabled: (start == 0)}"><a href="" ng-click="prevPage()"><i class="fa fa-chevron-left"></i></a></li>
+			<li>
+				<a href="">halaman {{noActive(start, limit)}} dari {{numPage( data, ykFilter, limit ) | lengthArray  | numberFormat:"":0}}</a> <!-- keterangan nomor halaman -->
+			</li>
+			<li>
+				<a href=""><i class="fa fa-backward"></i></a> <!-- nomor halaman pertama -->
+			</li>
+			<li ng-class="{disabled: (start == 0)}">
+				<a href="" ng-click="prevPage()"><i class="fa fa-chevron-left"></i></a> <!-- nomor halaman sebelumnya -->
+			</li>
 			<li ng-class="{active: (item*limit)==start}" ng-repeat="item in numPage( data, ykFilter, limit ).slice(numPagStart(start, limit),numPagEnd(start, limit))" ng-click="setPage()">
-				<a href="" ng-bind="item + 1">1</a>
+				<a href="" ng-bind="item + 1">1</a> <!-- pengulangan nomor halaman -->
 			</li>
 			<li ng-class = "{disabled: disabledNextPage()}">
 				<!-- ng-class="{disabled: (start >= ((data | filter:ykFilter | lengthArray) - limit))}" -->
-			<a href="" ng-click="nextPage()"><i class="fa fa-chevron-right"></i></a></li>
-			<li><a href=""><i class="fa fa-forward"></i></a></li>
+				<a href="" ng-click="nextPage()"><i class="fa fa-chevron-right"></i></a> <!-- nomor halaman selanjutnya -->
+			</li>
+			<li>
+				<a href=""><i class="fa fa-forward"></i></a> <!-- nomor halaman terakhir -->
+			</li>
 		</ul>
 	<!-- ui-bootstrap
 	<pagination total-items="data.length" items-per-page="limit" page="start" on-select-page="setPage()" on-select-page="setPage()" max-size="maxSize" class="pagination-sm" boundary-links="true"></pagination> -->

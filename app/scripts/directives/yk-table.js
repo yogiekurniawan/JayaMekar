@@ -9,108 +9,17 @@ angular.module('jayaMekarApp')
       replace: true,
       controller: function ($scope, $filter){
 
-          $scope.data = [
-/*            {
-              "_id": "id"+ 1,
-              "column1": "column1 "+ 1,
-              "column2": "column2 "+ 2,
-              "column3": "column3 "+ 3,
-              "column4": 1 + 2,
-              "column5": 1 + 3,
-              "aksi": "edit "+ 1
-            },
-            {
-              "_id": "id"+ 2,
-              "column1": "column1 "+ 2,
-              "column2": "column2 "+ 2,
-              "column3": "column3 "+ 3,
-              "column4": 1 + 2,
-              "column5": 1 + 3,
-              "aksi": "edit "+ 1
-            },
-            {
-              "_id": "id"+ 1,
-              "column1": "column1 "+ 1,
-              "column2": "column2 "+ 1,
-              "column3": "column3 "+ 3,
-              "column4": 1 + 2,
-              "column5": 1 + 3,
-              "aksi": "edit "+ 1
-            },
-            {
-              "_id": "id"+ 1,
-              "column1": "column1 "+ 2,
-              "column2": "column2 "+ 1,
-              "column3": "column3 "+ 3,
-              "column4": 1 + 2,
-              "column5": 1 + 3,
-              "aksi": "edit "+ 1
-            },
-            {
-              "_id": "id"+ 1,
-              "column1": "column1 "+ 1,
-              "column2": "column2 "+ 3,
-              "column3": "column3 "+ 3,
-              "column4": 1 + 2,
-              "column5": 1 + 3,
-              "aksi": "edit "+ 1
-            },
-            {
-              "_id": "id"+ 1,
-              "column1": "column1 "+ 2,
-              "column2": "column2 "+ 3,
-              "column3": "column3 "+ 3,
-              "column4": 1 + 2,
-              "column5": 1 + 3,
-              "aksi": "edit "+ 1
-            },
-            {
-              "_id": "id"+ 1,
-              "column1": "column1 "+ 1,
-              "column2": "column2 "+ 4,
-              "column3": "column3 "+ 3,
-              "column4": 1 + 2,
-              "column5": 1 + 3,
-              "aksi": "edit "+ 1
-            },
-            {
-              "_id": "id"+ 1,
-              "column1": "column1 "+ 2,
-              "column2": "column2 "+ 4,
-              "column3": "column3 "+ 3,
-              "column4": 1 + 2,
-              "column5": 1 + 3,
-              "aksi": "edit "+ 1
-            },
-            {
-              "_id": "id"+ 1,
-              "column1": "column1 "+ 1,
-              "column2": "column2 "+ 5,
-              "column3": "column3 "+ 3,
-              "column4": 1 + 2,
-              "column5": 1 + 3,
-              "aksi": "edit "+ 1
-            },
-            {
-              "_id": "id"+ 1,
-              "column1": "column1 "+ 2,
-              "column2": "column2 "+ 5,
-              "column3": "column3 "+ 3,
-              "column4": 1 + 2,
-              "column5": 1 + 3,
-              "aksi": "edit "+ 1
-            }*/
-          ];
+          $scope.data = [];
 
           $scope.ykFiler = "";
           $scope.limit = 10;
           $scope.start = 0;
           var maxSize = 7; // maksimal tombol pagination yang muncul
-          $scope.noActive2 = $scope.limit - $scope.start;
+          //$scope.noActive2 = $scope.limit - $scope.start;
 
 
           // membuat contoh data
-          for (var i = 1; i <= 2000; i++) {
+          for (var i = 1; i <= 100; i++) {
             $scope.data.push({
               "_id": "id"+ i,
               "column1": "column1 "+( i+ Math.floor((Math.random()*50)+1)),
@@ -122,7 +31,9 @@ angular.module('jayaMekarApp')
             });
           }
 
+/* S:pagination */
 
+          // fungsi untuk mendapatkan nomor jumlah nomor halaman yang harus disediakan
           $scope.numPage = function (data, ykFilter, limit) {
 
             var tempNumPage = [];
@@ -137,11 +48,22 @@ angular.module('jayaMekarApp')
 
           }
 
+          // fungsi menentukan halaman yang harus ditampilkan saat nomor halaman d klik
           $scope.setPage = function () {
             $scope.start = this.item * $scope.limit;
             console.log("nextPage : "+ ($scope.start + 1))
           }
 
+
+          // fungsi menentukan halaman yang harus ditampilkan saat icon nomor halaman sebelumnya di klik
+          $scope.prevPage = function () {
+            if ($scope.start > 0 ) {
+              $scope.start = $scope.start - $scope.limit;
+            };
+              console.log("prevPage : "+ ($scope.start + 1))
+          }
+          
+          // fungsi menentukan halaman yang harus ditampilkan saat icon nomor halaman selanjurnya di klik
           $scope.nextPage = function () {
             if ($scope.start < ( $filter('filter')( $scope.data, $scope.ykFilter ).length - $scope.limit)) {
               $scope.start = $scope.start + $scope.limit;
@@ -149,19 +71,13 @@ angular.module('jayaMekarApp')
             console.log("nextPage : "+ ($scope.start + 1))
           }
 
-
-          $scope.prevPage = function () {
-            if ($scope.start > 0 ) {
-              $scope.start = $scope.start - $scope.limit;
-            };
-              console.log("prevPage : "+ ($scope.start + 1))
-          }
-
-/* S:Fungsi untuk disabled tombol pagination */
+  /* S:Fungsi untuk disabled tombol pagination */
           $scope.disabledPrevPage = function () {
             // body...
           }
 
+          /* fungsi disabled button halaman selanjutnya ketika nomor halaman yang aktif adalah nomor terakhir
+             dari nomor pagination dengan menambahkan class disabled */
           $scope.disabledNextPage = function () {
             var temp;
             var tempLengthData = $filter('filter')( $scope.data, $scope.myFilter ).length - $scope.limit;
@@ -172,13 +88,14 @@ angular.module('jayaMekarApp')
             }
             return temp;
           }
-/* E:Fungsi untuk disabled tombol pagination */
+  /* E:Fungsi untuk disabled tombol pagination */
           
+          // fungsi untuk melihat nomor halaman yang sedang aktif
           $scope.noActive = function(start, limit){
                
             var pageActive = (start / limit ) + 1;
             return pageActive; 
-          }
+          } 
 
           $scope.numPagStart = function (start, limit) {
             var starCenter = Math.ceil(maxSize / 2);
@@ -204,10 +121,10 @@ angular.module('jayaMekarApp')
             return numPagEnd;
           }
 
-        }
-
-    };
-  })
+/* E:pagination */
+        } // E:controller
+    }; // E:return
+  }) // E:directive
 
   .filter('startArray', function () {
     return function (data, start) {
