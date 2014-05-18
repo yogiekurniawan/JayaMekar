@@ -3,7 +3,7 @@
 /**********************************************************************************
 * 
 * @author : Yogie Kurniawan - yogie.jm@gmail.com
-* @url    : 
+* @url    : scripts/controllers/jabatan.js
 *
 ***********************************************************************************/
 
@@ -28,6 +28,16 @@ angular.module('jayaMekarApp')
             console.log("HomeCtrl : getAllJabatan : data");
         });
     };
+
+    $scope.data = "";
+
+     $scope.newjabatan = function(){
+        indexeddb.getAllJabatan().then(function(data){
+            return data;
+            console.log("HomeCtrl : getAllJabatan : data");
+        });
+     } 
+
 /*********************************** E:getAllJabatan ***********************************/
 
 /*********************************** S:saveJabatan ***********************************/
@@ -41,18 +51,11 @@ angular.module('jayaMekarApp')
             timeUpdate : new Date().getTime(),
             namaStatus : "Tidak aktif"
         };
-        
-        // data.id = "";
-        // data.namaJabatan = "Operator Malet";
-        // data.type = "Harian";
-        // data.timeCreate = new Date().getTime();
-        // data.timeUpdate = new Date().getTime();
-        // data.namaStatus = "Tidak aktif";
 
         /*  dari services indexeddb  */
-        indexeddb.saveJabatan(data).then(function(){
+        indexeddb.saveJabatan(data).then(function(data){
             console.log("data berhasil dimasukan");
-            getAllJabatan();
+            $scope.jabatan = data;
         });
 
     };

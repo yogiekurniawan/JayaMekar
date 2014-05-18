@@ -27,7 +27,7 @@
 						<div class="panel-heading">
 							<h4 ng-if="j.key" class="text-center">
 							<!-- <span tooltip="Dibuat {{j.timeStamps.update | date: 'dd MMMM yyyy'}} pukul {{j.timeStamps.update | date: 'H:mm'}}" class="glyphicon glyphicon-time margin-span"></span> -->
-							<span tooltip="Dibuat {{j.timeStamps.update}} menit lalu" class="glyphicon glyphicon-time margin-span" ng-click="hapus(j.key)"></span>
+							<span tooltip="Dibuat {{j.timeStamps.update | waktu}} menit lalu" class="glyphicon glyphicon-time margin-span" ng-click="hapus(j.key)"></span>
 							{{j.namaJabatan}}</h4>
 							<!-- <h4 > --><input ng-if="!j.key" class="form-control" type="text" ng-model="j.namaJabatan"><!-- </h4> -->
 						</div>

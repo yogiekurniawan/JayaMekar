@@ -3,7 +3,7 @@
 /**
 * 
 * @author : Yogie Kurniawan - yogie.jm@gmail.com
-* @url    : 
+* @url    : scripts/services/indexeddb.js
 *
 */
 
@@ -24,9 +24,9 @@ angular.module('jayaMekarApp')
     var setUp = false;
     var db;
     var namaDB = "Penggajian";
-    var versi = 2;
+    var versi = 1;
 
-    /* S:init */
+/*********************************** S:init ***********************************/
     var init = function(){
 
       var defer = $q.defer();
@@ -55,7 +55,6 @@ angular.module('jayaMekarApp')
           var objectStore = db.createObjectStore("jabatan", {keyPath: "idJabatan", autoIncrement: true});
           objectStore.createIndex("namaJabatan", "namaJabatan", {unique: false});
         }
-        console.log('init() :Pemberitahuan saat upgrade db');
       };
 
       /* fungsi di panggil jika success */
@@ -65,14 +64,12 @@ angular.module('jayaMekarApp')
         db.onerror = function(e){
           defer.reject("init() : Kesalahan DB" + e.target.errorCode);
         }
-        console.log('init() : Database siap digunakan');
         defer.resolve(true);
       };
 
-      console.log( "init() : defer.promise" );
       return defer.promise;
     }
-    /* E:init */
+/*********************************** E:init ***********************************/
 
 
 /**
@@ -113,14 +110,10 @@ angular.module('jayaMekarApp')
         objectStore.openCursor().onsuccess = handleResult;
 
         t.oncomplete = function(e){
-          console.log(result);
           defer.resolve(result);
-          console.log("indexeddb: getAllJabatan: t.oncomplete")
         }
       });
 
-      console.log("indexeddb : getAllJabatan : defer.promise");
-      console.log(defer.promise);
       return defer.promise;
     }
 
@@ -165,7 +158,7 @@ angular.module('jayaMekarApp')
       }
 
       t.oncomplete = function(e){
-        defer.resolve();
+        defer.resolve(getAllJabatan());
         console.log("saveJabatan() : oncomplete");
       };
 
@@ -209,7 +202,7 @@ angular.module('jayaMekarApp')
 /*********************************** E:Support IDB ***********************************/
 
 /*********************************** S:return ***********************************/
-    /* digunakan untuk mengenalkan fungsi yang sudah dibuat ke services */
+    
     return {
       init:init,
       getAllJabatan:getAllJabatan,

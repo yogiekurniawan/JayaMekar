@@ -21,7 +21,7 @@ angular.module('jayaMekarApp', [
     ]
   )
 
-  .config( [
+  .config([
       '$compileProvider',
       function( $compileProvider )
       {   
@@ -98,17 +98,21 @@ angular.module('jayaMekarApp', [
         templateUrl: "views/about-app.html",
         controller: "AboutAppCtrl"
       })
-      // S:yk-eksperimen
+
+      // S:eksperimen
       .state('eksperimen', {
         url: '/eksperimen',
         template: "<ui-view></ui-view>"
       })
+      // S:yk-table
       .state('eksperimen.yk-table', {
         url: "/yk-table",
         templateUrl: "views/eksperimen-yk-table.html",
-        controller: "EksperimenCtrl"
+        controller: "EksperimenYkTableCtrl"
       })
       // E:yk-eksperimen
+      // E:eksperimen
+
       // S:ykLib
       .state('jabatan2', {
         url: "/jabatan2",
@@ -124,11 +128,6 @@ angular.module('jayaMekarApp', [
         url: "/waktu",
         templateUrl: "views/waktu.html",
         controller: "WaktuCtrl as waktu"
-      })
-      .state('input', {
-        url: "/input",
-        templateUrl: "views/input.html",
-        controller: "NumberCtrl"
       })
       // E:ykLib
   }]);
