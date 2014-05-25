@@ -220,6 +220,11 @@ angular.module('jayaMekarApp')
   * @link http://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-money-in-javascript
   */
   .filter('numberFormat', function () {
+    // Contoh penggunaan filter
+    // numberFormat:"Rp ":0
+    // number yaitu data yang akan dirubah formatnya
+    // key yaitu jenis mata uangnya
+    // LD yaitu jumlah desimal yang diinginkan
     return function (number, key, LD) {
       Number.prototype.format = function(n, x, s, c) { // doc terlampir - Number.prototype.format(n, x, s, c)
           var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
