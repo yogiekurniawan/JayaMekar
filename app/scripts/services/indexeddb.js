@@ -24,7 +24,7 @@ angular.module('jayaMekarApp')
     var setUp = false;
     var db;
     var namaDB = "Penggajian";
-    var versi = 1;
+    var versi = 3;
 
 /*********************************** S:init ***********************************/
     var init = function(){
@@ -54,6 +54,10 @@ angular.module('jayaMekarApp')
         if(!db.objectStoreNames.contains("jabatan")){
           var objectStore = db.createObjectStore("jabatan", {keyPath: "idJabatan", autoIncrement: true});
           objectStore.createIndex("namaJabatan", "namaJabatan", {unique: false});
+        }
+        if(!db.objectStoreNames.contains("karyawan")){
+          var objectStore = db.createObjectStore("karyawan", {keyPath: "idKaryawan", autoIncrement: true});
+          objectStore.createIndex("nama", "nama", {unique: false});
         }
       };
 
@@ -125,32 +129,33 @@ angular.module('jayaMekarApp')
 
       var defer = $q.defer();
 
-      if(!data.id) data.id = "";
+      if(!data._id) data._id = "";
 
       var t = db.transaction(["jabatan"], "readwrite");
 
 
-      if (data.id === ""){ /* menambah data baru jika id = "" */
+      if (data._id === ""){ /* menambah data baru jika _id = "" */
         t.objectStore("jabatan")
+            //.add(data);
           .add({
             namaJabatan: data.namaJabatan,
             type: data.type,
             timeStamps: {
-              create: data.timeCreate,
-              update: data.timeUpdate
+              create: data.timeStamps.timeCreate,
+              update: data.timeStamps.timeUpdate
             },
             namaStatus: data.namaStatus
           });
           console.log("saveJabatan() : add : untuk menambah jabatan");
-      } else { /* merubah data jabatan yang sudah ada dengan kunci id */
+      } else { /* merubah data jabatan yang sudah ada dengan kunci _id */
         t.objectStore("jabatan")
           .put({
-            idJabatan:number(data.id),
+            idJabatan:number(data._id),
             namaJabatan: data.namaJabatan,
             type: data.type,
             timeStamps: { 
-              create: data.timeCreate,
-              update: data.timeUpdate
+              create: data.timeStamps.timeCreate,
+              update: data.timeStamps.timeUpdate
             },
             namaStatus: data.namaStatus
           });

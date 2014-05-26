@@ -21,6 +21,9 @@ angular.module('jayaMekarApp')
         function ($scope, layananData, indexeddb) {
 
 /*********************************** S:getAllJabatan ***********************************/
+    $scope.jabatan = [];
+    $scope.baru = false;
+
     var getAllJabatan = function(){
         /*  dari services indexeddb  */
         indexeddb.getAllJabatan().then(function(data){
@@ -29,7 +32,7 @@ angular.module('jayaMekarApp')
         });
     };
 
-    $scope.data = "";
+    //$scope.data = "";
 
      $scope.newjabatan = function(){
         indexeddb.getAllJabatan().then(function(data){
@@ -42,14 +45,31 @@ angular.module('jayaMekarApp')
 
 /*********************************** S:saveJabatan ***********************************/
 
-    $scope.saveJabatan = function(){
+    $scope.tambah = function(){
+        $scope.baru = true;
         var data = {
             _id : "",
-            namaJabatan : "Operator Malet",
+            namaJabatan : "",
+            type : "",
+            timeStamps: {
+                timeCreate : new Date().getTime(),
+                timeUpdate : new Date().getTime()
+            },
+            namaStatus : "Aktif"
+        };
+        $scope.jabatan.push(data);
+    };
+
+    $scope.simpan = function() {
+        var data = {
+            _id : "",
+            namaJabatan : "Montir",
             type : "Harian",
-            timeCreate : new Date().getTime(),
-            timeUpdate : new Date().getTime(),
-            namaStatus : "Tidak aktif"
+            timeStamps: {
+                timeCreate : new Date().getTime(),
+                timeUpdate : new Date().getTime()
+            },
+            namaStatus : "Aktif"
         };
 
         /*  dari services indexeddb  */
@@ -57,9 +77,7 @@ angular.module('jayaMekarApp')
             console.log("data berhasil dimasukan");
             $scope.jabatan = data;
         });
-
-    };
-
+    }
 /*********************************** E:saveJabatan ***********************************/
 
 

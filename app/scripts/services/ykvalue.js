@@ -46,7 +46,7 @@ angular.module('jayaMekarApp')
 			          		{href:'eksperimen.yk-table', submenu:'yk-table', ngClass:'glyphicon glyphicon-wrench'}
 			          	]
 			          },
-			          { href:'info', menu:'', ngClassD:'fa fa-info', dropdown:true,
+			          { href:'info', menu:'', ngClassD:'glyphicon glyphicon-align-justify', dropdown:true,
 			            submenu: [
 			              {href:'info.recycle', submenu:'Recyle', ngClass: 'glyphicon glyphicon-trash'},
 			              {href:'info.about-me', submenu:'About Me', ngClass: 'glyphicon glyphicon-user'},

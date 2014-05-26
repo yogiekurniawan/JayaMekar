@@ -114,16 +114,6 @@ angular.module('jayaMekarApp', [
       // E:eksperimen
 
       // S:ykLib
-      .state('jabatan2', {
-        url: "/jabatan2",
-        templateUrl: "views/jabatan/jabatan2.html",
-        controller: "JabatanCtrl2"
-      })
-      .state('jabatan3', {
-        url: "/jabatan3",
-        templateUrl: "views/jabatan/jabatan3.html",
-        controller: "JabatanCtrl2"
-      })
       .state('waktu', {
         url: "/waktu",
         templateUrl: "views/waktu.html",
