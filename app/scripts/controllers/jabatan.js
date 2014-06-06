@@ -37,15 +37,6 @@ angular.module('jayaMekarApp')
         });
     };
 
-     /*$scope.newjabatan = function(){
-        indexeddb.getAllJabatan().then(function(data){
-            return data;
-            console.log("HomeCtrl : getAllJabatan : data");
-        });
-     }*/
-
-     //$scope.order ('namaJabatan', false);*/
-
 /*********************************** E:getAllJabatan ***********************************/
 
 /*********************************** S:saveJabatan ***********************************/
@@ -115,21 +106,6 @@ angular.module('jayaMekarApp')
     $scope.edit = function(j){
         $scope.edited = j;
     };
-
-    /*$scope.save = function(key){
-        console.log("function save click "+ this.j.key);
-        this.j.key = true;
-    };
-
-    $scope.ngIfView = function(key){
-        return key;
-        console.log( key );
-    }
-
-    $scope.ngIfEdit = function(key){
-        return "!"+key ;
-        console.log( key );
-    }*/
 
   }]);
 /**********************************************************************************
