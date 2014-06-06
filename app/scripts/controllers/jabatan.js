@@ -17,8 +17,8 @@ angular.module('jayaMekarApp')
 ***********************************************************************************/
 
   .controller('JabatanCtrl', 
-    ['$scope', 'indexeddb', '$filter', '$timeout', 
-        function ($scope, indexeddb, $filter, $timeout) {
+    ['$scope', 'indexeddb', '$filter', 
+        function ($scope, indexeddb, $filter) {
 
 /*********************************** S:getAllJabatan ***********************************/
     $scope.jabatan = [];
@@ -56,7 +56,6 @@ angular.module('jayaMekarApp')
                 timeUpdate : new Date().getTime()
             },
             namaStatus : nStatus,
-            modeEdit: j.key
         };
 
         /*  dari services indexeddb  */
@@ -79,7 +78,6 @@ angular.module('jayaMekarApp')
                 timeUpdate : new Date().getTime()
             },
             namaStatus : j.namaStatus,
-            modeEdit: j.key
         };
 
         /*  dari services indexeddb  */
@@ -92,20 +90,22 @@ angular.module('jayaMekarApp')
 /*********************************** E:saveJabatan ***********************************/
 
 
+/*********************************** S:edit ***********************************/
+    $scope.edit = function(j){
+        $scope.edited = j;
+    };
+/*********************************** E:edit ***********************************/
+
 /*********************************** S:StokKomen ***********************************/
 /*********************************** E:StokKomen ***********************************/
 
-    
+
     if(indexeddb.idbOK()){
         getAllJabatan();
         console.log("HomeCtrl : Browser support IDB");
     } else {
         console.log("HomeCtrl : Browser tidak support IDB");
     }
-
-    $scope.edit = function(j){
-        $scope.edited = j;
-    };
 
   }]);
 /**********************************************************************************
