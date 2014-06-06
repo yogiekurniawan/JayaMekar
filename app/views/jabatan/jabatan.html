@@ -6,12 +6,8 @@
 			</div>
 			<div class="col-xs-6 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 margin-top-20">
 				<a ng-click="tambah()" class="btn btn-primary pull-right">
-					<span class="glyphicon glyphicon-pencil margin-span"></span>
-					Tambah Jabatan
-				</a>
-				<a ng-click="simpan()" class="btn btn-primary pull-right">
-					<span class="glyphicon glyphicon-pencil margin-span"></span>
-					Tambah Jabatan2
+					<span class="glyphicon glyphicon-plus margin-span"></span>
+					Jabatan
 				</a>
 			</div>
 		</div>
@@ -19,14 +15,48 @@
 	<div class="container">
 		<div class="row margin-top-20">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3" ng-repeat="j in jabatan">
+				<div ng-if="baru" class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+					<div class="panel jabatan panel-default" ng-class='{"panel-success": {{baru}} == true, "panel-success": j.namaStatus == "Aktif", "panel-danger": j.namaStatus == "Tidak aktif" }'>
+						<div class="panel-heading">
+							<input 	class="form-control" 
+									type="text" 
+									ng-model="j.namaJabatan" 
+									placeholder="Nama Jabatan"
+									onfocus
+							>
+						</div>
+						<div class="panel-body">
+							<table class="table jabatan">
+								<tbody>
+									<tr>
+										<td colspan="3">
+											<select class="form-control" ng-model="j.type"
+												ng-options="t for t in type" ng-selected="t">
+											</select>
+											{{j.type}}
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<select class="form-control" ng-model="namaStatus"
+												ng-options="s for s in status" disabled>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+								<a href="" ng-click="add(j, namaStatus)" class="text-center active"><span class="glyphicon glyphicon-edit margin-span"></span>Simpan Data -  {{baru}}</a><br/>
+						</div>
+					</div> <!--/ E:Panel New Data -->
+				</div>
+				<div 	class="col-xs-6 col-sm-6 col-md-4 col-lg-3" 
+						ng-repeat="j in jabatan | orderBy:'timeStamps.create':true ">
 					<!-- S:Panel View Data -->
-					<div ng-if="j.key" 
-						 class="panel jabatan" 
-						 ng-class='{"panel-success": j.namaStatus == "Aktif", "panel-danger": j.namaStatus == "Tidak aktif" }'>
+					<div class="panel jabatan" 
+						 ng-class='{"panel-success": j.namaStatus == "Aktif", "panel-danger": j.namaStatus == "Tidak aktif", "hidden": j == edited }'>
 						<div class="panel-heading">
 							<h4 class="text-center">
-							<span tooltip="Dibuat {{j.time.update | date: 'dd MMMM yyyy'}} pukul {{j.time.update | date: 'H:mm'}}" class="glyphicon glyphicon-time margin-span"></span>
+							<span tooltip="Dibuat {{j.timeStamps.create | date: 'dd MMMM yyyy'}} - {{j.timeStamps.create | date: 'H:mm'}} Dirubah {{j.timeStamps.update | date: 'dd MMMM yyyy'}} - {{j.timeStamps.update | date: 'H:mm'}}" class="glyphicon glyphicon-time margin-span"></span>
 							{{j.namaJabatan}}</h4>
 						</div>
 						<div class="panel-body">
@@ -45,11 +75,11 @@
 									</tr>
 								</tbody>
 							</table>
-								<a href="" ng-click="j.key = false" class="text-center gray"><span class="glyphicon glyphicon-edit margin-span"></span>Ubah Data</a>
+								<a href ng-click="edit(j)" class="text-center gray"><span class="glyphicon glyphicon-edit margin-span"></span>Ubah Data</a>
 						</div>
-					</div> <!--// E:Panel View Data -->
+					</div> <!--/ E:Panel View Data -->
 					<!-- S:Panel Edit Data -->
-					<div ng-hide="{{baru}}" ng-if="!j.key" class="panel jabatan" ng-class='{"panel-success": j.namaStatus == "Aktif", "panel-danger": j.namaStatus == "Tidak aktif" }'>
+					<div class="panel jabatan" ng-class='{ "panel-success": j.namaStatus == "Aktif", "panel-danger": j.namaStatus == "Tidak aktif", "show": j == edited, "hidden": j != edited }'>
 						<div class="panel-heading">
 							<input 	class="form-control" 
 									type="text" 
@@ -62,7 +92,7 @@
 								<tbody>
 									<tr>
 										<td colspan="3">
-											<select class="form-control" value="j.type">
+											<select class="form-control" ng-model="j.type">
 												<option value=""></option>
 												<option value="Harian">Harian</option>
 												<option value="Borongan">Borongan</option>
@@ -71,7 +101,7 @@
 									</tr>
 									<tr>
 										<td colspan="3">
-											<select class="form-control" ng-value="j.namaStatus">
+											<select class="form-control" ng-model="j.namaStatus">
 												<option value="Aktif">Aktif</option>
 												<option value="Tidak aktif">Tidak aktif</option>
 											</select>
@@ -79,46 +109,10 @@
 									</tr>
 								</tbody>
 							</table>
-								<a href="" ng-click="save(j.key)" class="text-center active"><span class="glyphicon glyphicon-edit margin-span"></span>Simpan Data</a><br/>
+								<a href ng-click="simpan(j)" class="text-center active"><span class="glyphicon glyphicon-edit margin-span"></span>Simpan Data</a><br/>
 						</div>
-					</div> <!--// E:Panel Edit Data -->
-					<!-- S:Panel New Data -->
-					<div ng-show="{{baru}}" class="panel jabatan" ng-class='{"panel-success": j.namaStatus == "Aktif", "panel-danger": j.namaStatus == "Tidak aktif" }'>
-						<div class="panel-heading">
-							<input 	class="form-control" 
-									type="text" 
-									ng-model="j.namaJabatan" 
-									placeholder="Nama Jabatan"
-							>
-						</div>
-						<div class="panel-body">
-							<table class="table jabatan">
-								<tbody>
-									<tr>
-										<td colspan="3">
-											<select class="form-control" value="j.type">
-												<option value=""></option>
-												<option value="Harian">Harian</option>
-												<option value="Borongan">Borongan</option>
-											</select>
-										</td>
-									</tr>
-									<tr>
-										<td colspan="3">
-											<select class="form-control" ng-value="j.namaStatus">
-												<option value="Aktif">Aktif</option>
-												<option value="Tidak aktif">Tidak aktif</option>
-											</select>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-								<a href="" ng-click="save(j.key)" class="text-center active"><span class="glyphicon glyphicon-edit margin-span"></span>Simpan Data</a><br/>
-						</div>
-					</div> <!--// E:Panel New Data -->
-				</div> <!--// ng-repeat -->
-				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-				</div>
+					</div> <!--/ E:Panel Edit Data -->
+				</div> <!--/ ng-repeat --> 
 			</div>
 		</div>
 	</div>

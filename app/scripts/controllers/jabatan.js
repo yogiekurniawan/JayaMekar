@@ -17,29 +17,34 @@ angular.module('jayaMekarApp')
 ***********************************************************************************/
 
   .controller('JabatanCtrl', 
-    ['$scope', 'layananData', 'indexeddb', 
-        function ($scope, layananData, indexeddb) {
+    ['$scope', 'indexeddb', '$filter', '$timeout', 
+        function ($scope, indexeddb, $filter, $timeout) {
 
 /*********************************** S:getAllJabatan ***********************************/
     $scope.jabatan = [];
+
     $scope.baru = false;
+    $scope.edited = false;
+    $scope.type = [ "Borongan","Harian" ];
+    $scope.status = [ "Aktif", "Tidak aktif" ];
+    $scope.namaStatus = $scope.status[0];
 
     var getAllJabatan = function(){
         /*  dari services indexeddb  */
         indexeddb.getAllJabatan().then(function(data){
             $scope.jabatan = data;
-            console.log("HomeCtrl : getAllJabatan : data");
+            console.log("HomeCtrl : getAllJabatan : ", data);
         });
     };
 
-    //$scope.data = "";
-
-     $scope.newjabatan = function(){
+     /*$scope.newjabatan = function(){
         indexeddb.getAllJabatan().then(function(data){
             return data;
             console.log("HomeCtrl : getAllJabatan : data");
         });
-     } 
+     }*/
+
+     //$scope.order ('namaJabatan', false);*/
 
 /*********************************** E:getAllJabatan ***********************************/
 
@@ -47,36 +52,51 @@ angular.module('jayaMekarApp')
 
     $scope.tambah = function(){
         $scope.baru = true;
-        var data = {
-            _id : "",
-            namaJabatan : "",
-            type : "",
-            timeStamps: {
-                timeCreate : new Date().getTime(),
-                timeUpdate : new Date().getTime()
-            },
-            namaStatus : "Aktif"
-        };
-        $scope.jabatan.push(data);
     };
 
-    $scope.simpan = function() {
+    $scope.add = function(j, nStatus) {
+
         var data = {
-            _id : "",
-            namaJabatan : "Montir",
-            type : "Harian",
+            _id : j.idJabatan,
+            namaJabatan : j.namaJabatan,
+            type : j.type,
             timeStamps: {
                 timeCreate : new Date().getTime(),
                 timeUpdate : new Date().getTime()
             },
-            namaStatus : "Aktif"
+            namaStatus : nStatus,
+            modeEdit: j.key
         };
 
         /*  dari services indexeddb  */
         indexeddb.saveJabatan(data).then(function(data){
-            console.log("data berhasil dimasukan");
             $scope.jabatan = data;
         });
+            console.log("data berhasil dimasukan", data);
+
+        $scope.baru = false;
+    }
+
+    $scope.simpan = function(j) {
+
+        var data = {
+            _id : j.idJabatan,
+            namaJabatan : j.namaJabatan,
+            type : j.type,
+            timeStamps: {
+                timeCreate : j.timeStamps.create,
+                timeUpdate : new Date().getTime()
+            },
+            namaStatus : j.namaStatus,
+            modeEdit: j.key
+        };
+
+        /*  dari services indexeddb  */
+        indexeddb.saveJabatan(data).then(function(){
+            console.log("data berhasil disimpan", data);
+        });
+            //console.log(data);
+        $scope.edited = false;
     }
 /*********************************** E:saveJabatan ***********************************/
 
@@ -92,14 +112,13 @@ angular.module('jayaMekarApp')
         console.log("HomeCtrl : Browser tidak support IDB");
     }
 
-    $scope.edit = function(key){
-        key = false;
-        console.log("function edit click "+  $scope.key);
+    $scope.edit = function(j){
+        $scope.edited = j;
     };
 
-    $scope.save = function(key){
-        this.j.key = true;
+    /*$scope.save = function(key){
         console.log("function save click "+ this.j.key);
+        this.j.key = true;
     };
 
     $scope.ngIfView = function(key){
@@ -110,7 +129,7 @@ angular.module('jayaMekarApp')
     $scope.ngIfEdit = function(key){
         return "!"+key ;
         console.log( key );
-    }
+    }*/
 
   }]);
 /**********************************************************************************

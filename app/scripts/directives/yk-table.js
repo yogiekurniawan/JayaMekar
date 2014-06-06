@@ -224,7 +224,7 @@ angular.module('jayaMekarApp')
     // numberFormat:"Rp ":0
     // number yaitu data yang akan dirubah formatnya
     // key yaitu jenis mata uangnya
-    // LD yaitu jumlah desimal yang diinginkan
+    // LD (Long Desimal) yaitu jumlah desimal yang diinginkan
     return function (number, key, LD) {
       Number.prototype.format = function(n, x, s, c) { // doc terlampir - Number.prototype.format(n, x, s, c)
           var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
