@@ -1,0 +1,103 @@
+<div class="wrapper with-sidebar with-search navbar-static-side  sidebar-fixed">
+    <div class="wrapper-sidebar sidebar-default">
+        <div class="sidebar-search">
+            <div class="input-group custom-search-form">
+                <input type="text" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+            <!-- /input-group -->
+        </div>
+        <ul class="nav sidebar" id="side-menu">
+            <li>
+                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Menu 1</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Menu 2<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="">
+                                Menu 2.1
+                            </a>
+                    </li>
+                    <li>
+                        <a href="morris.html">Menu 2.2</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-sitemap fa-fw"></i> Menu 3<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="#">Menu 3.1</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu 3.2</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu 3.3 <span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            <li>
+                                <a href="#">Menu 3.3.1</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu 3.3.2</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu 3.3.3</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu 3.3.4</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-third-level -->
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+        </ul>
+        <!-- /#side-menu -->
+    </div>
+    <div class="wrapper-body">
+        <div class="wrapper-inner">
+            <div class="page-wrapper">
+                <div class="page-inner">
+                    <div class="header">
+                        <div class="yk-header">
+                            <h4>Judul Halaman</h4>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>String</th>
+                                                <th>Number</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="i in [1,2,3,4,5,6,7,8,9,10]">
+                                                <td>{{i}}</td>
+                                                <td>{{i}}</td>
+                                                <td>{{i}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -24,7 +24,8 @@ angular.module('jayaMekarApp')
     var setUp = false;
     var db;
     var namaDB = "Penggajian";
-    var versi = 3;
+    var versi = 1;
+    var data = [];
 
 /*********************************** S:init ***********************************/
     var init = function(){
@@ -41,8 +42,8 @@ angular.module('jayaMekarApp')
 
       /* fungsi di panggil jika error */
       openRequest.onerror = function(e){
-        console.log("init() : Kesalahan membuka DB");
-        console.dir(e);
+        //console.log("init() : Kesalahan membuka DB");
+        //console.dir(e);
         defer.reject(e.toString());
       };
 
@@ -52,8 +53,9 @@ angular.module('jayaMekarApp')
 
         /* membuat object store jabatan jika object store jabatan belum dibuat */
         if(!db.objectStoreNames.contains("jabatan")){
-          var objectStore = db.createObjectStore("jabatan", {keyPath: "idJabatan", autoIncrement: true});
+          var objectStore = db.createObjectStore("jabatan", {keyPath: "_id", autoIncrement: true});
           objectStore.createIndex("namaJabatan", "namaJabatan", {unique: false});
+          objectStore.createIndex("namaStatus", "namaStatus", {unique: false});
         }
         if(!db.objectStoreNames.contains("karyawan")){
           var objectStore = db.createObjectStore("karyawan", {keyPath: "idKaryawan", autoIncrement: true});
@@ -84,28 +86,30 @@ angular.module('jayaMekarApp')
 
 /*********************************** S:getAllJabatan ***********************************/
     
-    var getAllJabatan = function(){
-      var result = [],
-          defer = $q.defer();
+    var getAllJabatan = function(d){
+      var result = [];
+          var defer = $q.defer();
+          //result.splice(0, result.length);
       init().then(function(){
         var handleResult = function(e){
           var cursor = e.target.result;
-          if(cursor){
-            /*result.push({
-              idJabatan:cursor.key,
-              namaJabatan: cursor.value.namaJabatan,
-              type: cursor.value.type,
-              timeStamps: {
-                create: cursor.value.timeStamps.create,
-                update: cursor.value.timeStamps.update
-              },
-              namaStatus: cursor.value.namaStatus,
-              modeEdit: cursor.value.modeEdit
-            });*/
-            console.log("dipanggil :", cursor.value);
-            result.push(cursor.value);
-            cursor.continue();
-          }
+            if(cursor){
+          //console.log("MANA NU IEU",d);
+              /*result.push({
+                idJabatan:cursor.key,
+                namaJabatan: cursor.value.namaJabatan,
+                type: cursor.value.type,
+                timeStamps: {
+                  create: cursor.value.timeStamps.create,
+                  update: cursor.value.timeStamps.update
+                },
+                namaStatus: cursor.value.namaStatus,
+                modeEdit: cursor.value.modeEdit
+              });*/
+              //console.log("dipanggil :", cursor.value.idJabatan);
+              result.push(cursor.value);
+              cursor.continue();
+            }
         };
 
         var t = db.transaction(["jabatan"], "readonly");
@@ -113,7 +117,49 @@ angular.module('jayaMekarApp')
         objectStore.openCursor().onsuccess = handleResult;
 
         t.oncomplete = function(e){
-          console.log("defer.resolve 124:", result);
+          //console.log("defer.resolve 124:", result);
+          defer.resolve(result);
+        }
+      });
+
+      return defer.promise;
+    }
+
+    var getAllJabatan2 = function(d){
+          var defer = $q.defer();
+          //result.splice(0, result.length);
+          console.log("getAllJabatan2",d);
+      init().then(function(){
+        var handleResult = function(e){
+          var cursor = e.target.result;
+            if(cursor){
+              if(cursor.value.idJabatan === d){
+                //console.log("dipanggil :", cursor.value.idJabatan);
+                result.push(cursor.value);
+                console.log("object yg ditambahkan ke result : ", cursor.value);
+              }
+                cursor.continue();
+              /*result.push({
+                idJabatan:cursor.key,
+                namaJabatan: cursor.value.namaJabatan,
+                type: cursor.value.type,
+                timeStamps: {
+                  create: cursor.value.timeStamps.create,
+                  update: cursor.value.timeStamps.update
+                },
+                namaStatus: cursor.value.namaStatus,
+                modeEdit: cursor.value.modeEdit
+              });*/
+              
+            }
+        };
+
+        var t = db.transaction(["jabatan"], "readonly");
+        var objectStore = t.objectStore("jabatan");
+        objectStore.openCursor().onsuccess = handleResult;
+
+        t.oncomplete = function(e){
+          
           defer.resolve(result);
         }
       });
@@ -125,54 +171,60 @@ angular.module('jayaMekarApp')
 
 /*********************************** S:saveJabatan dan editJabatan ***********************************/
 
-    var saveJabatan = function(data){
+    var saveJabatan = function(object_store, data){
 
       var defer = $q.defer();
 
-      if(!data._id) data._id = "";
-      if(!data._id) data.modeEdit = new Date().getTime();
-      if(!data.timeStamps.timeCreate) data.timeStamps.timeCreate = new Date().getTime();
+      //if(!data._id) data._id = "";
+      //if(!data.idJabatan) data.modeEdit = new Date().getTime();
+      //if(!data.timeStamps.timeCreate) data.timeStamps.timeCreate = new Date().getTime();
 
-      var t = db.transaction(["jabatan"], "readwrite");
+      var t = db.transaction([object_store], "readwrite");
+
+      t.objectStore(object_store).add(data);
 
 
-      if (data._id === ""){ /* menambah data baru jika _id = "" */
-        t.objectStore("jabatan")
-            //.add(data);
-          .add({
-            idJabatan: new Date().getTime(),
-            namaJabatan: data.namaJabatan,
-            type: data.type,
-            timeStamps: {
-              create: data.timeStamps.timeCreate,
-              update: data.timeStamps.timeUpdate
-            },
-            namaStatus: data.namaStatus,
-            modeEdit: data.modeEdit
-          });
-          console.log("saveJabatan() : add : untuk menambah jabatan");
-      } else { /* merubah data jabatan yang sudah ada dengan kunci _id */
-        t.objectStore("jabatan")
-          .put({
-            idJabatan: data._id,
-            namaJabatan: data.namaJabatan,
-            type: data.type,
-            timeStamps: { 
-              create: data.timeStamps.timeCreate,
-              update: data.timeStamps.timeUpdate
-            },
-            namaStatus: data.namaStatus,
-            modeEdit: data.modeEdit
-          });
-          console.log("saveJabatan() : put : untuk merubah jabatan");
-      }
+      // if (data.idJabatan === ""){ /* menambah data baru jika idJabatan = "" */
+      //   t.objectStore("jabatan")
+      //       //.add(data);
+      //     .add({
+      //       idJabatan: data.idJabatan,
+      //       namaJabatan: data.namaJabatan,
+      //       type: data.type,
+      //       timeStamps: {
+      //         create: data.timeStamps.timeCreate,
+      //         update: data.timeStamps.timeUpdate
+      //       },
+      //       namaStatus: data.namaStatus,
+      //       modeEdit: data.modeEdit
+      //     });
+      //    // getAllJabatan2(data.idJabatan);
+
+      //     console.log("saveJabatan() : add : untuk menambah jabatan");
+      //   /* merubah data jabatan yang sudah ada dengan kunci idJabatan */
+      // } else { 
+      //   t.objectStore("jabatan")
+      //     .put({
+      //       idJabatan: data.idJabatan,
+      //       namaJabatan: data.namaJabatan,
+      //       type: data.type,
+      //       timeStamps: { 
+      //         create: data.timeStamps.timeCreate,
+      //         update: data.timeStamps.timeUpdate
+      //       },
+      //       namaStatus: data.namaStatus,
+      //       modeEdit: data.modeEdit
+      //     });
+      //     console.log("saveJabatan() : put : untuk merubah jabatan");
+      // }
 
       t.oncomplete = function(e){
         defer.resolve(getAllJabatan());
-        console.log("saveJabatan() : oncomplete");
+
+        //console.log("saveJabatan() : oncomplete");
       };
 
-      console.log("saveJabatan() : defer.promise");
+      //console.log("saveJabatan() : defer.promise");
       return defer.promise;
 
     };
@@ -217,8 +269,8 @@ angular.module('jayaMekarApp')
       init:init,
       getAllJabatan:getAllJabatan,
       saveJabatan:saveJabatan,
+      data:data,
       idbOK:idbOK
-     // r:r
     };
 
 /*********************************** E:return ***********************************/

@@ -11,7 +11,12 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<yk-table></yk-table>
+			<yk-table data='data' limit='itemsPerPage' start='start'>
+				<yk-thead></yk-thead>
+				<yk-tbody></yk-tbody>
+			</yk-table>
+			<pagination total-items="bigTotalItems" items-per-page="itemsPerPage" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" num-pages="numPages"></pagination>
+    		<pre>start array: {{start}} / {{numPages}} - {{bigCurrentPage}}</pre>
 		</div>
 	</div>
 </div>

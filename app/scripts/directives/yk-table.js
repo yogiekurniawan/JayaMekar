@@ -49,37 +49,27 @@ angular.module('jayaMekarApp')
     return {
       templateUrl: 'views/directive/yk-table.html',
       restrict: 'E',
+
       replace: true,
-      //transclude: true,
+      transclude: true,
       scope: {
         ykdata: '=data',
         yklimit:'=limit',
+        ykstartarray: '=start',
         //ykFilter: '=filter',
         ykheader: '=header'
       },
       controller: function ($scope, $filter){
 
-          var data = [];
-
-          // contoh data
-        for (var i = 1; i <= 100; i++) {
-          data.push({
-            "_id": "id"+ i,
-            "column1": "sample C1 "+( i+ Math.floor((Math.random()*100)+1)),
-            "column2": "sample C2 "+( i+ Math.floor((Math.random()*100)+1)),
-            "column3": "sample C3 "+( i+ Math.floor((Math.random()*100)+1)),
-            "column4": 1+ i+ Math.floor((Math.random()*100)+1),
-            "column5": 1+ i+ Math.floor((Math.random()*100)+1),
-            "aksi": "edit "+ i
-          });
-        }
-
         $scope.header = ($scope.ykheader)? $scope.ykheader: "";
-          $scope.data = ($scope.ykdata)? $scope.ykdata: data;
-          $scope.limit = ($scope.yklimit)? $scope.yklimit: 5;
+          $scope.data = this.data = ($scope.ykdata)? $scope.ykdata: data;
+          $scope.limit = this.limit = ($scope.yklimit)? $scope.yklimit: 5;
           //$scope.ykfilter = ($scope.ykFilter)? $scope.ykFilter: "";
           var maxSize = 7; // maksimal tombol pagination yang ditampilkan
-          $scope.start = ($scope.ykstartarray)? $scope.ykstartarray: 0; // nilai mulai untuk data array
+              this.start = $scope.start = ($scope.ykstartarray)? $scope.ykstartarray: 0; // nilai mulai untuk data array
+            $scope.$watch('start', function () {
+              
+            });
 
   /*********************************** S:fungsi pagination ***********************************/
 
@@ -88,14 +78,14 @@ angular.module('jayaMekarApp')
      */
 
           // fungsi untuk mendapatkan nilai jumlah halaman yang harus disediakan
-          $scope.numPage = function () {
+          /*$scope.numPage = function () {
             var tempNumPage = [];
             var temp = $filter('filter')($scope.data, $scope.ykfilter).length / $scope.limit;
             for (var i = 0; i < temp; i++) {
               tempNumPage.push(i);
             };
             return tempNumPage;
-          }
+          }*/
 
           // fungsi menentukan halaman yang harus ditampilkan saat nomor halaman d klik
           $scope.setPage = function () {
@@ -160,6 +150,7 @@ angular.module('jayaMekarApp')
             var numPagEnd = (pageActive > center)? pageActive + 3: maxSize;
             return numPagEnd;
           }
+
 
   /*********************************** E:fungsi pagination ***********************************/
 

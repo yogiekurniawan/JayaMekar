@@ -1,117 +1,16 @@
 <div>
-	<div class="row" ng-bind="header">
-		<!-- konten untuk header -->
-	</div> <!--/ .row -->
-	<div class="row">
-		<div class="col-md-3">
-			<!-- <input type="text" class="form-control input-sm" ng-model="ykfilter" ng-change="start = 0">	 -->
-		</div> <!--/ .col-md-3 -->
-	</div> <!--/ .row -->
-	<div class="row">
-		<div class="col-md-12">
-			<table class="table table-bordered table-striped">
-				<thead>
-					<tr>
-						<th class="text-center">#</th> <!--/ column number -->
-						<th class="text-center" ng-click="predicate='column1'; reverse=!reverse" >
-							Column 1
-							<i class="fa fa-sort margin-icon-left pull-right" 
-								ng-if="predicate!=='column1'">
-							</i>
-							<span class="margin-icon-left pull-right" ng-if="predicate=='column1'">
-								<i 	class="fa" 
-									ng-class="{'fa-sort-up': reverse ,'fa-sort-down': !reverse}">
-								</i>
-							</span>
-						</th> <!--/ column main planning ng-repeat -->
-						<th class="text-center" ng-click="predicate='column2'; reverse=!reverse">
-						Column 2
-						<i class="fa fa-sort margin-icon-left pull-right" ng-if="predicate!=='column2'"></i>
-						<span class="margin-icon-left pull-right" ng-if="predicate=='column2'">
-							<i ng-class="{'fa fa-sort-up': reverse}"></i>
-							<i ng-class="{'fa fa-sort-down': !reverse}"></i>
-						</span>
-						</th>
-						<th class="text-center" ng-click="predicate='column3'; reverse=!reverse">Column 3
-						<i class="fa fa-sort margin-icon-left pull-right" ng-if="predicate!=='column3'"></i>
-						<span class="margin-icon-left pull-right" ng-if="predicate=='column3'">
-							<i ng-class="{'fa fa-sort-up': reverse}"></i>
-							<i ng-class="{'fa fa-sort-down': !reverse}"></i>
-						</span>
-						</th>
-						<th class="text-center" ng-click="predicate='column4'; reverse=!reverse">Column 4
-						<i class="fa fa-sort margin-icon-left pull-right" ng-if="predicate!=='column4'"></i>
-						<span class="margin-icon-left pull-right" ng-if="predicate=='column4'">
-							<i ng-class="{'fa fa-sort-up': reverse}"></i>
-							<i ng-class="{'fa fa-sort-down': !reverse}"></i>
-						</span>
-						</th>
-						<th class="text-center" ng-click="predicate='column5'; reverse=!reverse">Column 5
-						<i class="fa fa-sort margin-icon-left pull-right" ng-if="predicate!=='column5'"></i>
-						<span class="margin-icon-left pull-right" ng-if="predicate=='column5'">
-							<i ng-class="{'fa fa-sort-up': reverse}"></i>
-							<i ng-class="{'fa fa-sort-down': !reverse}"></i>
-						</span>
-						</th>
-						<th class="text-center" ng-click="predicate=''">
-							<span class="glyphicon glyphicon-remove "></span>
-						</th> <!--/ column aksi untuk menghapus sort -->
-					</tr>
-				</thead>
-				<tbody>
-					<tr ng-repeat="item in data | filter:ykfilter | orderBy:predicate:reverse | startArray:start | limitTo:limit">
-						<td class="text-center">{{$index + start + 1}}</td>
-						<td class="text-center">{{item.column1}}</td>
-						<td class="text-center">{{item.column2}}</td>
-						<td class="text-center">{{item.column3}}</td>
-						<td class="text-center">{{item.column4}}</td>
-						<td class="text-center">{{item.column5}}</td>
-						<td class="text-center col-aksi">
-							<a href="#/{{item.aksi}}"><i class="glyphicon glyphicon-edit"></i></a>
-						</td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<th colspan=4>Jumlah</th>
-						<th>{{ data | filter:ykfilter | sumByKey:'column4' | currency:"Rp "}}</th>
-						<th>{{ data | filter:ykfilter | sumByKey:'column5' | numberFormat:"Rp ":0}}</th>
-					</tr>
-				</tfoot>
-			</table>
-		</div>
-		<div class="col-md-6">
-			<!-- konten kiri sejajar dengan pagination -->
-		</div>
-		<div class="col-md-6" ng-if="numPage().length > 1">
-			<ul class="pagination pagination-sm pull-right">
-				<li>
-					<!-- fungsi: keterangan nomor halaman -->
-					<a>halaman {{noActive()}} dari {{numPage().length}}</a> 
-				</li>
-				<li ng-class="{disabled: (start == 0)}" ng-if="noActive() > 1">
-					<!-- fungsi: nomor halaman pertama -->
-					<a href="" ng-click="firstPage()"><i class="fa fa-backward"></i></a> 
-				</li>
-				<li ng-class="{disabled: (start == 0)}" ng-if="noActive() > 1">
-					<!-- fungsi: nomor halaman sebelumnya -->
-					<a href="" ng-click="prevPage()"><i class="fa fa-chevron-left"></i></a> 
-				</li>
-				<li ng-class="{active: (item*limit)==start}"
-					ng-repeat="item in numPage().slice(numPagStart(),numPagEnd())" 
-					ng-click="setPage()">
-					<!-- fungsi: pengulangan nomor halaman -->
-					<a href="" ng-bind="item + 1">1</a> 
-				</li>
-				<li ng-class ="{disabled: disabledNextPage()}" ng-if="!disabledNextPage()">
-					<!-- fungsi: nomor halaman selanjutnya -->
-					<a href="" ng-click="nextPage()"><i class="fa fa-chevron-right"></i></a> 
-				</li>
-				<li ng-class ="{disabled: disabledNextPage()}" ng-if="!disabledNextPage()">
-					<!-- fungsi: nomor halaman terakhir -->
-					<a href="" ng-click="lastPage()"><i class="fa fa-forward"></i></a> 
-				</li>
-			</ul>
-		</div> <!--/ pagination -->
-	</div> <!--/ .row -->
+	<table class="table table-bordered table-striped" ng-transclude>
+		
+		
+		<tfoot>
+			<tr>
+				<th colspan=4>Jumlah</th>
+				<th>{{ data | filter:ykfilter | sumByKey:'column4' | currency:"Rp "}}</th>
+				<th>{{ data | filter:ykfilter | sumByKey:'column5' | numberFormat:"Rp ":0}}</th>
+			</tr>
+		</tfoot>
+	</table>
+	
 </div>
+			
+	

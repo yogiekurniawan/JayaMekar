@@ -14,7 +14,7 @@
         <li ng-repeat="item in menu" ng-if="!item.dropdown" ui-sref-active="active">
           <a ui-sref="{{item.href}}"><i class="margin-span" ng-class="{'{{item.ngClass}}': item.ngClass}"></i> {{item.menu}}</a>
         </li>
-        <li ng-repeat="item in menu" ng-if="item.dropdown" ng-class="{active: $state.includes('{{item.href}}')}">
+        <li class="dropdown" ng-repeat="item in menu" ng-if="item.dropdown" ng-class="{active: $state.includes('{{item.href}}')}">
           <a href="#" class="dropdown-toggle" ng-class="{'{{item.ngClass}}': item.ngClass}">{{item.menu}} <i class="{{item.ngClassD}}"></i></a>
           <ul class="dropdown-menu" role="menu">
             <li ui-sref-active="active" ng-repeat="sm in item.submenu">

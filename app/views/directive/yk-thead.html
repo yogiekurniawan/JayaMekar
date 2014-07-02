@@ -1,0 +1,59 @@
+<thead>
+	<tr>
+		<th class="text-center">#</th> <!--/ column number -->
+		<th class="text-center" 
+			ng-click="	predicate='column1'; 
+						reverse=!reverse">
+			Column 1
+			<!-- <i 	class="fa fa-sort margin-icon-left pull-right"  -->
+			<i 	class="	glyphicon 
+						glyphicon-sort 
+						margin-icon-left 
+						pull-right" 
+				ng-if="	predicate!=='column1'">
+			</i>
+			<span 	class="margin-icon-left pull-right" 
+					ng-if="predicate=='column1'">
+				<i 	class="fa" 
+					ng-class="{	'fa-sort-up': reverse ,
+								'fa-sort-down': !reverse }">
+				</i>
+			</span>
+		</th> <!--/ column main planning ng-repeat -->
+		<th class="text-center" ng-click="predicate='column2'; reverse=!reverse">
+		Column 2
+		<!-- <i class="fa fa-sort margin-icon-left pull-right" ng-if="predicate!=='column2'"></i> -->
+		<i class="glyphicon glyphicon-sort margin-icon-left pull-right" ng-if="predicate!=='column2'"></i>
+		<span class="margin-icon-left pull-right" ng-if="predicate=='column2'">
+			<!-- <i ng-class="{'fa fa-sort-up': reverse}"></i> -->
+			<i ng-class="{'glyphicon glyphicon-sort-by-alphabet-alt': reverse}"></i>
+			<!-- <i ng-class="{'fa fa-sort-down': !reverse}"></i> -->
+			<i ng-class="{'glyphicon glyphicon-sort-by-alphabet': !reverse}"></i>
+		</span>
+		</th>
+		<th class="text-center" ng-click="predicate='column3'; reverse=!reverse">Column 3
+		<i class="fa fa-sort margin-icon-left pull-right" ng-if="predicate!=='column3'"></i>
+		<span class="margin-icon-left pull-right" ng-if="predicate=='column3'">
+			<i ng-class="{'fa fa-sort-up': reverse}"></i>
+			<i ng-class="{'fa fa-sort-down': !reverse}"></i>
+		</span>
+		</th>
+		<th class="text-center" ng-click="predicate='column4'; reverse=!reverse">Column 4
+		<i class="fa fa-sort margin-icon-left pull-right" ng-if="predicate!=='column4'"></i>
+		<span class="margin-icon-left pull-right" ng-if="predicate=='column4'">
+			<i ng-class="{'fa fa-sort-up': reverse}"></i>
+			<i ng-class="{'fa fa-sort-down': !reverse}"></i>
+		</span>
+		</th>
+		<th class="text-center" ng-click="predicate='column5'; reverse=!reverse">Column 5
+		<i class="fa fa-sort margin-icon-left pull-right" ng-if="predicate!=='column5'"></i>
+		<span class="margin-icon-left pull-right" ng-if="predicate=='column5'">
+			<i ng-class="{'fa fa-sort-up': reverse}"></i>
+			<i ng-class="{'fa fa-sort-down': !reverse}"></i>
+		</span>
+		</th>
+		<th class="text-center" ng-click="predicate=''">
+			<span class="glyphicon glyphicon-remove "></span>
+		</th> <!--/ column aksi untuk menghapus sort -->
+	</tr>
+</thead>

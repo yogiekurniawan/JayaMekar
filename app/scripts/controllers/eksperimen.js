@@ -19,5 +19,13 @@ angular.module('jayaMekarApp')
 
       $scope.ykfilter = "";
       $scope.dataheader = "ini adalah data header";
+      $scope.maxSize = 5; // number yang ditampilkan dipagination
+      $scope.bigTotalItems = 100; // banyak data
+      $scope.bigCurrentPage = 1; // number pagination pertama
+      $scope.itemsPerPage = 7; // banyak data per-halaman
+      //this.start = $scope.bigCurrentPage;
+      $scope.$watch('bigCurrentPage', function (newValue, oldValue) { 
+        $scope.start = (newValue - 1) * $scope.itemsPerPage;
+      });
   });
 

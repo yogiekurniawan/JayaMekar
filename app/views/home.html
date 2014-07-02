@@ -1,65 +1,113 @@
-<div class="container-fluid margin">
-	<div class="row">
-		<div class="col-xs-1 col-sm-1 col-md-3 col-lg-2 page-header">
-			<h3>Sub Menu</h3>
-		</div>
-		<div class="col-xs-11 col-sm-1 col-md-9 col-lg-10 page-header">
-			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				<h3>Mengelola Home</h3>
-			</div>
-			<div class="col-xs-6 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 margin-top-20">
-				<a ng-click="saveJabatan()" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-pencil margin-span"></span>Tambah Jabatan</a>
-			</div>
-		</div>
-	</div>
+<div class="wrapper with-sidebar with-search">
+    <div class="wrapper-sidebar sidebar-default">
+        <div class="sidebar-search">
+            <div class="input-group custom-search-form">
+                <input type="text" class="form-control input-sm" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default btn-sm" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+            <!-- / .input-group -->
+        </div>
+        <ul class="nav sidebar-menu" id="side-menu">
+            <li>
+                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Menu 1</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Menu 2<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="">
+                                Menu 2.1
+                            </a>
+                    </li>
+                    <li>
+                        <a href="morris.html">Menu 2.2</a>
+                    </li>
+                </ul>
+                <!-- / .nav-second-level -->
+            </li>
 
-	<div class="container">
-
-		{{home}}
-		
-<!-- S:TEST -->
-<!-- <h4>Select2</h4>-->
-<input
-    type="hidden"
-    ui-select2="select2Options"
-    ng-model="list_of_string"
-    >
-
-    <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
-
-    <h4>Inline</h4>
-    <div style="display:inline-block; min-height:290px;">
-      <div class="well well-sm" ng-model="dt">
-          <datepicker min="minDate" show-weeks="showWeeks"></datepicker>
-      </div>
+            <li>
+                <a href="#"><i class="fa fa-sitemap fa-fw"></i> Menu 3<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="#">Menu 3.1</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu 3.2</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu 3.3 <span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            <li>
+                                <a href="#">Menu 3.3.1</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu 3.3.2</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu 3.3.3</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu 3.3.4</a>
+                            </li>
+                        </ul>
+                        <!-- / .nav-third-level -->
+                    </li>
+                </ul>
+                <!-- / .nav-second-level -->
+            </li>
+        </ul>
+        <!-- / #side-menu -->
     </div>
-
-    <h4>Popup</h4>
-    <div class="row">
-        <div class="col-md-6">
-            <p class="input-group">
-              <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min="minDate" max="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
-              <span class="input-group-btn">
-                <button class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
-              </span>
-            </p>
+    <div class="wrapper-body">
+        <div class="wrapper-inner">
+            <div class="header">
+                <div class="bs-page-header">
+                    <h4>Judul Halaman</h4>
+                </div>
+                <!-- / .yk-header -->
+            </div>
+            <!-- / .header -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="col-sm-1">#</th>
+                                        <th class="col-sm-2">Column</th>
+                                        <th class="col-sm-2">Column</th>
+                                        <th class="col-sm-2">Column</th>
+                                        <th class="col-sm-2">Column</th>
+                                        <th class="col-sm-2">Column</th>
+                                        <th class="col-sm-1">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="i in ['row1','row2','row3','row4','row5','row6','row7','row8','row9','row10']">
+                                        <td class="col-sm-1">{{i}}</td>
+                                        <td class="col-sm-2">{{i}}</td>
+                                        <td class="col-sm-2">{{i}}</td>
+                                        <td class="col-sm-2">{{i}}</td>
+                                        <td class="col-sm-2">{{i}}</td>
+                                        <td class="col-sm-2">{{i}}</td>
+                                        <td class="col-sm-1">{{i}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- / .col-sm-12 -->
+                    </div>
+                    <!-- / .row -->
+                </div>
+                <!-- / .container-fluid -->
+            </div>
+            <!-- / .content -->
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label>Format:</label> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
-        </div>
-    </div>
-
-    <hr />
-    <button class="btn btn-sm btn-info" ng-click="today()">Today</button>
-    <button class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24</button>
-    <button class="btn btn-sm btn-success" ng-click="toggleWeeks()" tooltip="For inline datepicker">Toggle Weeks</button>
-    <button class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
-    <button class="btn btn-sm btn-default" ng-click="toggleMin()" tooltip="After today restriction">Min date</button>
-
-
-<!-- E:TEST -->
-
-	</div>
 </div>
