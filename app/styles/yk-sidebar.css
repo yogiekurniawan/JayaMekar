@@ -1,146 +1,252 @@
 /* Sidebar Menu Styles */
- .sidebar-default ul li, .sidebar-search {
+
+.sidebar-default ul li, .sidebar-search
+{
     border-bottom: 1px solid #e7e7e7;
 }
-.sidebar-search {
+.sidebar-search
+{
     padding: 10px 15px;
 }
-.arrow {
+.arrow
+{
     float: right;
 }
-.fa.arrow:before {
-    content:'\f104';
+.fa.arrow:before
+{
+    content: '\f104';
 }
-.active > a > .fa.arrow:before {
-    content:'\f107';
+.active > a > .fa.arrow:before
+{
+    content: '\f107';
 }
-.nav-second-level li, .nav-third-level li {
+.nav-second-level li, .nav-third-level li
+{
     border-bottom: none !important;
 }
-.nav-second-level li a {
+.nav-second-level li a
+{
     padding-left: 37px;
 }
-.nav-third-level li a {
+.nav-third-level li a
+{
     padding-left: 52px;
 }
 /* E:sidebar */
- .sidebar-default {
-    border-color: #e7e7e7;
-    background: #f7f7f7;
+
+.sidebar-default
+{
     border-width: 0 0 1px;
+    border-color: #e7e7e7;
     border-right: #e7e7e7 solid 1px;
+    background: #f7f7f7;
 }
-.sidebar-default > ul > li > a {
-    border-left: solid 5px #555;
-    left: -5px;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+
+.sidebar-default > ul.sidebar-menu > li.active > ul:before
+{
+    border-color: #777;
 }
-.sidebar-default > ul > li.active {
+.sidebar-default > ul.sidebar-menu > li > ul:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 19px;
+    left: 24px;
+
+    display: block;
+
+    content: '';
+
+    border: 1px dotted;
+    border-width: 0 0 0 1px;
+}
+.sidebar-default > ul.sidebar-menu > li.active > ul > li:before
+{
+    border-color: #777;
+}
+
+.sidebar-default > ul.sidebar-menu > li > ul > li:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 26px;
+
+    display: block;
+
+    width: 7px;
+
+    content: '';
+
+    border: 1px dotted;
+    border-width: 1px 0 0;
+}
+.sidebar-default > ul > li.active
+{
     background: #f9f9f9;
 }
-.sidebar-default > ul > li.active > a, .sidebar-default > ul > li > ul > li.active > a, .sidebar-default > ul > li > ul > li > ul > li.active > a {
-    color: #333;
-    border-left: solid 5px #333;
-    left: 0;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+.sidebar-default > ul > li.active > a
+{
+    z-index: 2;
+
+    border-bottom: 1px solid #e7e7e7;
+    background: #f9f9f9;
 }
-.sidebar-default > ul > li > a, .sidebar-default > ul > li > ul > li > a, .sidebar-default > ul > li > ul > li > ul > li > a {
+.sidebar-default > ul > li > a,
+.sidebar-default > ul > li > ul > li > a,
+.sidebar-default > ul > li > ul > li > ul > li > a
+{
     color: #777;
 }
-.sidebar-default > ul > li > a:hover, 
-.sidebar-default > ul > li > ul > li > a:hover, 
-.sidebar-default > ul > li > ul > li > ul > li > a:hover {
+.sidebar-default > ul > li > a:hover,
+.sidebar-default > ul > li > ul > li > a:hover,
+.sidebar-default > ul > li > ul > li > ul > li > a:hover
+{
     color: #333;
-    background: transparent;
+    background: #f9f9f9;
 }
-.sidebar-default > ul > li > a:hover {
-    padding-left: 10px;
+.sidebar-default > ul > li.active > a:before
+{
+    display: block;
+
+    width: 5px;
+}
+.sidebar-default > ul > li > ul > li.active:before
+{
+    /*bottom: 50%;*/
+}
+.sidebar-default > ul > li > a:before
+{
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
     left: 0;
+
+    width: 0;
+
+    content: '';
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+            transition: all .5s ease;
+
+    background: #333;
 }
 /*new definition*/
- .wrapper.with-sidebar .wrapper-sidebar {
-    left: 0;
-}
-.wrapper .wrapper-sidebar {
+.wrapper.with-sidebar .wrapper-sidebar
+    {
+        left: 0;
+    }
+
+.wrapper .wrapper-sidebar
+{
     position: absolute;
-    top: 50px;
-    left: -250px;
-    bottom: 0;
     z-index: 1;
+    top: 50px;
+    bottom: 0;
+    left: -250px;
+
     width: 250px;
+
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+            transition: all .5s ease;
 }
-.wrapper .wrapper-body {
+.wrapper .wrapper-body
+{
     position: absolute;
     top: 50px;
     right: 0;
-    left: 0;
     bottom: 0;
+    left: 0;
+
+    -webkit-transition: left .5s ease;
+            transition: left .5s ease;
+
     /*color: #000;*/
     background: #fdfdfd;
-    -webkit-transition: left .5s ease;
-    transition: left .5s ease;
 }
-.wrapper .wrapper-body .wrapper-inner {
+.wrapper .wrapper-body .wrapper-inner
+{
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 0;
-    left: 0;
     bottom: 0;
+    left: 0;
+
     overflow-y: auto;
 }
-.wrapper .wrapper-body .wrapper-inner .page-wrapper {
+.wrapper .wrapper-body .wrapper-inner .page-wrapper
+{
     position: relative;
+
     outline: 0;
 }
-.wrapper .wrapper-body .wrapper-inner .content {
+.wrapper .wrapper-body .wrapper-inner .content
+{
     max-width: 100%;
     padding: 20px 15px;
 }
-.wrapper .wrapper-sidebar ul.sidebar-menu {
+.wrapper .wrapper-sidebar ul.sidebar-menu
+{
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+
     overflow-y: auto;
+
     margin: 0;
     padding: 0;
+
     list-style: none;
+
     -webkit-transition: top .5s ease;
-    transition: top .5s ease;
+            transition: top .5s ease;
 }
-.wrapper .wrapper-sidebar .sidebar-search {
+.wrapper .wrapper-sidebar .sidebar-search
+{
     position: absolute;
     top: -50px;
+
     -webkit-transition: top .5s ease;
-    transition: top .5s ease;
+            transition: top .5s ease;
 }
-.wrapper.with-search .wrapper-sidebar .sidebar-search {
+.wrapper.with-search .wrapper-sidebar .sidebar-search
+{
     top: 0;
 }
-.wrapper.with-search .wrapper-sidebar ul.sidebar-menu {
+.wrapper.with-search .wrapper-sidebar ul.sidebar-menu
+{
     top: 50px;
 }
-@media (min-width: 600px) {
-    .wrapper.with-sidebar > .wrapper-body {
+@media (min-width: 925px)
+{
+    .wrapper.with-sidebar > .wrapper-body
+    {
         left: 250px;
     }
 }
-@media (max-width: 1240px) {
-    .wrapper .wrapper-body {
+@media (max-width: 1240px)
+{
+    .wrapper .wrapper-body
+    {
         overflow-y: auto;
     }
 }
-@media (max-width: 1240px) {
-    .wrapper .wrapper-body .wrapper-inner {
+@media (max-width: 1240px)
+{
+    .wrapper .wrapper-body .wrapper-inner
+    {
         position: static;
-        padding-bottom: 20px;
+
         min-height: calc(100% - 57px);
+        padding-bottom: 20px;
     }
 }
+
+/**
+* note:
+* untuk menyembunyikan sidebar, maka harus menghapus class "with-sidebar" di html.
+* 
+**/

@@ -5,9 +5,9 @@
 
 chrome.app.runtime.onLaunched.addListener(function() {
 	var window = chrome.app.window.create('index.html', {
-		minWidth:670, minHeight:450
+		minWidth:840, minHeight:600
 	},function(createdWindow){
-		createdWindow.maximize();
+		//createdWindow.maximize();
 	});
 });
 

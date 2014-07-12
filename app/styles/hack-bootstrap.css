@@ -1,5 +1,5 @@
 /* 
-	 edited default config bootstrap 
+	 edited config default bootstrap 
 	 bs = bootstrap
 */
  .bs-page-header {
@@ -8,6 +8,6 @@
     background: #f7f7f7;
 }
 
-.nav > li > a {
+/*.nav > li > a {
 	padding-left: 10px;
-} 
+} */
