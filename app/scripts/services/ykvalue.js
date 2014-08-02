@@ -23,8 +23,8 @@ angular.module('jayaMekarApp')
         },
         menu: {
             navTop: [{
-                href: 'home',
-                menu: 'Home',
+                href: 'dashboard',
+                menu: 'Dashboard',
                 ngClass: 'fa fa-home'
             }, {
                 href: 'jabatan',

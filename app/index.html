@@ -1,9 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html ng-app="jayaMekarApp" class="no-js" ng-csp>
+<html ng-app="jayaMekarApp" ng-csp ng-controller="RootCtrl as root">
 <!--<![endif]-->
 
 <head>
@@ -29,48 +25,111 @@
     <link rel="stylesheet" href="styles/yk-sidebar.css">
     <link rel="stylesheet" href="styles/hack-bootstrap.css">
     <!-- endbuild -->
-    <!-- S:HTML5 Mode -->
-    <!-- <base href="/"> -->
-    <!-- E:HTML5 Mode -->
 </head>
 
-<body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
+<body yk-window>
     <!-- Add your site or application content here -->
-    <yk-nav></yk-nav>
-    <div ui-view></div>
+    <yk-navbar brand="root.brand" fixed-top>
+        <yk-menu-list menu="root.menuNavLeft" nav></yk-menu-list>
+        <yk-menu-list menu="root.menuNavRight" nav right></yk-menu-list>
+    </yk-navbar>
 
-    <!-- <pre>
-      Here's some values to keep an eye on in the sample in order to understand $state and $stateParams
-      tes
-      $state = {{$state.current.name}}
-      $stateParams = {{$stateParams}}
-      $state full url = {{ $state.$current.url.source }}
-      $state.$current is not a public api, we are using it to
-           display the full url for learning purposes
-    </pre> -->
+    <!-- S:Sidebar -->
+    <yk-wrapper yk-toggle-sidebar="root.withSidebar" window-width="{{windowWidth}}">
+        <yk-sidebar filter="root.filter">
+            <li>
+                <a ui-sref="dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+            </li>
+            <li>
+                <a ui-sref="jabatan"><i class="fa fa-dashboard fa-fw"></i> Jabatan</a>
+            </li>
+            <li>
+                <a ui-sref="karyawan"><i class="fa fa-dashboard fa-fw"></i> Karyawan</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Rumus Gaji<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a ui-sref="rumus-gaji.karyawan-harian"> Karyawan Harian</a>
+                    </li>
+                    <li class="last-child">
+                        <a ui-sref="rumus-gaji.karyawan-tenun"> Karyawan Tenun</a>
+                    </li>
+                </ul>
+                <!-- / .nav-second-level -->
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Penggajian<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a ui-sref="penggajian.karyawan-harian"> Karyawan Harian</a>
+                    </li>
+                    <li class="last-child">
+                        <a ui-sref="penggajian.karyawan-tenun"> Karyawan Tenun</a>
+                    </li>
+                </ul>
+                <!-- / .nav-second-level -->
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Info<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a ui-sref="info.recycle"> Recyle</a>
+                    </li>
+                    <li>
+                        <a ui-sref="info.about-me"> About Me</a>
+                    </li>
+                    <li class="last-child">
+                        <a ui-sref="info.about-app"> About App</a>
+                    </li>
+                </ul>
+                <!-- / .nav-second-level -->
+            </li>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <!-- <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-         </script> -->
+            <li>
+                <a href="#"><i class="fa fa-sitemap"></i> Menu 3<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="#"> Menu 3.1</a>
+                    </li>
+                    <li>
+                        <a href="#"> Menu 3.2</a>
+                    </li>
+                    <li class="last-child">
+                        <a href="#"> Menu 3.3 <span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            <li>
+                                <a href="#"> Menu 3.3.1</a>
+                            </li>
+                            <li>
+                                <a href="#"> Menu 3.3.2</a>
+                            </li>
+                            <li>
+                                <a href="#"> Menu 3.3.3</a>
+                            </li>
+                            <li class="last-child">
+                                <a href="#"> Menu 3.3.4</a>
+                            </li>
+                        </ul>
+                        <!-- / .nav-third-level -->
+                    </li>
+                </ul>
+                <!-- / .nav-second-level -->
+            </li>
+        </yk-sidebar>
+        <yk-wrapper-content>
+            <!-- S:Content -->
+            <ui-view></ui-view>
+            <!-- E:Content -->
+        </yk-wrapper-content>
+    </yk-wrapper>
 
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
+    <!-- E:Sidebar -->
+    <!-- <div ui-view></div> -->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -79,6 +138,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/metisMenu/jquery.metisMenu.js"></script>
     <script src="bower_components/ng-table/ng-table.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
     <script src="bower_components/select2/select2.js"></script>
     <script src="bower_components/angular-ui-select2/src/select2.js"></script>
     <!-- endbower -->
@@ -87,22 +147,23 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/directives/nav-directive.js"></script>
-    <script src="scripts/controllers/home.js"></script>
+    <script src="scripts/controllers/dashboard.js"></script>
     <script src="scripts/controllers/jabatan.js"></script>
     <script src="scripts/controllers/karyawan.js"></script>
+    <script src="scripts/controllers/rumus-gaji.js"></script>
     <script src="scripts/controllers/rumus-gaji-karyawan-tenun.js"></script>
     <script src="scripts/controllers/rumus-gaji-karyawan-harian.js"></script>
-    <script src="scripts/controllers/transaksi-karyawan-tenun.js"></script>
-    <script src="scripts/controllers/transaksi-karyawan-harian.js"></script>
+    <script src="scripts/controllers/penggajian.js"></script>
+    <script src="scripts/controllers/penggajian-karyawan-tenun.js"></script>
+    <script src="scripts/controllers/penggajian-karyawan-harian.js"></script>
+    <script src="scripts/controllers/info.js"></script>
     <script src="scripts/controllers/recycle.js"></script>
     <script src="scripts/controllers/about-me.js"></script>
     <script src="scripts/controllers/about-app.js"></script>
     <script src="scripts/filters/status.js"></script>
     <script src="scripts/controllers/waktu.js"></script>
     <script src="scripts/services/time.js"></script>
-    <script src="scripts/controllers/rumus-gaji.js"></script>
     <script src="scripts/services/layanan-data.js"></script>
-    <script src="scripts/controllers/transaksi.js"></script>
     <script src="scripts/services/indexeddb.js"></script>
     <script src="scripts/services/ykValue.js"></script>
     <script src="scripts/directives/yk-table.js"></script>
@@ -110,7 +171,11 @@
     <script src="scripts/controllers/jabatan2.js"></script>
     <script src="scripts/directives/yk-thead.js"></script>
     <script src="scripts/directives/yk-tbody.js"></script>
-    <script src="scripts/controllers/info.js"></script>
+    <script src="scripts/controllers/root.js"></script>
+    <script src="scripts/directives/yk-sidebar.js"></script>
+    <script src="scripts/directives/yk-wrapper.js"></script>
+    <script src="scripts/directives/yk-window.js"></script>
+    <script src="scripts/services/navbar-value.js"></script>
     <!-- endbuild -->
 </body>
 

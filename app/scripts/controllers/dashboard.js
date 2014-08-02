@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .controller('HomeCtrl', function($scope, layananData, indexeddb) {
+    .controller('DashboardCtrl', function($scope, layananData, indexeddb) {
 
         // menjalankan mentis menu
         $(function() {

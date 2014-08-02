@@ -41,10 +41,10 @@ angular.module('jayaMekarApp', [
         // $locationProvider.html5Mode(true);
 
         $stateProvider
-            .state('home', {
+            .state('dashboard', {
                 url: "/",
-                templateUrl: "views/home.html",
-                controller: "HomeCtrl"
+                templateUrl: "views/dashboard.html",
+                controller: "DashboardCtrl"
             })
             .state('jabatan', {
                 url: "/jabatan",
@@ -71,20 +71,20 @@ angular.module('jayaMekarApp', [
                 templateUrl: "views/rumus-gaji/rumus-gaji-karyawan-harian.html",
                 controller: "RumusGajiKaryawanHarianCtrl"
             })
-            .state('transaksi', {
-                url: "/transaksi",
-                templateUrl: "views/transaksi/transaksi.html",
-                controller: "TransaksiCtrl"
+            .state('penggajian', {
+                url: "/penggajian",
+                templateUrl: "views/penggajian/penggajian.html",
+                controller: "PenggajianCtrl"
             })
-            .state('transaksi.karyawan-tenun', {
+            .state('penggajian.karyawan-tenun', {
                 url: "/karyawan-tenun",
-                templateUrl: "views/transaksi/karyawan-borongan/transaksi-karyawan-tenun.html",
-                controller: "TransaksiKaryawanTenunCtrl"
+                templateUrl: "views/penggajian/karyawan-borongan/penggajian-karyawan-tenun.html",
+                controller: "PenggajianKaryawanTenunCtrl"
             })
-            .state('transaksi.karyawan-harian', {
+            .state('penggajian.karyawan-harian', {
                 url: "/karyawan-harian",
-                templateUrl: "views/transaksi/karyawan-harian/transaksi-karyawan-harian.html",
-                controller: "TransaksiKaryawanHarianCtrl"
+                templateUrl: "views/penggajian/karyawan-harian/penggajian-karyawan-harian.html",
+                controller: "PenggajianKaryawanHarianCtrl"
             })
             .state('info', {
                 url: "/info",

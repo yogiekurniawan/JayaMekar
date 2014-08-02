@@ -181,9 +181,13 @@
 
     outline: 0;
 }
-.wrapper .wrapper-body .wrapper-inner .content
+.wrapper .wrapper-body .wrapper-inner .content,
+.wrapper .wrapper-body .wrapper-inner .content .body
 {
     max-width: 100%;
+}
+.wrapper .wrapper-body .wrapper-inner .content .body
+{
     padding: 20px 15px;
 }
 .wrapper .wrapper-sidebar ul.sidebar-menu

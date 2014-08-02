@@ -16,7 +16,7 @@ angular.module('jayaMekarApp')
 *
 ***********************************************************************************/
 
-  .controller('TransaksiKaryawanTenunCtrl', function ($scope) {
+  .controller('PenggajianKaryawanTenunCtrl', function ($scope) {
 
 /*********************************** S:StokKomen ***********************************/
 /*********************************** E:StokKomen ***********************************/

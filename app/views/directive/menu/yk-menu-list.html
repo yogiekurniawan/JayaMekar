@@ -1,0 +1,14 @@
+
+<ul class="nav">
+    <li ng-repeat="item in menu" ng-if="!item.dropdown" ui-sref-active="active">
+        <a ui-sref="{{item.href}}"><i class="margin-span" ng-class="{'{{item.ngClass}}': item.ngClass}"></i> {{item.menu}}</a>
+    </li>
+    <li class="dropdown" ng-repeat="item in menu" ng-if="item.dropdown" ng-class="{active: $state.includes('{{item.href}}')}">
+        <a href="#" class="dropdown-toggle" ng-class="{'{{item.ngClass}}': item.ngClass}">{{item.menu}} <i class="{{item.ngClassD}}"></i></a>
+        <ul class="dropdown-menu">
+            <li ui-sref-active="active" ng-repeat="sm in item.submenu">
+                <a ui-sref="{{sm.href}}"><i class="margin-span" ng-class="{'{{sm.ngClass}}': sm.ngClass}"></i> {{sm.submenu}}</a>
+            </li>
+        </ul>
+    </li>
+</ul> 
