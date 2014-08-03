@@ -8,7 +8,7 @@ angular.module('jayaMekarApp')
         },
         'menuNavRightVal': [{
             href: ' ',
-            menu: 'Home',
+            menu: 'Menu',
             ngClass: 'fa fa-home'
         },{
             href: 'eksperimen',
@@ -19,6 +19,24 @@ angular.module('jayaMekarApp')
                 href: 'eksperimen.yk-table',
                 submenu: 'yk-table',
                 ngClass: 'glyphicon glyphicon-wrench'
+            }]
+        },{
+            href: 'info',
+            menu: 'Info',
+            ngClassD: 'caret',
+            dropdown: true,
+            submenu: [{
+                href: 'info.recycle',
+                submenu: 'Recycle',
+                ngClass: 'glyphicon glyphicon-trash'
+            },{
+                href: 'info.about-app',
+                submenu: 'About App',
+                ngClass: 'fa fa-laptop'
+            },{
+                href: 'info.about-me',
+                submenu: 'About Me',
+                ngClass: 'glyphicon glyphicon-user'
             }]
         }]
     });

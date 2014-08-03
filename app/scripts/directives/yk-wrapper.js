@@ -1,41 +1,42 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .directive('ykWrapper', function() {
 
-        function ykWrapperLink(scope, element, attrs) {
+.directive('ykWrapper', function() {
 
-            // binding perubahan ukuran window
-            attrs.$observe('windowWidth', function(newValue) {
-                if (newValue < 925) {
-                    element.removeClass('with-sidebar');
-                    scope.ykToggleSidebar = false;
-                } else {
-                    element.addClass('with-sidebar');
-                    scope.ykToggleSidebar = true;
-                }
-            });
+    function ykWrapperLink(scope, element, attrs) {
 
-            scope.$watch('ykToggleSidebar', function(newValue) {
-                if (newValue) {
-                    element.addClass('with-sidebar');
-                } else {
-                    element.removeClass('with-sidebar');
-                }
-            });
-        }
+        // binding perubahan ukuran window
+        attrs.$observe('windowWidth', function(newValue) {
+            if (newValue < 925) {
+                element.removeClass('with-sidebar');
+                scope.ykToggleSidebar = false;
+            } else {
+                element.addClass('with-sidebar');
+                scope.ykToggleSidebar = true;
+            }
+        });
 
-        return {
-            restrict: 'E',
-            templateUrl: 'views/directive/wrapper/yk-wrapper.html',
-            transclude: true,
-            replace: true,
-            scope: {
-                ykToggleSidebar: '='
-            },
-            link: ykWrapperLink
-        };
-    })
+        scope.$watch('ykToggleSidebar', function(newValue) {
+            if (newValue) {
+                element.addClass('with-sidebar');
+            } else {
+                element.removeClass('with-sidebar');
+            }
+        });
+    }
+
+    return {
+        restrict: 'E',
+        templateUrl: 'views/directive/wrapper/yk-wrapper.html',
+        transclude: true,
+        replace: true,
+        scope: {
+            ykToggleSidebar: '='
+        },
+        link: ykWrapperLink
+    };
+})
 
 .directive('ykWrapperContent', function() {
 
