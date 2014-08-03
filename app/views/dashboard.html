@@ -1,113 +1,18 @@
-<div class="wrapper with-sidebar with-search">
-    <div class="wrapper-sidebar sidebar-default">
-        <div class="sidebar-search">
-            <div class="input-group custom-search-form">
-                <input type="text" class="form-control input-sm" placeholder="Search...">
-                <span class="input-group-btn">
-                    <button class="btn btn-default btn-sm" type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </span>
-            </div>
-            <!-- / .input-group -->
-        </div>
-        <ul class="nav sidebar-menu" id="side-menu">
-            <li>
-                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Menu 1</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Menu 2<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="">
-                                Menu 2.1
-                            </a>
-                    </li>
-                    <li class="last-child">
-                        <a href="morris.html">Menu 2.2</a>
-                    </li>
-                </ul>
-                <!-- / .nav-second-level -->
-            </li>
+<div class="header">
+    <div class="bs-page-header">
+        <h4 ng-click="root.toggleSidebar()">Mengelola Dashboard</h4>
+    </div>
+    <!-- / .yk-header -->
+</div>
+<div class="body">
 
-            <li>
-                <a href="#"><i class="fa fa-sitemap fa-fw"></i> Menu 3<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="#">Menu 3.1</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu 3.2</a>
-                    </li>
-                    <li class="last-child">
-                        <a href="#">Menu 3.3 <span class="fa arrow"></span></a>
-                        <ul class="nav nav-third-level">
-                            <li>
-                                <a href="#">Menu 3.3.1</a>
-                            </li>
-                            <li>
-                                <a href="#">Menu 3.3.2</a>
-                            </li>
-                            <li>
-                                <a href="#">Menu 3.3.3</a>
-                            </li>
-                            <li class="last-child">
-                                <a href="#">Menu 3.3.4</a>
-                            </li>
-                        </ul>
-                        <!-- / .nav-third-level -->
-                    </li>
-                </ul>
-                <!-- / .nav-second-level -->
-            </li>
-        </ul>
-        <!-- / #side-menu -->
-    </div>
-    <div class="wrapper-body">
-        <div class="wrapper-inner">
-            <div class="header">
-                <div class="bs-page-header">
-                    <h4>Judul Halaman</h4>
-                </div>
-                <!-- / .yk-header -->
-            </div>
-            <!-- / .header -->
-            <div class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th class="col-sm-1">#</th>
-                                        <th class="col-sm-2">Column</th>
-                                        <th class="col-sm-2">Column</th>
-                                        <th class="col-sm-2">Column</th>
-                                        <th class="col-sm-2">Column</th>
-                                        <th class="col-sm-2">Column</th>
-                                        <th class="col-sm-1">Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr ng-repeat="i in ['row1','row2','row3','row4','row5','row6','row7','row8','row9','row10']">
-                                        <td class="col-sm-1">{{i}}</td>
-                                        <td class="col-sm-2">{{i}}</td>
-                                        <td class="col-sm-2">{{i}}</td>
-                                        <td class="col-sm-2">{{i}}</td>
-                                        <td class="col-sm-2">{{i}}</td>
-                                        <td class="col-sm-2">{{i}}</td>
-                                        <td class="col-sm-1">{{i}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- / .col-sm-12 -->
-                    </div>
-                    <!-- / .row -->
-                </div>
-                <!-- / .container-fluid -->
-            </div>
-            <!-- / .content -->
+    <div class="header">
+        <div class="bs-page-header">
+            <button class="btn btn-sm" ng-click="root.toggleSidebar()">Toggle Sidebar</button>
+            <h4>Judul Halaman - {{windowHeight}} - {{windowWidth}} - {{root.withSidebar}} - {{root.filter}}</h4>
         </div>
+        <!-- / .yk-header -->
     </div>
+    <h1>Area Content dashboard</h1>
+
 </div>

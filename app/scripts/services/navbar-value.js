@@ -6,19 +6,11 @@ angular.module('jayaMekarApp')
             nama: 'Nama Aplikasi',
             icon: 'Icon Aplikasi'
         },
-        'menuNavLeftVal': [{
-            href: 'home',
+        'menuNavRightVal': [{
+            href: ' ',
             menu: 'Home',
             ngClass: 'fa fa-home'
-        }, {
-            href: 'jabatan',
-            menu: 'Jabatan',
-            ngClass: ''
-        }, {
-            href: 'template',
-            menu: 'Template',
-            ngClass: ''
-        }, {
+        },{
             href: 'eksperimen',
             menu: 'Eksperimen',
             ngClassD: 'caret',
@@ -28,10 +20,5 @@ angular.module('jayaMekarApp')
                 submenu: 'yk-table',
                 ngClass: 'glyphicon glyphicon-wrench'
             }]
-        }],
-        'menuNavRightVal': [{
-            href: 'main',
-            menu: 'Home',
-            ngClass: 'fa fa-home'
         }]
     });

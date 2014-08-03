@@ -1,18 +1,1 @@
-<div class="container-fluid margin">
-	<div class="row">
-		<table ng-table="tableRGKaryawanTenun" show-filter="false" class="table table-bordered table-striped">
-			<tr ng-repeat="rg in $data">
-				<td data-title="'No'" class="text-center">{{$index | noTable:tableRGKaryawanTenun.page()}}</td>
-				<td data-title="'Jabatan'" sortable="'idJabatan'" ng-repeat="j in jabatan | filter:rg.idJabatan">{{j.namaJabatan}}</td>
-				<td data-title="'Shift'" filter="{ 'shift': 'text'}" sortable="'shift'" class="text-center">{{rg.shift}}</td>
-				<td data-title="'H. Normal'" sortable="'harga'" class="text-center">{{rg.harga}}</td>
-				<td data-title="'H. Target'" sortable="'hargaTarget'" class="text-center">{{rg.hargaTarget}}</td>
-				<td data-title="'T. Produksi'" sortable="'targetProduksi'" class="text-center">{{rg.targetProduksi}}</td>
-				<td data-title="'T. J. Produksi'" sortable="'targetJmlProduksi'" class="text-center">{{rg.targetJmlProduksi}}</td>
-				<td data-title="'U. Hadir'" sortable="'uangHadir'" class="text-center">{{rg.uangHadir}}</td>
-				<td data-title="'Status'" class="text-center">{{rg.status}}</td>
-				<td data-title="'A'" class="col-aksi"><a class="glyphicon glyphicon-edit" href="/#/karyawan/edit/{{k.nip}}" tooltip='edit'></a></td>
-			</tr>
-		</table>
-	</div>
-</div>
+Rumus Gaji Karyawan Tenun
