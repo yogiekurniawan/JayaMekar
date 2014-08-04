@@ -65,7 +65,8 @@ angular.module('jayaMekarApp')
         templateUrl: 'views/directive/navbar/yk-navbar.html',
         restrict: 'E',
         scope: {
-            brand: '='
+            brand: '=',
+            toggleSidebar: '&'
         },
         replace: true,
         transclude: true,
