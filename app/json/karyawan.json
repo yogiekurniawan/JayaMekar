@@ -1,200 +1,433 @@
-[
-      { 
-            "nip": "P001",
-            "namaDepan": "Yogie",
-            "namaBelakang": "Kurniawan",
-            "kelompokKerja": "-",
-            "idJabatan": "J001",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-            "nip": "P002",
-            "namaDepan": "Ujang",
-            "namaBelakang": "Mara",
-            "kelompokKerja": "Kel-UM",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Keluar"
-      },
-      { 
-            "nip": "P003",
-            "namaDepan": "Uje",
-            "kelompokKerja": "Kel-UJ",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-            "nip": "P004",
-            "namaDepan": "Buyak",
-            "kelompokKerja": "Kel-UM",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Keluar"
-      },
-      { 
-            "nip": "P005",
-            "namaDepan": "Novi",
-            "kelompokKerja": "Kel-UJ",
-            "idJabatan": "J003",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-            "nip": "P001",
-            "namaDepan": "Yogie",
-            "namaBelakang": "Kurniawan",
-            "kelompokKerja": "-",
-            "idJabatan": "J001",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-            "nip": "P002",
-            "namaDepan": "Ujang",
-            "namaBelakang": "Mara",
-            "kelompokKerja": "Kel-UM",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Keluar"
-      },
-      { 
-            "nip": "P003",
-            "namaDepan": "Uje",
-            "kelompokKerja": "Kel-UJ",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-            "nip": "P004",
-            "namaDepan": "Buyak",
-            "kelompokKerja": "Kel-UM",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Keluar"
-      },
-      { 
-            "nip": "P005",
-            "namaDepan": "Novi",
-            "kelompokKerja": "Kel-UJ",
-            "idJabatan": "J003",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-            "nip": "P001",
-            "namaDepan": "Yogie",
-            "namaBelakang": "Kurniawan",
-            "kelompokKerja": "-",
-            "idJabatan": "J001",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-            "nip": "P002",
-            "namaDepan": "Ujang",
-            "namaBelakang": "Mara",
-            "kelompokKerja": "Kel-UM",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Keluar"
-      },
-      { 
-            "nip": "P003",
-            "namaDepan": "Uje",
-            "kelompokKerja": "Kel-UJ",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-            "nip": "P004",
-            "namaDepan": "Buyak",
-            "kelompokKerja": "Kel-UM",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Keluar"
-      },
-      { 
-            "nip": "P005",
-            "namaDepan": "Novi",
-            "kelompokKerja": "Kel-UJ",
-            "idJabatan": "J003",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-      	"nip": "P001",
-		"namaDepan": "Yogie",
-		"namaBelakang": "Kurniawan",
-      	"kelompokKerja": "-",
-      	"idJabatan": "J001",
-		"timeCreate": "27 Maret 2014",
-		"timeUpdate": "27 Maret 2014",
-      	"status": "Kerja"
-      },
-      { 
-            "nip": "P002",
-            "namaDepan": "Ujang",
-            "namaBelakang": "Mara",
-            "kelompokKerja": "Kel-UM",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Keluar"
-      },
-      { 
-            "nip": "P003",
-            "namaDepan": "Uje",
-            "kelompokKerja": "Kel-UJ",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-            "nip": "P004",
-            "namaDepan": "Buyak",
-            "kelompokKerja": "Kel-UM",
-            "idJabatan": "J002",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Keluar"
-      },
-      { 
-            "nip": "P005",
-            "namaDepan": "Novi",
-            "kelompokKerja": "Kel-UJ",
-            "idJabatan": "J003",
-            "timeCreate": "27 Maret 2014",
-            "timeUpdate": "27 Maret 2014",
-            "status": "Kerja"
-      },
-      { 
-      	"nip": "P006",
-		"namaDepan": "Ceu",
-            "namaBelakang": "Ai",
-      	"kelompokKerja": "Kel-UJ",
-      	"idJabatan": "J004",
-		"timeCreate": "27 Maret 2014",
-		"timeUpdate": "27 Maret 2014",
-      	"status": "Kerja"
-      }
-]
+[{
+    "nip": "P001",
+    "namaDepan": "Hugh",
+    "namaBelakang": "Lloyd",
+    "jabatan": "J001",
+    "kelompokKerja": "-",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P002",
+    "namaDepan": "Ben",
+    "namaBelakang": "Garascia",
+    "jabatan": "J002",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P003",
+    "namaDepan": "Hector",
+    "namaBelakang": "Coe",
+    "jabatan": "J002",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P004",
+    "namaDepan": "Brooks",
+    "namaBelakang": "Stevenson",
+    "jabatan": "J002",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P005",
+    "namaDepan": "Alfred",
+    "namaBelakang": "Aubut",
+    "jabatan": "J002",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P006",
+    "namaDepan": "Theodora",
+    "namaBelakang": "Lau",
+    "jabatan": "J003",
+    "kelompokKerja": "-",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P007",
+    "namaDepan": "Cayla",
+    "namaBelakang": "Vicari",
+    "jabatan": "J003",
+    "kelompokKerja": "-",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P008",
+    "namaDepan": "Iris",
+    "namaBelakang": "Painter",
+    "jabatan": "J004",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P009",
+    "namaDepan": "Milind",
+    "namaBelakang": "Grant",
+    "jabatan": "J004",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P010",
+    "namaDepan": "Trisha",
+    "namaBelakang": "Gray",
+    "jabatan": "J004",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P011",
+    "namaDepan": "Bingmei",
+    "namaBelakang": "Shelton",
+    "jabatan": "J004",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P012",
+    "namaDepan": "Lucy",
+    "namaBelakang": "Kozlowski",
+    "jabatan": "J004",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P013",
+    "namaDepan": "Rob",
+    "namaBelakang": "Houston",
+    "jabatan": "J004",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P014",
+    "namaDepan": "Arthur",
+    "namaBelakang": "Vidales",
+    "jabatan": "J004",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P015",
+    "namaDepan": "Chaiporn",
+    "namaBelakang": "Keene",
+    "jabatan": "J004",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P016",
+    "namaDepan": "Nancy",
+    "namaBelakang": "Hefner",
+    "jabatan": "J004",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P017",
+    "namaDepan": "Melina",
+    "namaBelakang": "Gilby",
+    "jabatan": "J004",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P018",
+    "namaDepan": "Dennis",
+    "namaBelakang": "Diriwachter",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P019",
+    "namaDepan": "Byron",
+    "namaBelakang": "Chow",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P020",
+    "namaDepan": "Larry",
+    "namaBelakang": "Eichberger",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P021",
+    "namaDepan": "Rabiah",
+    "namaBelakang": "Corkett",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P022",
+    "namaDepan": "Yong",
+    "namaBelakang": "Gipple",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P023",
+    "namaDepan": "Julie",
+    "namaBelakang": "Nicols",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P024",
+    "namaDepan": "Michelamone",
+    "namaBelakang": "Jackson",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P025",
+    "namaDepan": "Demetrius",
+    "namaBelakang": "Schall",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P026",
+    "namaDepan": "Deborah",
+    "namaBelakang": "Burkholder",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P027",
+    "namaDepan": "Amalia",
+    "namaBelakang": "Schlottman",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P028",
+    "namaDepan": "Chandra",
+    "namaBelakang": "Ayers",
+    "jabatan": "J005",
+    "kelompokKerja": "UM",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P029",
+    "namaDepan": "Elridge",
+    "namaBelakang": "Carlsen",
+    "jabatan": "J005",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P030",
+    "namaDepan": "Nancy",
+    "namaBelakang": "Marzolf",
+    "jabatan": "J005",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P031",
+    "namaDepan": "Ann",
+    "namaBelakang": "Key",
+    "jabatan": "J005",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P032",
+    "namaDepan": "Delia",
+    "namaBelakang": "Bartley",
+    "jabatan": "J005",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P033",
+    "namaDepan": "Catherine",
+    "namaBelakang": "Kubota",
+    "jabatan": "J005",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P034",
+    "namaDepan": "Triandi",
+    "namaBelakang": "Kerkemeyer",
+    "jabatan": "J005",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P035",
+    "namaDepan": "Kingi",
+    "namaBelakang": "Theobald",
+    "jabatan": "J005",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}, {
+    "nip": "P036",
+    "namaDepan": "Shannon",
+    "namaBelakang": "Chacon",
+    "jabatan": "J005",
+    "kelompokKerja": "UJ",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusKaryawan": "Kerja",
+    "versi": 1
+}]

@@ -1,50 +1,51 @@
-[
-	{
-		"_id": "J001",
-		"namaJabatan": "Operator Penggajian",
-		"timeCreate": "28 Maret 2014",
-		"timeUpdate": "28 Maret 2014",
-		"namaStatus": "Aktif",
-		"type": "Harian"
-	},
-	{
-		"_id": "J002",
-		"namaJabatan": "Montir Mesin",
-		"timeCreate": "28 Maret 2014",
-		"timeUpdate": "28 Maret 2014",
-		"namaStatus": "Aktif",
-		"type": "Harian"
-	},
-	{
-		"_id": "J003",
-		"namaJabatan": "Operator Tenun",
-		"timeCreate": "28 Maret 2014",
-		"timeUpdate": "28 Maret 2014",
-		"namaStatus": "Aktif",
-		"type": "Borongan"
-	},
-	{
-		"_id": "J004",
-		"namaJabatan": "Operator Malet",
-		"timeCreate": "28 Maret 2014",
-		"timeUpdate": "28 Maret 2014",
-		"namaStatus": "Aktif",
-		"type": "Harian"
-	},
-	{
-		"_id": "J005",
-		"namaJabatan": "Operator Penghanian",
-		"timeCreate": "28 Maret 2014",
-		"timeUpdate": "28 Maret 2014",
-		"namaStatus": "Aktif",
-		"type": "Harian"
-	},
-	{
-		"_id": "J006",
-		"namaJabatan": "Operator Penggulungan",
-		"timeCreate": "28 Maret 2014",
-		"timeUpdate": "28 Maret 2014",
-		"namaStatus": "Tidak aktif",
-		"type": "Harian"
-	}
-]
+[{
+    "_idJabatan": "J001",
+    "jabatan": "Operator Penggajian",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusJabatan": "Aktif",
+    "jenis": "Harian",
+    "versi": 1
+}, {
+    "_idJabatan": "J002",
+    "jabatan": "Teknisi Mesin",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusJabatan": "Aktif",
+    "jenis": "Harian",
+    "versi": 1
+}, {
+    "_idJabatan": "J003",
+    "jabatan": "Operator Penghanian",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusJabatan": "Aktif",
+    "jenis": "Harian",
+    "versi": 1
+}, {
+    "_idJabatan": "J004",
+    "jabatan": "Operator Malet",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusJabatan": "Aktif",
+    "jenis": "Harian",
+    "versi": 1
+}, {
+    "_idJabatan": "J005",
+    "jabatan": "Operator Tenun",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusJabatan": "Aktif",
+    "jenis": "Borongan",
+    "versi": 1
+}]

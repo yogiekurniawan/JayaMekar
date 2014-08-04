@@ -1,18 +1,34 @@
 <div class="header">
     <div class="bs-page-header">
-        <h4 ng-click="root.toggleSidebar()">Mengelola Karyawan</h4>
+        <h4>Mengelola Karyawan</h4>
     </div>
     <!-- / .yk-header -->
 </div>
 <div class="body">
 
-    <div class="header">
-        <div class="bs-page-header">
-            <button class="btn btn-sm" ng-click="root.toggleSidebar()">Toggle Sidebar</button>
-            <h4>Judul Halaman - {{windowHeight}} - {{windowWidth}} - {{root.withSidebar}} - {{root.filter}}</h4>
-        </div>
-        <!-- / .yk-header -->
-    </div>
-    <h1>Area Content karyawan</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center">#</th>
+                <th class="text-center">Nama</th>
+                <th class="text-center">Jabatan</th>
+                <th class="text-center">Kelompok</th>
+                <th class="text-center">Waktu</th>
+                <th class="text-center">Status</th>
+                <th class="text-center">Versi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="i in karyawan.karyawan | filter:root.filter | limitTo:10">
+                <td class="text-center">{{$index+1}}</td>
+                <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
+                <td class="text-center">{{i.jabatan}}</td>
+                <td class="text-center">{{i.kelompokKerja}}</td>
+                <td class="text-center">{{i.waktu.dibuat | date}}</td>
+                <td class="text-center">{{i.statusKaryawan}}</td>
+                <td class="text-center">{{i.versi}}</td>
+            </tr>
+        </tbody>
+    </table>
 
 </div>

@@ -49,12 +49,12 @@ angular.module('jayaMekarApp', [
             .state('jabatan', {
                 url: "/jabatan",
                 templateUrl: "views/jabatan/jabatan.html",
-                controller: "JabatanCtrl"
+                controller: "JabatanCtrl as jabatan"
             })
             .state('karyawan', {
                 url: "/karyawan",
                 templateUrl: "views/karyawan/karyawan.html",
-                controller: "KaryawanCtrl"
+                controller: "KaryawanCtrl as karyawan"
             })
             .state('rumus-gaji', {
                 url: "/rumus-gaji",
