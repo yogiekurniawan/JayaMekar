@@ -21,20 +21,20 @@ angular.module('jayaMekarApp')
                 ngClass: 'glyphicon glyphicon-wrench'
             }]
         },{
-            href: 'info',
+            href: '#',
             menu: 'Info',
             ngClassD: 'caret',
             dropdown: true,
             submenu: [{
-                href: 'info.recycle',
+                href: 'recycle',
                 submenu: 'Recycle',
                 ngClass: 'glyphicon glyphicon-trash'
             },{
-                href: 'info.about-app',
+                href: 'about-app',
                 submenu: 'About App',
                 ngClass: 'fa fa-laptop'
             },{
-                href: 'info.about-me',
+                href: 'about-me',
                 submenu: 'About Me',
                 ngClass: 'glyphicon glyphicon-user'
             }]

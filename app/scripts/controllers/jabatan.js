@@ -16,7 +16,6 @@ angular.module('jayaMekarApp')
 
     layananData.getJabatan().then(function(data) {
         that.jabatan = data;
-        console.log( that.jabatan );
     });
 
 });

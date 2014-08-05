@@ -86,22 +86,17 @@ angular.module('jayaMekarApp', [
                 templateUrl: "views/penggajian/karyawan-harian/penggajian-karyawan-harian.html",
                 controller: "PenggajianKaryawanHarianCtrl"
             })
-            .state('info', {
-                url: "/info",
-                templateUrl: "views/info.html",
-                controller: "InfoCtrl"
-            })
-            .state('info.recycle', {
+            .state('recycle', {
                 url: "/recycle",
                 templateUrl: "views/recycle.html",
                 controller: "RecycleCtrl"
             })
-            .state('info.about-me', {
+            .state('about-me', {
                 url: "/about-me",
                 templateUrl: "views/about-me.html",
                 controller: "AboutMeCtrl"
             })
-            .state('info.about-app', {
+            .state('about-app', {
                 url: "/about-app",
                 templateUrl: "views/about-app.html",
                 controller: "AboutAppCtrl"
