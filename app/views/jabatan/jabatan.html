@@ -19,7 +19,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="i in jabatan.jabatan | filter:root.filter">
+                    <tr ng-repeat="i in jabatan.jabatan track by i._idJabatan | filter:root.filter">
                         <td class="text-center">{{i._idJabatan}}</td>
                         <td>{{i.jabatan}}</td>
                         <td class="text-center">{{i.waktu.dibuat | date}}</td>
@@ -46,15 +46,15 @@
                                 <span class="glyphicon glyphicon-chevron-down"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#"><span class="margin-span glyphicon glyphicon-ban-circle"></span>Aktifkan Data</a> </li>
-                                <li><a href="#"><span class="margin-span glyphicon glyphicon-edit"></span>Edit Data</a> </li>
+                                <li><a href><span class="margin-span glyphicon glyphicon-ban-circle"></span>Aktifkan Data</a> </li>
+                                <li><a href><span class="margin-span glyphicon glyphicon-list-alt"></span>Riwayat Data</a> </li>
                                 <li class="divider"></li>
-                                <li class="delete"><a href="#"><span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a> </li> 
+                                <li class="delete"><a href><span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a> </li> 
                             </ul>
                         </span>
                     </div>
                 </div>
-                <div class="box-body"><% Area Kontent Jabatan %></div>
+                <div class="box-body"><% Area Konten Jabatan %></div>
                 <div class="box-footer">
                     <div class="box-time pull-right">
                         <span class="glyphicon glyphicon-calendar"></span>
@@ -66,7 +66,7 @@
         </div>
         <div class="col-sm-6">
 
-            <div class="box box-primary">
+            <div class="box" ng-class="{'box-primary': Aktif===Aktif }">
                 <div class="box-header">
                     <i class="glyphicon glyphicon-ok icon-status"></i>
                     <h3 class="box-title">
@@ -79,14 +79,14 @@
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#"><span class="margin-span glyphicon glyphicon-ban-circle"></span>Tidak Aktifkan</a> </li>
-                                <li><a href="#"><span class="margin-span glyphicon glyphicon-edit"></span>Edit Data</a> </li>
+                                <li><a href="#"><span class="margin-span glyphicon glyphicon-list-alt"></span>Riwayat Data</a> </li>
                                 <li class="divider"></li>
                                 <li class="delete"><a href="#"><span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a> </li> 
                             </ul>
                         </span>
                     </div>
                 </div>
-                <div class="box-body"><% Area Kontent Jabatan %></div>
+                <div class="box-body"><% Area Konten Jabatan %></div>
                 <div class="box-footer">
                     <div class="box-time pull-right">
                         <span class="glyphicon glyphicon-calendar"></span>

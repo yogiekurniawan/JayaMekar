@@ -48,4 +48,14 @@
     "statusJabatan": "Aktif",
     "jenis": "Borongan",
     "versi": 1
+}, {
+    "_idJabatan": "J006",
+    "jabatan": "Operator Penggulungan",
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "1407334427233"
+    },
+    "statusJabatan": "Tidak Aktif",
+    "jenis": "Harian",
+    "versi": 1
 }]
