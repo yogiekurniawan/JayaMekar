@@ -1,5 +1,5 @@
 [{
-    "_idJabatan": "J001",
+    "idJabatan": "J001",
     "jabatan": "Operator Penggajian",
     "waktu": {
         "dibuat": "1407134327233",
@@ -9,7 +9,7 @@
     "jenis": "Harian",
     "versi": 1
 }, {
-    "_idJabatan": "J002",
+    "idJabatan": "J002",
     "jabatan": "Teknisi Mesin",
     "waktu": {
         "dibuat": "1407134327233",
@@ -19,7 +19,7 @@
     "jenis": "Harian",
     "versi": 1
 }, {
-    "_idJabatan": "J003",
+    "idJabatan": "J003",
     "jabatan": "Operator Penghanian",
     "waktu": {
         "dibuat": "1407134327233",
@@ -29,7 +29,7 @@
     "jenis": "Harian",
     "versi": 1
 }, {
-    "_idJabatan": "J004",
+    "idJabatan": "J004",
     "jabatan": "Operator Malet",
     "waktu": {
         "dibuat": "1407134327233",
@@ -39,7 +39,7 @@
     "jenis": "Harian",
     "versi": 1
 }, {
-    "_idJabatan": "J005",
+    "idJabatan": "J005",
     "jabatan": "Operator Tenun",
     "waktu": {
         "dibuat": "1407134327233",
@@ -49,7 +49,7 @@
     "jenis": "Borongan",
     "versi": 1
 }, {
-    "_idJabatan": "J006",
+    "idJabatan": "J006",
     "jabatan": "Operator Penggulungan",
     "waktu": {
         "dibuat": "1407134327233",

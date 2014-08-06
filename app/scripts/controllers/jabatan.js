@@ -18,4 +18,15 @@ angular.module('jayaMekarApp')
         that.jabatan = data;
     });
 
+    this.toggleStatus = function(obj) {
+    	console.log('toggle status', obj);	
+    };
+
+    this.riwayatData = function(obj) {
+    	console.log('Riwayat Data', obj);
+    };
+
+    this.hapusData = function(obj) {
+    	console.log('Hapus Data', obj);
+    };
 });
