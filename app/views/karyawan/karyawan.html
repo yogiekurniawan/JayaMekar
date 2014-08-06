@@ -5,30 +5,41 @@
     <!-- / .yk-header -->
 </div>
 <div class="body">
+    <div class="row newline">
+        <div class="col-md-6">
 
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th class="text-center">#</th>
-                <th class="text-center">Nama</th>
-                <th class="text-center">Jabatan</th>
-                <th class="text-center">Kelompok</th>
-                <th class="text-center">Waktu</th>
-                <th class="text-center">Status</th>
-                <th class="text-center">Versi</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="i in karyawan.karyawan | filter:root.filter | limitTo:10">
-                <td class="text-center">{{$index+1}}</td>
-                <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
-                <td class="text-center">{{i.jabatan}}</td>
-                <td class="text-center">{{i.kelompokKerja}}</td>
-                <td class="text-center">{{i.waktu.dibuat | date}}</td>
-                <td class="text-center">{{i.statusKaryawan}}</td>
-                <td class="text-center">{{i.versi}}</td>
-            </tr>
-        </tbody>
-    </table>
-
+        </div>
+        <div class="col-md-6">
+            <div class="btn-group pull-right">
+                <label class="btn btn-primary" ng-model="statusKerja" btn-radio="'Kerja'">Kerja</label>
+                <label class="btn btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Keluar</label>
+            </div>
+        </div>
+    </div>
+    <div class="row newline">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center">#</th>
+                    <th class="text-center">Nama</th>
+                    <th class="text-center">Jabatan</th>
+                    <th class="text-center">Kelompok</th>
+                    <th class="text-center">Waktu</th>
+                    <th class="text-center">Status</th>
+                    <th class="text-center">Versi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="i in karyawan.karyawan | filter:root.filter | limitTo:10">
+                    <td class="text-center">{{i.nip}}</td>
+                    <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
+                    <td class="text-center">{{i.jabatan}}</td>
+                    <td class="text-center">{{i.kelompokKerja}}</td>
+                    <td class="text-center">{{i.waktu.dibuat | date}}</td>
+                    <td class="text-center">{{i.statusKaryawan}}</td>
+                    <td class="text-center">{{i.versi}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

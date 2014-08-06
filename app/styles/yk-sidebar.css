@@ -137,7 +137,7 @@
     max-width: 100%;
 }
 .wrapper .wrapper-body .wrapper-inner .content .body {
-    padding: 20px 15px;
+    padding: 20px 0;
 }
 .wrapper .wrapper-sidebar ul.sidebar-menu {
     position: absolute;
