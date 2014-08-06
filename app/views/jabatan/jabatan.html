@@ -6,38 +6,39 @@
 </div>
 <div class="body">
     <div class="row newline">
-
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th class="text-center">nip</th>
-                    <th class="text-center">Jabatan</th>
-                    <th class="text-center">Waktu</th>
-                    <th class="text-center">Jenis</th>
-                    <th class="text-center">Status</th>
-                    <th class="text-center">Ver</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="i in jabatan.jabatan | filter:root.filter">
-                    <td class="text-center">{{i._idJabatan}}</td>
-                    <td>{{i.jabatan}}</td>
-                    <td class="text-center">{{i.waktu.dibuat | date}}</td>
-                    <td class="text-center">{{i.jenis}}</td>
-                    <td class="text-center">{{i.statusJabatan}}</td>
-                    <td class="text-center">{{i.versi}}</td>
-                </tr>
-            </tbody>
-        </table>
-
+        <div class="col-sm-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center">nip</th>
+                        <th class="text-center">Jabatan</th>
+                        <th class="text-center">Waktu</th>
+                        <th class="text-center">Jenis</th>
+                        <th class="text-center">Status</th>
+                        <th class="text-center">Ver</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="i in jabatan.jabatan | filter:root.filter">
+                        <td class="text-center">{{i._idJabatan}}</td>
+                        <td>{{i.jabatan}}</td>
+                        <td class="text-center">{{i.waktu.dibuat | date}}</td>
+                        <td class="text-center">{{i.jenis}}</td>
+                        <td class="text-center">{{i.statusJabatan}}</td>
+                        <td class="text-center">{{i.versi}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div class="row newline">
         <div class="col-sm-6">
 
             <div class="box">
                 <div class="box-header">
+                    <i class="glyphicon glyphicon-ban-circle icon-status"></i>
                     <h3 class="box-title">
-                        Operator Tenun
+                        Nama Jabatan Tidak Aktif
                     </h3>
                     <div class="box-tools pull-right">
                         <span class="dropdown" on-toggle="toggled(open)">
@@ -45,22 +46,20 @@
                                 <span class="glyphicon glyphicon-chevron-down"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a> 
-                                </li>
-                                <li><a href="#">Another action</a> 
-                                </li>
-                                <li><a href="#">Something else here</a> 
-                                </li>
+                                <li><a href="#"><span class="margin-span glyphicon glyphicon-ban-circle"></span>Aktifkan Data</a> </li>
+                                <li><a href="#"><span class="margin-span glyphicon glyphicon-edit"></span>Edit Data</a> </li>
                                 <li class="divider"></li>
-                                <li><a href="#">Separated link</a> 
-                                </li>
+                                <li class="delete"><a href="#"><span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a> </li> 
                             </ul>
                         </span>
                     </div>
                 </div>
-                <div class="box-body">box body</div>
+                <div class="box-body"><% Area Kontent Jabatan %></div>
                 <div class="box-footer">
-                    Box Footer
+                    <div class="box-time pull-right">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        Terakhir diperbaharui · 24 Februari 2014
+                    </div>
                 </div>
             </div>
 
@@ -69,8 +68,9 @@
 
             <div class="box box-primary">
                 <div class="box-header">
+                    <i class="glyphicon glyphicon-ok icon-status"></i>
                     <h3 class="box-title">
-                        Operator Tenun
+                        Nama Jabatan Aktif
                     </h3>
                     <div class="box-tools pull-right">
                         <span class="dropdown" on-toggle="toggled(open)">
@@ -78,22 +78,20 @@
                                 <span class="glyphicon glyphicon-chevron-down"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a> 
-                                </li>
-                                <li><a href="#">Another action</a> 
-                                </li>
-                                <li><a href="#">Something else here</a> 
-                                </li>
+                                <li><a href="#"><span class="margin-span glyphicon glyphicon-ban-circle"></span>Tidak Aktifkan</a> </li>
+                                <li><a href="#"><span class="margin-span glyphicon glyphicon-edit"></span>Edit Data</a> </li>
                                 <li class="divider"></li>
-                                <li><a href="#">Separated link</a> 
-                                </li>
+                                <li class="delete"><a href="#"><span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a> </li> 
                             </ul>
                         </span>
                     </div>
                 </div>
-                <div class="box-body">box body</div>
+                <div class="box-body"><% Area Kontent Jabatan %></div>
                 <div class="box-footer">
-                    Box Footer
+                    <div class="box-time pull-right">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        Dibuat · 24 Februari 2014
+                    </div>
                 </div>
             </div>
 
