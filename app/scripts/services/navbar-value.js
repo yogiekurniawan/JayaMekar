@@ -3,7 +3,7 @@
 angular.module('jayaMekarApp')
     .value('navbarValue', {
         'brandVal': {
-            nama: 'Nama Aplikasi',
+            nama: 'Jaya Mekar',
             icon: 'Icon Aplikasi'
         },
         'menuNavRightVal': [{

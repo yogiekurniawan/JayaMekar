@@ -18,8 +18,12 @@ angular.module('jayaMekarApp')
         that.jabatan = data;
     });
 
-    this.toggleStatus = function(obj) {
-    	console.log('toggle status', obj);	
+    this.aktifkanStatus = function(obj) {
+        console.log('aktifkan status', obj);    
+    };
+
+    this.tidakAktifkanStatus = function(obj) {
+    	console.log('tidak aktifkan status', obj);	
     };
 
     this.riwayatData = function(obj) {

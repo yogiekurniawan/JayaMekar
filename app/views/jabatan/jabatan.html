@@ -48,7 +48,8 @@
                                 <span class="glyphicon glyphicon-chevron-down"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href ng-click="jabatan.toggleStatus(i)"><span class="margin-span glyphicon glyphicon-ban-circle"></span>Aktifkan Data</a> </li>
+                                <li ng-if="i.statusJabatan === 'Tidak Aktif'"><a href ng-click="jabatan.aktifkanStatus(i)"><span class="margin-span glyphicon glyphicon-ok"></span>Aktifkan Data</a> </li>
+                                <li ng-if="i.statusJabatan === 'Aktif'"><a href ng-click="jabatan.tidakAktifkanStatus(i)"><span class="margin-span glyphicon glyphicon-ban-circle"></span>Tidak Aktifkan</a> </li>
                                 <li><a href ng-click="jabatan.riwayatData(i)"><span class="margin-span glyphicon glyphicon-list-alt"></span>Riwayat Data</a> </li>
                                 <li class="divider"></li>
                                 <li class="delete"><a href ng-click="jabatan.hapusData(i)"><span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a> </li> 
@@ -60,7 +61,7 @@
                 <div class="box-footer">
                     <div class="box-time pull-right">
                         <span class="glyphicon glyphicon-calendar"></span>
-                        Terakhir diperbaharui · {{i.waktu.dibuat | date}}
+                        {{i.waktu | waktu}}
                     </div>
                 </div>
             </div>
