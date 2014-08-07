@@ -1,38 +1,23 @@
 'use strict';
 
-/**********************************************************************************
-* 
-* @author : Yogie Kurniawan - yogie.jm@gmail.com
-* @url    : 
-*
-***********************************************************************************/
-
 angular.module('jayaMekarApp')
 
-/**********************************************************************************
-* 
-* Name      : KaryawanCtrl
-* Deskripsi : Semua control untuk karyawan
-*
-***********************************************************************************/
+.controller('KaryawanCtrl', ['layananData',
+    function(layananData) {
 
-  .controller('KaryawanCtrl', 
-    ['layananData', 
-      function (layananData){
+        var that = this;
+        this.karyawan = [];
 
+        layananData.getKaryawan().then(function(data) {
+            that.karyawan = data;
+        });
 
-/*********************************** S:StokKomen ***********************************/
-/*********************************** E:StokKomen ***********************************/
-    var that = this;
-    this.karyawan = [];
+        this.editKaryawan = function(obj) {
+        	console.log('Melakukan perubahan data karyawan', obj);
+        };
 
-    layananData.getKaryawan().then(function (data) {
-      that.karyawan = data;
-    });
-
-  }]);
-/**********************************************************************************
-* 
-* @ E:KaryawanCtrl
-*
-***********************************************************************************/
+        this.hapusKaryawan = function(obj) {
+        	console.log('Mlakukan penghapusan data karyawan', obj);	
+        };
+    }
+]);
