@@ -2,7 +2,7 @@
 
 angular.module('jayaMekarApp')
     .constant('appConfig', {
-        'brandTop   ': {
+        'brandTop': {
             nama: 'Nama Aplikasi',
             icon: 'Icon Aplikasi'
         }

@@ -30,8 +30,4 @@ angular.module('jayaMekarApp')
         this.$get = function() {
             return new getter();
         };
-    })
-
-
-
-;
+    });
