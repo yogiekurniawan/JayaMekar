@@ -12,5 +12,5 @@ angular.module('jayaMekarApp')
 .run(function($indexedDB) {
     var app = $indexedDB.getConfig();
     console.log(app);
-    $indexedDB.openDB();
+    $indexedDB.init();
 });
