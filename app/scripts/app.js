@@ -8,8 +8,7 @@ angular.module('jayaMekarApp', [
     'ngTable'
 ])
 
-.run(
-    ['$rootScope', '$state', '$stateParams',
+.run(['$rootScope', '$state', '$stateParams',
         function($rootScope, $state, $stateParams) {
 
             // It's very handy to add references to $state and $stateParams to the $rootScope
@@ -18,13 +17,12 @@ angular.module('jayaMekarApp', [
             // 'contacts.list' or one of its decendents is active.
             $rootScope.$state = $state;
             $rootScope.$stateParams = $stateParams;
-            
+
         }
     ]
 )
 
-.config([
-    '$compileProvider',
+.config(['$compileProvider',
     function($compileProvider) {
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension):/);
         // Angular before v1.2 uses $compileProvider.urlSanitizationWhitelist(...)

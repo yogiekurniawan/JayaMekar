@@ -16,11 +16,11 @@ angular.module('jayaMekarApp')
 *
 * @ctrl atau service value untuk data menu
 {
-    'brandVal': {
+    'brandTop': {
         nama: 'Nama Aplikasi',
         icon: 'Icon Aplikasi'
     },
-    'menuNavLeftVal': [{
+    'menuNavLeftTop': [{
         href: 'menu-1',
         menu: 'Menu 1',
         ngClass: 'fa fa-icon'
@@ -35,7 +35,7 @@ angular.module('jayaMekarApp')
             ngClass: 'glyphicon glyphicon-icon'
         }]
     }],
-    'menuNavRightVal': [{
+    'menuNavRightTop': [{
         href: 'menu-1',
         menu: 'Menu 1',
         ngClass: 'fa fa-icon'

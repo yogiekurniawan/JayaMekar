@@ -1,12 +1,13 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .value('navbarValue', {
-        'brandVal': {
-            nama: 'Jaya Mekar',
-            icon: 'Icon Aplikasi'
-        },
-        'menuNavRightVal': [{
+
+.config(['appConfig',
+    function(appConfig) {
+        appConfig.brandTop = {
+            nama: 'Jaya Mekar'
+        };
+        appConfig.menuNavRightTop = [{
             href: ' ',
             menu: 'Menu',
             ngClass: 'fa fa-home'
@@ -38,5 +39,19 @@ angular.module('jayaMekarApp')
                 submenu: 'About Me',
                 ngClass: 'glyphicon glyphicon-user'
             }]
-        }]
+        }];
+    }
+])
+
+.config(function($indexedDBProvider) {
+    $indexedDBProvider.setConfig({
+        namaIdb: 'Jaya Mekar',
+        versiIdb: 1
     });
+})
+
+.run(function($indexedDB) {
+    var app = $indexedDB.getConfig();
+    console.log(app);
+    $indexedDB.openDB();
+});

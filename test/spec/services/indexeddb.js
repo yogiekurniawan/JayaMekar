@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: indexeddb', function () {
+describe('Service: $indexedDB', function () {
 
   // load the service's module
   beforeEach(module('jayaMekarApp'));
 
   // instantiate service
-  var indexeddb;
-  beforeEach(inject(function (_indexeddb_) {
-    indexeddb = _indexeddb_;
+  var $indexedDB;
+  beforeEach(inject(function (_$indexedDB_) {
+    $indexedDB = _$indexedDB_;
   }));
 
   it('should do something', function () {
-    expect(!!indexeddb).toBe(true);
+    expect(!!$indexedDB).toBe(true);
   });
 
 });
