@@ -4,15 +4,18 @@ angular.module('jayaMekarApp')
 
 .provider('$indexedDB', function() {
 
-    var idb = {};
+    var idb = {},
+        db;
     idb.setUp = false;
     idb.namaIdb = "YK-indexedDB";
     idb.versiIdb = 1;
 
     function getter($q) {
+        var that = this;
         this.getConfig = function() {
             return idb;
         };
+
         this.init = function() {
 
             var defer = $q.defer();
@@ -29,14 +32,14 @@ angular.module('jayaMekarApp')
             };
 
             openRequest.onupgradeneeded = function(e) {
-                var db = e.target.result;
+                db = e.target.result;
 
                 // S:Pembuatan ObjectStore
                 //   Jika objectStore belum ada maka objectStre akan dibuat
                 if (!db.objectStoreNames.contains("jabatan")) {
                     var objectStore = db.createObjectStore("jabatan", {
                         keyPath: "idJabatan",
-                        unique: true
+                        autoIncrement: true
                     });
                     objectStore.createIndex("jabatan", "jabatan", {
                         unique: false
@@ -51,16 +54,64 @@ angular.module('jayaMekarApp')
 
             /* fungsi di panggil jika success */
             openRequest.onsuccess = function(e) {
-                var db = e.target.result;
+                db = e.target.result;
 
                 db.onerror = function(e) {
                     defer.reject("init() : Kesalahan DB" + e.target.errorCode);
                 };
+                idb.setUp = true;
                 defer.resolve(true);
+                console.log("Database siap digunakan");
             };
 
             return defer.promise;
+        }; // E:this.init()
+
+        this.getAll = function() {
+            var result = [];
+            var defer = $q.defer();
+
+            this.init().then(function() {
+                var handleResult = function(e) {
+                    var cursor = e.target.result;
+                    if (cursor) {
+                        result.push(cursor.value);
+                        cursor.continue();
+                    }
+                };
+
+                var transaction = db.transaction(["jabatan"], "readonly");
+                var objectStore = transaction.objectStore("jabatan");
+                objectStore.openCursor().onsuccess = handleResult;
+
+                transaction.oncomplete = function(e) {
+                    defer.resolve(result);
+                    console.log(e);
+                    console.log(result);
+                };
+            });
+        }; // E:this.getAll()
+
+        this.save = function(objStore, obj) {
+            var deferred = $q.defer();
+
+            //handle tags
+            // console.log("db save", db);
+            var t = db.transaction( objStore, "readwrite");
+
+            angular.forEach( objStore, function (v) {
+                t.objectStore( v ).put(obj);
+                console.log( v, obj)
+            });
+
+            t.oncomplete = function(event) {
+                deferred.resolve();
+                console.log("obj berhasil disimpan ",obj)
+            };
+
+            return deferred.promise;
         };
+
     }
 
     this.setConfig = function(value) {
