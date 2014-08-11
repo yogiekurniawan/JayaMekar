@@ -14,7 +14,7 @@
     "fullscreen",
     "notifications",
     "unlimitedStorage",
-    "<all_urls>"
+    "http://www.filltext.com"
   ],
   "icons": { "128": "icon.png" }
 }

@@ -5,7 +5,7 @@ angular.module('jayaMekarApp')
 .config(function($indexedDBProvider) {
     $indexedDBProvider.setConfig({
         namaIdb: 'Jaya Mekar',
-        versiIdb: 4
+        versiIdb: 6
     });
 })
 
@@ -18,75 +18,48 @@ angular.module('jayaMekarApp')
 
 })
 
-.run(function($indexedDB, $timeout) {
-	var arrObjS = ["jabatan","jabatan2"];
-    var arr = [{
-        "idJabatan": "J001",
-        "jabatan": "Operator Penggajian",
-        "waktu": {
-            "dibuat": "1407134327233",
-            "dirubah": "0"
-        },
-        "statusJabatan": "Aktif",
-        "jenis": "Harian",
-        "versi": 1
-    }, {
-        "idJabatan": "J002",
-        "jabatan": "Teknisi Mesin",
-        "waktu": {
-            "dibuat": "1407134327233",
-            "dirubah": "0"
-        },
-        "statusJabatan": "Aktif",
-        "jenis": "Harian",
-        "versi": 1
-    }, {
-        "idJabatan": "J003",
-        "jabatan": "Operator Penghanian",
-        "waktu": {
-            "dibuat": "1407134327233",
-            "dirubah": "0"
-        },
-        "statusJabatan": "Aktif",
-        "jenis": "Harian",
-        "versi": 1
-    }, {
-        "idJabatan": "J004",
-        "jabatan": "Operator Malet",
-        "waktu": {
-            "dibuat": "1407134327233",
-            "dirubah": "0"
-        },
-        "statusJabatan": "Aktif",
-        "jenis": "Harian",
-        "versi": 1
-    }, {
-        "idJabatan": "J005",
-        "jabatan": "Operator Tenun",
-        "waktu": {
-            "dibuat": "1407134327233",
-            "dirubah": "0"
-        },
-        "statusJabatan": "Aktif",
-        "jenis": "Borongan",
-        "versi": 1
-    }, {
-        "idJabatan": "J006",
-        "jabatan": "Operator Penggulungan",
-        "waktu": {
-            "dibuat": "1407134327233",
-            "dirubah": "1407334427233"
-        },
-        "statusJabatan": "Tidak Aktif",
-        "jenis": "Harian",
-        "versi": 1
-    }]
+.run(function($indexedDB, $timeout, layananData, data) {
 
-$timeout( function () {
-	angular.forEach(arr, function(v) {
-        $indexedDB.save(arrObjS, v);
-    });
-}, 1000);
-    
+    var arrJabatan = [],
+        arrKaryawan = [],
+        arrKaryawanFillText = [];
 
+    var arrObjStoreJabatan = ["jabatan"];
+    var arrObjStoreKaryawan = ["karyawan"];
+
+    // layananData.getJabatan().then(function(data) {
+    //     arrJabatan = data;
+    // });
+
+    // layananData.getKaryawan().then(function(data) {
+    //     arrKaryawan = data;
+    //     console.log(arrKaryawan);
+    // });
+
+
+    // layananData.getKaryawanFillText().then(function(data) {
+        // arrKaryawanFillText = data;
+        // console.log(data);
+        /*angular.forEach(data, function(v) {
+            console.log("arrKaryawanFillText",v);
+            $indexedDB.save(arrObjStoreJabatan, v);
+        });*/
+    // });
+
+
+    $timeout(function() {
+        angular.forEach(arrJabatan, function(v) {
+            $indexedDB.save(arrObjStoreJabatan, v);
+        });
+        angular.forEach(arrKaryawan, function(v) {
+            $indexedDB.save(arrObjStoreKaryawan, v);
+        });
+        /*angular.forEach(arrKaryawanFillText, function(v) {
+            console.log("arrKaryawanFillText",v);
+            $indexedDB.save(arrObjStoreKaryawan, v);
+        });*/
+
+    }, 1000);
+
+    // data.getKaryawan();
 });

@@ -9,14 +9,24 @@
 
 angular.module('jayaMekarApp')
 
-.controller('JabatanCtrl', function(layananData) {
+.controller('JabatanCtrl', function(layananData, $indexedDB) {
 	var that = this;
 
 	this.jabatan = [];
 
-    layananData.getJabatan().then(function(data) {
-        that.jabatan = data;
-    });
+    // layananData.getJabatan().then(function(data) {
+    //     that.jabatan = data;
+    // });
+
+    // function getAll() {
+    //     var arrObjectStore = ["jabatan"];
+    //     $indexedDB.getAll( arrObjectStore ).then(function (result) {
+    //         that.jabatan = result;
+    //         console.log(that.jabatan);
+    //     });
+    // }
+
+    // getAll();
 
     this.aktifkanStatus = function(obj) {
         console.log('aktifkan status', obj);    

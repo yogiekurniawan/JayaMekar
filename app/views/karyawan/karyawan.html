@@ -32,10 +32,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="i in karyawan.karyawan | filter:root.filter">
+                    <tr ng-repeat="i in karyawan.karyawan | filter:root.filter | limitTo:10 track by i.nip">
                         <td class="text-center">{{i.nip}}</td>
                         <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
-                        <td class="text-center">{{i.jabatan}}</td>
+                        <td class="text-center" title="{{i.detailJabatan}}">{{i.jabatan}}</td>
                         <td class="text-center">{{i.kelompokKerja}}</td>
                         <td class="text-center">{{i.waktu.dibuat | date}}</td>
                         <td class="text-center">{{i.statusKaryawan}}</td>
@@ -47,6 +47,9 @@
                     </tr>
                 </tbody>
             </table>
+
+            <pre>{{karyawan.karyawan | filter:root.filter | lengthArray}}</pre> 
+            <!-- <pre>{{root.dataKaryawan | filter:root.filter | lengthArray}}</pre>  -->
         </div>
     </div>
 </div>

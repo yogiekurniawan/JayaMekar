@@ -19,7 +19,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="i in jabatan.jabatan track by i.idJabatan | filter:root.filter">
+                    <tr ng-repeat="i in jabatan.jabatan | filter:root.filter track by i.idJabatan">
                         <td class="text-center">{{i._idJabatan}}</td>
                         <td>{{i.jabatan}}</td>
                         <td class="text-center">{{i.waktu.dibuat | date}}</td>
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="row newline">
-        <div class="col-sm-6" ng-repeat="i in jabatan.jabatan track by i.idJabatan | filter:root.filter">
+        <div class="col-sm-6" ng-repeat="i in jabatan.jabatan | filter:root.filter track by i.idJabatan">
 
             <div class="box" ng-class="{'box-primary': 'Aktif' === i.statusJabatan }">
                 <div class="box-header">
@@ -97,6 +97,8 @@
                     </div>
                 </div>
             </div>
+
+            <pre>{{root.dataKaryawan.length}}</pre>
 
         </div>
     </div>

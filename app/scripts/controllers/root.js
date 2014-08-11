@@ -1,8 +1,11 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .controller('RootCtrl', ['appConfig',
-        function(appConfig) {
+    .controller('RootCtrl', ['appConfig', 'data',
+        function(appConfig, data) {
+
+            var that = this;
+            
             this.brand = appConfig.brandTop;
             this.menuNavRight = appConfig.menuNavRightTop;
 
@@ -10,5 +13,11 @@ angular.module('jayaMekarApp')
             this.toggleSidebar = function() {
                 this.withSidebar = !this.withSidebar;
             };
+
+            this.dataKaryawan = [];
+
+            // data.getKaryawan().then(function(result) {
+            //     that.dataKaryawan = result;
+            // });
         }
     ]);
