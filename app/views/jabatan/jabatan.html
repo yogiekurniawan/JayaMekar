@@ -19,7 +19,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="i in jabatan.jabatan | filter:root.filter track by i.idJabatan">
+                    <tr ng-repeat="i in jabatan.jabatan | filter:root.filter track by i.idJabatan" title="{{i.karyawan.length}} karyawan yang bekerja">
                         <td class="text-center">{{i._idJabatan}}</td>
                         <td>{{i.jabatan}}</td>
                         <td class="text-center">{{i.waktu.dibuat | date}}</td>
@@ -98,7 +98,7 @@
                 </div>
             </div>
 
-            <pre>{{root.dataKaryawan.length}}</pre>
+            <!-- <pre>{{jabatan.jabatan | json}}</pre> -->
 
         </div>
     </div>

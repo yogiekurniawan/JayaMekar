@@ -1,140 +1,111 @@
-[
-	{
-		"_id": "RG001",
-		"idJabatan": "J001",
-		"type": "KaryawanHarian",
-		"shift": "Siang",
-		"harga": 41234.123456789,
-		"uangHadir": 40000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	},
-	{
-		"_id": "RG002",
-		"idJabatan": "J002",
-		"type": "KaryawanHarian",
-		"shift": "Siang",
-		"harga": 45000,
-		"uangHadir": 40000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	},
-	{
-		"_id": "RG003",
-		"idJabatan": "J002",
-		"type": "KaryawanHarian",
-		"shift": "Malam",
-		"harga": 45000,
-		"uangHadir": 40000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	},
-	{
-		"_id": "RG004",
-		"idJabatan": "J004",
-		"type": "KaryawanHarian",
-		"shift": "Siang",
-		"harga": 45000,
-		"uangHadir": 40000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	},
-	{
-		"_id": "RG005",
-		"idJabatan": "J004",
-		"type": "KaryawanHarian",
-		"shift": "Malam",
-		"harga": 45000,
-		"uangHadir": 40000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	},
-	{
-		"_id": "RG006",
-		"idJabatan": "J005",
-		"type": "KaryawanHarian",
-		"shift": "Siang",
-		"harga": 45000,
-		"uangHadir": 40000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	},
-	{
-		"_id": "RG007",
-		"idJabatan": "J005",
-		"type": "KaryawanHarian",
-		"shift": "Malam",
-		"harga": 45000,
-		"uangHadir": 40000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	},
-	{
-		"_id": "RG008",
-		"idJabatan": "J006",
-		"type": "KaryawanHarian",
-		"shift": "Siang",
-		"harga": 45000,
-		"uangHadir": 40000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	},
-	{
-		"_id": "RG009",
-		"idJabatan": "J006",
-		"type": "KaryawanHarian",
-		"shift": "Malam",
-		"harga": 45000,
-		"uangHadir": 40000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	},
-	{
-		"_id": "RG010",
-		"idJabatan": "J003",
-		"type": "KaryawanBorongan",
-		"shift": "Siang",
-		"harga": 170,
-		"hargaTarget": 185,
-		"targetProduksi": 2000,
-		"targetJmlProduksi": 4000,
-		"uangHadir": 8000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	},
-	{
-		"_id": "RG011",
-		"idJabatan": "J003",
-		"type": "KaryawanBorongan",
-		"shift": "Malam",
-		"harga": 175,
-		"hargaTarget": 190,
-		"targetProduksi": 2000,
-		"targetJmlProduksi": 4000,
-		"uangHadir": 8000,
-		"versi": 1,
-		"timeCreate": "29 Maret 2014",
-		"timeUpdate": "29 Maret 2014",
-		"status": "aktif"
-	}
-]
+[{
+    "idRumusGaji": "RG001",
+    "idJabatan": "J001",
+    "jenis": "Harian",
+    "shift": "Siang",
+    "harga": 41234.123456789,
+    "uangHadir": 40000,
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusRumusGaji": "aktif",
+    "versi": 1
+}, {
+    "idRumusGaji": "RG002",
+    "idJabatan": "J002",
+    "jenis": "Harian",
+    "shift": "Siang",
+    "harga": 45000,
+    "uangHadir": 40000,
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusRumusGaji": "aktif",
+    "versi": 1
+}, {
+    "idRumusGaji": "RG003",
+    "idJabatan": "J002",
+    "jenis": "Harian",
+    "shift": "Malam",
+    "harga": 45000,
+    "uangHadir": 40000,
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusRumusGaji": "aktif",
+    "versi": 1
+}, {
+    "idRumusGaji": "RG004",
+    "idJabatan": "J003",
+    "jenis": "Harian",
+    "shift": "Siang",
+    "harga": 45000,
+    "uangHadir": 40000,
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusRumusGaji": "aktif",
+    "versi": 1
+}, {
+    "idRumusGaji": "RG005",
+    "idJabatan": "J004",
+    "jenis": "Harian",
+    "shift": "Siang",
+    "harga": 45000,
+    "uangHadir": 40000,
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusRumusGaji": "aktif",
+    "versi": 1
+}, {
+    "idRumusGaji": "RG006",
+    "idJabatan": "J004",
+    "jenis": "Harian",
+    "shift": "Malam",
+    "harga": 45000,
+    "uangHadir": 40000,
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusRumusGaji": "aktif",
+    "versi": 1
+}, {
+    "idRumusGaji": "RG007",
+    "idJabatan": "J005",
+    "jenis": "Borongan",
+    "shift": "Siang",
+    "harga": 170,
+    "hargaTarget": 185,
+    "targetProduksi": 2000,
+    "targetJmlProduksi": 4000,
+    "uangHadir": 8000,
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusRumusGaji": "aktif",
+    "versi": 1
+}, {
+    "idRumusGaji": "RG008",
+    "idJabatan": "J005",
+    "jenis": "Borongan",
+    "shift": "Malam",
+    "harga": 175,
+    "hargaTarget": 190,
+    "targetProduksi": 2000,
+    "targetJmlProduksi": 4000,
+    "uangHadir": 8000,
+    "waktu": {
+        "dibuat": "1407134327233",
+        "dirubah": "0"
+    },
+    "statusRumusGaji": "aktif",
+    "versi": 1
+}]

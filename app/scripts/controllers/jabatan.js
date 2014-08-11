@@ -9,38 +9,40 @@
 
 angular.module('jayaMekarApp')
 
-.controller('JabatanCtrl', function(layananData, $indexedDB) {
-	var that = this;
+.controller('JabatanCtrl', function($indexedDB) {
+    var that = this;
 
-	this.jabatan = [];
+    var jabatan = this.jabatan = [];
 
-    // layananData.getJabatan().then(function(data) {
-    //     that.jabatan = data;
-    // });
+    $indexedDB.getJabatan().then(function(result) {
+        that.jabatan = result;
 
-    // function getAll() {
-    //     var arrObjectStore = ["jabatan"];
-    //     $indexedDB.getAll( arrObjectStore ).then(function (result) {
-    //         that.jabatan = result;
-    //         console.log(that.jabatan);
-    //     });
-    // }
+        // untuk validasi keakuratan objek yang digabungkan
+        // (function() {
+        //     for (var i = 0; i < result.length; i++) {
+        //         var res = result[i];
+        //         for (var j = 0; j < res.karyawan.length; j++) {
+        //             console.log(res.idJabatan === res.karyawan[j].idJabatan);
+        //         }
+        //     };
+        // })();
 
-    // getAll();
+    });
+
 
     this.aktifkanStatus = function(obj) {
-        console.log('aktifkan status', obj);    
+        console.log('aktifkan status', obj);
     };
 
     this.tidakAktifkanStatus = function(obj) {
-    	console.log('tidak aktifkan status', obj);	
+        console.log('tidak aktifkan status', obj);
     };
 
     this.riwayatData = function(obj) {
-    	console.log('Riwayat Data', obj);
+        console.log('Riwayat Data', obj);
     };
 
     this.hapusData = function(obj) {
-    	console.log('Hapus Data', obj);
+        console.log('Hapus Data', obj);
     };
 });
