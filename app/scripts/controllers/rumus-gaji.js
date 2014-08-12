@@ -1,32 +1,19 @@
 'use strict';
 
-/**********************************************************************************
-* 
-* @author : Yogie Kurniawan - yogie.jm@gmail.com
-* @url    : 
-*
-***********************************************************************************/
-
 angular.module('jayaMekarApp')
 
-/**********************************************************************************
-* 
-* Name      : RumusGajiCtrl
-* Deskripsi : Semua control untuk main rumus gaji
-*
-***********************************************************************************/
+/*
+* RumusGajiCtrl as rumusgaji
+*/
 
-  .controller('RumusGajiCtrl', function () {
+  .controller('RumusGajiCtrl', function ($indexedDB) {
 
-/*********************************** S:StokKomen ***********************************/
-/*********************************** E:StokKomen ***********************************/
+  	var that = this;
 
+  	this.jabatan = [];
 
-
+  	$indexedDB.getRumusGaji().then(function(result){
+  		that.jabatan = result;
+  	});
 
   });
-/**********************************************************************************
-* 
-* @ E:RumusGajiCtrl
-*
-***********************************************************************************/

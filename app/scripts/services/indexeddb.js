@@ -287,6 +287,7 @@ angular.module('jayaMekarApp')
                             var cursorKaryawan = karyawan.result;
                             if (cursorKaryawan) {
                                 if (cursorKaryawan.value.idJabatan === cursorJabatan.value.idJabatan) {
+
                                     var data = {
                                         nip: cursorKaryawan.value.nip,
                                         namaDepan: cursorKaryawan.value.namaDepan,
@@ -320,6 +321,71 @@ angular.module('jayaMekarApp')
 
             return defer.promise;
         }; // E:this.getKaryawan()
+
+        this.getRumusGaji = function() {
+            var result = [];
+            var arrObjStore = ['jabatan', 'rumusgaji'];
+            var defer = $q.defer();
+
+            this.init().then(function() {
+
+                var transaction = db.transaction(arrObjStore, 'readonly');
+                var jabatan = transaction.objectStore('jabatan').openCursor();
+
+                jabatan.onsuccess = function(event) {
+                    var cursorJabatan = event.target.result;
+
+                    if (cursorJabatan) {
+
+                        var rumusgaji = transaction.objectStore('rumusgaji')
+                            .index('idJabatan').openCursor(cursorJabatan.value.idJabatan);
+
+                        rumusgaji.onerror = function(e) {
+                            console.log('error', e);
+                        };
+
+                        rumusgaji.onsuccess = function() {
+                            var cursorRumusGaji = rumusgaji.result;
+                            if (cursorRumusGaji) {
+                                if (cursorRumusGaji.value.idJabatan === cursorJabatan.value.idJabatan) {
+
+                                    var data = {
+                                        idRumusGaji: cursorRumusGaji.value.idRumusGaji,
+                                        idJabatan: cursorRumusGaji.value.idJabatan,
+                                        jabatan: cursorJabatan.value.jabatan,
+                                        detailJabatan: cursorJabatan.value,
+                                        jenis: cursorRumusGaji.value.jenis,
+                                        shift: cursorRumusGaji.value.shift,
+                                        harga: cursorRumusGaji.value.harga,
+                                        uangHadir: cursorRumusGaji.value.uangHadir,
+                                        waktu: {
+                                            dibuat: cursorRumusGaji.value.dibuat,
+                                            dirubah: cursorRumusGaji.value.dirubah
+                                        },
+                                        statusRumusGaji: cursorRumusGaji.value.statusRumusGaji,
+                                        versi: cursorRumusGaji.value.versi
+                                    };
+
+                                    result.push(data);
+                                } else {
+                                    console.log('warning: id jabatan tidak sama');
+                                }
+                                cursorRumusGaji.continue();
+                            } else {
+                                cursorJabatan.continue();
+                            }
+                        };
+                    }
+                };
+
+                transaction.oncomplete = function() {
+                    defer.resolve(result);
+                };
+
+            });
+
+            return defer.promise;
+        }; // E:this.getRumusGaji()
 
     } // getter()
 

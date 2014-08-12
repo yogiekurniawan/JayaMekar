@@ -1,37 +1,45 @@
 'use strict';
 
-/**********************************************************************************
-* 
-* @author : Yogie Kurniawan - yogie.jm@gmail.com
-* @url    : 
-*
-***********************************************************************************/
-
 angular.module('jayaMekarApp')
 
-/**********************************************************************************
-* 
-* Name      : AboutAppCtrl
-* Deskripsi : Semua control untuk About App
-*
-***********************************************************************************/
+// AboutAppCtrl as aboutapp
+.controller('AboutAppCtrl', function($indexedDB, $timeout, layananData) {
 
-  .controller('AboutAppCtrl', function ($scope) {
+    var arrJabatan = [],
+        arrKaryawan = [],
+        arrRumusGaji = [];
 
-/*********************************** S:StokKomen ***********************************/
-/*********************************** E:StokKomen ***********************************/
+    layananData.getJabatan().then(function(data) {
+        arrJabatan = data;
+    });
+
+    layananData.getKaryawan().then(function(data) {
+        arrKaryawan = data;
+    });
+
+    layananData.getRumusGaji().then(function(data) {
+        arrRumusGaji = data;
+    });
 
 
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    this.addContohData = function() {
+    	
+        angular.forEach(arrJabatan, function(v) {
+            $indexedDB.save(["jabatan"], v).then(function(){
+            	
+            });
+        });
+        angular.forEach(arrKaryawan, function(v) {
+            $indexedDB.save(["karyawan"], v).then(function(){
+            	
+            });
+        });
+        angular.forEach(arrRumusGaji, function(v) {
+            $indexedDB.save(["rumusgaji"], v).then(function(){
+            	
+            });
+        });
 
+    };
 
-  });
-/**********************************************************************************
-* 
-* @ E:AboutAppCtrl
-*
-***********************************************************************************/
+});

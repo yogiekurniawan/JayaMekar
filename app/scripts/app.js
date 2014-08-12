@@ -57,7 +57,7 @@ angular.module('jayaMekarApp', [
             .state('rumus-gaji', {
                 url: "/rumus-gaji",
                 templateUrl: "views/rumus-gaji/rumus-gaji.html",
-                controller: "RumusGajiCtrl as rg"
+                controller: "RumusGajiCtrl as rumusgaji"
             })
             .state('rumus-gaji.karyawan-tenun', {
                 url: "/karyawan-tenun",
@@ -97,7 +97,7 @@ angular.module('jayaMekarApp', [
             .state('about-app', {
                 url: "/about-app",
                 templateUrl: "views/about-app.html",
-                controller: "AboutAppCtrl"
+                controller: "AboutAppCtrl as aboutapp"
             })
 
         // S:eksperimen
