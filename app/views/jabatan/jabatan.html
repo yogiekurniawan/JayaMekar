@@ -19,25 +19,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="i in jabatan.jabatan | filter:root.filter track by i.idJabatan" title="{{i.karyawan.length}} karyawan yang bekerja">
+                    <tr ng-repeat="i in JabatanCtrl.jabatan | filter:root.filter track by i.idJabatan">
                         <td class="text-center">{{i._idJabatan}}</td>
                         <td>{{i.jabatan}}</td>
                         <td class="text-center">{{i.waktu.dibuat | date}}</td>
                         <td class="text-center">{{i.jenis}}</td>
-                        <td class="text-center">{{i.statusJabatan}}</td>
-                        <td class="text-center">{{i.versi}}</td>
+                        <td class="text-center" title="{{i.karyawan.length}} karyawan yang bekerja">{{i.statusJabatan}}</td>
+                        <td class="text-center"  title="{{i.rumusGaji.length}}">{{i.versi}}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
     <div class="row newline">
-        <div class="col-sm-6" ng-repeat="i in jabatan.jabatan | filter:root.filter track by i.idJabatan">
+        <div class="col-sm-6" ng-repeat="i in JabatanCtrl.jabatan | filter:root.filter track by i.idJabatan">
 
-            <div class="box" ng-class="{'box-primary': 'Aktif' === i.statusJabatan }">
+            <div class="box" ng-class="{'box-primary': JabatanCtrl.render.jabatanDipakai(i) }">
                 <div class="box-header">
                     <i  class="glyphicon icon-status" 
-                        ng-class="{'glyphicon-ban-circle': 'Tidak Aktif' === i.statusJabatan, 'glyphicon-ok': 'Aktif' === i.statusJabatan }">
+                        ng-class="{'glyphicon-ban-circle': false === JabatanCtrl.render.jabatanDipakai(i), 'glyphicon-ok': JabatanCtrl.render.jabatanDipakai(i) }">
                     </i>
                     <h3 class="box-title">
                         {{i.jabatan}}
@@ -48,11 +48,9 @@
                                 <span class="glyphicon glyphicon-chevron-down"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li ng-if="i.statusJabatan === 'Tidak Aktif'"><a href ng-click="jabatan.aktifkanStatus(i)"><span class="margin-span glyphicon glyphicon-ok"></span>Aktifkan Data</a> </li>
-                                <li ng-if="i.statusJabatan === 'Aktif'"><a href ng-click="jabatan.tidakAktifkanStatus(i)"><span class="margin-span glyphicon glyphicon-ban-circle"></span>Tidak Aktifkan</a> </li>
-                                <li><a href ng-click="jabatan.riwayatData(i)"><span class="margin-span glyphicon glyphicon-list-alt"></span>Riwayat Data</a> </li>
-                                <li class="divider"></li>
-                                <li class="delete"><a href ng-click="jabatan.hapusData(i)"><span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a> </li> 
+                                <li><a href ng-click="JabatanCtrl.suntingData(i, 'sm')"><span class="margin-span glyphicon glyphicon-edit"></span>Sunting Data</a> </li>
+                                <li ng-if="JabatanCtrl.render.hapusData(i)" class="divider"></li>
+                                <li ng-if="JabatanCtrl.render.hapusData(i)" class="delete"><a href ng-click="JabatanCtrl.hapusData(i)"><span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a> </li> 
                             </ul>
                         </span>
                     </div>

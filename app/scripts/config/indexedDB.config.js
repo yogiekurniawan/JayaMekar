@@ -14,36 +14,3 @@ angular.module('jayaMekarApp')
     console.log(app);
     $indexedDB.init();
 });
-
-// run untuk memasukan contoh data
-// .run(function($indexedDB, $timeout, layananData) {
-
-//     var arrJabatan = [],
-//         arrKaryawan = [],
-//         arrRumusGaji = [];
-
-//     layananData.getJabatan().then(function(data) {
-//         arrJabatan = data;
-//     });
-
-//     layananData.getKaryawan().then(function(data) {
-//         arrKaryawan = data;
-//     });
-
-//     layananData.getRumusGaji().then(function(data) {
-//         arrRumusGaji = data;
-//     });
-
-//     $timeout(function() {
-//         angular.forEach(arrJabatan, function(v) {
-//             $indexedDB.save(["jabatan"], v);
-//         });
-//         angular.forEach(arrKaryawan, function(v) {
-//             $indexedDB.save(["karyawan"], v);
-//         });
-//         angular.forEach(arrRumusGaji, function(v) {
-//             $indexedDB.save(["rumusgaji"], v);
-//         });
-//     }, 1000);
-
-// });

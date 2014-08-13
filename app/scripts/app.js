@@ -1,11 +1,10 @@
 'use strict';
 
 angular.module('jayaMekarApp', [
+    'ui.router',
     'ngAnimate',
     'ui.bootstrap',
-    'ui.select2',
-    'ui.router',
-    'ngTable'
+    'ui.select2'
 ])
 
 .run(['$rootScope', '$state', '$stateParams',
@@ -13,7 +12,7 @@ angular.module('jayaMekarApp', [
 
             // It's very handy to add references to $state and $stateParams to the $rootScope
             // so that you can access them from any scope within your applications.For example,
-            // <li ui-sref-active="active }"> will set the <li> // to active whenever
+            // <li ui-sref-active='active }'> will set the <li> // to active whenever
             // 'contacts.list' or one of its decendents is active.
             $rootScope.$state = $state;
             $rootScope.$stateParams = $stateParams;
@@ -32,7 +31,7 @@ angular.module('jayaMekarApp', [
 
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
     function($stateProvider, $urlRouterProvider, $locationProvider) {
-        $urlRouterProvider.otherwise("/");
+        $urlRouterProvider.otherwise('/');
 
         // tutorial : http://scotch.io/quick-tips/js/angular/pretty-urls-in-angularjs-removing-the-hashtag
         // use the HTML5 History API => http://diveintohtml5.info/history.html
@@ -40,90 +39,90 @@ angular.module('jayaMekarApp', [
 
         $stateProvider
             .state('dashboard', {
-                url: "/",
-                templateUrl: "views/dashboard.html",
-                controller: "DashboardCtrl"
+                url: '/',
+                templateUrl: 'views/dashboard.html',
+                controller: 'DashboardCtrl'
             })
             .state('jabatan', {
-                url: "/jabatan",
-                templateUrl: "views/jabatan/jabatan.html",
-                controller: "JabatanCtrl as jabatan"
+                url: '/jabatan',
+                templateUrl: 'views/jabatan/jabatan.html',
+                controller: 'JabatanCtrl'
             })
             .state('karyawan', {
-                url: "/karyawan",
-                templateUrl: "views/karyawan/karyawan.html",
-                controller: "KaryawanCtrl as karyawan"
+                url: '/karyawan',
+                templateUrl: 'views/karyawan/karyawan.html',
+                controller: 'KaryawanCtrl'
             })
             .state('rumus-gaji', {
-                url: "/rumus-gaji",
-                templateUrl: "views/rumus-gaji/rumus-gaji.html",
-                controller: "RumusGajiCtrl as rumusgaji"
+                url: '/rumus-gaji',
+                templateUrl: 'views/rumus-gaji/rumus-gaji.html',
+                controller: 'RumusGajiCtrl'
             })
             .state('rumus-gaji.karyawan-tenun', {
-                url: "/karyawan-tenun",
-                templateUrl: "views/rumus-gaji/rumus-gaji-karyawan-tenun.html",
-                controller: "RumusGajiKaryawanTenunCtrl"
+                url: '/karyawan-tenun',
+                templateUrl: 'views/rumus-gaji/rumus-gaji-karyawan-tenun.html',
+                controller: 'RumusGajiKaryawanTenunCtrl'
             })
             .state('rumus-gaji.karyawan-harian', {
-                url: "/karyawan-harian",
-                templateUrl: "views/rumus-gaji/rumus-gaji-karyawan-harian.html",
-                controller: "RumusGajiKaryawanHarianCtrl"
+                url: '/karyawan-harian',
+                templateUrl: 'views/rumus-gaji/rumus-gaji-karyawan-harian.html',
+                controller: 'RumusGajiKaryawanHarianCtrl'
             })
             .state('penggajian', {
-                url: "/penggajian",
-                templateUrl: "views/penggajian/penggajian.html",
-                controller: "PenggajianCtrl"
+                url: '/penggajian',
+                templateUrl: 'views/penggajian/penggajian.html',
+                controller: 'PenggajianCtrl'
             })
             .state('penggajian.karyawan-tenun', {
-                url: "/karyawan-tenun",
-                templateUrl: "views/penggajian/karyawan-borongan/penggajian-karyawan-tenun.html",
-                controller: "PenggajianKaryawanTenunCtrl"
+                url: '/karyawan-tenun',
+                templateUrl: 'views/penggajian/karyawan-borongan/penggajian-karyawan-tenun.html',
+                controller: 'PenggajianKaryawanTenunCtrl'
             })
             .state('penggajian.karyawan-harian', {
-                url: "/karyawan-harian",
-                templateUrl: "views/penggajian/karyawan-harian/penggajian-karyawan-harian.html",
-                controller: "PenggajianKaryawanHarianCtrl"
+                url: '/karyawan-harian',
+                templateUrl: 'views/penggajian/karyawan-harian/penggajian-karyawan-harian.html',
+                controller: 'PenggajianKaryawanHarianCtrl'
             })
             .state('recycle', {
-                url: "/recycle",
-                templateUrl: "views/recycle.html",
-                controller: "RecycleCtrl"
+                url: '/recycle',
+                templateUrl: 'views/recycle.html',
+                controller: 'RecycleCtrl'
             })
             .state('about-me', {
-                url: "/about-me",
-                templateUrl: "views/about-me.html",
-                controller: "AboutMeCtrl"
+                url: '/about-me',
+                templateUrl: 'views/about-me.html',
+                controller: 'AboutMeCtrl'
             })
             .state('about-app', {
-                url: "/about-app",
-                templateUrl: "views/about-app.html",
-                controller: "AboutAppCtrl as aboutapp"
+                url: '/about-app',
+                templateUrl: 'views/about-app.html',
+                controller: 'AboutAppCtrl'
             })
 
         // S:eksperimen
         .state('eksperimen', {
             url: '/eksperimen',
-            template: "<ui-view></ui-view>"
+            template: '<ui-view></ui-view>'
         })
         // S:yk-table
         .state('eksperimen.yk-table', {
-            url: "/yk-table",
-            templateUrl: "views/eksperimen-yk-table.html",
-            controller: "EksperimenYkTableCtrl"
+            url: '/yk-table',
+            templateUrl: 'views/eksperimen-yk-table.html',
+            controller: 'EksperimenYkTableCtrl'
         })
         // E:yk-eksperimen
         // E:eksperimen
 
         // S:ykLib
         .state('waktu', {
-            url: "/waktu",
-            templateUrl: "views/waktu.html",
-            controller: "WaktuCtrl as waktu"
+            url: '/waktu',
+            templateUrl: 'views/waktu.html',
+            controller: 'WaktuCtrl as waktu'
         })
             .state('jabatan2', {
-                url: "/jabatan2",
-                templateUrl: "views/jabatan2.html",
-                controller: "Jabatan2Ctrl as jabatan2"
+                url: '/jabatan2',
+                templateUrl: 'views/jabatan2.html',
+                controller: 'Jabatan2Ctrl as jabatan2'
             });
         // E:ykLib
     }

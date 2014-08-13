@@ -20,50 +20,30 @@ angular.module('jayaMekarApp')
 
 // )
 
-.controller('RumusGajiKaryawanHarianCtrl', ['$scope', '$modal', '$log',
-    function($scope, $modal, $log) {
+.controller('RumusGajiKaryawanHarianCtrl',
+    function($scope, modalFactory, $log, $window) {
 
 
-        /*********************************** S:StokKomen ***********************************/
-        /*********************************** E:StokKomen ***********************************/
+        var that = $scope.RumusGajiKaryawanHarianCtrl = this;
 
-        $scope.items = ['item1', 'item2', 'item3'];
+        this.itemss = ['item1', 'item2', 'item3', 'item4'];
+        this.itemss2 = ['item11', 'item21', 'item31', 'item41'];
 
-        $scope.open = function(size) {
+        this.open = function(itemss2, itemss, size) {
 
-            var modalInstance = $modal.open({
-                templateUrl: 'myModalContent.html',
-                controller: function($scope, $modalInstance, items) {
-
-                    $scope.items = items;
-                    $scope.selected = {
-                        item: $scope.items[0]
-                    };
-
-                    $scope.ok = function() {
-                        $modalInstance.close($scope.selected.item);
-                    };
-
-                    $scope.cancel = function() {
-                        $modalInstance.dismiss('cancel');
-                    };
-                },
-                size: size,
-                resolve: {
-                    items: function() {
-                        return $scope.items;
-                    }
-                }
-            });
-
-            modalInstance.result.then(function(selectedItem) {
-                $scope.selected = selectedItem;
-            }, function() {
-                $log.info('Modal dismissed at: ' + new Date());
+            modalFactory.open(itemss2, itemss, size).then(function(selectedItem){
+                that.selected = selectedItem;
             });
         };
+
+        $log.info("load RumusGajiKaryawanHarianCtrl");
+
+        this.goto = function(){
+            $log.info('hello goto');
+            $window.location.href = '#/jabatan';
+        };
     }
-]);
+);
 
 /**********************************************************************************
  *

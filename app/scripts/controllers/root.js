@@ -1,13 +1,13 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .controller('RootCtrl', ['appConfig', 'data',
-        function(appConfig, data) {
+    .controller('RootCtrl', ['APP_CONFIG',
+        function(APP_CONFIG) {
 
             var that = this;
             
-            this.brand = appConfig.brandTop;
-            this.menuNavRight = appConfig.menuNavRightTop;
+            this.brand = APP_CONFIG.brandTop;
+            this.menuNavRight = APP_CONFIG.menuNavRightTop;
 
             this.withSidebar = true;
             this.toggleSidebar = function() {

@@ -2,44 +2,52 @@
 
 angular.module('jayaMekarApp')
 
-// AboutAppCtrl as aboutapp
-.controller('AboutAppCtrl', function($indexedDB, $timeout, layananData) {
+.controller('AboutAppCtrl',
+    function($scope, $indexedDB, $timeout, layananData) {
 
-    var arrJabatan = [],
-        arrKaryawan = [],
-        arrRumusGaji = [];
+        var that = $scope.AboutAppCtrl = this;
 
-    layananData.getJabatan().then(function(data) {
-        arrJabatan = data;
-    });
+        this.arrayJabatan = [];
+        this.arrayKaryawan = [];
+        this.arrayRumusGaji = [];
 
-    layananData.getKaryawan().then(function(data) {
-        arrKaryawan = data;
-    });
-
-    layananData.getRumusGaji().then(function(data) {
-        arrRumusGaji = data;
-    });
-
-
-    this.addContohData = function() {
-    	
-        angular.forEach(arrJabatan, function(v) {
-            $indexedDB.save(["jabatan"], v).then(function(){
-            	
-            });
-        });
-        angular.forEach(arrKaryawan, function(v) {
-            $indexedDB.save(["karyawan"], v).then(function(){
-            	
-            });
-        });
-        angular.forEach(arrRumusGaji, function(v) {
-            $indexedDB.save(["rumusgaji"], v).then(function(){
-            	
-            });
+        layananData.getJabatan().then(function(data) {
+            that.arrayJabatan = data;
         });
 
-    };
+        layananData.getKaryawan().then(function(data) {
+            that.arrayKaryawan = data;
+        });
 
-});
+        layananData.getRumusGaji().then(function(data) {
+            that.arrayRumusGaji = data;
+        });
+
+        this.addSemuaContohData = function() {
+            that.addContohDataJabatan();
+            that.addContohDataKaryawan();
+            that.addContohDataRumusGaji();
+        };
+        this.addContohDataJabatan = function() {
+            angular.forEach(that.arrayJabatan, function(v) {
+                $indexedDB.save(["jabatan"], v).then(function() {
+
+                });
+            });
+        };
+        this.addContohDataKaryawan = function() {
+            angular.forEach(that.arrayKaryawan, function(v) {
+                $indexedDB.save(["karyawan"], v).then(function() {
+
+                });
+            });
+        };
+        this.addContohDataRumusGaji = function() {
+            angular.forEach(that.arrayRumusGaji, function(v) {
+                $indexedDB.save(["rumusgaji"], v).then(function() {
+
+                });
+            });
+        };
+
+    });

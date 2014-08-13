@@ -71,11 +71,11 @@ angular.module('jayaMekarApp')
 
       return bln;
     }
-  })
+  });
   /* E:Bulan */
 
   /* S:Waktu */
-  .filter('waktu', function ($timeout) {
+  /*.filter('waktu', function ($timeout) {
     var wkt;
     return function (data) {
 
@@ -85,13 +85,13 @@ angular.module('jayaMekarApp')
         var wkt = "baru saja";
       } else {
         wkt = ((selisih / (1000*60)) %60);
-      }
+      }*/
       
       //var wkt =  ((selisih / (1000*60)) %60);
 
 
 
-      return wkt;
+      /*return wkt;
     }
-  })
+  })*/
   /* E:Waktu */

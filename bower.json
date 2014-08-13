@@ -11,7 +11,6 @@
     "bootstrap": "~3.2.0",
     "metisMenu": "1.0.1",
     "font-awesome": "4.0.3",
-    "ng-table": "0.3.1",
     "es5-shim": "~2.1.0",
     "json3": "~3.2.6",
     "select2": "3.4.6",

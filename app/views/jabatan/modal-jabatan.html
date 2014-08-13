@@ -1,0 +1,23 @@
+<div class="modal-header">
+    <h3 class="modal-title">{{modalJabatanCtrl.obj.aksi}} Jabatan</h3>
+</div>
+<div class="modal-body">
+
+    <div class="form-group has-success has-feedback">
+        <label class="control-label">Nama Jabatan</label>
+        <input ng-model="modalJabatanCtrl.obj.jabatan" type="text" class="form-control input-sm">
+        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div>
+    <div class="form-group has-error has-feedback">
+        <label class="control-label">Jenis</label>
+        <!-- <input ng-model="modalJabatanCtrl.obj.jenis" type="text" class="form-control input-sm"> -->
+        <select class="form-control input-sm" ng-model="modalJabatanCtrl.obj.jenis" ng-options="jenis for jenis in modalJabatanCtrl.jenis">
+        </select>
+        <!-- <span class="glyphicon glyphicon-remove form-control-feedback"></span> -->
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="modalJabatanCtrl.ok()">OK</button>
+    <button class="btn btn-warning" ng-click="modalJabatanCtrl.cancel()">Cancel</button>
+</div>

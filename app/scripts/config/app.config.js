@@ -2,12 +2,12 @@
 
 angular.module('jayaMekarApp')
 
-.config(['appConfig',
-    function(appConfig) {
-        appConfig.brandTop = {
+.config(['APP_CONFIG',
+    function(APP_CONFIG) {
+        APP_CONFIG.brandTop = {
             nama: 'Jaya Mekar'
         };
-        appConfig.menuNavRightTop = [{
+        APP_CONFIG.menuNavRightTop = [{
             href: ' ',
             menu: 'Menu',
             ngClass: 'fa fa-home'

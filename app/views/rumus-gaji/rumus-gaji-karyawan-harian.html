@@ -1,4 +1,4 @@
-<script type="text/ng-template" id="myModalContent.html">
+<!-- <script type="text/ng-template" id="myModalContent.html">
     <div class="modal-header">
         <h3 class="modal-title">I m a modal!</h3>
     </div>
@@ -10,13 +10,14 @@
         </ul>
         Selected: <b>{{ selected.item }}</b>
     </div>
-</script>
-    <!-- <div class="modal-footer">
+    <div class="modal-footer">
         <button class="btn btn-primary" ng-click="ok()">OK</button>
         <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-    </div> -->
+    </div>
+</script> -->
 
-<button class="btn btn-default" ng-click="open()">Open me!</button>
-<button class="btn btn-default" ng-click="open('lg')">Large modal</button>
-<button class="btn btn-default" ng-click="open('sm')">Small modal</button>
-<div ng-show="selected">Selection from a modal: {{ selected }}</div>
+<button class="btn btn-default" ng-click="RumusGajiKaryawanHarianCtrl.open(RumusGajiKaryawanHarianCtrl.itemss, RumusGajiKaryawanHarianCtrl.itemss2)">Open me!</button>
+<button class="btn btn-default" ng-click="RumusGajiKaryawanHarianCtrl.open(RumusGajiKaryawanHarianCtrl.itemss, RumusGajiKaryawanHarianCtrl.itemss2, 'lg')">Large modal</button>
+<button class="btn btn-default" ng-click="RumusGajiKaryawanHarianCtrl.open(RumusGajiKaryawanHarianCtrl.itemss, RumusGajiKaryawanHarianCtrl.itemss2, 'sm')">Small modal</button>
+<button class="btn btn-default" ng-click="RumusGajiKaryawanHarianCtrl.goto()">Go to</button>
+<div ng-show="RumusGajiKaryawanHarianCtrl.selected">Selection from a modal: {{ RumusGajiKaryawanHarianCtrl.selected }}</div>

@@ -6,9 +6,9 @@ angular.module('jayaMekarApp')
 * RumusGajiCtrl as rumusgaji
 */
 
-  .controller('RumusGajiCtrl', function ($indexedDB) {
+  .controller('RumusGajiCtrl', function ($scope, $indexedDB) {
 
-  	var that = this;
+  	var that = $scope.RumusGajiCtrl = this;
 
   	this.jabatan = [];
 

@@ -32,7 +32,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="i in karyawan.karyawan | filter:root.filter | limitTo:10 track by i.nip">
+                    <tr ng-repeat="i in KaryawanCtrl.karyawan | filter:root.filter | orderBy:'+namaDepan':false | startArray:(KaryawanCtrl.numberPage - 1 )*KaryawanCtrl.limit | limitTo:KaryawanCtrl.limit track by i.nip">
                         <td class="text-center">{{i.nip}}</td>
                         <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
                         <td class="text-center" title="{{i.detailJabatan}}">{{i.jabatan}}</td>
@@ -41,14 +41,14 @@
                         <td class="text-center">{{i.statusKaryawan}}</td>
                         <td class="text-center">{{i.versi}}</td>
                         <td class="text-center">
-                            <button class="btn btn-sm btn-primary" ng-click="karyawan.editKaryawan(i)">Edit</button>
-                            <button class="btn btn-sm btn-danger" ng-click="karyawan.hapusKaryawan(i)">Delete</button>
+                            <button class="btn btn-sm btn-primary" ng-click="KaryawanCtrl.editKaryawan(i)">Edit</button>
+                            <button class="btn btn-sm btn-danger" ng-click="KaryawanCtrl.hapusKaryawan(i)">Delete</button>
                         </td>
                     </tr>
                 </tbody>
             </table>
-
-            <pre>{{karyawan.karyawan | filter:root.filter | lengthArray}}</pre> 
+            <pagination total-items="KaryawanCtrl.karyawan.length" ng-model="KaryawanCtrl.numberPage" max-size="KaryawanCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir"></pagination>
+            <pre class="pull-left">{{(KaryawanCtrl.numberPage-1)*KaryawanCtrl.limit}}</pre>
             <!-- <pre>{{root.dataKaryawan | filter:root.filter | lengthArray}}</pre>  -->
         </div>
     </div>

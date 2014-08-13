@@ -4,14 +4,14 @@ angular.module('jayaMekarApp')
 
 .provider('$indexedDB', function() {
 
-    var idb = {};
+    var idb = {
+        setUp: false,
+        namaIdb: 'JayaMekar',
+        versiIdb: 1
+    };
     var db;
 
-    idb.setUp = false;
-    idb.namaIdb = 'JayaMekar';
-    idb.versiIdb = 1;
-
-    function GETTER($q) {
+    function GETTER($q, $log) {
 
         this.getConfig = function() {
             return idb;
@@ -105,7 +105,7 @@ angular.module('jayaMekarApp')
                 };
                 idb.setUp = true;
                 defer.resolve(true);
-                console.log('Database siap digunakan');
+                $log.info('Database siap digunakan ' + new Date());
             };
 
             return defer.promise;
@@ -205,15 +205,15 @@ angular.module('jayaMekarApp')
 
         this.getJabatan = function() {
             var result = [];
-            var arrObjStore = ['jabatan', 'karyawan'];
+            var arrayObjStore = ['jabatan', 'karyawan', 'rumusgaji'];
             var defer = $q.defer();
 
             this.init().then(function() {
 
-                var transaction = db.transaction(arrObjStore, 'readonly');
-                var jabatan = transaction.objectStore('jabatan').openCursor();
+                var transaction = db.transaction(arrayObjStore, 'readonly');
+                var transactionJabatan = transaction.objectStore('jabatan').openCursor();
 
-                jabatan.onsuccess = function(event) {
+                transactionJabatan.onsuccess = function(event) {
                     var cursorJabatan = event.target.result;
 
                     if (cursorJabatan) {
@@ -225,18 +225,20 @@ angular.module('jayaMekarApp')
                             statusJabatan: cursorJabatan.value.statusJabatan,
                             jenis: cursorJabatan.value.jenis,
                             versi: cursorJabatan.value.versi,
-                            karyawan: []
+                            url: '#/jabatan',
+                            karyawan: [],
+                            rumusGaji: []
                         };
 
-                        var karyawan = transaction.objectStore('karyawan')
+                        var transactionKaryawan = transaction.objectStore('karyawan')
                             .index('idJabatan')
                             .openCursor(cursorJabatan.value.idJabatan);
 
-                        karyawan.onerror = function(e) {
+                        transactionKaryawan.onerror = function(e) {
                             console.log('error', e);
                         };
-                        karyawan.onsuccess = function() {
-                            var cursorKaryawan = karyawan.result;
+                        transactionKaryawan.onsuccess = function() {
+                            var cursorKaryawan = transactionKaryawan.result;
                             if (cursorKaryawan) {
                                 if (cursorKaryawan.value.idJabatan === cursorJabatan.value.idJabatan) {
                                     data.karyawan.push(cursorKaryawan.value);
@@ -245,10 +247,31 @@ angular.module('jayaMekarApp')
                                     console.log('warning: id jabatan tidak sama');
                                 }
                             } else {
-                                cursorJabatan.continue();
+                                //cursorJabatan.continue();
+                                var transactionRumusgaji = transaction.objectStore('rumusgaji')
+                                    .index('idJabatan')
+                                    .openCursor(cursorJabatan.value.idJabatan);
+
+                                transactionRumusgaji.onerror = function(event) {
+                                    console.log('error', event);
+                                };
+                                transactionRumusgaji.onsuccess = function(event) {
+                                    var cursorRumusGaji = event.target.result;
+                                    if (cursorRumusGaji) {
+                                        if (cursorRumusGaji.value.idJabatan === cursorJabatan.value.idJabatan) {
+                                            data.rumusGaji.push(cursorRumusGaji.value);
+                                            cursorRumusGaji.continue();
+                                        } else {
+                                            console.log('warning: id jabatan tidak sama');
+                                        }
+                                    } else {
+                                        cursorJabatan.continue();
+                                    }
+                                };
                             }
                         };
 
+                        $log.info(data);
                         result.push(data);
                     }
                 };
@@ -263,28 +286,28 @@ angular.module('jayaMekarApp')
 
         this.getKaryawan = function() {
             var result = [];
-            var arrObjStore = ['jabatan', 'karyawan'];
+            var arrayObjStore = ['jabatan', 'karyawan'];
             var defer = $q.defer();
 
             this.init().then(function() {
 
-                var transaction = db.transaction(arrObjStore, 'readonly');
-                var jabatan = transaction.objectStore('jabatan').openCursor();
+                var transaction = db.transaction(arrayObjStore, 'readonly');
+                var transactionJabatan = transaction.objectStore('jabatan').openCursor();
 
-                jabatan.onsuccess = function(event) {
+                transactionJabatan.onsuccess = function(event) {
                     var cursorJabatan = event.target.result;
 
                     if (cursorJabatan) {
 
-                        var karyawan = transaction.objectStore('karyawan')
+                        var transactionKaryawan = transaction.objectStore('karyawan')
                             .index('idJabatan').openCursor(cursorJabatan.value.idJabatan);
 
-                        karyawan.onerror = function(e) {
-                            console.log('error', e);
+                        transactionKaryawan.onerror = function(event) {
+                            console.log('error', event);
                         };
 
-                        karyawan.onsuccess = function() {
-                            var cursorKaryawan = karyawan.result;
+                        transactionKaryawan.onsuccess = function(event) {
+                            var cursorKaryawan = event.target.result;
                             if (cursorKaryawan) {
                                 if (cursorKaryawan.value.idJabatan === cursorJabatan.value.idJabatan) {
 
@@ -305,11 +328,14 @@ angular.module('jayaMekarApp')
                                 } else {
                                     console.log('warning: id jabatan tidak sama');
                                 }
+
                                 cursorKaryawan.continue();
+
                             } else {
                                 cursorJabatan.continue();
                             }
                         };
+
                     }
                 };
 
@@ -320,32 +346,32 @@ angular.module('jayaMekarApp')
             });
 
             return defer.promise;
-        }; // E:this.getKaryawan()
+        };
 
         this.getRumusGaji = function() {
             var result = [];
-            var arrObjStore = ['jabatan', 'rumusgaji'];
+            var arrayObjStore = ['jabatan', 'rumusgaji'];
             var defer = $q.defer();
 
             this.init().then(function() {
 
-                var transaction = db.transaction(arrObjStore, 'readonly');
-                var jabatan = transaction.objectStore('jabatan').openCursor();
+                var transaction = db.transaction(arrayObjStore, 'readonly');
+                var transactionJabatan = transaction.objectStore('jabatan').openCursor();
 
-                jabatan.onsuccess = function(event) {
+                transactionJabatan.onsuccess = function(event) {
                     var cursorJabatan = event.target.result;
 
                     if (cursorJabatan) {
 
-                        var rumusgaji = transaction.objectStore('rumusgaji')
+                        var transactionRumusgaji = transaction.objectStore('rumusgaji')
                             .index('idJabatan').openCursor(cursorJabatan.value.idJabatan);
 
-                        rumusgaji.onerror = function(e) {
-                            console.log('error', e);
+                        transactionRumusgaji.onerror = function(event) {
+                            console.log('error', event);
                         };
 
-                        rumusgaji.onsuccess = function() {
-                            var cursorRumusGaji = rumusgaji.result;
+                        transactionRumusgaji.onsuccess = function() {
+                            var cursorRumusGaji = transactionRumusgaji.result;
                             if (cursorRumusGaji) {
                                 if (cursorRumusGaji.value.idJabatan === cursorJabatan.value.idJabatan) {
 
@@ -394,7 +420,7 @@ angular.module('jayaMekarApp')
         idb.versiIdb = value.versiIdb || idb.versiIdb;
     };
 
-    this.$get = function($q) {
-        return new GETTER($q);
+    this.$get = function($q, $log) {
+        return new GETTER($q, $log);
     };
 });

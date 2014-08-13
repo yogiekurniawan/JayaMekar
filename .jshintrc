@@ -17,11 +17,9 @@
     "unused": true,
     "trailing": true,
     "smarttabs": true,
+    "strict": true,
     "globals": {
         "angular": false
     },
-    "validthis": false,
-    "predef": [
-        "objectStore"
-    ]
+    "validthis": false
 }
