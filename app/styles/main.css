@@ -72,49 +72,11 @@ th.col-aksi
     margin-bottom: 0;
 }
 
-div.panel.jabatan
-{
-    min-width: 200px;
-    max-width: 260px;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-div.panel-body > table.table
-{
-    margin-bottom: 5px;
-}
-
-div.panel-heading > h4
-{
-    margin-top: 6px;
-    margin-bottom: 7px;
-}
-
-table.table.jabatan > tbody > tr > td.jabatan
-{
-    padding: 15px 0;
-}
-
-div.panel.jabatan > div.panel-body > a:hover,
-div.panel.jabatan > div.panel-body > a:focus,
-div.panel.jabatan > div.panel-body > a.active
-{
-    text-decoration: none;
-
-    color: #3c763d;
-}
-
 /* custom ui-select2 */
 .select2-container .select2-choice
 {
     height: auto;
     padding: 3px 0 3px 8px;
-}
-
-label.control-label.normal
-{
-    font-weight: normal;
 }
 
 .width-200

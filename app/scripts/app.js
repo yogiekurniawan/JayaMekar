@@ -3,6 +3,7 @@
 angular.module('jayaMekarApp', [
     'ui.router',
     'ngAnimate',
+    'ngMessages',
     'ui.bootstrap',
     'ui.select2'
 ])

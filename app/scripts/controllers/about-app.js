@@ -3,7 +3,7 @@
 angular.module('jayaMekarApp')
 
 .controller('AboutAppCtrl',
-    function($scope, $indexedDB, $timeout, layananData) {
+    function($scope, $indexedDB, $timeout, $id, layananData) {
 
         var that = $scope.AboutAppCtrl = this;
 
@@ -37,6 +37,7 @@ angular.module('jayaMekarApp')
         };
         this.addContohDataKaryawan = function() {
             angular.forEach(that.arrayKaryawan, function(v) {
+                v.nip = $id();
                 $indexedDB.save(["karyawan"], v).then(function() {
 
                 });
@@ -44,6 +45,7 @@ angular.module('jayaMekarApp')
         };
         this.addContohDataRumusGaji = function() {
             angular.forEach(that.arrayRumusGaji, function(v) {
+                v.idRumusGaji = $id();
                 $indexedDB.save(["rumusgaji"], v).then(function() {
 
                 });

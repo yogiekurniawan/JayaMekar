@@ -101,7 +101,7 @@ angular.module('jayaMekarApp')
                 db = event.target.result;
 
                 db.onerror = function(event) {
-                    defer.reject('init() : Kesalahan DB' + event.target.errorCode);
+                    defer.reject(event.target.errorCode);
                 };
                 idb.setUp = true;
                 defer.resolve(true);
@@ -148,7 +148,7 @@ angular.module('jayaMekarApp')
             var request = objectStore.get(key);
 
             request.onerror = function(event) {
-                console.log('error', event);
+                $log.error(event.target.errorCode);
             };
 
             request.onsuccess = function() {
@@ -169,8 +169,8 @@ angular.module('jayaMekarApp')
 
             var request = index.openCursor(key);
 
-            request.onerror = function(e) {
-                console.log('error', e);
+            request.onerror = function(event) {
+                $log.error(event.target.errorCode);
             };
 
             request.onsuccess = function() {
@@ -193,8 +193,8 @@ angular.module('jayaMekarApp')
                 transaction.objectStore(value).put(obj);
             });
 
-            transaction.onerror = function(e) {
-                console.log('error', e);
+            transaction.onerror = function(event) {
+                $log.error(event.target.errorCode);
             };
             transaction.oncomplete = function() {
                 defer.resolve();
@@ -235,7 +235,7 @@ angular.module('jayaMekarApp')
                             .openCursor(cursorJabatan.value.idJabatan);
 
                         transactionKaryawan.onerror = function(e) {
-                            console.log('error', e);
+                            $log.info('error', e);
                         };
                         transactionKaryawan.onsuccess = function() {
                             var cursorKaryawan = transactionKaryawan.result;
@@ -244,7 +244,7 @@ angular.module('jayaMekarApp')
                                     data.karyawan.push(cursorKaryawan.value);
                                     cursorKaryawan.continue();
                                 } else {
-                                    console.log('warning: id jabatan tidak sama');
+                                    $log.info('warning: id jabatan tidak sama');
                                 }
                             } else {
                                 //cursorJabatan.continue();
@@ -253,7 +253,7 @@ angular.module('jayaMekarApp')
                                     .openCursor(cursorJabatan.value.idJabatan);
 
                                 transactionRumusgaji.onerror = function(event) {
-                                    console.log('error', event);
+                                    $log.info('error', event);
                                 };
                                 transactionRumusgaji.onsuccess = function(event) {
                                     var cursorRumusGaji = event.target.result;
@@ -262,7 +262,7 @@ angular.module('jayaMekarApp')
                                             data.rumusGaji.push(cursorRumusGaji.value);
                                             cursorRumusGaji.continue();
                                         } else {
-                                            console.log('warning: id jabatan tidak sama');
+                                            $log.info('warning: id jabatan tidak sama');
                                         }
                                     } else {
                                         cursorJabatan.continue();
@@ -270,8 +270,6 @@ angular.module('jayaMekarApp')
                                 };
                             }
                         };
-
-                        $log.info(data);
                         result.push(data);
                     }
                 };
@@ -303,7 +301,7 @@ angular.module('jayaMekarApp')
                             .index('idJabatan').openCursor(cursorJabatan.value.idJabatan);
 
                         transactionKaryawan.onerror = function(event) {
-                            console.log('error', event);
+                            $log.error(event.target.errorCode);
                         };
 
                         transactionKaryawan.onsuccess = function(event) {
@@ -326,7 +324,7 @@ angular.module('jayaMekarApp')
 
                                     result.push(data);
                                 } else {
-                                    console.log('warning: id jabatan tidak sama');
+                                    $log.info('warning: id jabatan tidak sama');
                                 }
 
                                 cursorKaryawan.continue();
@@ -367,7 +365,7 @@ angular.module('jayaMekarApp')
                             .index('idJabatan').openCursor(cursorJabatan.value.idJabatan);
 
                         transactionRumusgaji.onerror = function(event) {
-                            console.log('error', event);
+                            $log.error(event.target.errorCode);
                         };
 
                         transactionRumusgaji.onsuccess = function() {
@@ -394,7 +392,7 @@ angular.module('jayaMekarApp')
 
                                     result.push(data);
                                 } else {
-                                    console.log('warning: id jabatan tidak sama');
+                                    $log.info('warning: id jabatan tidak sama');
                                 }
                                 cursorRumusGaji.continue();
                             } else {

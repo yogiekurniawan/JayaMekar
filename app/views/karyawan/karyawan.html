@@ -2,7 +2,6 @@
     <div class="bs-page-header">
         <h4>Mengelola Karyawan</h4>
     </div>
-    <!-- / .yk-header -->
 </div>
 <div class="body">
     <div class="row newline">
@@ -33,7 +32,7 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="i in KaryawanCtrl.karyawan | filter:root.filter | orderBy:'+namaDepan':false | startArray:(KaryawanCtrl.numberPage - 1 )*KaryawanCtrl.limit | limitTo:KaryawanCtrl.limit track by i.nip">
-                        <td class="text-center">{{i.nip}}</td>
+                        <td class="text-center" title="{{i.nip}}">{{(KaryawanCtrl.numberPage-1)*KaryawanCtrl.limit+$index+1}}</td>
                         <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
                         <td class="text-center" title="{{i.detailJabatan}}">{{i.jabatan}}</td>
                         <td class="text-center" title="{{i.kelompokKerja | kelompokKerja}}">{{i.kelompokKerja}}</td>
@@ -47,8 +46,12 @@
                     </tr>
                 </tbody>
             </table>
-            <pagination total-items="KaryawanCtrl.karyawan.length" ng-model="KaryawanCtrl.numberPage" max-size="KaryawanCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir"></pagination>
-            <pre class="pull-left">{{(KaryawanCtrl.numberPage-1)*KaryawanCtrl.limit}}</pre>
+            <li class="pagination" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | lengthArray) <= KaryawanCtrl.limit">
+                <p>halaman {{KaryawanCtrl.numberPage}} dari {{KaryawanCtrl.karyawan.length / 10}}</p>
+            </li>
+            <pagination total-items="KaryawanCtrl.karyawan | filter:root.filter | lengthArray" ng-model="KaryawanCtrl.numberPage" max-size="KaryawanCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | lengthArray) <= KaryawanCtrl.limit"></pagination>
+
+            <!-- <pre class="pull-left">{{(KaryawanCtrl.numberPage-1)*KaryawanCtrl.limit}} - {{KaryawanCtrl.karyawan.length}}</pre> -->
             <!-- <pre>{{root.dataKaryawan | filter:root.filter | lengthArray}}</pre>  -->
         </div>
     </div>

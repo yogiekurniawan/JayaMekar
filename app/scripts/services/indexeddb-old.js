@@ -23,7 +23,7 @@ angular.module('jayaMekarApp')
 
     var setUp = false,
         db,
-        namaDB = "Penggajian",
+        namaDB = 'Penggajian',
         versi = 1,
         data = [];
 
@@ -42,7 +42,7 @@ angular.module('jayaMekarApp')
 
         /* fungsi di panggil jika error */
         openRequest.onerror = function(e) {
-            //console.log("init() : Kesalahan membuka DB");
+            //console.log('init() : Kesalahan membuka DB');
             //console.dir(e);
             defer.reject(e.toString());
         };
@@ -52,63 +52,63 @@ angular.module('jayaMekarApp')
             db = e.target.result;
 
             /* membuat object store jika object store belum dibuat */
-            if (!db.objectStoreNames.contains("jabatan")) {
-                var objectStore = db.createObjectStore("jabatan", {
-                    keyPath: "idJabatan",
+            if (!db.objectStoreNames.contains('jabatan')) {
+                var objectStore = db.createObjectStore('jabatan', {
+                    keyPath: 'idJabatan',
                     unique: true
                 });
-                objectStore.createIndex("jabatan", "jabatan", {
+                objectStore.createIndex('jabatan', 'jabatan', {
                     unique: false
                 });
-                objectStore.createIndex("statusJabatan", "statusJabatan", {
+                objectStore.createIndex('statusJabatan', 'statusJabatan', {
                     unique: false
                 });
             }
-            if (!db.objectStoreNames.contains("karyawan")) {
-                var objectStore = db.createObjectStore("karyawan", {
-                    keyPath: "nip",
+            if (!db.objectStoreNames.contains('karyawan')) {
+                var objectStore = db.createObjectStore('karyawan', {
+                    keyPath: 'nip',
                     unique: true
                 });
-                objectStore.createIndex("namaDepan", "namaDepan", {
+                objectStore.createIndex('namaDepan', 'namaDepan', {
                     unique: false
                 });
-                objectStore.createIndex("idJabatan", "idJabatan", {
+                objectStore.createIndex('idJabatan', 'idJabatan', {
                     unique: false
                 });
-                objectStore.createIndex("kelompokKerja", "kelompokKerja", {
+                objectStore.createIndex('kelompokKerja', 'kelompokKerja', {
                     unique: false
                 });
-                objectStore.createIndex("statusKaryawan", "statusKaryawan", {
+                objectStore.createIndex('statusKaryawan', 'statusKaryawan', {
                     unique: false
                 });
             }
-            if (!db.objectStoreNames.contains("rumusGaji")) {
-                var objectStore = db.createObjectStore("rumusGaji", {
-                    keyPath: "idRumusGaji",
+            if (!db.objectStoreNames.contains('rumusGaji')) {
+                var objectStore = db.createObjectStore('rumusGaji', {
+                    keyPath: 'idRumusGaji',
                     unique: true
                 });
-                objectStore.createIndex("idJabatan", "idJabatan", {
+                objectStore.createIndex('idJabatan', 'idJabatan', {
                     unique: false
                 });
-                objectStore.createIndex("shift", "shift", {
+                objectStore.createIndex('shift', 'shift', {
                     unique: false
                 });
-                objectStore.createIndex("statusRumusGaji", "statusRumusGaji", {
+                objectStore.createIndex('statusRumusGaji', 'statusRumusGaji', {
                     unique: false
                 });
             }
-            if (!db.objectStoreNames.contains("penggajian")) {
-                var objectStore = db.createObjectStore("penggajian", {
-                    keyPath: "idPenggajian",
+            if (!db.objectStoreNames.contains('penggajian')) {
+                var objectStore = db.createObjectStore('penggajian', {
+                    keyPath: 'idPenggajian',
                     unique: true
                 });
-                objectStore.createIndex("nip", "nip", {
+                objectStore.createIndex('nip', 'nip', {
                     unique: false
                 });
-                objectStore.createIndex("idRumusGaji", "idRumusGaji", {
+                objectStore.createIndex('idRumusGaji', 'idRumusGaji', {
                     unique: false
                 });
-                objectStore.createIndex("statusPenggajian", "statusPenggajian", {
+                objectStore.createIndex('statusPenggajian', 'statusPenggajian', {
                     unique: false
                 });
             }
@@ -119,7 +119,7 @@ angular.module('jayaMekarApp')
             db = e.target.result;
 
             db.onerror = function(e) {
-                defer.reject("init() : Kesalahan DB" + e.target.errorCode);
+                defer.reject('init() : Kesalahan DB' + e.target.errorCode);
             };
             defer.resolve(true);
         };
@@ -145,7 +145,7 @@ angular.module('jayaMekarApp')
             var handleResult = function(e) {
                 var cursor = e.target.result;
                 if (cursor) {
-                    //console.log("MANA NU IEU",d);
+                    //console.log('MANA NU IEU',d);
                     /*result.push({
                 idJabatan:cursor.key,
                 namaJabatan: cursor.value.namaJabatan,
@@ -157,18 +157,18 @@ angular.module('jayaMekarApp')
                 namaStatus: cursor.value.namaStatus,
                 modeEdit: cursor.value.modeEdit
               });*/
-                    //console.log("dipanggil :", cursor.value.idJabatan);
+                    //console.log('dipanggil :', cursor.value.idJabatan);
                     result.push(cursor.value);
                     cursor.continue();
                 }
             };
 
-            var t = db.transaction(["jabatan"], "readonly");
-            var objectStore = t.objectStore("jabatan");
+            var t = db.transaction(['jabatan'], 'readonly');
+            var objectStore = t.objectStore('jabatan');
             objectStore.openCursor().onsuccess = handleResult;
 
             t.oncomplete = function(e) {
-                //console.log("defer.resolve 124:", result);
+                //console.log('defer.resolve 124:', result);
                 defer.resolve(result);
             };
         });
@@ -179,15 +179,15 @@ angular.module('jayaMekarApp')
     var getAllJabatan2 = function(d) {
         var defer = $q.defer();
         //result.splice(0, result.length);
-        console.log("getAllJabatan2", d);
+        console.log('getAllJabatan2', d);
         init().then(function() {
             var handleResult = function(e) {
                 var cursor = e.target.result;
                 if (cursor) {
                     if (cursor.value.idJabatan === d) {
-                        //console.log("dipanggil :", cursor.value.idJabatan);
+                        //console.log('dipanggil :', cursor.value.idJabatan);
                         result.push(cursor.value);
-                        console.log("object yg ditambahkan ke result : ", cursor.value);
+                        console.log('object yg ditambahkan ke result : ', cursor.value);
                     }
                     cursor.continue();
                     /*result.push({
@@ -205,8 +205,8 @@ angular.module('jayaMekarApp')
                 }
             };
 
-            var t = db.transaction(["jabatan"], "readonly");
-            var objectStore = t.objectStore("jabatan");
+            var t = db.transaction(['jabatan'], 'readonly');
+            var objectStore = t.objectStore('jabatan');
             objectStore.openCursor().onsuccess = handleResult;
 
             t.oncomplete = function(e) {
@@ -226,17 +226,17 @@ angular.module('jayaMekarApp')
 
         var defer = $q.defer();
 
-        //if(!data._id) data._id = "";
+        //if(!data._id) data._id = ';
         //if(!data.idJabatan) data.modeEdit = new Date().getTime();
         //if(!data.timeStamps.timeCreate) data.timeStamps.timeCreate = new Date().getTime();
 
-        var t = db.transaction([object_store], "readwrite");
+        var t = db.transaction([object_store], 'readwrite');
 
         t.objectStore(object_store).add(data);
 
 
-        // if (data.idJabatan === ""){ /* menambah data baru jika idJabatan = "" */
-        //   t.objectStore("jabatan")
+        // if (data.idJabatan === '){ /* menambah data baru jika idJabatan = ' */
+        //   t.objectStore('jabatan')
         //       //.add(data);
         //     .add({
         //       idJabatan: data.idJabatan,
@@ -251,10 +251,10 @@ angular.module('jayaMekarApp')
         //     });
         //    // getAllJabatan2(data.idJabatan);
 
-        //     console.log("saveJabatan() : add : untuk menambah jabatan");
+        //     console.log('saveJabatan() : add : untuk menambah jabatan');
         //   /* merubah data jabatan yang sudah ada dengan kunci idJabatan */
         // } else { 
-        //   t.objectStore("jabatan")
+        //   t.objectStore('jabatan')
         //     .put({
         //       idJabatan: data.idJabatan,
         //       namaJabatan: data.namaJabatan,
@@ -266,16 +266,16 @@ angular.module('jayaMekarApp')
         //       namaStatus: data.namaStatus,
         //       modeEdit: data.modeEdit
         //     });
-        //     console.log("saveJabatan() : put : untuk merubah jabatan");
+        //     console.log('saveJabatan() : put : untuk merubah jabatan');
         // }
 
         t.oncomplete = function(e) {
             defer.resolve(getAllJabatan());
 
-            //console.log("saveJabatan() : oncomplete");
+            //console.log('saveJabatan() : oncomplete');
         };
 
-        //console.log("saveJabatan() : defer.promise");
+        //console.log('saveJabatan() : defer.promise');
         return defer.promise;
 
     };
@@ -310,7 +310,7 @@ angular.module('jayaMekarApp')
 
     /*********************************** S:Support IDB ***********************************/
     var idbOK = function() {
-        return ("indexedDB" in window);
+        return ('indexedDB' in window);
     };
     /*********************************** E:Support IDB ***********************************/
 
