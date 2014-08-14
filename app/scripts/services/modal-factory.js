@@ -6,7 +6,7 @@ angular.module('jayaMekarApp')
         var open = function(itemss2, itemss, size) {
             var defer = $q.defer();
             $window.location.href = '#/rumus-gaji/karyawan-harian';
-            var modalInstancee = $modal.open({
+            var modalInstance = $modal.open({
                 templateUrl: 'views/rumus-gaji/modal-rumus-gaji.html',
                 controller: 'tesModalCtrl',
                 size: size,
@@ -21,7 +21,7 @@ angular.module('jayaMekarApp')
                 }
             });
 
-            modalInstancee.result.then(function(selectedItem) {
+            modalInstance.result.then(function(selectedItem) {
                 // that.selected = selectedItem;
                 defer.resolve(selectedItem);
             }, function() {
@@ -33,8 +33,8 @@ angular.module('jayaMekarApp')
 
         var jabatan = function(obj, size) {
             var defer = $q.defer();
-            $window.location.href = '#/jabatan';
-            var modalInstancee = $modal.open({
+            //$window.location.href = '#/jabatan';
+            var modalJabatan = $modal.open({
                 templateUrl: 'views/jabatan/modal-jabatan.html',
                 controller: 'modalJabatanCtrl',
                 size: size,
@@ -46,7 +46,7 @@ angular.module('jayaMekarApp')
                 }
             });
 
-            modalInstancee.result.then(function(selectedItem) {
+            modalJabatan.result.then(function(selectedItem) {
                 // that.selected = selectedItem;
                 defer.resolve(selectedItem);
             }, function() {

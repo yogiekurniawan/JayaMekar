@@ -7,9 +7,8 @@ angular.module('jayaMekarApp')
 
             var defer = $q.defer();
 
-            var method = "get";
-            var url = "json/jabatan.json";
-            var data;
+            var method = 'get';
+            var url = 'json/jabatan.json';
 
             $http({
                 method: method,
@@ -20,7 +19,7 @@ angular.module('jayaMekarApp')
                     defer.resolve(data);
                 })
                 .error(function(data) {
-                    data = data || "Permintaan data gagal";
+                    data = data || 'Permintaan data gagal';
                     defer.reject(data);
                 });
 
@@ -32,8 +31,8 @@ angular.module('jayaMekarApp')
 
             var defer = $q.defer();
 
-            var method = "get";
-            var url = "json/karyawan.json";
+            var method = 'get';
+            var url = 'json/karyawan.json';
 
             $http({
                 method: method,
@@ -44,7 +43,7 @@ angular.module('jayaMekarApp')
                     defer.resolve(data);
                 })
                 .error(function(data) {
-                    data = data || "Permintaan data gagal";
+                    data = data || 'Permintaan data gagal';
                     defer.reject(data);
                 });
 
@@ -55,8 +54,8 @@ angular.module('jayaMekarApp')
 
             var defer = $q.defer();
 
-            var method = "get";
-            var url = "json/rumusGaji.json";
+            var method = 'get';
+            var url = 'json/rumusGaji.json';
 
             $http({
                 method: method,
@@ -67,7 +66,7 @@ angular.module('jayaMekarApp')
                     defer.resolve(data);
                 })
                 .error(function(data) {
-                    data = data || "Permintaan data gagal";
+                    data = data || 'Permintaan data gagal';
                     defer.reject(data);
                 });
 
@@ -89,29 +88,29 @@ angular.module('jayaMekarApp')
                     'kelompokKerja': '["UM","UJ","NS"]',
                     'statusKaryawan': '["Kerja","Keluar"]',
                     'versi': 1,
-                    'callback': "JSON_CALLBACK"
+                    'callback': 'JSON_CALLBACK'
                 }
             };
-            $http.jsonp("http://www.filltext.com", config, {}).success(function(data) {
+            $http.jsonp('http://www.filltext.com', config, {}).success(function(data) {
 
                 angular.forEach(data, function(v) {
                     var objKaryawan = {
-                        "nip": "P" + v.nip ,
-                        "namaDepan": v.namaDepan,
-                        "namaBelakang": v.namaBelakang,
-                        "idJabatan": v.idJabatan,
-                        "kelompokKerja": v.kelompokKerja,
-                        "waktu": {
-                            "dibuat": new Date().getTime(),
-                            "dirubah": "0"
+                        'nip': 'P' + v.nip ,
+                        'namaDepan': v.namaDepan,
+                        'namaBelakang': v.namaBelakang,
+                        'idJabatan': v.idJabatan,
+                        'kelompokKerja': v.kelompokKerja,
+                        'waktu': {
+                            'dibuat': new Date().getTime(),
+                            'dirubah': '0'
                         },
-                        "statusKaryawan": v.statusKaryawan,
-                        "versi": v.versi
+                        'statusKaryawan': v.statusKaryawan,
+                        'versi': v.versi
                     };
                     result.push(objKaryawan);
                 });
 
-                defer.resolve(result)
+                defer.resolve(result);
             });
 
             return defer.promise;

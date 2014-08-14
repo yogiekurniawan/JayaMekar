@@ -3,7 +3,7 @@
         <h4>Mengelola Karyawan</h4>
     </div>
 </div>
-<div class="body">
+<div class="body" ng-show="KaryawanCtrl.karyawan.length > 0">
     <div class="row newline">
         <div class="col-md-6">
 
@@ -51,8 +51,6 @@
             </li>
             <pagination total-items="KaryawanCtrl.karyawan | filter:root.filter | lengthArray" ng-model="KaryawanCtrl.numberPage" max-size="KaryawanCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | lengthArray) <= KaryawanCtrl.limit"></pagination>
 
-            <!-- <pre class="pull-left">{{(KaryawanCtrl.numberPage-1)*KaryawanCtrl.limit}} - {{KaryawanCtrl.karyawan.length}}</pre> -->
-            <!-- <pre>{{root.dataKaryawan | filter:root.filter | lengthArray}}</pre>  -->
         </div>
     </div>
 </div>

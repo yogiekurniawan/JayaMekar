@@ -30,7 +30,7 @@ angular.module('jayaMekarApp')
         };
         this.addContohDataJabatan = function() {
             angular.forEach(that.arrayJabatan, function(v) {
-                $indexedDB.save(["jabatan"], v).then(function() {
+                $indexedDB.save(['jabatan'], v).then(function() {
 
                 });
             });
@@ -38,7 +38,7 @@ angular.module('jayaMekarApp')
         this.addContohDataKaryawan = function() {
             angular.forEach(that.arrayKaryawan, function(v) {
                 v.nip = $id();
-                $indexedDB.save(["karyawan"], v).then(function() {
+                $indexedDB.save(['karyawan'], v).then(function() {
 
                 });
             });
@@ -46,7 +46,7 @@ angular.module('jayaMekarApp')
         this.addContohDataRumusGaji = function() {
             angular.forEach(that.arrayRumusGaji, function(v) {
                 v.idRumusGaji = $id();
-                $indexedDB.save(["rumusgaji"], v).then(function() {
+                $indexedDB.save(['rumusgaji'], v).then(function() {
 
                 });
             });

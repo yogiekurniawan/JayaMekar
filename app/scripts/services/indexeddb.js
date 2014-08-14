@@ -28,7 +28,7 @@ angular.module('jayaMekarApp')
             var openRequest = window.indexedDB.open(idb.namaIdb, idb.versiIdb);
 
             openRequest.onerror = function(event) {
-                defer.reject(event.toString());
+                $log.error(event.target.errorCode);
             };
             openRequest.onupgradeneeded = function(event) {
                 db = event.target.result;
@@ -101,7 +101,7 @@ angular.module('jayaMekarApp')
                 db = event.target.result;
 
                 db.onerror = function(event) {
-                    defer.reject(event.target.errorCode);
+                    defer.reject("sala", event.target.errorCode);
                 };
                 idb.setUp = true;
                 defer.resolve(true);
@@ -235,7 +235,7 @@ angular.module('jayaMekarApp')
                             .openCursor(cursorJabatan.value.idJabatan);
 
                         transactionKaryawan.onerror = function(e) {
-                            $log.info('error', e);
+                            $log.error(event.target.errorCode);
                         };
                         transactionKaryawan.onsuccess = function() {
                             var cursorKaryawan = transactionKaryawan.result;
@@ -244,7 +244,7 @@ angular.module('jayaMekarApp')
                                     data.karyawan.push(cursorKaryawan.value);
                                     cursorKaryawan.continue();
                                 } else {
-                                    $log.info('warning: id jabatan tidak sama');
+                                    $log.warn('warning: id jabatan tidak sama');
                                 }
                             } else {
                                 //cursorJabatan.continue();
@@ -262,7 +262,7 @@ angular.module('jayaMekarApp')
                                             data.rumusGaji.push(cursorRumusGaji.value);
                                             cursorRumusGaji.continue();
                                         } else {
-                                            $log.info('warning: id jabatan tidak sama');
+                                            $log.warn('warning: id jabatan tidak sama');
                                         }
                                     } else {
                                         cursorJabatan.continue();
@@ -324,7 +324,7 @@ angular.module('jayaMekarApp')
 
                                     result.push(data);
                                 } else {
-                                    $log.info('warning: id jabatan tidak sama');
+                                    $log.warn('warning: id jabatan tidak sama');
                                 }
 
                                 cursorKaryawan.continue();
@@ -392,7 +392,7 @@ angular.module('jayaMekarApp')
 
                                     result.push(data);
                                 } else {
-                                    $log.info('warning: id jabatan tidak sama');
+                                    $log.warn('warning: id jabatan tidak sama');
                                 }
                                 cursorRumusGaji.continue();
                             } else {
