@@ -46,9 +46,8 @@ angular.module('jayaMekarApp')
                 }
             });
 
-            modalJabatan.result.then(function(selectedItem) {
-                // that.selected = selectedItem;
-                defer.resolve(selectedItem);
+            modalJabatan.result.then(function(result) {
+                defer.resolve(result);
             }, function() {
                 $log.info('Modal dismissed at: ' + new Date());
             });
@@ -74,22 +73,24 @@ angular.module('jayaMekarApp')
         };
 
         this.ok = function() {
-            $modalInstance.close(that.selected.item);
+            $modalInstance.close("that.selected.item");
         };
 
         this.cancel = function() {
             $modalInstance.dismiss('cancel');
         };
     })
-    .controller('modalJabatanCtrl', function($scope, $modalInstance, obj) {
+    .controller('modalJabatanCtrl', function($scope, $modalInstance, obj, $log) {
 
         var that = $scope.modalJabatanCtrl = this;
 
         this.obj = obj;
+        this.historyObject = angular.copy(obj);
+        $log.info('historyObject', this.historyObject);
         this.jenis = ['Harian', 'Borongan'];
 
         this.ok = function() {
-            $modalInstance.close(that.obj);
+            $modalInstance.close(obj, that.historyObject);
         };
 
         this.cancel = function() {

@@ -7,10 +7,10 @@ angular.module('jayaMekarApp')
         namaIdb: 'Jaya Mekar',
         versiIdb: 7
     });
-})
-
-.run(function($indexedDB) {
-    var app = $indexedDB.getConfig();
-    console.log(app);
-    $indexedDB.init();
 });
+
+// .run(function($indexedDB) {
+    // var app = $indexedDB.getConfig();
+    // console.log(app);
+    // $indexedDB.init();
+// });

@@ -2,28 +2,16 @@
 
 angular.module('jayaMekarApp')
 
-.controller('JabatanCtrl', function($scope, $indexedDB, modalFactory, $log) {
+.controller('JabatanCtrl', function($scope, $indexedDB, modalFactory, jabatanFactory, $log) {
 
     var that = $scope.JabatanCtrl = this;
 
     this.objectStore = 'jabatan';
     this.jabatan = [];
 
-    $indexedDB.getJabatan()
-        .then(
-            function(result) {
-                that.jabatan = result;
-
-                // untuk validasi keakuratan objek yang digabungkan
-                // for (var i = 0; i < result.length; i++) {
-                //     var res = result[i];
-                //     for (var j = 0; j < res.karyawan.length; j++) {
-                //         console.log(res.idJabatan === res.karyawan[j].idJabatan);
-                //     }
-                // };
-
-            }
-    );
+    jabatanFactory.get().then(function(result) {
+        that.jabatan = result;
+    });
 
     this.render = {
         jabatanDipakai: function(object) {
@@ -40,8 +28,11 @@ angular.module('jayaMekarApp')
 
     this.suntingData = function(obj, size) {
         obj.aksi = 'Sunting';
-        modalFactory.jabatan(obj, size).then(function(result) {
-            $log.info(result);
+        modalFactory.jabatan(obj, size).then(function(kirimData) {
+            $log.info(kirimData);
+            $indexedDB.save(['jabatan'], kirimData).then(function(sukses) {
+                $log.info(sukses);
+            });
         });
 
     };

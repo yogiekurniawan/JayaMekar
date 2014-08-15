@@ -5,25 +5,15 @@ angular.module('jayaMekarApp')
 .provider('$indexedDB', function() {
 
     var idb = {
-        setUp: false,
         namaIdb: 'JayaMekar',
         versiIdb: 1
     };
-    var db;
 
     function GETTER($q, $log) {
 
-        this.getConfig = function() {
-            return idb;
-        };
-
         this.init = function() {
             var defer = $q.defer();
-
-            if (idb.setUp) {
-                defer.resolve(true);
-                return defer.promise;
-            }
+            var db;
 
             var openRequest = window.indexedDB.open(idb.namaIdb, idb.versiIdb);
 
@@ -101,11 +91,9 @@ angular.module('jayaMekarApp')
                 db = event.target.result;
 
                 db.onerror = function(event) {
-                    defer.reject("sala", event.target.errorCode);
+                    defer.reject(event.target.errorCode);
                 };
-                idb.setUp = true;
-                defer.resolve(true);
-                $log.info('Database siap digunakan ' + new Date());
+                defer.resolve(db);
             };
 
             return defer.promise;
@@ -115,7 +103,7 @@ angular.module('jayaMekarApp')
             var result = [];
             var defer = $q.defer();
 
-            this.init().then(function() {
+            this.init().then(function(db) {
                 var handleResult = function(event) {
                     var cursor = event.target.result;
                     if (cursor) {
@@ -143,18 +131,20 @@ angular.module('jayaMekarApp')
         this.get = function(objStore, key) {
             var defer = $q.defer();
 
-            var transaction = db.transaction([objStore]);
-            var objectStore = transaction.objectStore(objStore);
-            var request = objectStore.get(key);
+            this.init().then(function(db) {
+                var transaction = db.transaction([objStore]);
+                var objectStore = transaction.objectStore(objStore);
+                var request = objectStore.get(key);
 
-            request.onerror = function(event) {
-                $log.error(event.target.errorCode);
-            };
+                request.onerror = function(event) {
+                    $log.error(event.target.errorCode);
+                };
 
-            request.onsuccess = function() {
-                var data = request.result;
-                defer.resolve(data);
-            };
+                request.onsuccess = function() {
+                    var data = request.result;
+                    defer.resolve(data);
+                };
+            });
 
             return defer.promise;
         }; // E:this.get()
@@ -163,131 +153,74 @@ angular.module('jayaMekarApp')
             var result = [];
             var defer = $q.defer();
 
-            var transaction = db.transaction(objStore, 'readonly');
-            var objectStore = transaction.objectStore(objStore);
-            var index = objectStore.index(nameIndex);
+            this.init().then(function(db) {
+                var transaction = db.transaction(objStore, 'readonly');
+                var objectStore = transaction.objectStore(objStore);
+                var index = objectStore.index(nameIndex);
 
-            var request = index.openCursor(key);
+                var request = index.openCursor(key);
 
-            request.onerror = function(event) {
-                $log.error(event.target.errorCode);
-            };
+                request.onerror = function(event) {
+                    $log.error(event.target.errorCode);
+                };
 
-            request.onsuccess = function() {
-                var cursor = request.result;
-                if (cursor) {
-                    result.push(cursor.value);
-                    cursor.continue();
-                }
-                defer.resolve(result);
-            };
+                request.onsuccess = function() {
+                    var cursor = request.result;
+                    if (cursor) {
+                        result.push(cursor.value);
+                        cursor.continue();
+                    }
+                    defer.resolve(result);
+                };
+            });
 
             return defer.promise;
         }; // E:this.getIndex()
 
         this.save = function(arrObjectStore, obj) {
             var defer = $q.defer();
-            var transaction = db.transaction(arrObjectStore, 'readwrite');
 
-            angular.forEach(arrObjectStore, function(value) {
-                transaction.objectStore(value).put(obj);
+            this.init().then(function(db) {
+
+                var transaction = db.transaction(arrObjectStore, 'readwrite');
+
+                var skemaJabatan = {
+                    'idJabatan': obj.idJabatan,
+                    'jabatan': obj.jabatan,
+                    'waktu': {
+                        'dibuat': obj.waktu.dibuat,
+                        'dirubah': new Date().getTime()
+                    },
+                    'statusJabatan': obj.statusJabatan,
+                    'jenis': obj.jenis,
+                    'versi': obj.versi + 1
+                };
+
+                var skemaObj = skemaJabatan;
+
+                angular.forEach(arrObjectStore, function(value) {
+                    transaction.objectStore(value).put(skemaObj);
+                });
+
+                transaction.onerror = function(event) {
+                    $log.error(event.target.errorCode);
+                };
+                transaction.oncomplete = function() {
+                    defer.resolve('Data dengan ' + skemaObj.idJabatan + ' berhasil disimpan.');
+                };
             });
-
-            transaction.onerror = function(event) {
-                $log.error(event.target.errorCode);
-            };
-            transaction.oncomplete = function() {
-                defer.resolve();
-            };
 
             return defer.promise;
         }; // E:this.save()
 
-        this.getJabatan = function() {
-            var result = [];
-            var arrayObjStore = ['jabatan', 'karyawan', 'rumusgaji'];
-            var defer = $q.defer();
-
-            this.init().then(function() {
-
-                var transaction = db.transaction(arrayObjStore, 'readonly');
-                var transactionJabatan = transaction.objectStore('jabatan').openCursor();
-
-                transactionJabatan.onsuccess = function(event) {
-                    var cursorJabatan = event.target.result;
-
-                    if (cursorJabatan) {
-
-                        var data = {
-                            idJabatan: cursorJabatan.value.idJabatan,
-                            jabatan: cursorJabatan.value.jabatan,
-                            waktu: cursorJabatan.value.waktu,
-                            statusJabatan: cursorJabatan.value.statusJabatan,
-                            jenis: cursorJabatan.value.jenis,
-                            versi: cursorJabatan.value.versi,
-                            url: '#/jabatan',
-                            karyawan: [],
-                            rumusGaji: []
-                        };
-
-                        var transactionKaryawan = transaction.objectStore('karyawan')
-                            .index('idJabatan')
-                            .openCursor(cursorJabatan.value.idJabatan);
-
-                        transactionKaryawan.onerror = function(e) {
-                            $log.error(event.target.errorCode);
-                        };
-                        transactionKaryawan.onsuccess = function() {
-                            var cursorKaryawan = transactionKaryawan.result;
-                            if (cursorKaryawan) {
-                                if (cursorKaryawan.value.idJabatan === cursorJabatan.value.idJabatan) {
-                                    data.karyawan.push(cursorKaryawan.value);
-                                    cursorKaryawan.continue();
-                                } else {
-                                    $log.warn('warning: id jabatan tidak sama');
-                                }
-                            } else {
-                                //cursorJabatan.continue();
-                                var transactionRumusgaji = transaction.objectStore('rumusgaji')
-                                    .index('idJabatan')
-                                    .openCursor(cursorJabatan.value.idJabatan);
-
-                                transactionRumusgaji.onerror = function(event) {
-                                    $log.info('error', event);
-                                };
-                                transactionRumusgaji.onsuccess = function(event) {
-                                    var cursorRumusGaji = event.target.result;
-                                    if (cursorRumusGaji) {
-                                        if (cursorRumusGaji.value.idJabatan === cursorJabatan.value.idJabatan) {
-                                            data.rumusGaji.push(cursorRumusGaji.value);
-                                            cursorRumusGaji.continue();
-                                        } else {
-                                            $log.warn('warning: id jabatan tidak sama');
-                                        }
-                                    } else {
-                                        cursorJabatan.continue();
-                                    }
-                                };
-                            }
-                        };
-                        result.push(data);
-                    }
-                };
-
-                transaction.oncomplete = function() {
-                    defer.resolve(result);
-                };
-            });
-
-            return defer.promise;
-        }; // E:this.getJabatan()
+        // getjabatan dipindahkan
 
         this.getKaryawan = function() {
             var result = [];
             var arrayObjStore = ['jabatan', 'karyawan'];
             var defer = $q.defer();
 
-            this.init().then(function() {
+            this.init().then(function(db) {
 
                 var transaction = db.transaction(arrayObjStore, 'readonly');
                 var transactionJabatan = transaction.objectStore('jabatan').openCursor();
@@ -351,7 +284,7 @@ angular.module('jayaMekarApp')
             var arrayObjStore = ['jabatan', 'rumusgaji'];
             var defer = $q.defer();
 
-            this.init().then(function() {
+            this.init().then(function(db) {
 
                 var transaction = db.transaction(arrayObjStore, 'readonly');
                 var transactionJabatan = transaction.objectStore('jabatan').openCursor();
