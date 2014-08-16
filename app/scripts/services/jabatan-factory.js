@@ -1,13 +1,35 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .factory('jabatanFactory', function($q, $log, $indexedDB) {
+    .factory('jabatanFactory', function($q, $log, $indexedDB, $id) {
+
+        var updateSchema = function(obj) {
+            var defer = $q.defer();
+            var date = new Date().getTime();
+            var idJabatan = obj.idJabatan ? obj.idJabatan : $id;
+            var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
+            var dirubah = obj.waktu.dirubah ? date : 0;
+            var versi = obj.versi ? obj.versi + 1 : 1;
+
+            var skemaJabatan = {
+                'idJabatan': idJabatan,
+                'jabatan': obj.jabatan,
+                'waktu': {
+                    'dibuat': dibuat,
+                    'dirubah': dirubah
+                },
+                'jenis': obj.jenis,
+                'versi': versi
+            };
+
+            defer.resolve(skemaJabatan);
+            return defer.promise;
+        };
 
         var get = function() {
             var result = [];
             var arrayObjStore = ['jabatan', 'karyawan', 'rumusgaji'];
             var defer = $q.defer();
-            // $log.info('getJabatan', db);
 
             $indexedDB.init().then(function(db) {
                 var transaction = db.transaction(arrayObjStore, 'readonly');
@@ -22,7 +44,6 @@ angular.module('jayaMekarApp')
                             idJabatan: cursorJabatan.value.idJabatan,
                             jabatan: cursorJabatan.value.jabatan,
                             waktu: cursorJabatan.value.waktu,
-                            statusJabatan: cursorJabatan.value.statusJabatan,
                             jenis: cursorJabatan.value.jenis,
                             versi: cursorJabatan.value.versi,
                             karyawan: [],
@@ -81,8 +102,36 @@ angular.module('jayaMekarApp')
             return defer.promise;
         }; // E:get()
 
+        var add = function(obj) {
+            var arrayObjStore = ['jabatan'];
+            updateSchema(obj).then(function(newObj) {
+                $indexedDB.add(arrayObjStore, newObj).then(function(success) {
+                    $log.info(success);
+                });
+            });
+        }; // E:add()
+
+        var save = function(obj) {
+            var arrayObjStore = ['jabatan'];
+            updateSchema(obj).then(function(newObj) {
+                $indexedDB.save(arrayObjStore, newObj).then(function(success) {
+                    $log.info(success);
+                });
+            });
+        }; // E:save()
+
+        var del = function(obj) {
+            var objStore = 'jabatan';
+            $indexedDB.delete(objStore, obj.idJabatan).then(function(result) {
+                $log.info('delete', result);
+            });
+        };
+
         // Public API here
         return {
-            get: get
+            get: get,
+            add: add,
+            save: save,
+            del: del
         };
     });

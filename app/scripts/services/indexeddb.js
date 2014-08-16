@@ -5,7 +5,7 @@ angular.module('jayaMekarApp')
 .provider('$indexedDB', function() {
 
     var idb = {
-        namaIdb: 'JayaMekar',
+        namaIdb: 'IndexedDB',
         versiIdb: 1
     };
 
@@ -99,7 +99,7 @@ angular.module('jayaMekarApp')
             return defer.promise;
         }; // E:this.init()
 
-        this.getAll = function(arrObjectStore) {
+        this.getAll = function(arrayObjStore) {
             var result = [];
             var defer = $q.defer();
 
@@ -112,9 +112,9 @@ angular.module('jayaMekarApp')
                     }
                 };
 
-                var transaction = db.transaction(arrObjectStore, 'readonly');
+                var transaction = db.transaction(arrayObjStore, 'readonly');
 
-                angular.forEach(arrObjectStore, function(value) {
+                angular.forEach(arrayObjStore, function(value) {
                     transaction.objectStore(value)
                         .openCursor()
                         .onsuccess = handleResult;
@@ -177,172 +177,69 @@ angular.module('jayaMekarApp')
             return defer.promise;
         }; // E:this.getIndex()
 
-        this.save = function(arrObjectStore, obj) {
+        this.add = function(arrayObjStore, obj) {
             var defer = $q.defer();
 
             this.init().then(function(db) {
 
-                var transaction = db.transaction(arrObjectStore, 'readwrite');
+                var transaction = db.transaction(arrayObjStore, 'readwrite');
 
-                var skemaJabatan = {
-                    'idJabatan': obj.idJabatan,
-                    'jabatan': obj.jabatan,
-                    'waktu': {
-                        'dibuat': obj.waktu.dibuat,
-                        'dirubah': new Date().getTime()
-                    },
-                    'statusJabatan': obj.statusJabatan,
-                    'jenis': obj.jenis,
-                    'versi': obj.versi + 1
-                };
-
-                var skemaObj = skemaJabatan;
-
-                angular.forEach(arrObjectStore, function(value) {
-                    transaction.objectStore(value).put(skemaObj);
+                angular.forEach(arrayObjStore, function(value) {
+                    transaction.objectStore(value).add(obj);
                 });
 
                 transaction.onerror = function(event) {
                     $log.error(event.target.errorCode);
                 };
                 transaction.oncomplete = function() {
-                    defer.resolve('Data dengan ' + skemaObj.idJabatan + ' berhasil disimpan.');
+                    defer.resolve('Data dengan ' + obj.idJabatan + ' berhasil disimpan.');
+                };
+            });
+
+            return defer.promise;
+        }; // E:this.add()
+
+        this.save = function(arrayObjStore, obj) {
+            var defer = $q.defer();
+
+            this.init().then(function(db) {
+
+                var transaction = db.transaction(arrayObjStore, 'readwrite');
+
+                angular.forEach(arrayObjStore, function(value) {
+                    transaction.objectStore(value).put(obj);
+                });
+
+                transaction.onerror = function(event) {
+                    $log.error(event.target.errorCode);
+                };
+                transaction.oncomplete = function() {
+                    defer.resolve('Data dengan ' + obj.idJabatan + ' berhasil disimpan.');
                 };
             });
 
             return defer.promise;
         }; // E:this.save()
 
-        // getjabatan dipindahkan
-
-        this.getKaryawan = function() {
-            var result = [];
-            var arrayObjStore = ['jabatan', 'karyawan'];
+        this.delete = function(objStore, key) {
             var defer = $q.defer();
 
             this.init().then(function(db) {
+                var transaction = db.transaction([objStore], 'readwrite');
+                var objectStore = transaction.objectStore(objStore);
+                var request = objectStore.delete(key);
 
-                var transaction = db.transaction(arrayObjStore, 'readonly');
-                var transactionJabatan = transaction.objectStore('jabatan').openCursor();
-
-                transactionJabatan.onsuccess = function(event) {
-                    var cursorJabatan = event.target.result;
-
-                    if (cursorJabatan) {
-
-                        var transactionKaryawan = transaction.objectStore('karyawan')
-                            .index('idJabatan').openCursor(cursorJabatan.value.idJabatan);
-
-                        transactionKaryawan.onerror = function(event) {
-                            $log.error(event.target.errorCode);
-                        };
-
-                        transactionKaryawan.onsuccess = function(event) {
-                            var cursorKaryawan = event.target.result;
-                            if (cursorKaryawan) {
-                                if (cursorKaryawan.value.idJabatan === cursorJabatan.value.idJabatan) {
-
-                                    var data = {
-                                        nip: cursorKaryawan.value.nip,
-                                        namaDepan: cursorKaryawan.value.namaDepan,
-                                        namaBelakang: cursorKaryawan.value.namaBelakang,
-                                        idJabatan: cursorKaryawan.value.idJabatan,
-                                        jabatan: cursorJabatan.value.jabatan,
-                                        detailJabatan: cursorJabatan.value,
-                                        kelompokKerja: cursorKaryawan.value.kelompokKerja,
-                                        waktu: cursorKaryawan.value.waktu,
-                                        statusKaryawan: cursorKaryawan.value.statusKaryawan,
-                                        versi: cursorKaryawan.value.versi
-                                    };
-
-                                    result.push(data);
-                                } else {
-                                    $log.warn('warning: id jabatan tidak sama');
-                                }
-
-                                cursorKaryawan.continue();
-
-                            } else {
-                                cursorJabatan.continue();
-                            }
-                        };
-
-                    }
+                request.onerror = function(event) {
+                    $log.error(event.target.errorCode);
                 };
 
-                transaction.oncomplete = function() {
-                    defer.resolve(result);
+                request.onsuccess = function() {
+                    defer.resolve(key);
                 };
-
             });
 
             return defer.promise;
-        };
-
-        this.getRumusGaji = function() {
-            var result = [];
-            var arrayObjStore = ['jabatan', 'rumusgaji'];
-            var defer = $q.defer();
-
-            this.init().then(function(db) {
-
-                var transaction = db.transaction(arrayObjStore, 'readonly');
-                var transactionJabatan = transaction.objectStore('jabatan').openCursor();
-
-                transactionJabatan.onsuccess = function(event) {
-                    var cursorJabatan = event.target.result;
-
-                    if (cursorJabatan) {
-
-                        var transactionRumusgaji = transaction.objectStore('rumusgaji')
-                            .index('idJabatan').openCursor(cursorJabatan.value.idJabatan);
-
-                        transactionRumusgaji.onerror = function(event) {
-                            $log.error(event.target.errorCode);
-                        };
-
-                        transactionRumusgaji.onsuccess = function() {
-                            var cursorRumusGaji = transactionRumusgaji.result;
-                            if (cursorRumusGaji) {
-                                if (cursorRumusGaji.value.idJabatan === cursorJabatan.value.idJabatan) {
-
-                                    var data = {
-                                        idRumusGaji: cursorRumusGaji.value.idRumusGaji,
-                                        idJabatan: cursorRumusGaji.value.idJabatan,
-                                        jabatan: cursorJabatan.value.jabatan,
-                                        detailJabatan: cursorJabatan.value,
-                                        jenis: cursorRumusGaji.value.jenis,
-                                        shift: cursorRumusGaji.value.shift,
-                                        harga: cursorRumusGaji.value.harga,
-                                        uangHadir: cursorRumusGaji.value.uangHadir,
-                                        waktu: {
-                                            dibuat: cursorRumusGaji.value.dibuat,
-                                            dirubah: cursorRumusGaji.value.dirubah
-                                        },
-                                        statusRumusGaji: cursorRumusGaji.value.statusRumusGaji,
-                                        versi: cursorRumusGaji.value.versi
-                                    };
-
-                                    result.push(data);
-                                } else {
-                                    $log.warn('warning: id jabatan tidak sama');
-                                }
-                                cursorRumusGaji.continue();
-                            } else {
-                                cursorJabatan.continue();
-                            }
-                        };
-                    }
-                };
-
-                transaction.oncomplete = function() {
-                    defer.resolve(result);
-                };
-
-            });
-
-            return defer.promise;
-        }; // E:this.getRumusGaji()
+        }; // E:this.get()
 
     } // getter()
 

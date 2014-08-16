@@ -3,17 +3,16 @@
 angular.module('jayaMekarApp')
 
 .controller('KaryawanCtrl',
-    function($scope, $indexedDB) {
+    function($scope, karyawanFactory) {
 
         var that = $scope.KaryawanCtrl = this;
 
-        this.objectStore = 'karyawan';
         this.karyawan = [];
         this.maxSize = 7;
         this.numberPage = 1;
         this.limit = 10;
 
-        $indexedDB.getKaryawan().then(function(result) {
+        karyawanFactory.get().then(function(result) {
             that.karyawan = result;
         });
 

@@ -3,17 +3,17 @@
 angular.module('jayaMekarApp')
 
 .controller('AboutAppCtrl',
-    function($scope, $indexedDB, $timeout, $id, layananData) {
+    function($scope, $timeout, $id, layananData, jabatanFactory) {
 
         var that = $scope.AboutAppCtrl = this;
 
-        this.arrayJabatan = [];
+        // this.arrayJabatan = [];
         this.arrayKaryawan = [];
         this.arrayRumusGaji = [];
 
-        layananData.getJabatan().then(function(data) {
-            that.arrayJabatan = data;
-        });
+        // layananData.getJabatan().then(function(data) {
+        //     that.arrayJabatan = data;
+        // });
 
         layananData.getKaryawan().then(function(data) {
             that.arrayKaryawan = data;
@@ -29,9 +29,9 @@ angular.module('jayaMekarApp')
             that.addContohDataRumusGaji();
         };
         this.addContohDataJabatan = function() {
-            angular.forEach(that.arrayJabatan, function(v) {
-                $indexedDB.save(['jabatan'], v).then(function() {
-
+            layananData.getJabatan().then(function(result) {
+                angular.forEach(result, function(obj) {
+                    jabatanFactory.save(obj);
                 });
             });
         };
