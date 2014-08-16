@@ -3,15 +3,11 @@
 angular.module('jayaMekarApp')
 
 .controller('JabatanCtrl',
-    function($scope, modalFactory, jabatanFactory) {
+    function($scope, $log, modalFactory, jabatanFactory) {
 
         var that = $scope.JabatanCtrl = this;
 
         this.jabatan = [];
-
-        jabatanFactory.get().then(function(result) {
-            that.jabatan = result;
-        });
 
         this.render = {
             jabatanDipakai: function(object) {
@@ -22,14 +18,26 @@ angular.module('jayaMekarApp')
             }
         };
 
+        function get() {
+            jabatanFactory.get().then(function(result) {
+                that.jabatan = result;
+            });
+        }
+
         this.suntingData = function(obj, size) {
             modalFactory.jabatan(obj, size).then(function(sendObj) {
                 // parameter sendObj didapat dari modalFactory.jabatan
-                jabatanFactory.save(sendObj);
+                jabatanFactory.save(sendObj).then(function() {
+                    get();
+                });
             });
         };
 
         this.hapusData = function(obj) {
-            jabatanFactory.del(obj);
+            jabatanFactory.del(obj).then(function() {
+                get();
+            });
         };
+
+        get();
     });

@@ -1,7 +1,34 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .factory('rumusGajiFactory', function($q, $indexedDB, $log) {
+    .factory('rumusGajiFactory', function($q, $indexedDB, $id, $log) {
+
+        var updateSchema = function(obj) {
+            var defer = $q.defer();
+            var date = new Date().getTime();
+            var idRumusGaji = obj.idRumusGaji ? obj.idRumusGaji : $id();
+            var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
+            var dirubah = obj.waktu.dirubah ? date : 0;
+            var versi = obj.versi ? obj.versi + 1 : 1;
+
+            var newSchema = {
+                'idRumusGaji': idRumusGaji,
+                'idJabatan': obj.idJabatan,
+                'jenis': obj.jenis,
+                'shift': obj.shift,
+                'harga': obj.harga,
+                'uangHadir': obj.uangHadir,
+                'waktu': {
+                    'dibuat': dibuat,
+                    'dirubah': dirubah
+                },
+                'statusRumusGaji': obj.statusRumusGaji,
+                'versi': versi
+            };
+
+            defer.resolve(newSchema);
+            return defer.promise;
+        };
 
         var get = function() {
             var result = [];
@@ -67,8 +94,18 @@ angular.module('jayaMekarApp')
             return defer.promise;
         }; // E:this.getRumusGaji()
 
+        var add = function(obj) {
+            var arrayObjStore = ['rumusgaji'];
+            updateSchema(obj).then(function(newObj) {
+                $indexedDB.add(arrayObjStore, newObj).then(function(success) {
+                    $log.info(success);
+                });
+            });
+        }; // E:add()
+
         // Public API here
         return {
-            get: get
+            get: get,
+            add: add
         };
     });

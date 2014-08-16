@@ -1,9 +1,37 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-  .factory('karyawanFactory', function ($q, $indexedDB, $log) {
-    
-    var get = function() {
+    .factory('karyawanFactory', function($q, $indexedDB, $id, $log) {
+
+        var updateSchema = function(obj) {
+            var defer = $q.defer();
+            var date = new Date().getTime();
+            var nip = obj.nip ? obj.nip : $id;
+            var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
+            var dirubah = obj.waktu.dirubah ? date : 0;
+            var pertamaMasuk = obj.waktu ? obj.waktu.pertamaMasuk : date;
+            var versi = obj.versi ? obj.versi + 1 : 1;
+
+            var newSchema = {
+                'nip': nip,
+                'namaDepan': obj.namaDepan,
+                'namaBelakang': obj.namaBelakang,
+                'idJabatan': obj.idJabatan,
+                'kelompokKerja': obj.kelompokKerja,
+                'waktu': {
+                    'dibuat': dibuat,
+                    'dirubah': dirubah,
+                    'pertamaMasuk': pertamaMasuk
+                },
+                'statusKaryawan': obj.statusKaryawan,
+                'versi': versi
+            };
+
+            defer.resolve(newSchema);
+            return defer.promise;
+        };
+
+        var get = function() {
             var result = [];
             var arrayObjStore = ['jabatan', 'karyawan'];
             var defer = $q.defer();
@@ -66,8 +94,28 @@ angular.module('jayaMekarApp')
             return defer.promise;
         };
 
-    // Public API here
-    return {
-      get: get
-    };
-  });
+        var add = function(obj) {
+            var arrayObjStore = ['karyawan'];
+            updateSchema(obj).then(function(newObj) {
+                $indexedDB.add(arrayObjStore, newObj).then(function(success) {
+                    $log.info(success);
+                });
+            });
+        }; // E:add()
+
+        var save = function(obj) {
+            var arrayObjStore = ['karyawan'];
+            updateSchema(obj).then(function(newObj) {
+                $indexedDB.save(arrayObjStore, newObj).then(function(success) {
+                    $log.info(success);
+                });
+            });
+        }; // E:add()
+
+        // Public API here
+        return {
+            get: get,
+            add: add,
+            save: save
+        };
+    });

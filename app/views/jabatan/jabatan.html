@@ -4,14 +4,20 @@
     </div>
 </div>
 <div class="body">
-    
+
+    <div class="row newline">
+        <div class="col-sm-12">
+            <button class="btn btn-sm btn-primary pull-right" ng-click="JabatanCtrl.add()">
+                Tambah Jabatan
+            </button>
+        </div>
+    </div>
     <div class="row newline">
         <div class="col-sm-6" ng-repeat="i in JabatanCtrl.jabatan | filter:root.filter track by i.idJabatan">
 
             <div class="box" ng-class="{'box-primary': JabatanCtrl.render.jabatanDipakai(i) }">
                 <div class="box-header">
-                    <i  class="glyphicon icon-status" 
-                        ng-class="{'glyphicon-ban-circle': false === JabatanCtrl.render.jabatanDipakai(i), 'glyphicon-ok': JabatanCtrl.render.jabatanDipakai(i) }">
+                    <i class="glyphicon icon-status" ng-class="{'glyphicon-ban-circle': false === JabatanCtrl.render.jabatanDipakai(i), 'glyphicon-ok': JabatanCtrl.render.jabatanDipakai(i) }">
                     </i>
                     <h3 class="box-title">
                         {{i.jabatan}}
@@ -22,13 +28,21 @@
                                 <span class="glyphicon glyphicon-chevron-down"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href ng-click="JabatanCtrl.suntingData(i, 'sm')"><span class="margin-span glyphicon glyphicon-edit"></span>Sunting Data</a> </li>
-                                <li ng-if="JabatanCtrl.render.hapusData(i)" class="delete"><a href ng-click="JabatanCtrl.hapusData(i)"><span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a> </li> 
+                                <li>
+                                    <a href ng-click="JabatanCtrl.suntingData(i, 'sm')">
+                                        <span class="margin-span glyphicon glyphicon-edit"></span>Sunting Data</a>
+                                </li>
+                                <li ng-if="JabatanCtrl.render.hapusData(i)" class="delete">
+                                    <a href ng-click="JabatanCtrl.hapusData(i)">
+                                        <span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a>
+                                </li>
                             </ul>
                         </span>
                     </div>
                 </div>
-                <div class="box-body"><% Area Konten Jabatan %></div>
+                <div class="box-body">
+                    <% Area Konten Jabatan %>
+                </div>
                 <div class="box-footer">
                     <div class="box-time pull-right">
                         <span class="glyphicon glyphicon-calendar"></span>

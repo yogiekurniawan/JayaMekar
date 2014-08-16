@@ -128,7 +128,7 @@ angular.module('jayaMekarApp')
             return defer.promise;
         }; // E:this.getAll()
 
-        this.get = function(objStore, key) {
+        this.getById = function(objStore, key) {
             var defer = $q.defer();
 
             this.init().then(function(db) {
@@ -147,9 +147,9 @@ angular.module('jayaMekarApp')
             });
 
             return defer.promise;
-        }; // E:this.get()
+        }; // E:this.getById()
 
-        this.getIndex = function(objStore, nameIndex, key) {
+        this.getByIndex = function(objStore, nameIndex, key) {
             var result = [];
             var defer = $q.defer();
 
@@ -175,7 +175,7 @@ angular.module('jayaMekarApp')
             });
 
             return defer.promise;
-        }; // E:this.getIndex()
+        }; // E:this.getByIndex()
 
         this.add = function(arrayObjStore, obj) {
             var defer = $q.defer();
@@ -192,7 +192,7 @@ angular.module('jayaMekarApp')
                     $log.error(event.target.errorCode);
                 };
                 transaction.oncomplete = function() {
-                    defer.resolve('Data dengan ' + obj.idJabatan + ' berhasil disimpan.');
+                    defer.resolve('Data dengan ' + obj + ' berhasil ditambahkan.');
                 };
             });
 
@@ -214,7 +214,7 @@ angular.module('jayaMekarApp')
                     $log.error(event.target.errorCode);
                 };
                 transaction.oncomplete = function() {
-                    defer.resolve('Data dengan ' + obj.idJabatan + ' berhasil disimpan.');
+                    defer.resolve('Data dengan ' + obj.idJabatan + ' berhasil dirubah.');
                 };
             });
 
@@ -234,7 +234,7 @@ angular.module('jayaMekarApp')
                 };
 
                 request.onsuccess = function() {
-                    defer.resolve(key);
+                    defer.resolve('Data dengan ' + key + ' berhasil dihapus.');
                 };
             });
 

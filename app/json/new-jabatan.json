@@ -1,0 +1,26 @@
+[{
+    "idJabatan": "J001",
+    "jabatan": "Operator Penggajian",
+    "jenis": "Harian"
+}, {
+    "idJabatan": "J002",
+    "jabatan": "Teknisi Mesin",
+    "jenis": "Harian"
+}, {
+    "idJabatan": "J003",
+    "jabatan": "Operator Penghanian",
+    "jenis": "Harian"
+}, {
+    "idJabatan": "J004",
+    "jabatan": "Operator Malet",
+    "jenis": "Harian"
+}, {
+    "idJabatan": "J005",
+    "jabatan": "Operator Tenun",
+    "jenis": "Borongan"
+}, {
+    "idJabatan": "J006",
+    "jabatan": "Operator Penggulungan",
+    "statusJabatan": "Tidak Aktif",
+    "jenis": "Harian"
+}]

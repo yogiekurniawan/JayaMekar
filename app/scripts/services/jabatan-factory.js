@@ -5,13 +5,18 @@ angular.module('jayaMekarApp')
 
         var updateSchema = function(obj) {
             var defer = $q.defer();
+
+            if (angular.isUndefined(obj.waktu)) {
+                obj.waktu = {};
+            }
+
             var date = new Date().getTime();
-            var idJabatan = obj.idJabatan ? obj.idJabatan : $id;
+            var idJabatan = obj.idJabatan ? obj.idJabatan : $id();
             var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
-            var dirubah = obj.waktu.dirubah ? date : 0;
+            var dirubah = obj.waktu.dirubah === 0 ? date: 0;
             var versi = obj.versi ? obj.versi + 1 : 1;
 
-            var skemaJabatan = {
+            var newSchema = {
                 'idJabatan': idJabatan,
                 'jabatan': obj.jabatan,
                 'waktu': {
@@ -22,18 +27,22 @@ angular.module('jayaMekarApp')
                 'versi': versi
             };
 
-            defer.resolve(skemaJabatan);
+            defer.resolve(newSchema);
             return defer.promise;
         };
 
         var get = function() {
             var result = [];
-            var arrayObjStore = ['jabatan', 'karyawan', 'rumusgaji'];
+            var arrayObjStore = ['jabatan'];
             var defer = $q.defer();
 
             $indexedDB.init().then(function(db) {
                 var transaction = db.transaction(arrayObjStore, 'readonly');
                 var transactionJabatan = transaction.objectStore('jabatan').openCursor();
+
+                transactionJabatan.onerror = function(event){
+                    $log.error(event.target.errorCode);
+                };
 
                 transactionJabatan.onsuccess = function(event) {
                     var cursorJabatan = event.target.result;
@@ -50,47 +59,20 @@ angular.module('jayaMekarApp')
                             rumusGaji: []
                         };
 
-                        var transactionKaryawan = transaction.objectStore('karyawan')
-                            .index('idJabatan')
-                            .openCursor(cursorJabatan.value.idJabatan);
+                        // Mengambil data karyawan sesuai idJabatan
+                        $indexedDB.getByIndex('karyawan', 'idJabatan', cursorJabatan.value.idJabatan)
+                            .then(function(result) {
+                                data.karyawan = result;
+                            });
 
-                        transactionKaryawan.onerror = function(event) {
-                            $log.error(event.target.errorCode);
-                        };
-                        transactionKaryawan.onsuccess = function() {
-                            var cursorKaryawan = transactionKaryawan.result;
-                            if (cursorKaryawan) {
-                                if (cursorKaryawan.value.idJabatan === cursorJabatan.value.idJabatan) {
-                                    data.karyawan.push(cursorKaryawan.value);
-                                    cursorKaryawan.continue();
-                                } else {
-                                    $log.warn('warning: id jabatan tidak sama');
-                                }
-                            } else {
-                                //cursorJabatan.continue();
-                                var transactionRumusgaji = transaction.objectStore('rumusgaji')
-                                    .index('idJabatan')
-                                    .openCursor(cursorJabatan.value.idJabatan);
+                        // Mengambil data rumusgaji sesuai idJabatan
+                        $indexedDB.getByIndex('rumusgaji', 'idJabatan', cursorJabatan.value.idJabatan)
+                            .then(function(result) {
+                                data.rumusGaji = result;
+                            });
 
-                                transactionRumusgaji.onerror = function(event) {
-                                    $log.info('error', event);
-                                };
-                                transactionRumusgaji.onsuccess = function(event) {
-                                    var cursorRumusGaji = event.target.result;
-                                    if (cursorRumusGaji) {
-                                        if (cursorRumusGaji.value.idJabatan === cursorJabatan.value.idJabatan) {
-                                            data.rumusGaji.push(cursorRumusGaji.value);
-                                            cursorRumusGaji.continue();
-                                        } else {
-                                            $log.warn('warning: id jabatan tidak sama');
-                                        }
-                                    } else {
-                                        cursorJabatan.continue();
-                                    }
-                                };
-                            }
-                        };
                         result.push(data);
+                        cursorJabatan.continue();
                     }
                 };
 
@@ -113,18 +95,28 @@ angular.module('jayaMekarApp')
 
         var save = function(obj) {
             var arrayObjStore = ['jabatan'];
+            var defer = $q.defer();
+
             updateSchema(obj).then(function(newObj) {
                 $indexedDB.save(arrayObjStore, newObj).then(function(success) {
                     $log.info(success);
+                    defer.resolve();
                 });
             });
+
+            return defer.promise;
         }; // E:save()
 
         var del = function(obj) {
             var objStore = 'jabatan';
-            $indexedDB.delete(objStore, obj.idJabatan).then(function(result) {
-                $log.info('delete', result);
+            var defer = $q.defer();
+
+            $indexedDB.delete(objStore, obj.idJabatan).then(function(success) {
+                $log.info(success);
+                defer.resolve();
             });
+
+            return defer.promise;
         };
 
         // Public API here

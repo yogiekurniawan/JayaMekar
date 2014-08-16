@@ -8,7 +8,7 @@ angular.module('jayaMekarApp')
             var defer = $q.defer();
 
             var method = 'get';
-            var url = 'json/jabatan.json';
+            var url = 'json/new-jabatan.json';
 
             $http({
                 method: method,

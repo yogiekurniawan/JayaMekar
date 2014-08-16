@@ -73,7 +73,7 @@ angular.module('jayaMekarApp')
         };
 
         this.ok = function() {
-            $modalInstance.close("that.selected.item");
+            $modalInstance.close('that.selected.item');
         };
 
         this.cancel = function() {
@@ -84,13 +84,13 @@ angular.module('jayaMekarApp')
 
         var that = $scope.modalJabatanCtrl = this;
 
-        this.obj = obj;
+        this.obj = angular.copy(obj);
         this.historyObject = angular.copy(obj);
         $log.info('historyObject', this.historyObject);
         this.jenis = ['Harian', 'Borongan'];
 
         this.ok = function() {
-            $modalInstance.close(obj, that.historyObject);
+            $modalInstance.close(that.obj);
         };
 
         this.cancel = function() {

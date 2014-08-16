@@ -3,51 +3,36 @@
 angular.module('jayaMekarApp')
 
 .controller('AboutAppCtrl',
-    function($scope, $timeout, $id, layananData, jabatanFactory) {
+    function($scope, layananData, jabatanFactory, karyawanFactory, rumusGajiFactory) {
 
         var that = $scope.AboutAppCtrl = this;
-
-        // this.arrayJabatan = [];
-        this.arrayKaryawan = [];
-        this.arrayRumusGaji = [];
-
-        // layananData.getJabatan().then(function(data) {
-        //     that.arrayJabatan = data;
-        // });
-
-        layananData.getKaryawan().then(function(data) {
-            that.arrayKaryawan = data;
-        });
-
-        layananData.getRumusGaji().then(function(data) {
-            that.arrayRumusGaji = data;
-        });
 
         this.addSemuaContohData = function() {
             that.addContohDataJabatan();
             that.addContohDataKaryawan();
             that.addContohDataRumusGaji();
         };
+
         this.addContohDataJabatan = function() {
             layananData.getJabatan().then(function(result) {
                 angular.forEach(result, function(obj) {
-                    jabatanFactory.save(obj);
+                    jabatanFactory.add(obj);
                 });
             });
         };
+
         this.addContohDataKaryawan = function() {
-            angular.forEach(that.arrayKaryawan, function(v) {
-                v.nip = $id();
-                $indexedDB.save(['karyawan'], v).then(function() {
-
+            layananData.getKaryawan().then(function(result) {
+                angular.forEach(result, function(obj) {
+                    karyawanFactory.add(obj);
                 });
             });
         };
-        this.addContohDataRumusGaji = function() {
-            angular.forEach(that.arrayRumusGaji, function(v) {
-                v.idRumusGaji = $id();
-                $indexedDB.save(['rumusgaji'], v).then(function() {
 
+        this.addContohDataRumusGaji = function() {
+            layananData.getRumusGaji().then(function(result) {
+                angular.forEach(result, function(obj) {
+                    rumusGajiFactory.add(obj);
                 });
             });
         };
