@@ -28,9 +28,7 @@ angular.module('jayaMekarApp')
                         this.disabledStatusKaryawan = true;
                     }
 
-                    console.log(that.historyObject);
-
-                    this.add = function(idJabatan, kelompokKerja, pertamaKerja) {
+                    this.save = function(idJabatan, kelompokKerja, pertamaKerja) {
                         this.obj.idJabatan = idJabatan;
                         this.obj.kelompokKerja = kelompokKerja;
                         this.obj.waktu.pertamaKerja = pertamaKerja.getTime();

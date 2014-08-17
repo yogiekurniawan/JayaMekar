@@ -89,7 +89,7 @@
         <!-- <button class="btn btn-primary pull-left" ng-click="modalKaryawanCtrl.delete()">Hapus</button>
         <button class="btn btn-primary" ng-click="modalKaryawanCtrl.confrimDelete()">Konfirmasi Penghapusan</button> -->
 
-        <button class="btn btn-primary" ng-class="{'btn-danger disabled': formKaryawan.$invalid, 'btn-success': formKaryawan.$valid}" ng-click="modalKaryawanCtrl.add(modalKaryawanCtrl.objectJabatan.idJabatan, modalKaryawanCtrl.objectKelompokKerja.id, modalKaryawanCtrl.pertamaKerja)">Simpan</button>
+        <button class="btn btn-primary" ng-class="{'btn-danger disabled': formKaryawan.$invalid, 'btn-success': formKaryawan.$valid}" ng-click="modalKaryawanCtrl.save(modalKaryawanCtrl.objectJabatan.idJabatan, modalKaryawanCtrl.objectKelompokKerja, modalKaryawanCtrl.pertamaKerja)">Simpan</button>
 
         <!-- <button class="btn btn-primary" ng-click="modalKaryawanCtrl.update()">Simpan</button> -->
         <button class="btn btn-warning" ng-click="modalKaryawanCtrl.cancel()">Cancel</button>

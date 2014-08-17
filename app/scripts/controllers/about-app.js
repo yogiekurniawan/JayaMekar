@@ -24,6 +24,7 @@ angular.module('jayaMekarApp')
         this.addContohDataKaryawan = function() {
             layananData.getKaryawan().then(function(result) {
                 angular.forEach(result, function(obj) {
+                    // console.log(obj);
                     karyawanFactory.add(obj);
                 });
             });

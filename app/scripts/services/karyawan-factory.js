@@ -6,10 +6,10 @@ angular.module('jayaMekarApp')
         var updateSchema = function(obj) {
             var defer = $q.defer();
             var date = new Date().getTime();
-            var nip = obj.nip ? obj.nip : $id;
+            var nip = obj.nip ? obj.nip : 'Karyawan-'+$id();
             var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
-            var dirubah = obj.waktu.dirubah ? date : 0;
-            var pertamaMasuk = obj.waktu ? obj.waktu.pertamaMasuk : date;
+            var dirubah = date;
+            var pertamaKerja = obj.waktu ? obj.waktu.pertamaKerja : date;
             var versi = obj.versi ? obj.versi + 1 : 1;
 
             var newSchema = {
@@ -21,7 +21,7 @@ angular.module('jayaMekarApp')
                 'waktu': {
                     'dibuat': dibuat,
                     'dirubah': dirubah,
-                    'pertamaMasuk': pertamaMasuk
+                    'pertamaKerja': pertamaKerja
                 },
                 'statusKaryawan': obj.statusKaryawan,
                 'versi': versi
@@ -95,27 +95,31 @@ angular.module('jayaMekarApp')
         };
 
         var add = function(obj) {
+            var defer = $q.defer();
             var arrayObjStore = ['karyawan'];
             updateSchema(obj).then(function(newObj) {
                 $indexedDB.add(arrayObjStore, newObj).then(function(success) {
-                    $log.info(success);
+                    defer.resolve(success);
                 });
             });
+            return defer.promise;
         }; // E:add()
 
-        var save = function(obj) {
+        var update = function(obj) {
+            var defer = $q.defer();
             var arrayObjStore = ['karyawan'];
             updateSchema(obj).then(function(newObj) {
                 $indexedDB.save(arrayObjStore, newObj).then(function(success) {
-                    $log.info(success);
+                    defer.resolve(success);
                 });
             });
-        }; // E:add()
+            return defer.promise;
+        }; // E:update()
 
         // Public API here
         return {
             get: get,
             add: add,
-            save: save
+            update: update
         };
     });

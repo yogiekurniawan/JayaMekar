@@ -25,7 +25,6 @@ angular.module('jayaMekarApp')
             var arrayObjectStore = ['jabatan'];
             $indexedDB.getAll(arrayObjectStore).then(function(result) {
                 that.jabatan = result;
-                console.log(that.jabatan);
             });
         }
 
@@ -36,13 +35,21 @@ angular.module('jayaMekarApp')
             var jabatan = that.jabatan; 
             modalKaryawanFactory.open(jabatan).then(function(result) {
                 console.log(result);
+                karyawanFactory.add(result).then(function(success){
+                    console.log(success);
+                    getKaryawan();
+                });
             });
         };
 
         this.edit = function(obj) {
             var jabatan = that.jabatan; 
-            modalKaryawanFactory.open(jabatan,obj).then(function() {
-
+            modalKaryawanFactory.open(jabatan,obj).then(function(result) {
+                console.log(result);
+                karyawanFactory.update(result).then(function(success){
+                    console.log(success);
+                    getKaryawan();
+                });
             });
         };
 

@@ -6,10 +6,6 @@ angular.module('jayaMekarApp')
         var updateSchema = function(obj) {
             var defer = $q.defer();
 
-            // if (angular.isUndefined(obj.waktu)) {
-            //     obj.waktu = {};
-            // }
-
             obj.waktu = obj.waktu || {};
 
             var date = new Date().getTime();

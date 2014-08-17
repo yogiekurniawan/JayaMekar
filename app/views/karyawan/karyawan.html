@@ -3,20 +3,20 @@
         <h4><span class="glyphicon glyphicon-user"></span> Mengelola Karyawan</h4>
     </div>
 </div>
-<div class="body" ng-show="KaryawanCtrl.karyawan.length > 0">
+<div class="body" ng-show="KaryawanCtrl.jabatan.length > 0">
     <div class="row newline">
-        <div class="col-md-6">
+        <div class="col-md-6" ng-show="KaryawanCtrl.karyawan.length > 0">
             <div class="btn-group">
                 <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Kerja'">Kerja</label>
                 <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Semua Karyawan</label>
                 <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Keluar</label>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 pull-right">
             <button ng-click="KaryawanCtrl.add()" class="btn btn-sm btn-primary pull-right">Tambah Karyawan</button>
         </div>
     </div>
-    <div class="row newline">
+    <div class="row newline" ng-show="KaryawanCtrl.karyawan.length > 0">
         <div class="col-md-12">
             <table class="table table-bordered table-striped table-hover">
                 <thead>
@@ -37,7 +37,7 @@
                         <td class="text-center" title="{{i.detailJabatan}}">{{i.jabatan}}</td>
                         <td class="text-center" title="{{i.kelompokKerja | kelompokKerja}}">{{i.kelompokKerja}}</td>
                         <td class="text-center">
-                            <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='Pertama kerja : {{i.waktu.pertamaMasuk | date:"d MMMM yyyy"}}'></span>
+                            <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='Pertama kerja : {{i.waktu.pertamaKerja | date:"d MMMM yyyy"}}'></span>
                         </td>
                         <td class="text-center">{{i.statusKaryawan}}</td>
                         <td class="text-center col-aksi">

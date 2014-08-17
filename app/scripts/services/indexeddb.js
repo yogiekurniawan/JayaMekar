@@ -36,9 +36,6 @@ angular.module('jayaMekarApp')
                     objectStore.createIndex('jabatan', 'jabatan', {
                         unique: false
                     });
-                    objectStore.createIndex('statusJabatan', 'statusJabatan', {
-                        unique: false
-                    });
                 }
                 if (!db.objectStoreNames.contains('karyawan')) {
                     objectStore = db.createObjectStore('karyawan', {
