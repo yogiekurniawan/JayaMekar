@@ -3,7 +3,7 @@
 angular.module('jayaMekarApp')
     .factory('modalKaryawanFactory', function($q, $log, $modal) {
 
-        var open = function(size, obj) {
+        var open = function(jabatan, obj) {
             var defer = $q.defer();
 
             var modalJabatan = $modal.open({
@@ -12,11 +12,7 @@ angular.module('jayaMekarApp')
 
                     var that = $scope.modalKaryawanCtrl = this;
 
-                    if (angular.isUndefined(obj)) {
-                        obj = {};
-                    }
-
-                    this.obj = angular.copy(obj);
+                    this.obj = angular.copy(obj) || {};
                     this.disabledStatusKaryawan = false;
 
                     if (angular.isUndefined(this.obj.statusKaryawan)) {
@@ -29,7 +25,6 @@ angular.module('jayaMekarApp')
                     // this.obj.status = this.obj.status || 'Kerja';
 
                     this.historyObject = angular.copy(obj);
-                    $log.info('historyObject', this.historyObject);
 
                     this.ok = function() {
                         $modalInstance.close(that.obj);
@@ -63,7 +58,7 @@ angular.module('jayaMekarApp')
 
                     this.format = 'dd MMMM yyyy';
                 },
-                size: size,
+                // size: size,
                 backdrop: false,
                 resolve: {
                     obj: function() {

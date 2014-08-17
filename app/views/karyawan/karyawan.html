@@ -21,13 +21,13 @@
             <table class="table table-bordered table-striped table-hover">
                 <thead>
                     <tr>
-                        <th class="text-center">#</th>
+                        <th class="text-center col-number">#</th>
                         <th class="text-center">Nama</th>
                         <th class="text-center">Jabatan</th>
                         <th class="text-center">Kel</th>
                         <th class="text-center"><span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Pertama Kerja'></span></th>
                         <th class="text-center">Status</th>
-                        <th class="text-center">Aksi</th>
+                        <th class="text-center"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,7 +40,7 @@
                             <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='Pertama kerja : {{i.waktu.pertamaMasuk | date:"d MMMM yyyy"}}'></span>
                         </td>
                         <td class="text-center">{{i.statusKaryawan}}</td>
-                        <td class="text-center">
+                        <td class="text-center col-aksi">
                             <a href ng-click="KaryawanCtrl.edit(i)" tooltip-popup-delay='500' tooltip='Sunting data'><span class="glyphicon glyphicon-edit"></span></a>
                         </td>
                     </tr>
