@@ -1,6 +1,6 @@
 <div class="header">
     <div class="bs-page-header">
-        <h4>Mengelola Karyawan</h4>
+        <h4><span class="glyphicon glyphicon-user"></span> Mengelola Karyawan</h4>
     </div>
 </div>
 <div class="body" ng-show="KaryawanCtrl.karyawan.length > 0">
@@ -18,16 +18,15 @@
     </div>
     <div class="row newline">
         <div class="col-md-12">
-            <table class="table table-bordered">
+            <table class="table table-bordered table-striped table-hover">
                 <thead>
                     <tr>
                         <th class="text-center">#</th>
                         <th class="text-center">Nama</th>
                         <th class="text-center">Jabatan</th>
-                        <th class="text-center">Kelompok</th>
-                        <th class="text-center">Waktu</th>
+                        <th class="text-center">Kel</th>
+                        <th class="text-center"><span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Pertama Kerja'></span></th>
                         <th class="text-center">Status</th>
-                        <th class="text-center">Versi</th>
                         <th class="text-center">Aksi</th>
                     </tr>
                 </thead>
@@ -38,13 +37,11 @@
                         <td class="text-center" title="{{i.detailJabatan}}">{{i.jabatan}}</td>
                         <td class="text-center" title="{{i.kelompokKerja | kelompokKerja}}">{{i.kelompokKerja}}</td>
                         <td class="text-center">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                            <span class="glyphicon glyphicon-calendar"></span>
+                            <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='Pertama kerja : {{i.waktu.pertamaMasuk | date:"d MMMM yyyy"}}'></span>
                         </td>
                         <td class="text-center">{{i.statusKaryawan}}</td>
-                        <td class="text-center">{{i.versi}}</td>
                         <td class="text-center">
-                            <a href ng-click="KaryawanCtrl.edit(i)"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href ng-click="KaryawanCtrl.edit(i)" tooltip-popup-delay='500' tooltip='Sunting data'><span class="glyphicon glyphicon-edit"></span></a>
                         </td>
                     </tr>
                 </tbody>

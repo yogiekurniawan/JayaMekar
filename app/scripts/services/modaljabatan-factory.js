@@ -13,9 +13,16 @@ angular.module('jayaMekarApp')
                     var that = $scope.modalJabatanCtrl = this;
 
                     this.obj = angular.copy(obj);
-                    this.historyObject = angular.copy(obj);
+                    this.historyObject = angular.copy(this.obj);
                     $log.info('historyObject', this.historyObject);
                     this.jenis = ['Harian', 'Borongan'];
+
+                    this.renderEdit = function(){
+                      if (that.historyObject) {
+                        $log.info( that.obj === that.historyObject );
+                        return that.obj === that.historyObject;
+                      }
+                    };
 
                     this.ok = function() {
                         $modalInstance.close(that.obj);

@@ -16,8 +16,14 @@ angular.module('jayaMekarApp')
             that.karyawan = result;
         });
 
+        this.add = function(){
+            modalKaryawanFactory.open().then(function(){
+
+            });
+        };
+
         this.edit = function(obj) {
-            modalKaryawanFactory.open('lg').then(function(){
+            modalKaryawanFactory.open('', obj).then(function(){
 
             });
         };

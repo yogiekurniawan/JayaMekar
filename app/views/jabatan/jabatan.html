@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="row newline">
-        <div class="col-sm-6" ng-repeat="i in JabatanCtrl.jabatan | filter:root.filter track by i.idJabatan">
+        <div class="col-sm-6" ng-repeat="i in JabatanCtrl.jabatan | filter:root.filter track by i.idJabatan" ng-dblclick="JabatanCtrl.edit('sm', i)">
 
             <div class="box" ng-class="{'box-primary': JabatanCtrl.render.jabatanDipakai(i) }">
                 <div class="box-header">

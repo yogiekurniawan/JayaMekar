@@ -1,13 +1,60 @@
 <div class="modal-header">
-    <h3 class="modal-title">Karyawan</h3>
+    <h4 class="modal-title">
+        <span class="glyphicon glyphicon-user"></span> Karyawan
+        <small ng-if="modalKaryawanCtrl.obj.waktu"> · {{modalKaryawanCtrl.obj.waktu | waktu}} · <span tooltip-popup-delay="500" tooltip="versi">#{{modalKaryawanCtrl.obj.versi}}</span></small>
+    </h4>
 </div>
 <div class="modal-body">
 
+    <form class="form-horizontal" role="form">
+        <div class="form-group form-group-sm">
+            <label class="col-sm-3 control-label">Nama Lengkap</label>
+            <div class="col-sm-4">
+                <input ng-model="modalKaryawanCtrl.obj.namaDepan" class="form-control" type="text" placeholder="Nama Depan">
+                <small class="help-block">* Nama jabatan wajib di isi</small>
+            </div>
+            <div class="col-sm-4">
+                <input ng-model="modalKaryawanCtrl.obj.namaBelakang" class="form-control" type="text" placeholder="Nama Belakang">
+            </div>
+        </div>
+        <div class="form-group form-group-sm">
+            <label class="col-sm-3 control-label">Jabatan</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control disabled" ng-model="modalKaryawanCtrl.obj.jabatan">
+            </div>
+        </div>
+        <div class="form-group form-group-sm">
+            <label class="col-sm-3 control-label">Kelompok</label>
+            <div class="col-sm-3">
+                <input ng-model="modalKaryawanCtrl.obj.kelompokKerja" class="form-control" type="text" placeholder="Kelompok">
+            </div>
+        </div>
+        <div class="form-group form-group-sm">
+            <label class="col-sm-3 control-label">Pertama Kerja</label>
+            <div class="col-sm-4">
+
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" datepicker-popup="{{modalKaryawanCtrl.format}}" ng-model="modalKaryawanCtrl.dt" is-open="modalKaryawanCtrl.opened" min-date="modalKaryawanCtrl.minDate" max-date="'2015-06-22'" datepicker-options="modalKaryawanCtrl.dateOptions" ng-required="true" close-text="Tutup" ng-click="modalKaryawanCtrl.open($event)" />
+                    <span class="input-group-btn">
+                        <button type="button btn-sm" class="btn btn-default" ng-click="modalKaryawanCtrl.open($event)"><i class="glyphicon glyphicon-calendar"></i>
+                        </button>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="form-group form-group-sm">
+            <label class="col-sm-3 control-label">Status</label>
+            <div class="col-sm-4">
+                <input ng-model="modalKaryawanCtrl.obj.statusKaryawan" class="form-control" type="text" placeholder="Status" ng-disabled="modalKaryawanCtrl.disabledStatusKaryawan">
+            </div>
+        </div>
+    </form>
 
 </div>
 <div class="modal-footer">
-    <button class="btn btn-primary" ng-click="modalJabatanCtrl.ok()">Simpan</button>
-    <button class="btn btn-primary" ng-click="modalJabatanCtrl.ok()">Hapus</button>
-    <button class="btn btn-primary" ng-click="modalJabatanCtrl.ok()">Konfirmasi Penghapusan</button>
-    <button class="btn btn-warning" ng-click="modalJabatanCtrl.cancel()">Cancel</button>
+    <button class="btn btn-primary pull-left" ng-click="modalKaryawanCtrl.ok()">Hapus</button>
+    <button class="btn btn-primary" ng-click="modalKaryawanCtrl.ok()">Simpan</button>
+    <button class="btn btn-primary" ng-click="modalKaryawanCtrl.ok()">Konfirmasi Penghapusan</button>
+    <button class="btn btn-warning" ng-click="modalKaryawanCtrl.cancel()">Cancel</button>
 </div>
