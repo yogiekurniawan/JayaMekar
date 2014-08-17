@@ -31,34 +31,11 @@ angular.module('jayaMekarApp')
             return defer.promise;
         };
 
-        var jabatan = function(obj, size) {
-            var defer = $q.defer();
-            //$window.location.href = '#/jabatan';
-            var modalJabatan = $modal.open({
-                templateUrl: 'views/jabatan/modal-jabatan.html',
-                controller: 'modalJabatanCtrl',
-                size: size,
-                backdrop: false,
-                resolve: {
-                    obj: function() {
-                        return obj;
-                    }
-                }
-            });
-
-            modalJabatan.result.then(function(result) {
-                defer.resolve(result);
-            }, function() {
-                $log.info('Modal dismissed at: ' + new Date());
-            });
-
-            return defer.promise;
-        };
+        
 
         // Public API here
         return {
-            open: open,
-            jabatan: jabatan
+            open: open
         };
     })
     .controller('tesModalCtrl', function($scope, $modalInstance, items, itemss2) {
@@ -79,21 +56,5 @@ angular.module('jayaMekarApp')
         this.cancel = function() {
             $modalInstance.dismiss('cancel');
         };
-    })
-    .controller('modalJabatanCtrl', function($scope, $modalInstance, obj, $log) {
-
-        var that = $scope.modalJabatanCtrl = this;
-
-        this.obj = angular.copy(obj);
-        this.historyObject = angular.copy(obj);
-        $log.info('historyObject', this.historyObject);
-        this.jenis = ['Harian', 'Borongan'];
-
-        this.ok = function() {
-            $modalInstance.close(that.obj);
-        };
-
-        this.cancel = function() {
-            $modalInstance.dismiss('cancel');
-        };
     });
+    

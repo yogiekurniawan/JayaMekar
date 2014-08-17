@@ -192,7 +192,7 @@ angular.module('jayaMekarApp')
                     $log.error(event.target.errorCode);
                 };
                 transaction.oncomplete = function() {
-                    defer.resolve('Data dengan ' + obj + ' berhasil ditambahkan.');
+                    defer.resolve(obj);
                 };
             });
 

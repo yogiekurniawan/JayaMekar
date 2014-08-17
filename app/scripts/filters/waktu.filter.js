@@ -12,9 +12,9 @@ angular.module('jayaMekarApp')
                 jamDirubah = $filter('date')(input.dirubah, formatJam);
 
             if (input.dirubah > 0) {
-                waktuTerakhir = "diperbaharui · " + tgldirubah + " pukul " + jamDirubah;
+                waktuTerakhir = 'diperbaharui · ' + tgldirubah + ' pukul ' + jamDirubah;
             } else {
-                waktuTerakhir = tglDibuat + " pukul " + jamDibuat;
+                waktuTerakhir = tglDibuat + ' pukul ' + jamDibuat;
             }
 
             return waktuTerakhir;

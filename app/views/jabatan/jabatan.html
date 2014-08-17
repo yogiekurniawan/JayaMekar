@@ -7,7 +7,7 @@
 
     <div class="row newline">
         <div class="col-sm-12">
-            <button class="btn btn-sm btn-primary pull-right" ng-click="JabatanCtrl.add()">
+            <button class="btn btn-sm btn-primary pull-right" ng-click="JabatanCtrl.add('sm')">
                 Tambah Jabatan
             </button>
         </div>
@@ -29,11 +29,11 @@
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a href ng-click="JabatanCtrl.suntingData(i, 'sm')">
+                                    <a href ng-click="JabatanCtrl.edit('sm', i)">
                                         <span class="margin-span glyphicon glyphicon-edit"></span>Sunting Data</a>
                                 </li>
                                 <li ng-if="JabatanCtrl.render.hapusData(i)" class="delete">
-                                    <a href ng-click="JabatanCtrl.hapusData(i)">
+                                    <a href ng-click="JabatanCtrl.delete(i)">
                                         <span class="margin-span glyphicon glyphicon-trash"></span>Hapus Data</a>
                                 </li>
                             </ul>

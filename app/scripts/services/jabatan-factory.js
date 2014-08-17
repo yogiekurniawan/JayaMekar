@@ -86,11 +86,16 @@ angular.module('jayaMekarApp')
 
         var add = function(obj) {
             var arrayObjStore = ['jabatan'];
+            var defer = $q.defer();
+
             updateSchema(obj).then(function(newObj) {
                 $indexedDB.add(arrayObjStore, newObj).then(function(success) {
-                    $log.info(success);
+                    $log.info('data ', success ,' berhasil disimpan');
+                    defer.resolve();
                 });
             });
+
+            return defer.promise;
         }; // E:add()
 
         var save = function(obj) {

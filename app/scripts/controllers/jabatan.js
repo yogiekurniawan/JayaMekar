@@ -3,7 +3,7 @@
 angular.module('jayaMekarApp')
 
 .controller('JabatanCtrl',
-    function($scope, $log, modalFactory, jabatanFactory) {
+    function($scope, $log, modalJabatanFactory, jabatanFactory) {
 
         var that = $scope.JabatanCtrl = this;
 
@@ -24,16 +24,25 @@ angular.module('jayaMekarApp')
             });
         }
 
-        this.suntingData = function(obj, size) {
-            modalFactory.jabatan(obj, size).then(function(sendObj) {
-                // parameter sendObj didapat dari modalFactory.jabatan
+        this.add = function(size){
+            modalJabatanFactory.jabatan(size).then(function(sendObj) {
+                jabatanFactory.add(sendObj).then(function(){
+                    console.log('reload');
+                    get();
+                });
+            });
+        };
+
+        this.edit = function(size, obj) {
+            modalJabatanFactory.jabatan(size, obj).then(function(sendObj) {
+                // parameter sendObj didapat dari modalJabatanFactory.jabatan
                 jabatanFactory.save(sendObj).then(function() {
                     get();
                 });
             });
         };
 
-        this.hapusData = function(obj) {
+        this.delete = function(obj) {
             jabatanFactory.del(obj).then(function() {
                 get();
             });

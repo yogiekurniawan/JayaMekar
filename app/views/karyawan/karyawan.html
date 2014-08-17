@@ -6,13 +6,14 @@
 <div class="body" ng-show="KaryawanCtrl.karyawan.length > 0">
     <div class="row newline">
         <div class="col-md-6">
-
+            <div class="btn-group">
+                <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Kerja'">Kerja</label>
+                <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Semua Karyawan</label>
+                <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Keluar</label>
+            </div>
         </div>
         <div class="col-md-6">
-            <div class="btn-group pull-right">
-                <label class="btn btn-primary" ng-model="statusKerja" btn-radio="'Kerja'">Kerja</label>
-                <label class="btn btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Keluar</label>
-            </div>
+            <button ng-click="KaryawanCtrl.add()" class="btn btn-sm btn-primary pull-right">Tambah Karyawan</button>
         </div>
     </div>
     <div class="row newline">
@@ -36,12 +37,14 @@
                         <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
                         <td class="text-center" title="{{i.detailJabatan}}">{{i.jabatan}}</td>
                         <td class="text-center" title="{{i.kelompokKerja | kelompokKerja}}">{{i.kelompokKerja}}</td>
-                        <td class="text-center">{{i.waktu.dibuat | date}}</td>
+                        <td class="text-center">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </td>
                         <td class="text-center">{{i.statusKaryawan}}</td>
                         <td class="text-center">{{i.versi}}</td>
                         <td class="text-center">
-                            <button class="btn btn-sm btn-primary" ng-click="KaryawanCtrl.editKaryawan(i)">Edit</button>
-                            <button class="btn btn-sm btn-danger" ng-click="KaryawanCtrl.hapusKaryawan(i)">Delete</button>
+                            <a href ng-click="KaryawanCtrl.edit(i)"><span class="glyphicon glyphicon-edit"></span></a>
                         </td>
                     </tr>
                 </tbody>

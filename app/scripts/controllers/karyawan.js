@@ -3,7 +3,7 @@
 angular.module('jayaMekarApp')
 
 .controller('KaryawanCtrl',
-    function($scope, karyawanFactory) {
+    function($scope, karyawanFactory, modalKaryawanFactory) {
 
         var that = $scope.KaryawanCtrl = this;
 
@@ -16,8 +16,10 @@ angular.module('jayaMekarApp')
             that.karyawan = result;
         });
 
-        this.editKaryawan = function(obj) {
-            console.log('Melakukan perubahan data karyawan', obj);
+        this.edit = function(obj) {
+            modalKaryawanFactory.open('lg').then(function(){
+
+            });
         };
 
         this.hapusKaryawan = function(obj) {
