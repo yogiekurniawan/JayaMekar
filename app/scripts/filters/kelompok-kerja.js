@@ -8,7 +8,7 @@ angular.module('jayaMekarApp')
             	result = 'Non Shift';
             } else if ( input === 'UM' ){
             	result = 'Ujang Mara ';
-            } else {
+            } else if ( input === 'UJ'){
             	result = 'Uje';
             }
             return result;

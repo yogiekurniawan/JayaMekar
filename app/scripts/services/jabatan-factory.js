@@ -6,14 +6,16 @@ angular.module('jayaMekarApp')
         var updateSchema = function(obj) {
             var defer = $q.defer();
 
-            if (angular.isUndefined(obj.waktu)) {
-                obj.waktu = {};
-            }
+            // if (angular.isUndefined(obj.waktu)) {
+            //     obj.waktu = {};
+            // }
+
+            obj.waktu = obj.waktu || {};
 
             var date = new Date().getTime();
             var idJabatan = obj.idJabatan ? obj.idJabatan : $id();
             var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
-            var dirubah = obj.waktu.dirubah === 0 ? date: 0;
+            var dirubah = date;
             var versi = obj.versi ? obj.versi + 1 : 1;
 
             var newSchema = {

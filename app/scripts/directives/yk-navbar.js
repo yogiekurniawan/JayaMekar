@@ -66,6 +66,7 @@ angular.module('jayaMekarApp')
         restrict: 'E',
         scope: {
             brand: '=',
+            withSidebar: '=',
             toggleSidebar: '&'
         },
         replace: true,

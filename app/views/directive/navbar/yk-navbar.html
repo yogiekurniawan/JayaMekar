@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="" ng-click="toggleSidebar()" class="navbar-brand"><i ng-class="brand.icon"></i> {{brand.nama}}</a>
+      <a href="" ng-click="toggleSidebar()" class="navbar-brand"><i class="glyphicon margin-span" ng-class="{'glyphicon-hand-left': withSidebar, 'glyphicon-hand-right': !withSidebar}"></i> {{brand.nama}}</a>
     </div> <!-- / .navbar-header -->
     <div class="collapse navbar-collapse" ng-transclude>
 

@@ -33,19 +33,15 @@ angular.module('jayaMekarApp')
 
 
         this.add = function() {
-            var paramObject = {
-                jabatan: that.jabatan
-            };
-            modalKaryawanFactory.open(paramObject).then(function() {
-
+            var jabatan = that.jabatan; 
+            modalKaryawanFactory.open(jabatan).then(function(result) {
+                console.log(result);
             });
         };
 
         this.edit = function(obj) {
-            var paramObject = {
-                jabatan: that.jabatan
-            };
-            modalKaryawanFactory.open(obj).then(function() {
+            var jabatan = that.jabatan; 
+            modalKaryawanFactory.open(jabatan,obj).then(function() {
 
             });
         };

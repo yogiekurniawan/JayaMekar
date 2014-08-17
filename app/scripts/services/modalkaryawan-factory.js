@@ -8,25 +8,32 @@ angular.module('jayaMekarApp')
 
             var modalJabatan = $modal.open({
                 templateUrl: 'views/karyawan/modal-karyawan.html',
-                controller: function($scope, $modalInstance, obj, $log) {
+                controller: function($scope, $modalInstance, obj) {
 
                     var that = $scope.modalKaryawanCtrl = this;
 
+                    // jika parameter obj undifined maka obj kosong dibuat
                     this.obj = angular.copy(obj) || {};
+                    this.obj.waktu = this.obj.waktu || {};
+                    this.historyObject = angular.copy(obj);
+                    this.arrayJabatan = jabatan;
                     this.disabledStatusKaryawan = false;
+                    this.objectJabatan = that.obj.detailJabatan;
+                    this.objectKelompokKerja = that.obj.kelompokKerja;
+                    this.kelompokKerja = ['UM','UJ','NS'];
+                    this.statusKaryawan = ['Kerja', 'Keluar'];
 
                     if (angular.isUndefined(this.obj.statusKaryawan)) {
                         this.obj.statusKaryawan = 'Kerja';
                         this.disabledStatusKaryawan = true;
                     }
 
-                    $log.info(this.obj.statusKaryawan);
+                    console.log(that.historyObject);
 
-                    // this.obj.status = this.obj.status || 'Kerja';
-
-                    this.historyObject = angular.copy(obj);
-
-                    this.ok = function() {
+                    this.add = function(idJabatan, kelompokKerja, pertamaKerja) {
+                        this.obj.idJabatan = idJabatan;
+                        this.obj.kelompokKerja = kelompokKerja;
+                        this.obj.waktu.pertamaKerja = pertamaKerja.getTime();
                         $modalInstance.close(that.obj);
                     };
 
@@ -35,7 +42,7 @@ angular.module('jayaMekarApp')
                     };
 
                     this.today = function() {
-                        this.dt = new Date();
+                        this.pertamaKerja = new Date();
                     };
                     this.today();
 
