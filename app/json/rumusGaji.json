@@ -6,8 +6,8 @@
     "harga": 41234.123456789,
     "uangHadir": 40000,
     "waktu": {
-        "dibuat": "1407134327233",
-        "dirubah": "0"
+        "dibuat": 1407134327233,
+        "dirubah": 0
     },
     "statusRumusGaji": "aktif",
     "versi": 1
@@ -19,8 +19,8 @@
     "harga": 45000,
     "uangHadir": 40000,
     "waktu": {
-        "dibuat": "1407134327233",
-        "dirubah": "0"
+        "dibuat": 1407134327233,
+        "dirubah": 0
     },
     "statusRumusGaji": "aktif",
     "versi": 1
@@ -32,8 +32,8 @@
     "harga": 45000,
     "uangHadir": 40000,
     "waktu": {
-        "dibuat": "1407134327233",
-        "dirubah": "0"
+        "dibuat": 1407134327233,
+        "dirubah": 0
     },
     "statusRumusGaji": "aktif",
     "versi": 1
@@ -45,8 +45,8 @@
     "harga": 45000,
     "uangHadir": 40000,
     "waktu": {
-        "dibuat": "1407134327233",
-        "dirubah": "0"
+        "dibuat": 1407134327233,
+        "dirubah": 0
     },
     "statusRumusGaji": "aktif",
     "versi": 1
@@ -58,8 +58,8 @@
     "harga": 45000,
     "uangHadir": 40000,
     "waktu": {
-        "dibuat": "1407134327233",
-        "dirubah": "0"
+        "dibuat": 1407134327233,
+        "dirubah": 0
     },
     "statusRumusGaji": "aktif",
     "versi": 1
@@ -71,8 +71,8 @@
     "harga": 45000,
     "uangHadir": 40000,
     "waktu": {
-        "dibuat": "1407134327233",
-        "dirubah": "0"
+        "dibuat": 1407134327233,
+        "dirubah": 0
     },
     "statusRumusGaji": "aktif",
     "versi": 1
@@ -82,14 +82,14 @@
     "jenis": "Borongan",
     "shift": "Siang",
     "harga": 170,
+    "uangHadir": 8000,
+    "waktu": {
+        "dibuat": 1407134327233,
+        "dirubah": 0
+    },
     "hargaTarget": 185,
     "targetProduksi": 2000,
     "targetJmlProduksi": 4000,
-    "uangHadir": 8000,
-    "waktu": {
-        "dibuat": "1407134327233",
-        "dirubah": "0"
-    },
     "statusRumusGaji": "aktif",
     "versi": 1
 }, {
@@ -103,8 +103,8 @@
     "targetJmlProduksi": 4000,
     "uangHadir": 8000,
     "waktu": {
-        "dibuat": "1407134327233",
-        "dirubah": "0"
+        "dibuat": 1407134327233,
+        "dirubah": 0
     },
     "statusRumusGaji": "aktif",
     "versi": 1

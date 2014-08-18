@@ -24,6 +24,7 @@
                         <th class="text-center col-number">#</th>
                         <th class="text-center">Nama</th>
                         <th class="text-center">Jabatan</th>
+                        <th class="text-center">Karyawan</th>
                         <th class="text-center"><span tooltip-popup-delay='500' tooltip='Kelompok Kerja'>Kel</span></th>
                         <th class="text-center"><span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Pertama Kerja'></span></th>
                         <th class="text-center"><span tooltip-popup-delay='500' tooltip='Status Karyawan'>Status</span></th>
@@ -35,6 +36,7 @@
                         <td class="text-center" title="{{i.nip}}">{{(KaryawanCtrl.numberPage-1)*KaryawanCtrl.limit+$index+1}}</td>
                         <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
                         <td class="text-center" title="{{i.detailJabatan}}">{{i.jabatan}}</td>
+                        <td class="text-center">{{i.detailJabatan.jenis}}</td>
                         <td class="text-center" title="{{i.kelompokKerja | kelompokKerja}}">{{i.kelompokKerja}}</td>
                         <td class="text-center">
                             <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='Pertama kerja : {{i.waktu.pertamaKerja | date:"d MMMM yyyy"}}'></span>
