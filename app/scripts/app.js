@@ -4,8 +4,7 @@ angular.module('jayaMekarApp', [
     'ui.router',
     'ngAnimate',
     'ngMessages',
-    'ui.bootstrap',
-    'ui.select2'
+    'ui.bootstrap'
 ])
 
 .run(['$rootScope', '$state', '$stateParams',
@@ -29,13 +28,9 @@ angular.module('jayaMekarApp', [
     }
 ])
 
-.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
-    function($stateProvider, $urlRouterProvider, $locationProvider) {
+.config(['$stateProvider', '$urlRouterProvider',
+    function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/');
-
-        // tutorial : http://scotch.io/quick-tips/js/angular/pretty-urls-in-angularjs-removing-the-hashtag
-        // use the HTML5 History API => http://diveintohtml5.info/history.html
-        // $locationProvider.html5Mode(true);
 
         $stateProvider
             .state('dashboard', {
