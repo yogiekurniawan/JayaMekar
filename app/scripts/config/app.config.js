@@ -25,11 +25,11 @@ angular.module('jayaMekarApp')
                 dropdown: true,
                 submenu: [{
                     href: 'about-app',
-                    submenu: 'About App',
+                    submenu: 'Tentang Aplikasi',
                     ngClass: 'fa fa-laptop'
                 }, {
                     href: 'about-me',
-                    submenu: 'About Me',
+                    submenu: 'Tentang Saya',
                     ngClass: 'glyphicon glyphicon-user'
                 }]
             }];
