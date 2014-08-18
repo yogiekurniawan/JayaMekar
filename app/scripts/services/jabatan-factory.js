@@ -9,7 +9,7 @@ angular.module('jayaMekarApp')
             obj.waktu = obj.waktu || {};
 
             var date = new Date().getTime();
-            var idJabatan = obj.idJabatan ? obj.idJabatan : $id();
+            var idJabatan = obj.idJabatan ? obj.idJabatan : 'Jabatan-'+$id();
             var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
             var dirubah = date;
             var versi = obj.versi ? obj.versi + 1 : 1;

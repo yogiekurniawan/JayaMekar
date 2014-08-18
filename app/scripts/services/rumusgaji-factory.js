@@ -6,7 +6,7 @@ angular.module('jayaMekarApp')
         var updateSchema = function(obj) {
             var defer = $q.defer();
             var date = new Date().getTime();
-            var idRumusGaji = obj.idRumusGaji ? obj.idRumusGaji : $id();
+            var idRumusGaji = obj.idRumusGaji ? obj.idRumusGaji : 'RumusGaji-'+$id();
             var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
             var dirubah = obj.waktu.dirubah ? date : 0;
             var versi = obj.versi ? obj.versi + 1 : 1;
