@@ -1,0 +1,10 @@
+<ul class="nav nav-tabs pull-right">
+    <li class="pull-left header">
+        {{titleTabs}}
+    </li>
+    <li data-ng-repeat="i in content" ng-class="{active: i.selected}">
+        <a href="" data-ng-click="selected(i)">{{i.titleContent}}</a>
+    </li>
+</ul>
+<div class="tab-content" ng-transclude>
+</div>
