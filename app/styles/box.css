@@ -87,19 +87,19 @@
 
 }
 
-.box .box-header > .box-tools .dropdown {
+.box .box-header .box-tools .dropdown {
 
     padding: 5px 10px 5px 5px;
 
 }
 
-.box .box-header > .box-tools .dropdown {
+.box .box-header .box-tools .dropdown {
 
     display: none;
 
 }
 
-.box .box-header > .box-tools .dropdown.open, .box:hover .box-header > .box-tools .dropdown {
+.box .box-header .box-tools .dropdown.open, .box:hover .box-header .box-tools .dropdown {
 
     display: inline-block;
 
