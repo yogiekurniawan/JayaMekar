@@ -1,17 +1,8 @@
-<div class="header">
-    <div class="bs-page-header">
-        <h4>Mengelola Rumus Gaji</h4>
-    </div>
-</div>
-<div class="body">
-    <div class="row newline">
-
-        <div class="col-sm-6">
-
-            <ul ng-repeat="i in rumusgajiCtrl.rumusgaji track by i.idRumusGaji">
-            	<li>{{i}}</li>
-            </ul>
-
-        </div>
-    </div>
-</div>
+<ng-tabs title-tabs="Mengelola Rumus Gaji" pull-body>
+    <ng-tabs-content title-content="Harian">
+        <p>Content Tabs 1</p>
+    </ng-tabs-content>
+    <ng-tabs-content title-content="Borongan">
+        <p>Content Tabs 2</p>
+    </ng-tabs-content>
+</ng-tabs>
