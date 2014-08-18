@@ -35,7 +35,7 @@ angular.module('jayaMekarApp')
         this.edit = function(size, obj) {
             modalJabatanFactory.jabatan(size, obj).then(function(sendObj) {
                 // parameter sendObj didapat dari modalJabatanFactory.jabatan
-                jabatanFactory.save(sendObj).then(function() {
+                jabatanFactory.edit(sendObj).then(function() {
                     get();
                 });
             });
