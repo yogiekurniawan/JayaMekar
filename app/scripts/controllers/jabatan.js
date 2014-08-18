@@ -2,7 +2,7 @@
 
 angular.module('jayaMekarApp')
 
-.controller('JabatanCtrl',
+.controller('JabatanCtrl', ['$scope', '$log', 'modalJabatanFactory', 'jabatanFactory',
     function($scope, $log, modalJabatanFactory, jabatanFactory) {
 
         var that = $scope.JabatanCtrl = this;
@@ -27,7 +27,6 @@ angular.module('jayaMekarApp')
         this.add = function(size){
             modalJabatanFactory.jabatan(size).then(function(sendObj) {
                 jabatanFactory.add(sendObj).then(function(){
-                    console.log('reload');
                     get();
                 });
             });
@@ -49,4 +48,4 @@ angular.module('jayaMekarApp')
         };
 
         get();
-    });
+    }]);

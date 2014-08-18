@@ -45,6 +45,6 @@ angular.module('jayaMekarApp')
         templateUrl: 'views/directive/wrapper/yk-wrapper-content.html',
         replace: true,
         transclude: true,
-        scope: {},
+        scope: {}
     };
 });

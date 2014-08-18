@@ -6,13 +6,13 @@ angular.module('jayaMekarApp')
         var open = function(jabatan, obj) {
             var defer = $q.defer();
 
-            var modalJabatan = $modal.open({
+            var modalKaryawan = $modal.open({
                 templateUrl: 'views/karyawan/modal-karyawan.html',
                 controller: function($scope, $modalInstance, obj) {
 
                     var that = $scope.modalKaryawanCtrl = this;
 
-                    // jika parameter obj undifined maka obj kosong dibuat
+                    // jika parameter objek undifined maka objek kosong dibuat
                     this.obj = angular.copy(obj) || {};
                     this.obj.waktu = this.obj.waktu || {};
                     this.historyObject = angular.copy(obj);
@@ -23,6 +23,8 @@ angular.module('jayaMekarApp')
                     this.kelompokKerja = ['UM','UJ','NS'];
                     this.statusKaryawan = ['Kerja', 'Keluar'];
 
+                    // jika obj.statusKaryawan undefined yang berarti sedang
+                    // melakukn penambahan data.
                     if (angular.isUndefined(this.obj.statusKaryawan)) {
                         this.obj.statusKaryawan = 'Kerja';
                         this.disabledStatusKaryawan = true;
@@ -39,6 +41,8 @@ angular.module('jayaMekarApp')
                         $modalInstance.dismiss('cancel');
                     };
 
+
+                    // S: Config untuk date
                     this.today = function() {
                         this.pertamaKerja = new Date();
                     };
@@ -62,6 +66,7 @@ angular.module('jayaMekarApp')
                     };
 
                     this.format = 'dd MMMM yyyy';
+                    // E: Config untuk date
                 },
                 // size: size,
                 backdrop: false,
@@ -72,7 +77,7 @@ angular.module('jayaMekarApp')
                 }
             });
 
-            modalJabatan.result.then(function(result) {
+            modalKaryawan.result.then(function(result) {
                 defer.resolve(result);
             }, function() {
                 $log.info('Modal dismissed at: ' + new Date());

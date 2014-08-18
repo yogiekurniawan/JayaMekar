@@ -18,7 +18,6 @@ angular.module('jayaMekarApp')
                 that.karyawan = result;
             });
         }
-
         getKaryawan();
 
         function getJabatan() {
@@ -27,7 +26,6 @@ angular.module('jayaMekarApp')
                 that.jabatan = result;
             });
         }
-
         getJabatan();
 
 
@@ -55,6 +53,10 @@ angular.module('jayaMekarApp')
 
         this.hapusKaryawan = function(obj) {
             console.log('Mlakukan penghapusan data karyawan', obj);
+        };
+
+        this.totalPage = function(){
+            return Math.ceil(this.karyawan.length / this.limit);
         };
     }
 );

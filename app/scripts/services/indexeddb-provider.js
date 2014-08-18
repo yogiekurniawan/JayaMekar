@@ -5,8 +5,8 @@ angular.module('jayaMekarApp')
 .provider('$indexedDB', function() {
 
     var idb = {
-        namaIdb: 'IndexedDB',
-        versiIdb: 1
+        namaIdb: 'Jaya Mekar',
+        versiIdb: 7
     };
 
     function GETTER($q, $log) {

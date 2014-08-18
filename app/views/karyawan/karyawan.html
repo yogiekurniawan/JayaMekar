@@ -46,10 +46,10 @@
                     </tr>
                 </tbody>
             </table>
-            <li class="pagination" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | lengthArray) <= KaryawanCtrl.limit">
-                <p>halaman {{KaryawanCtrl.numberPage}} dari {{KaryawanCtrl.karyawan.length / 10}}</p>
+            <li class="pagination" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | length) <= KaryawanCtrl.limit">
+                <p>halaman {{KaryawanCtrl.numberPage}} dari {{KaryawanCtrl.totalPage()}}</p>
             </li>
-            <pagination total-items="KaryawanCtrl.karyawan | filter:root.filter | lengthArray" ng-model="KaryawanCtrl.numberPage" max-size="KaryawanCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | lengthArray) <= KaryawanCtrl.limit"></pagination>
+            <pagination total-items="KaryawanCtrl.karyawan | filter:root.filter | length" ng-model="KaryawanCtrl.numberPage" max-size="KaryawanCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | length) <= KaryawanCtrl.limit"></pagination>
 
         </div>
     </div>
