@@ -17,7 +17,7 @@
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="bower_components/angular/angular-csp.css" />
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="bower_components/select2/select2-bootstrap.css" />
+    <!-- <link rel="stylesheet" href="bower_components/select2/select2-bootstrap.css" /> -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/yk-sidebar.css">
     <link rel="stylesheet" href="styles/box.css" />
@@ -42,31 +42,13 @@
                 <a ui-sref="jabatan"><i class="fa fa-dashboard fa-fw"></i> Jabatan</a>
             </li>
             <li ui-sref-active="active">
-                <a ui-sref="karyawan" href="#"><i class="glyphicon glyphicon-user"></i> Karyawan</a>
+                <a ui-sref="karyawan"><i class="glyphicon glyphicon-user"></i> Karyawan</a>
             </li>
             <li ui-sref-active="active">
-                <a ui-sref="rumus-gaji"><i class="fa fa-bar-chart-o fa-fw"></i> Rumus Gaji<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a ui-sref="rumus-gaji.karyawan-harian"> Karyawan Harian</a>
-                    </li>
-                    <li class="last-child">
-                        <a ui-sref="rumus-gaji.karyawan-tenun"> Karyawan Tenun</a>
-                    </li>
-                </ul>
-                <!-- / .nav-second-level -->
+                <a ui-sref="rumus-gaji"><i class="fa fa-bar-chart-o fa-fw"></i> Rumus Gaji</a>
             </li>
             <li ui-sref-active="active">
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Penggajian<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a ui-sref="penggajian.karyawan-harian"> Karyawan Harian</a>
-                    </li>
-                    <li class="last-child">
-                        <a ui-sref="penggajian.karyawan-tenun"> Karyawan Tenun</a>
-                    </li>
-                </ul>
-                <!-- / .nav-second-level -->
+                <a ui-sref="penggajian"><i class="fa fa-bar-chart-o fa-fw"></i> Penggajian</a>
             </li>
         </yk-sidebar>
         <yk-wrapper-content>
@@ -80,14 +62,14 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <!-- <script src="bower_components/es5-shim/es5-shim.js"></script> -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- <script src="bower_components/jquery/dist/jquery.js"></script> -->
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script> -->
-    <script src="bower_components/metisMenu/jquery.metisMenu.js"></script>
+    <!-- <script src="bower_components/metisMenu/jquery.metisMenu.js"></script> -->
     <!-- <script src="bower_components/json3/lib/json3.min.js"></script> -->
     <!-- <script src="bower_components/select2/select2.js"></script> -->
     <!-- <script src="bower_components/angular-ui-select2/src/select2.js"></script> -->
@@ -97,10 +79,12 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="bower_components/node-uuid/uuid.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/config/app.config.js"></script>
     <script src="scripts/directives/yk-navbar.js"></script>
     <script src="scripts/directives/yk-sidebar.js"></script>
     <script src="scripts/directives/yk-wrapper.js"></script>
     <script src="scripts/directives/yk-window.js"></script>
+    <script src="scripts/controllers/root.js"></script>
     <script src="scripts/controllers/dashboard.js"></script>
     <script src="scripts/controllers/jabatan.js"></script>
     <script src="scripts/controllers/karyawan.js"></script>
@@ -110,23 +94,21 @@
     <script src="scripts/controllers/penggajian-karyawan-harian.js"></script>
     <script src="scripts/controllers/about-me.js"></script>
     <script src="scripts/controllers/about-app.js"></script>
-    <script src="scripts/controllers/root.js"></script>
     <script src="scripts/filters/waktu-filter.js"></script>
-    <script src="scripts/services/layanan-data-factory.js"></script>
-    <script src="scripts/services/indexeddb-provider.js"></script>
-    <script src="scripts/config/app.config.js"></script>
     <script src="scripts/filters/kelompok-kerja-filter.js"></script>
-    <script src="scripts/services/id-factory.js"></script>
-    <script src="scripts/services/jabatan-factory.js"></script>
-    <script src="scripts/services/karyawan-factory.js"></script>
-    <script src="scripts/services/rumusgaji-factory.js"></script>
-    <script src="scripts/services/modaljabatan-factory.js"></script>
-    <script src="scripts/services/modalkaryawan-factory.js"></script>
     <script src="scripts/filters/startarray-filter.js"></script>
     <script src="scripts/filters/length-filter.js"></script>
     <script src="scripts/filters/numberformat-filter.js"></script>
     <script src="scripts/filters/sumbykey-filter.js"></script>
     <script src="scripts/filters/bulan-filter.js"></script>
+    <script src="scripts/services/indexeddb-provider.js"></script>
+    <script src="scripts/services/layanan-data-factory.js"></script>
+    <script src="scripts/services/id-factory.js"></script>
+    <script src="scripts/services/karyawan-factory.js"></script>
+    <script src="scripts/services/rumusgaji-factory.js"></script>
+    <script src="scripts/services/modaljabatan-factory.js"></script>
+    <script src="scripts/services/modalkaryawan-factory.js"></script>
+    <script src="scripts/services/jabatan-factory.js"></script>
     <!-- endbuild -->
 </body>
 

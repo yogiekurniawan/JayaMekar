@@ -28,10 +28,10 @@ body
     margin-right: 0;
 }
 
-div.container-fluid.margin
+/*div.container-fluid.margin
 {
     margin: 10px 2% 0 2%;
-}
+}*/
 
 .margin-span
 {
@@ -43,10 +43,10 @@ div.container-fluid.margin
     margin-left: 7px;
 }
 
-div.margin-top-20
+/*div.margin-top-20
 {
     margin-top: 20px;
-}
+}*/
 
 /* reset bootstrap */
 th.col-number, th.col-aksi, td.col-aksi
@@ -70,16 +70,4 @@ th.col-aksi
 .table
 {
     margin-bottom: 0;
-}
-
-/* custom ui-select2 */
-.select2-container .select2-choice
-{
-    height: auto;
-    padding: 3px 0 3px 8px;
-}
-
-.width-200
-{
-    width: 200px;
 }

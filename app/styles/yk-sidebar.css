@@ -16,9 +16,9 @@
 .active > a > .fa.arrow:before {
     content: '\f107';
 }
-.nav-second-level li, .nav-third-level li {
+/*.nav-second-level li, .nav-third-level li {
     border-bottom: none !important;
-}
+}*/
 .nav-second-level li a {
     padding-left: 37px;
 }
@@ -33,7 +33,7 @@
     border-right: #e7e7e7 solid 1px;
     background: #f7f7f7;
 }
-.sidebar-default > ul.sidebar-menu > li.active > ul:before {
+/*.sidebar-default > ul.sidebar-menu > li.active > ul:before {
     border-color: #777;
 }
 .sidebar-default > ul.sidebar-menu > li > ul:before {
@@ -46,8 +46,8 @@
     content: '';
     border: 1px dotted;
     border-width: 0 0 0 1px;
-}
-.sidebar-default > ul.sidebar-menu > li.active > ul > li:before {
+}*/
+/*.sidebar-default > ul.sidebar-menu > li.active > ul > li:before {
     border-color: #777;
 }
 .sidebar-default > ul.sidebar-menu > li > ul > li:before {
@@ -60,19 +60,23 @@
     content: '';
     border: 1px dotted;
     border-width: 1px 0 0;
-}
+}*/
 .sidebar-default > ul > li.active {
     background: #f9f9f9;
 }
 .sidebar-default > ul > li.active > a {
     z-index: 2;
-    border-bottom: 1px solid #e7e7e7;
+    /*border-bottom: 1px solid #e7e7e7;*/
     background: #f9f9f9;
 }
-.sidebar-default > ul > li > a, .sidebar-default > ul > li > ul > li > a, .sidebar-default > ul > li > ul > li > ul > li > a {
+.sidebar-default > ul > li > a
+/*.sidebar-default > ul > li > ul > li > a, .sidebar-default > ul > li > ul > li > ul > li > a */
+{
     color: #777;
 }
-.sidebar-default > ul > li > a:hover, .sidebar-default > ul > li > ul > li > a:hover, .sidebar-default > ul > li > ul > li > ul > li > a:hover {
+.sidebar-default > ul > li > a:hover
+/*.sidebar-default > ul > li > ul > li > a:hover, .sidebar-default > ul > li > ul > li > ul > li > a:hover */
+{
     color: #333;
     background: #f9f9f9;
 }
@@ -80,9 +84,9 @@
     display: block;
     width: 5px;
 }
-.sidebar-default > ul > li > ul > li.active:before {
+/*.sidebar-default > ul > li > ul > li.active:before {*/
     /*bottom: 50%;*/
-}
+/*}*/
 .sidebar-default > ul > li > a:before {
     position: absolute;
     top: 0;

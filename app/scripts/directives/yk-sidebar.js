@@ -3,13 +3,8 @@
 angular.module('jayaMekarApp')
     .directive('ykSidebar', function() {
 
-        function ykSidebarLinkFn(scope, element, attrs) {
+        function ykSidebarLinkFn() {
 
-            // menjalankan mentis menu untuk sidebar
-            // membutuhkan src : jquery.js, bootstrap.js, mentisMenu.js
-            $(function() {
-                $('#side-menu').metisMenu();
-            });
         }
 
         return {
@@ -18,8 +13,8 @@ angular.module('jayaMekarApp')
             replace: true,
             transclude: true,
             scope: {
-                filter: "="
+                filter: '='
             },
             link: ykSidebarLinkFn
         };
-    })
+    });
