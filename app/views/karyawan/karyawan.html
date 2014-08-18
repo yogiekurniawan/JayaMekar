@@ -1,6 +1,6 @@
 <div class="header">
     <div class="bs-page-header">
-        <h4><span class="glyphicon glyphicon-user"></span> Mengelola Karyawan</h4>
+        <h4>Mengelola Karyawan</h4>
     </div>
 </div>
 <div class="body" ng-show="KaryawanCtrl.jabatan.length > 0">
@@ -25,9 +25,15 @@
                         <th class="text-center">Nama</th>
                         <th class="text-center">Jabatan</th>
                         <th class="text-center">Karyawan</th>
-                        <th class="text-center"><span tooltip-popup-delay='500' tooltip='Kelompok Kerja'>Kel</span></th>
-                        <th class="text-center"><span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Pertama Kerja'></span></th>
-                        <th class="text-center"><span tooltip-popup-delay='500' tooltip='Status Karyawan'>Status</span></th>
+                        <th class="text-center">
+                            <span tooltip-popup-delay='500' tooltip='Kelompok Kerja'>Kel</span>
+                        </th>
+                        <th class="text-center">
+                            <span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Pertama Kerja'></span>
+                        </th>
+                        <th class="text-center">
+                            <span tooltip-popup-delay='500' tooltip='Status Karyawan'>Status</span>
+                        </th>
                         <th class="text-center"></th>
                     </tr>
                 </thead>
@@ -43,7 +49,9 @@
                         </td>
                         <td class="text-center">{{i.statusKaryawan}}</td>
                         <td class="text-center col-aksi">
-                            <a href ng-click="KaryawanCtrl.edit(i)" tooltip-popup-delay='500' tooltip='Sunting data'><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href ng-click="KaryawanCtrl.edit(i)" tooltip-popup-delay='500' tooltip='Sunting data'>
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </a>
                         </td>
                     </tr>
                 </tbody>

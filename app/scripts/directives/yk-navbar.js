@@ -9,9 +9,9 @@ angular.module('jayaMekarApp')
 *
 * @example
 * @html
-<yk-navbar brand="root.brand" fixed-top>
-    <yk-menu-list menu="root.menuNavLeft" nav></yk-menu-list>
-    <yk-menu-list menu="root.menuNavRight" nav right></yk-menu-list>
+<yk-navbar brand='root.brand' fixed-top>
+    <yk-menu-list menu='root.menuNavLeft' nav></yk-menu-list>
+    <yk-menu-list menu='root.menuNavRight' nav right></yk-menu-list>
 </yk-navbar>
 *
 * @ctrl atau service value untuk data menu
@@ -57,8 +57,8 @@ angular.module('jayaMekarApp')
 .directive('ykNavbar', function() {
 
     function ykNavbarLinkFn(scope, element, attrs) {
-        if (angular.isDefined(attrs.fixedTop)) element.addClass('navbar-fixed-top');
-        if (angular.isDefined(attrs.fixedBottom)) element.addClass('navbar-fixed-bottom');
+        if (angular.isDefined(attrs.fixedTop)){ element.addClass('navbar-fixed-top'); } 
+        if (angular.isDefined(attrs.fixedBottom)){ element.addClass('navbar-fixed-bottom'); } 
     }
 
     return {
@@ -83,11 +83,9 @@ angular.module('jayaMekarApp')
 
 .directive('ykMenuList', function() {
 
-    function ykMenuListLinkFn(scope, element, attrs, ykNavbarCtrl) {
-        if (angular.isDefined(attrs.nav)) element.addClass("navbar-nav");
-        if (angular.isDefined(attrs.right)) element.addClass("navbar-right");
-
-        // ykNavbarCtrl.menu(scope.menu);
+    function ykMenuListLinkFn(scope, element, attrs) {
+        if (angular.isDefined(attrs.nav)){ element.addClass('navbar-nav'); }
+        if (angular.isDefined(attrs.right)){ element.addClass('navbar-right'); }
     }
 
     return {
