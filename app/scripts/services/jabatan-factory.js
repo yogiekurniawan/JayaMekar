@@ -88,7 +88,7 @@ angular.module('jayaMekarApp')
 
             updateSchema(obj).then(function(newObj) {
                 $indexedDB.add(arrayObjStore, newObj).then(function(success) {
-                    $log.info('data ', success ,' berhasil disimpan');
+                    console.log('data ', success ,' berhasil disimpan');
                     defer.resolve();
                 });
             });
@@ -96,13 +96,13 @@ angular.module('jayaMekarApp')
             return defer.promise;
         }; // E:add()
 
-        var save = function(obj) {
+        var edit = function(obj) {
             var arrayObjStore = ['jabatan'];
             var defer = $q.defer();
 
             updateSchema(obj).then(function(newObj) {
                 $indexedDB.save(arrayObjStore, newObj).then(function(success) {
-                    $log.info(success);
+                    console.log(success);
                     defer.resolve();
                 });
             });
@@ -115,7 +115,7 @@ angular.module('jayaMekarApp')
             var defer = $q.defer();
 
             $indexedDB.delete(objStore, obj.idJabatan).then(function(success) {
-                $log.info(success);
+                console.log(success);
                 defer.resolve();
             });
 
@@ -126,7 +126,7 @@ angular.module('jayaMekarApp')
         return {
             get: get,
             add: add,
-            save: save,
+            edit: edit,
             del: del
         };
     });
