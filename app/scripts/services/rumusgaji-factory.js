@@ -6,7 +6,7 @@ angular.module('jayaMekarApp')
         var updateSchema = function(obj) {
             var defer = $q.defer();
             var date = new Date().getTime();
-            var idRumusGaji = obj.idRumusGaji ? obj.idRumusGaji : 'RumusGaji-'+$id();
+            var idRumusGaji = obj.idRumusGaji ? obj.idRumusGaji : 'RumusGaji-' + $id();
             var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
             var dirubah = obj.waktu.dirubah ? date : 0;
             var versi = obj.versi ? obj.versi + 1 : 1;
@@ -25,6 +25,12 @@ angular.module('jayaMekarApp')
                 'statusRumusGaji': obj.statusRumusGaji,
                 'versi': versi
             };
+
+            if (obj.jenis === 'Borongan') {
+                newSchema.hargaTarget = obj.hargaTarget;
+                newSchema.targetProduksi = obj.targetProduksi;
+                newSchema.targetJmlProduksi = obj.targetJmlProduksi;
+            }
 
             defer.resolve(newSchema);
             return defer.promise;
@@ -57,7 +63,7 @@ angular.module('jayaMekarApp')
                             if (cursorRumusGaji) {
                                 if (cursorRumusGaji.value.idJabatan === cursorJabatan.value.idJabatan) {
 
-                                    var data = {
+                                    var schema = {
                                         idRumusGaji: cursorRumusGaji.value.idRumusGaji,
                                         idJabatan: cursorRumusGaji.value.idJabatan,
                                         jabatan: cursorJabatan.value.jabatan,
@@ -67,14 +73,20 @@ angular.module('jayaMekarApp')
                                         harga: cursorRumusGaji.value.harga,
                                         uangHadir: cursorRumusGaji.value.uangHadir,
                                         waktu: {
-                                            dibuat: cursorRumusGaji.value.dibuat,
-                                            dirubah: cursorRumusGaji.value.dirubah
+                                            dibuat: cursorRumusGaji.value.waktu.dibuat,
+                                            dirubah: cursorRumusGaji.value.waktu.dirubah
                                         },
                                         statusRumusGaji: cursorRumusGaji.value.statusRumusGaji,
                                         versi: cursorRumusGaji.value.versi
                                     };
 
-                                    result.push(data);
+                                    if (cursorRumusGaji.value.jenis === 'Borongan') {
+                                        schema.hargaTarget = cursorRumusGaji.value.hargaTarget;
+                                        schema.targetProduksi = cursorRumusGaji.value.targetProduksi;
+                                        schema.targetJmlProduksi = cursorRumusGaji.value.targetJmlProduksi;
+                                    }
+
+                                    result.push(schema);
                                 } else {
                                     $log.warn('warning: id jabatan tidak sama');
                                 }
