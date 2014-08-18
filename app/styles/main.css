@@ -49,9 +49,13 @@ body
 }*/
 
 /* reset bootstrap */
-th.col-number, th.col-aksi, td.col-aksi
-{
+th.col-number {
     width: 10px;
+}
+
+th.col-aksi, td.col-aksi
+{
+    width: 55px;
 }
 
 /* reset bootstrap */
