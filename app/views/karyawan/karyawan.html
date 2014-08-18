@@ -1,66 +1,69 @@
 <div class="header">
-    <div class="bs-page-header">
-        <h4>Mengelola Karyawan</h4>
-    </div>
+  <div class="bs-page-header">
+    <h4>Mengelola Karyawan</h4>
+  </div>
 </div>
 <div class="body" ng-show="KaryawanCtrl.jabatan.length > 0">
-    <div class="row newline">
-        <div class="col-md-6" ng-show="KaryawanCtrl.karyawan.length > 0">
-            <div class="btn-group">
-                <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Kerja'">Kerja</label>
-                <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Semua Karyawan</label>
-                <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Keluar</label>
-            </div>
-        </div>
-        <div class="col-md-6 pull-right">
-            <button ng-click="KaryawanCtrl.add()" class="btn btn-sm btn-primary pull-right">Tambah Karyawan</button>
-        </div>
+  <div class="row newline">
+    <div class="col-md-6" ng-show="KaryawanCtrl.karyawan.length > 0">
+      <div class="btn-group">
+        <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Kerja'">Kerja</label>
+        <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Semua Karyawan</label>
+        <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Keluar</label>
+      </div>
     </div>
-    <div class="row newline" ng-show="KaryawanCtrl.karyawan.length > 0">
-        <div class="col-md-12">
-            <table class="table table-bordered table-striped table-hover">
-                <thead>
-                    <tr>
-                        <th class="text-center col-number">#</th>
-                        <th class="text-center">Nama</th>
-                        <th class="text-center">Jabatan</th>
-                        <th class="text-center">Karyawan</th>
-                        <th class="text-center">
-                            <span tooltip-popup-delay='500' tooltip='Kelompok Kerja'>Kel</span>
-                        </th>
-                        <th class="text-center">
-                            <span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Pertama Kerja'></span>
-                        </th>
-                        <th class="text-center">
-                            <span tooltip-popup-delay='500' tooltip='Status Karyawan'>Status</span>
-                        </th>
-                        <th class="text-center"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="" ng-repeat="i in KaryawanCtrl.karyawan | filter:root.filter | orderBy:'+namaDepan':false | startArray:(KaryawanCtrl.numberPage - 1 )*KaryawanCtrl.limit | limitTo:KaryawanCtrl.limit track by i.nip">
-                        <td class="text-center" title="{{i.nip}}">{{(KaryawanCtrl.numberPage-1)*KaryawanCtrl.limit+$index+1}}</td>
-                        <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
-                        <td class="text-center" title="{{i.detailJabatan}}">{{i.jabatan}}</td>
-                        <td class="text-center">{{i.detailJabatan.jenis}}</td>
-                        <td class="text-center" title="{{i.kelompokKerja | kelompokKerja}}">{{i.kelompokKerja}}</td>
-                        <td class="text-center">
-                            <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='Pertama kerja : {{i.waktu.pertamaKerja | date:"d MMMM yyyy"}}'></span>
-                        </td>
-                        <td class="text-center">{{i.statusKaryawan}}</td>
-                        <td class="text-center col-aksi">
-                            <a href ng-click="KaryawanCtrl.edit(i)" tooltip-popup-delay='500' tooltip='Sunting data'>
-                                <span class="glyphicon glyphicon-edit"></span>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <li class="pagination" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | length) <= KaryawanCtrl.limit">
-                <p>halaman {{KaryawanCtrl.numberPage}} dari {{KaryawanCtrl.totalPage()}}</p>
-            </li>
-            <pagination total-items="KaryawanCtrl.karyawan | filter:root.filter | length" ng-model="KaryawanCtrl.numberPage" max-size="KaryawanCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | length) <= KaryawanCtrl.limit"></pagination>
+    <div class="col-md-6 pull-right">
+      <button ng-click="KaryawanCtrl.add()" class="btn btn-sm btn-primary pull-right">Tambah Karyawan</button>
+    </div>
+  </div>
+  <div class="row newline" ng-show="KaryawanCtrl.karyawan.length > 0">
+    <div class="col-md-12">
+      <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr>
+            <th class="text-center col-number">#</th>
+            <th class="text-center">Nama</th>
+            <th class="text-center">Jabatan</th>
+            <th class="text-center">Karyawan</th>
+            <th class="text-center">
+              <span tooltip-popup-delay='500' tooltip='Kelompok Kerja'>Kel</span>
+            </th>
+            <th class="text-center">
+              <span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Pertama Kerja'></span>
+            </th>
+            <th class="text-center">
+              <span tooltip-popup-delay='500' tooltip='Status Karyawan'>Status</span>
+            </th>
+            <th class="text-center">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="" ng-repeat="i in KaryawanCtrl.karyawan | filter:root.filter | orderBy:'+namaDepan':false | startArray:(KaryawanCtrl.numberPage - 1 )*KaryawanCtrl.limit | limitTo:KaryawanCtrl.limit track by i.nip">
+            <td class="text-center" title="{{i.nip}}">{{(KaryawanCtrl.numberPage-1)*KaryawanCtrl.limit+$index+1}}</td>
+            <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
+            <td class="text-center" title="{{i.detailJabatan}}">{{i.jabatan}}</td>
+            <td class="text-center">{{i.detailJabatan.jenis}}</td>
+            <td class="text-center" title="{{i.kelompokKerja | kelompokKerja}}">{{i.kelompokKerja}}</td>
+            <td class="text-center">
+              <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='Pertama kerja : {{i.waktu.pertamaKerja | date:"d MMMM yyyy"}}'></span>
+            </td>
+            <td class="text-center">{{i.statusKaryawan}}</td>
+            <td class="text-center col-aksi">
+              <a href ng-click="KaryawanCtrl.edit(i)" tooltip-popup-delay='500' tooltip='Sunting data'>
+                <span class="glyphicon glyphicon-edit"></span>
+              </a>
+              <a href ng-click="KaryawanCtrl.delete(i)" tooltip-popup-delay='500' tooltip='Hapus data'>
+                <span class="glyphicon glyphicon-trash"></span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <li class="pagination" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | length) <= KaryawanCtrl.limit">
+        <p>halaman {{KaryawanCtrl.numberPage}} dari {{KaryawanCtrl.totalPage()}}</p>
+      </li>
+      <pagination total-items="KaryawanCtrl.karyawan | filter:root.filter | length" ng-model="KaryawanCtrl.numberPage" max-size="KaryawanCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir" ng-hide="(KaryawanCtrl.karyawan | filter:root.filter | length) <= KaryawanCtrl.limit"></pagination>
 
-        </div>
     </div>
+  </div>
 </div>

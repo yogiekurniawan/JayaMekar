@@ -105,7 +105,7 @@ angular.module('jayaMekarApp')
             return defer.promise;
         }; // E:add()
 
-        var update = function(obj) {
+        var edit = function(obj) {
             var defer = $q.defer();
             var arrayObjStore = ['karyawan'];
             updateSchema(obj).then(function(newObj) {
@@ -116,10 +116,21 @@ angular.module('jayaMekarApp')
             return defer.promise;
         }; // E:update()
 
+        var del = function(obj) {
+            var objStore = 'karyawan';
+            var defer = $q.defer();
+            $indexedDB.delete(objStore, obj.nip).then(function(success) {
+                console.log(success);
+                defer.resolve();
+            });
+            return defer.promise;
+        };
+
         // Public API here
         return {
             get: get,
             add: add,
-            update: update
+            edit: edit,
+            del: del
         };
     });

@@ -44,15 +44,17 @@ angular.module('jayaMekarApp')
             var jabatan = that.jabatan; 
             modalKaryawanFactory.open(jabatan,obj).then(function(result) {
                 console.log(result);
-                karyawanFactory.update(result).then(function(success){
+                karyawanFactory.edit(result).then(function(success){
                     console.log(success);
                     getKaryawan();
                 });
             });
         };
 
-        this.hapusKaryawan = function(obj) {
-            console.log('Mlakukan penghapusan data karyawan', obj);
+        this.delete = function(obj) {
+            karyawanFactory.del(obj).then(function() {
+                getKaryawan();
+            });
         };
 
         this.totalPage = function(){
