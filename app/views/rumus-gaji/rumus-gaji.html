@@ -1,8 +1,124 @@
 <ng-tabs title-tabs="Mengelola Rumus Gaji" pull-body>
-    <ng-tabs-content title-content="Harian">
-        <p>Content Tabs 1</p>
-    </ng-tabs-content>
-    <ng-tabs-content title-content="Borongan">
-        <p>Content Tabs 2</p>
-    </ng-tabs-content>
+  <ng-tabs-content title-content="Harian">
+    <div class="body">
+      <div class="row newline">
+        <div class="col-md-6 pull-right">
+          <button ng-click="RumusGajiCtrl.add()" class="btn btn-sm btn-primary pull-right">Tambah Rumus Gaji</button>
+        </div>
+      </div>
+      <div class="row new-line">
+        <div class="col-md-12">
+          <table class="table table-bordered table-striped table-hover">
+            <thead>
+              <tr>
+                <th class="text-center">#</th>
+                <th class="text-center">Jabatan</th>
+                <th class="text-center">Jenis</th>
+                <th class="text-center">Shift</th>
+                <th class="text-center">
+                  <span class="margin-span" tooltip-popup-delay='500' tooltip='Harga Perminggu'>H.Perminggu</span>
+                </th>
+                <th class="text-center">
+                  <span class="margin-span" tooltip-popup-delay='500' tooltip='Harga Perhari'>H.Perhari</span>
+                </th>
+                <th class="text-center" tooltip-popup-delay='500' tooltip='Uang Hadir'>U.Hadir</th>
+                <th class="text-center">
+                  <span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Catatan waktu'></span>
+                </th>
+                <th class="text-center">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="i in RumusGajiCtrl.rumusgaji | filter:'Harian' | filter:root.filter | orderBy:'+jabatan':false | startArray:(RumusGajiCtrl.numberPage - 1 )*RumusGajiCtrl.limit | limitTo:RumusGajiCtrl.limit track by i.idRumusGaji">
+                <td class="text-center" title="{{i.idRumusGaji}}">{{(RumusGajiCtrl.numberPage-1)*RumusGajiCtrl.limit+$index+1}}</td>
+                <td class="text-center">{{i.jabatan}}</td>
+                <td class="text-center">{{i.jenis}}</td>
+                <td class="text-center">{{i.shift}}</td>
+                <td class="text-center">{{i.harga | numberFormat:"Rp ":0}}</td>
+                <td class="text-center">{{i.harga / 6 | numberFormat:"Rp ":0}}</td>
+                <td class="text-center">{{i.uangHadir | numberFormat:"Rp ":0}}</td>
+                <td class="text-center">
+                  <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='{{i.waktu | waktu}}'></span>
+                </td>
+                <td class="text-center col-aksi">
+                  <a href ng-click="RumusGajiCtrl.edit(i)" tooltip-popup-delay='500' tooltip='Sunting data'>
+                    <span class="glyphicon glyphicon-edit"></span>
+                  </a>
+                  <a href ng-click="RumusGajiCtrl.delete(i)" tooltip-popup-delay='500' tooltip='Hapus data'>
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <pagination total-items="RumusGajiCtrl.rumusgaji | filter:'Harian'| filter:root.filter | length" ng-model="RumusGajiCtrl.numberPage" max-size="RumusGajiCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir" ng-hide="(RumusGajiCtrl.rumusgaji | filter:'Harian' | filter:root.filter | length) <= RumusGajiCtrl.limit"></pagination>
+        </div>
+      </div>
+    </div>
+  </ng-tabs-content>
+  <ng-tabs-content title-content="Borongan">
+
+    <div class="body">
+      <div class="row newline">
+        <div class="col-md-6 pull-right">
+          <button ng-click="RumusGajiCtrl.add()" class="btn btn-sm btn-primary pull-right">Tambah Rumus Gaji</button>
+        </div>
+      </div>
+      <div class="row new-line">
+        <div class="col-md-12">
+          <table class="table table-bordered table-striped table-hover">
+            <thead>
+              <tr>
+                <th class="text-center">#</th>
+                <th class="text-center">Jabatan</th>
+                <th class="text-center">Jenis</th>
+                <th class="text-center">Shift</th>
+                <th class="text-center"><span tooltip-popup-delay='500' tooltip='Target Produksi'>T.Produksi</span></th>
+                <th class="text-center"><span tooltip-popup-delay='500' tooltip='Target Jumlah Produksi'>T.J.Produksi</span></th>
+                <th class="text-center">
+                  <span class="margin-span" tooltip-popup-delay='500' tooltip='Harga Normal'>H.Normal</span>
+                </th>
+                <th class="text-center">
+                  <span class="margin-span" tooltip-popup-delay='500' tooltip='Harga Target'>H.Target</span>
+                </th>
+                <th class="text-center">
+                <span class="margin-span" tooltip-popup-delay='500' tooltip='Uang Hadir'>U.Hadir</span></th>
+                <th class="text-center">
+                  <span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Catatan waktu'></span>
+                </th>
+                <th class="text-center">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="i in RumusGajiCtrl.rumusgaji | filter:'Borongan' | filter:root.filter | orderBy:'+jabatan':false | startArray:(RumusGajiCtrl.numberPage - 1 )*RumusGajiCtrl.limit | limitTo:RumusGajiCtrl.limit track by i.idRumusGaji">
+                <td class="text-center" title="{{i.idRumusGaji}}">{{(RumusGajiCtrl.numberPage-1)*RumusGajiCtrl.limit+$index+1}}</td>
+                <td class="text-center">{{i.jabatan}}</td>
+                <td class="text-center">{{i.jenis}}</td>
+                <td class="text-center">{{i.shift}}</td>
+                <td class="text-center">{{i.targetProduksi | numberFormat:""}} mtr</td>
+                <td class="text-center">{{i.targetJmlProduksi | numberFormat:""}} mtr</td>
+                <td class="text-center">{{i.harga | numberFormat:"Rp ":0}}</td>
+                <td class="text-center">{{i.hargaTarget | numberFormat:"Rp ":0}}</td>
+                <td class="text-center">{{i.uangHadir | numberFormat:"Rp ":0}}</td>
+                <td class="text-center">
+                  <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='{{i.waktu | waktu}}'></span>
+                </td>
+                <td class="text-center col-aksi">
+                  <a href ng-click="RumusGajiCtrl.edit(i)" tooltip-popup-delay='500' tooltip='Sunting data'>
+                    <span class="glyphicon glyphicon-edit"></span>
+                  </a>
+                  <a href ng-click="RumusGajiCtrl.delete(i)" tooltip-popup-delay='500' tooltip='Hapus data'>
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <pagination total-items="RumusGajiCtrl.rumusgaji | filter:'Harian'| filter:root.filter | length" ng-model="RumusGajiCtrl.numberPage" max-size="RumusGajiCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir" ng-hide="(RumusGajiCtrl.rumusgaji | filter:'Harian' | filter:root.filter | length) <= RumusGajiCtrl.limit"></pagination>
+        </div>
+      </div>
+
+    </div>
+
+  </ng-tabs-content>
 </ng-tabs>

@@ -8,7 +8,7 @@ angular.module('jayaMekarApp')
             var date = new Date().getTime();
             var idRumusGaji = obj.idRumusGaji ? obj.idRumusGaji : 'RumusGaji-' + $id();
             var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
-            var dirubah = obj.waktu.dirubah ? date : 0;
+            var dirubah = date;
             var versi = obj.versi ? obj.versi + 1 : 1;
 
             var newSchema = {
@@ -22,7 +22,6 @@ angular.module('jayaMekarApp')
                     'dibuat': dibuat,
                     'dirubah': dirubah
                 },
-                'statusRumusGaji': obj.statusRumusGaji,
                 'versi': versi
             };
 
@@ -55,7 +54,7 @@ angular.module('jayaMekarApp')
                             .index('idJabatan').openCursor(cursorJabatan.value.idJabatan);
 
                         transactionRumusgaji.onerror = function(event) {
-                            $log.error(event.target.errorCode);
+                            $log.error('transactionRumusgaji.onerror' + event.target.errorCode);
                         };
 
                         transactionRumusgaji.onsuccess = function() {
@@ -76,7 +75,6 @@ angular.module('jayaMekarApp')
                                             dibuat: cursorRumusGaji.value.waktu.dibuat,
                                             dirubah: cursorRumusGaji.value.waktu.dirubah
                                         },
-                                        statusRumusGaji: cursorRumusGaji.value.statusRumusGaji,
                                         versi: cursorRumusGaji.value.versi
                                     };
 
@@ -88,7 +86,7 @@ angular.module('jayaMekarApp')
 
                                     result.push(schema);
                                 } else {
-                                    $log.warn('warning: id jabatan tidak sama');
+                                    $log.warn('warning: id jabatan tidak sama => transactionRumusgaji.onsuccess');
                                 }
                                 cursorRumusGaji.continue();
                             } else {
@@ -107,17 +105,42 @@ angular.module('jayaMekarApp')
         }; // E:this.getRumusGaji()
 
         var add = function(obj) {
+            var defer = $q.defer();
             var arrayObjStore = ['rumusgaji'];
             updateSchema(obj).then(function(newObj) {
                 $indexedDB.add(arrayObjStore, newObj).then(function(success) {
-                    $log.info(success);
+                    defer.resolve(success);
                 });
             });
+            return defer.promise;
         }; // E:add()
+
+        var edit = function(obj) {
+            var defer = $q.defer();
+            var arrayObjStore = ['rumusgaji'];
+            updateSchema(obj).then(function(newObj) {
+                $indexedDB.save(arrayObjStore, newObj).then(function(success) {
+                    defer.resolve(success);
+                });
+            });
+            return defer.promise;
+        }; // E:edit()
+
+        var del = function(obj) {
+            var objStore = 'rumusgaji';
+            var defer = $q.defer();
+            $indexedDB.delete(objStore, obj.idRumusGaji).then(function(success) {
+                console.log(success);
+                defer.resolve();
+            });
+            return defer.promise;
+        }; // E:del()
 
         // Public API here
         return {
             get: get,
-            add: add
+            add: add,
+            edit: edit,
+            del: del
         };
     });

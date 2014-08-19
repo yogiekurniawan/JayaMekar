@@ -1,26 +1,111 @@
-<div class="modal-header">
-    <h3 class="modal-title">I m a modal!</h3>
-</div>
-<div class="modal-body">
-    
-     <div class="form-group has-success has-feedback">
-        <label class="control-label">Nama Jabatan</label>
-        <input ng-model="modalJabatanCtrl.obj.jabatan" type="text" class="form-control">
-        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-    </div>
-    <div class="form-group has-warning has-feedback">
-        <label class="control-label">Input with warning</label>
-        <input type="text" class="form-control">
-        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
-    </div>
-    <div class="form-group has-error has-feedback">
-        <label class="control-label">Input with error</label>
-        <input type="text" class="form-control">
-        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+<form class="form-horizontal" name="formRumusGaji">
+  <div class="modal-header">
+    <h3 class="modal-title">Rumus Gaji</h3>
+  </div>
+  <div class="modal-body">
+
+    <div class="form-group form-group-sm" ng-class="{'has-error': formRumusGaji.jenisJabatan.$invalid, 'has-success': formRumusGaji.jenisJabatan.$valid}">
+      <label class="col-sm-4 control-label">Jabatan</label>
+      <div class="col-sm-5">
+
+        <select name="jenisJabatan" class="form-control input-sm" ng-model="modalRumusGaji.objectJabatan" ng-options=" objectJabatan.jabatan group by objectJabatan.jenis for objectJabatan in modalRumusGaji.arrayJabatan track by objectJabatan.idJabatan" required>
+          <option value="">-- Pilih Jenis Jabatan --</option>
+        </select>
+        <div class="help-block" ng-messages="formRumusGaji.jenisJabatan.$error">
+          <small class="help-block" ng-message="required">* Jenis jabatan wajib di isi</small>
+        </div>
+
+      </div>
     </div>
 
-</div>
-<div class="modal-footer">
-    <button class="btn btn-primary" ng-click="tesModal.ok()">OK</button>
-    <button class="btn btn-warning" ng-click="tesModal.cancel()">Cancel</button>
-</div>
+    <div class="form-group form-group-sm" ng-class="{'has-success': formRumusGaji.jenisJabatan.$valid}" ng-if="modalRumusGaji.objectJabatan.jenis">
+      <label class="col-sm-4 control-label">Jenis</label>
+      <div class="col-sm-4">
+        <input name="jenis" ng-model="modalRumusGaji.objectJabatan.jenis" class="form-control" type="text" placeholder="Harga perminggu" disabled>
+      </div>
+    </div>
+
+    <div class="form-group form-group-sm" ng-class="{'has-error': formRumusGaji.shift.$invalid, 'has-success': formRumusGaji.shift.$valid}">
+      <label class="col-sm-4 control-label">Shift</label>
+      <div class="col-sm-3">
+
+        <select name="shift" ng-model="modalRumusGaji.obj.shift" ng-options="shift for shift in modalRumusGaji.shift" class="form-control input-sm" required>
+          <option value="">--</option>
+        </select>
+
+      </div>
+    </div>
+
+    <!-- S:input khusus untuk jenis karyawan harian -->
+    <div ng-if="modalRumusGaji.objectJabatan.jenis === 'Harian'" class="form-group form-group-sm" ng-class="{'has-success': formRumusGaji.harga.$valid, 'has-error': formRumusGaji.harga.$invalid}">
+      <label class="col-sm-4 control-label">Harga perminggu</label>
+      <div class="col-sm-4">
+        <input name="harga" ng-model="modalRumusGaji.obj.harga" class="form-control" type="number" placeholder="Harga perminggu" required>
+        <div class="help-block" ng-messages="formRumusGaji.harga.$error">
+          <small class="help-block" ng-message="required">* Harga perminggu wajib di isi</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="help-block" ng-if="formRumusGaji.harga.$valid" ng-show="modalRumusGaji.objectJabatan.jenis === 'Harian'">
+          <small class="help-block">
+            <span tooltip-popup-delay='500' tooltip='Harga perhari' class="glyphicon glyphicon-info-sign margin-span"></span>{{modalRumusGaji.obj.harga / 6 | numberFormat:"Rp ":0}}</small>
+        </div>
+      </div>
+    </div>
+    <!-- E:input khusus untuk jenis karyawan harian -->
+
+    <!-- S:input khusus untuk jenis karyawan borongan -->
+    <div ng-if="modalRumusGaji.objectJabatan.jenis === 'Borongan'" class="form-group form-group-sm" ng-class="{'has-success': formRumusGaji.harga.$valid, 'has-error': formRumusGaji.harga.$invalid}">
+      <label class="col-sm-4 control-label">Harga normal</label>
+      <div class="col-sm-4">
+        <input name="harga" ng-model="modalRumusGaji.obj.harga" class="form-control" type="number" placeholder="Harga normal" required>
+        <div class="help-block" ng-messages="formRumusGaji.harga.$error">
+          <small class="help-block" ng-message="required">* Harga normal wajib di isi</small>
+        </div>
+      </div>
+    </div>
+    <div ng-if="modalRumusGaji.objectJabatan.jenis === 'Borongan'" class="form-group form-group-sm" ng-class="{'has-success': formRumusGaji.hargaTarget.$valid, 'has-error': formRumusGaji.hargaTarget.$invalid}">
+      <label class="col-sm-4 control-label">Harga target</label>
+      <div class="col-sm-4">
+        <input name="hargaTarget" ng-model="modalRumusGaji.obj.hargaTarget" class="form-control" type="number" placeholder="Harga target" required>
+        <div class="help-block" ng-messages="formRumusGaji.hargaTarget.$error">
+          <small class="help-block" ng-message="required">* Harga target wajib di isi</small>
+        </div>
+      </div>
+    </div>
+    <div ng-if="modalRumusGaji.objectJabatan.jenis === 'Borongan'" class="form-group form-group-sm" ng-class="{'has-success': formRumusGaji.targetProduksi.$valid, 'has-error': formRumusGaji.targetProduksi.$invalid}">
+      <label class="col-sm-4 control-label">Target produksi</label>
+      <div class="col-sm-4">
+        <input name="targetProduksi" ng-model="modalRumusGaji.obj.targetProduksi" class="form-control" type="number" placeholder="Target produksi" required>
+        <div class="help-block" ng-messages="formRumusGaji.targetProduksi.$error">
+          <small class="help-block" ng-message="required">* Target produksi wajib di isi</small>
+        </div>
+      </div>
+    </div>
+    <div ng-if="modalRumusGaji.objectJabatan.jenis === 'Borongan'" class="form-group form-group-sm" ng-class="{'has-success': formRumusGaji.targetJmlProduksi.$valid, 'has-error': formRumusGaji.targetJmlProduksi.$invalid}">
+      <label class="col-sm-4 control-label">T.Jml Produksi</label>
+      <div class="col-sm-4">
+        <input name="targetJmlProduksi" ng-model="modalRumusGaji.obj.targetJmlProduksi" class="form-control" type="number" placeholder="Target Jumlah Produksi" required>
+        <div class="help-block" ng-messages="formRumusGaji.targetJmlProduksi.$error">
+          <small class="help-block" ng-message="required">* T.Jml produksi wajib di isi</small>
+        </div>
+      </div>
+    </div>
+    <!-- E:input khusus untuk jenis karyawan borongan -->
+
+    <div class="form-group form-group-sm" ng-class="{'has-success': formRumusGaji.uangHadir.$valid, 'has-error': formRumusGaji.uangHadir.$invalid}">
+      <label class="col-sm-4 control-label">Uang hadir</label>
+      <div class="col-sm-4">
+        <input name="uangHadir" ng-model="modalRumusGaji.obj.uangHadir" class="form-control" type="number" placeholder="Uang hadir" required>
+        <div class="help-block" ng-messages="formRumusGaji.uangHadir.$error">
+          <small class="help-block" ng-message="required">* Harga Uang hadir wajib di isi</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" ng-class="{'btn-danger disabled': formRumusGaji.$invalid, 'btn-success': formRumusGaji.$valid}" ng-click="modalRumusGaji.save(modalRumusGaji.objectJabatan)">Simpan</button>
+    <button class="btn btn-warning" ng-click="modalRumusGaji.cancel()">Batal</button>
+  </div>
+</form>
