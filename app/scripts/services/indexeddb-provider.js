@@ -75,9 +75,6 @@ angular.module('jayaMekarApp')
                     objectStore.createIndex('shift', 'shift', {
                         unique: false
                     });
-                    objectStore.createIndex('statusRumusGaji', 'statusRumusGaji', {
-                        unique: false
-                    });
                 }
 
                 // E:Pembuatan ObjectStore

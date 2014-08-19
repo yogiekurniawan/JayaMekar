@@ -6,6 +6,9 @@ angular.module('jayaMekarApp')
         var updateSchema = function(obj) {
             var defer = $q.defer();
             var date = new Date().getTime();
+
+            obj.waktu = obj.waktu || {};
+            
             var nip = obj.nip ? obj.nip : 'Karyawan-'+$id();
             var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
             var dirubah = date;
@@ -114,7 +117,7 @@ angular.module('jayaMekarApp')
                 });
             });
             return defer.promise;
-        }; // E:update()
+        }; // E:edit()
 
         var del = function(obj) {
             var objStore = 'karyawan';
@@ -124,7 +127,7 @@ angular.module('jayaMekarApp')
                 defer.resolve();
             });
             return defer.promise;
-        };
+        }; // E:del()
 
         // Public API here
         return {

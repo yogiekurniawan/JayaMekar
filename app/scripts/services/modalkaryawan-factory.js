@@ -15,7 +15,6 @@ angular.module('jayaMekarApp')
                     // jika parameter objek undifined maka objek kosong dibuat
                     this.obj = angular.copy(obj) || {};
                     this.obj.waktu = this.obj.waktu || {};
-                    this.historyObject = angular.copy(obj);
                     this.arrayJabatan = jabatan;
                     this.disabledStatusKaryawan = false;
                     this.objectJabatan = that.obj.detailJabatan;
@@ -80,7 +79,7 @@ angular.module('jayaMekarApp')
             modalKaryawan.result.then(function(result) {
                 defer.resolve(result);
             }, function() {
-                $log.info('Modal dismissed at: ' + new Date());
+                console.log('Modal dismissed at: ' + new Date());
             });
 
             return defer.promise;
