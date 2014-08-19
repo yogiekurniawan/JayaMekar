@@ -4,78 +4,78 @@
     "jenis": "Harian",
     "shift": "Siang",
     "harga": 41234.123456789,
+    "hargaPerhari": 41234.123456789,
     "uangHadir": 40000,
     "waktu": {
         "dibuat": 1407134327233,
         "dirubah": 0
     },
-    "statusRumusGaji": "aktif",
-    "versi": 1
+    "statusRumusGaji": "aktif"
 }, {
     "idRumusGaji": "RG002",
     "idJabatan": "J002",
     "jenis": "Harian",
     "shift": "Siang",
     "harga": 45000,
+    "hargaPerhari": 45000,
     "uangHadir": 40000,
     "waktu": {
         "dibuat": 1407134327233,
         "dirubah": 0
     },
-    "statusRumusGaji": "aktif",
-    "versi": 1
+    "statusRumusGaji": "aktif"
 }, {
     "idRumusGaji": "RG003",
     "idJabatan": "J002",
     "jenis": "Harian",
     "shift": "Malam",
     "harga": 45000,
+    "hargaPerhari": 45000,
     "uangHadir": 40000,
     "waktu": {
         "dibuat": 1407134327233,
         "dirubah": 0
     },
-    "statusRumusGaji": "aktif",
-    "versi": 1
+    "statusRumusGaji": "aktif"
 }, {
     "idRumusGaji": "RG004",
     "idJabatan": "J003",
     "jenis": "Harian",
     "shift": "Siang",
     "harga": 45000,
+    "hargaPerhari": 45000,
     "uangHadir": 40000,
     "waktu": {
         "dibuat": 1407134327233,
         "dirubah": 0
     },
-    "statusRumusGaji": "aktif",
-    "versi": 1
+    "statusRumusGaji": "aktif"
 }, {
     "idRumusGaji": "RG005",
     "idJabatan": "J004",
     "jenis": "Harian",
     "shift": "Siang",
     "harga": 45000,
+    "hargaPerhari": 45000,
     "uangHadir": 40000,
     "waktu": {
         "dibuat": 1407134327233,
         "dirubah": 0
     },
-    "statusRumusGaji": "aktif",
-    "versi": 1
+    "statusRumusGaji": "aktif"
 }, {
     "idRumusGaji": "RG006",
     "idJabatan": "J004",
     "jenis": "Harian",
     "shift": "Malam",
     "harga": 45000,
+    "hargaPerhari": 45000,
     "uangHadir": 40000,
     "waktu": {
         "dibuat": 1407134327233,
         "dirubah": 0
     },
-    "statusRumusGaji": "aktif",
-    "versi": 1
+    "statusRumusGaji": "aktif"
 }, {
     "idRumusGaji": "RG007",
     "idJabatan": "J005",
@@ -88,16 +88,17 @@
         "dirubah": 0
     },
     "hargaTarget": 185,
+    "hargaTarget": 185,
     "targetProduksi": 2000,
     "targetJmlProduksi": 4000,
-    "statusRumusGaji": "aktif",
-    "versi": 1
+    "statusRumusGaji": "aktif"
 }, {
     "idRumusGaji": "RG008",
     "idJabatan": "J005",
     "jenis": "Borongan",
     "shift": "Malam",
     "harga": 175,
+    "hargaTarget": 190,
     "hargaTarget": 190,
     "targetProduksi": 2000,
     "targetJmlProduksi": 4000,
@@ -106,6 +107,5 @@
         "dibuat": 1407134327233,
         "dirubah": 0
     },
-    "statusRumusGaji": "aktif",
-    "versi": 1
+    "statusRumusGaji": "aktif"
 }]

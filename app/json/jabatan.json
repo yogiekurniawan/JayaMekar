@@ -5,8 +5,7 @@
         "dibuat": "1407134327233",
         "dirubah": "0"
     },
-    "jenis": "Harian",
-    "versi": 1
+    "jenis": "Harian"
 }, {
     "idJabatan": "J002",
     "jabatan": "Teknisi Mesin",
@@ -14,8 +13,7 @@
         "dibuat": "1407134327233",
         "dirubah": "0"
     },
-    "jenis": "Harian",
-    "versi": 1
+    "jenis": "Harian"
 }, {
     "idJabatan": "J003",
     "jabatan": "Operator Penghanian",
@@ -23,8 +21,7 @@
         "dibuat": "1407134327233",
         "dirubah": "0"
     },
-    "jenis": "Harian",
-    "versi": 1
+    "jenis": "Harian"
 }, {
     "idJabatan": "J004",
     "jabatan": "Operator Malet",
@@ -32,8 +29,7 @@
         "dibuat": "1407134327233",
         "dirubah": "0"
     },
-    "jenis": "Harian",
-    "versi": 1
+    "jenis": "Harian"
 }, {
     "idJabatan": "J005",
     "jabatan": "Operator Tenun",
@@ -41,8 +37,7 @@
         "dibuat": "1407134327233",
         "dirubah": "0"
     },
-    "jenis": "Borongan",
-    "versi": 1
+    "jenis": "Borongan"
 }, {
     "idJabatan": "J006",
     "jabatan": "Operator Penggulungan",
@@ -51,6 +46,5 @@
         "dirubah": "1407334427233"
     },
     "statusJabatan": "Tidak Aktif",
-    "jenis": "Harian",
-    "versi": 1
+    "jenis": "Harian"
 }]
