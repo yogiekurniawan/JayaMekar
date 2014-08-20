@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .factory('rumusGajiFactory', function($q, $indexedDB, $id, $log) {
+    .factory('rumusGajiFactory',['$q', '$indexedDB', '$id', '$log', function($q, $indexedDB, $id, $log) {
 
         var updateSchema = function(obj) {
             var defer = $q.defer();
@@ -66,7 +66,7 @@ angular.module('jayaMekarApp')
                                         idRumusGaji: cursorRumusGaji.value.idRumusGaji,
                                         idJabatan: cursorRumusGaji.value.idJabatan,
                                         jabatan: cursorJabatan.value.jabatan,
-                                        detailJabatan: cursorJabatan.value,
+                                        rincianJabatan: cursorJabatan.value,
                                         jenis: cursorRumusGaji.value.jenis,
                                         shift: cursorRumusGaji.value.shift,
                                         harga: cursorRumusGaji.value.harga,
@@ -143,4 +143,4 @@ angular.module('jayaMekarApp')
             edit: edit,
             del: del
         };
-    });
+    }]);

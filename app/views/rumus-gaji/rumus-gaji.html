@@ -3,7 +3,7 @@
     <div class="body">
       <div class="row newline">
         <div class="col-md-6 pull-right">
-          <button ng-click="RumusGajiCtrl.add()" class="btn btn-sm btn-primary pull-right">Tambah Rumus Gaji</button>
+          <button ng-click="RumusGajiCtrl.add('Harian')" class="btn btn-sm btn-primary pull-right">Tambah Rumus Gaji Karyawan Harian</button>
         </div>
       </div>
       <div class="row new-line">
@@ -41,7 +41,7 @@
                   <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='{{i.waktu | waktu}}'></span>
                 </td>
                 <td class="text-center col-aksi">
-                  <a href ng-click="RumusGajiCtrl.edit(i)" tooltip-popup-delay='500' tooltip='Sunting data'>
+                  <a href ng-click="RumusGajiCtrl.edit('Harian', i)" tooltip-popup-delay='500' tooltip='Sunting data'>
                     <span class="glyphicon glyphicon-edit"></span>
                   </a>
                   <a href ng-click="RumusGajiCtrl.delete(i)" tooltip-popup-delay='500' tooltip='Hapus data'>
@@ -57,11 +57,10 @@
     </div>
   </ng-tabs-content>
   <ng-tabs-content title-content="Borongan">
-
     <div class="body">
       <div class="row newline">
         <div class="col-md-6 pull-right">
-          <button ng-click="RumusGajiCtrl.add()" class="btn btn-sm btn-primary pull-right">Tambah Rumus Gaji</button>
+          <button ng-click="RumusGajiCtrl.add('Borongan')" class="btn btn-sm btn-primary pull-right">Tambah Rumus Gaji Karyawan Borongan</button>
         </div>
       </div>
       <div class="row new-line">
@@ -86,7 +85,6 @@
                 <th class="text-center">
                   <span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Catatan waktu'></span>
                 </th>
-                <th class="text-center">Aksi</th>
               </tr>
             </thead>
             <tbody>
@@ -104,7 +102,7 @@
                   <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='{{i.waktu | waktu}}'></span>
                 </td>
                 <td class="text-center col-aksi">
-                  <a href ng-click="RumusGajiCtrl.edit(i)" tooltip-popup-delay='500' tooltip='Sunting data'>
+                  <a href ng-click="RumusGajiCtrl.edit('Borongan', i)" tooltip-popup-delay='500' tooltip='Sunting data'>
                     <span class="glyphicon glyphicon-edit"></span>
                   </a>
                   <a href ng-click="RumusGajiCtrl.delete(i)" tooltip-popup-delay='500' tooltip='Hapus data'>
@@ -117,8 +115,6 @@
           <pagination total-items="RumusGajiCtrl.rumusgaji | filter:'Harian'| filter:root.filter | length" ng-model="RumusGajiCtrl.numberPage" max-size="RumusGajiCtrl.maxSize" class="pagination-sm pull-right" boundary-links="true" previous-text="Sebelumnya" next-text="Selanjutnya" first-text="Pertama" last-text="Terakhir" ng-hide="(RumusGajiCtrl.rumusgaji | filter:'Harian' | filter:root.filter | length) <= RumusGajiCtrl.limit"></pagination>
         </div>
       </div>
-
     </div>
-
   </ng-tabs-content>
 </ng-tabs>

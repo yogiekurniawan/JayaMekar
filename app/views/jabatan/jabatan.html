@@ -37,7 +37,22 @@
                     </div>
                 </ng-box-header>
                 <div class="box-body">
-                    <p>Area Konten Jabatan</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Jenis</th>
+                                <th>Jml Karyawan</th>
+                                <th>Jml Rumus Gaji</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{i.jenis}}</td>
+                                <td>{{i.karyawan.length || 0}} orang</td>
+                                <td>{{i.rumusgaji.length || 0}} data</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="box-footer">
                     <div class="box-time pull-right">

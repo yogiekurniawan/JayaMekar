@@ -2,7 +2,7 @@
 
 angular.module('jayaMekarApp')
 
-.controller('AboutAppCtrl',
+.controller('AboutAppCtrl', ['$scope', 'layananData', 'jabatanFactory', 'karyawanFactory', 'rumusGajiFactory',
     function($scope, layananData, jabatanFactory, karyawanFactory, rumusGajiFactory) {
 
         var that = $scope.AboutAppCtrl = this;
@@ -38,4 +38,4 @@ angular.module('jayaMekarApp')
             });
         };
 
-    });
+    }]);

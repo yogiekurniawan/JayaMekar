@@ -6,7 +6,7 @@ angular.module('jayaMekarApp')
 
     var idb = {
         namaIdb: 'Jaya Mekar',
-        versiIdb: 7
+        versiIdb: 1
     };
 
     function GETTER($q, $log) {
@@ -43,7 +43,7 @@ angular.module('jayaMekarApp')
                         unique: true
                     });
                     objectStore.createIndex('nip', 'nip', {
-                        unique: false
+                        unique: true
                     });
                     objectStore.createIndex('namaDepan', 'namaDepan', {
                         unique: false
@@ -65,6 +65,27 @@ angular.module('jayaMekarApp')
                     });
                     objectStore.createIndex('idRumusGaji', 'idRumusGaji', {
                         unique: true
+                    });
+                    objectStore.createIndex('idJabatan', 'idJabatan', {
+                        unique: false
+                    });
+                    objectStore.createIndex('jenis', 'jenis', {
+                        unique: false
+                    });
+                    objectStore.createIndex('shift', 'shift', {
+                        unique: false
+                    });
+                }
+                if (!db.objectStoreNames.contains('penggajian')) {
+                    objectStore = db.createObjectStore('penggajian', {
+                        keyPath: 'idPenggajian',
+                        unique: true
+                    });
+                    objectStore.createIndex('idPenggajian', 'idPenggajian', {
+                        unique: true
+                    });
+                    objectStore.createIndex('nip', 'nip', {
+                        unique: false
                     });
                     objectStore.createIndex('idJabatan', 'idJabatan', {
                         unique: false
@@ -208,7 +229,7 @@ angular.module('jayaMekarApp')
                     $log.error(event.target.errorCode);
                 };
                 transaction.oncomplete = function() {
-                    defer.resolve('Data dengan ' + obj.idJabatan + ' berhasil dirubah.');
+                    defer.resolve('Data dengan ' + obj + ' berhasil dirubah.');
                 };
             });
 

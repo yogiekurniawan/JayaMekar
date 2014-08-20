@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .factory('modalJabatanFactory', function($q, $log, $modal) {
+    .factory('modalJabatanFactory',['$q', '$log', '$modal', function($q, $log, $modal) {
 
         var jabatan = function(size, obj) {
             var defer = $q.defer();
@@ -53,4 +53,4 @@ angular.module('jayaMekarApp')
         return {
             jabatan: jabatan
         };
-    });
+    }]);

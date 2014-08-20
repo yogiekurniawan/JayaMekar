@@ -1,5 +1,5 @@
 {
-  "name": "WA Jaya Mekar",
+  "name": "Jaya Mekar",
   "description": "Sistem Informasi Penggajian Karyawan",
   "version": "1",
   "app": {
@@ -13,8 +13,7 @@
     "app.window",
     "fullscreen",
     "notifications",
-    "unlimitedStorage",
-    "http://www.filltext.com"
+    "unlimitedStorage"
   ],
   "icons": { "128": "icon.png" }
 }

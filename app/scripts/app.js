@@ -7,37 +7,32 @@ angular.module('jayaMekarApp', [
     'ui.bootstrap'
 ])
 
-.run(['$rootScope', '$state', '$stateParams',
-    function($rootScope, $state, $stateParams) {
+// .run(['$rootScope', '$state', '$stateParams',
+//     function($rootScope, $state, $stateParams) {
 
         // It's very handy to add references to $state and $stateParams to the $rootScope
         // so that you can access them from any scope within your applications.For example,
         // <li ui-sref-active='active }'> will set the <li> // to active whenever
         // 'contacts.list' or one of its decendents is active.
-        $rootScope.$state = $state;
-        $rootScope.$stateParams = $stateParams;
+//         $rootScope.$state = $state;
+//         $rootScope.$stateParams = $stateParams;
 
-    }
-])
+//     }
+// ])
 
-.config(['$compileProvider',
-    function($compileProvider) {
-        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension):/);
+// .config(['$compileProvider',
+    // function($compileProvider) {
+    //     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension):/);
         // Angular before v1.2 uses $compileProvider.urlSanitizationWhitelist(...)
         // http://stackoverflow.com/questions/15606751/angular-changes-urls-to-unsafe-in-extension-page
-    }
-])
+    //}
+// ])
 
 .config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/jabatan');
 
         $stateProvider
-            .state('dashboard', {
-                url: '/',
-                templateUrl: 'views/dashboard.html',
-                controller: 'DashboardCtrl'
-            })
             .state('jabatan', {
                 url: '/jabatan',
                 templateUrl: 'views/jabatan/jabatan.html',

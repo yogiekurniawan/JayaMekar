@@ -2,7 +2,7 @@
 
 angular.module('jayaMekarApp')
 
-.controller('KaryawanCtrl',
+.controller('KaryawanCtrl', ['$scope', '$log', 'karyawanFactory', '$indexedDB', 'modalKaryawanFactory',
     function($scope, $log, karyawanFactory, $indexedDB, modalKaryawanFactory) {
 
         var that = $scope.KaryawanCtrl = this;
@@ -13,13 +13,6 @@ angular.module('jayaMekarApp')
         this.numberPage = 1;
         this.limit = 10;
 
-        function getKaryawan() {
-            karyawanFactory.get().then(function(result) {
-                that.karyawan = result;
-            });
-        }
-        getKaryawan();
-
         function getJabatan() {
             var arrayObjectStore = ['jabatan'];
             $indexedDB.getAll(arrayObjectStore).then(function(result) {
@@ -28,12 +21,18 @@ angular.module('jayaMekarApp')
         }
         getJabatan();
 
+        function getKaryawan() {
+            karyawanFactory.get().then(function(result) {
+                that.karyawan = result;
+            });
+        }
+        getKaryawan();
 
         this.add = function() {
-            var jabatan = that.jabatan; 
+            var jabatan = that.jabatan;
             modalKaryawanFactory.open(jabatan).then(function(result) {
                 console.log(result);
-                karyawanFactory.add(result).then(function(success){
+                karyawanFactory.add(result).then(function(success) {
                     console.log(success);
                     getKaryawan();
                 });
@@ -41,10 +40,10 @@ angular.module('jayaMekarApp')
         };
 
         this.edit = function(obj) {
-            var jabatan = that.jabatan; 
-            modalKaryawanFactory.open(jabatan,obj).then(function(result) {
+            var jabatan = that.jabatan;
+            modalKaryawanFactory.open(jabatan, obj).then(function(result) {
                 console.log(result);
-                karyawanFactory.edit(result).then(function(success){
+                karyawanFactory.edit(result).then(function(success) {
                     console.log(success);
                     getKaryawan();
                 });
@@ -57,8 +56,8 @@ angular.module('jayaMekarApp')
             });
         };
 
-        this.totalPage = function(){
+        this.totalPage = function() {
             return Math.ceil(this.karyawan.length / this.limit);
         };
     }
-);
+]);

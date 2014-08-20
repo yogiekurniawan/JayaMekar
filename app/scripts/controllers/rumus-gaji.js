@@ -6,7 +6,8 @@ angular.module('jayaMekarApp')
  * RumusGajiCtrl as rumusgaji
  */
 
-.controller('RumusGajiCtrl', function($scope, $indexedDB, rumusGajiFactory, modalRumusGajiFactory) {
+.controller('RumusGajiCtrl', ['$scope', '$indexedDB', 'rumusGajiFactory', 'modalRumusGajiFactory',
+    function($scope, $indexedDB, rumusGajiFactory, modalRumusGajiFactory) {
 
     var that = $scope.RumusGajiCtrl = this;
 
@@ -31,9 +32,9 @@ angular.module('jayaMekarApp')
     }
     getJabatan();
 
-    this.add = function() {
+    this.add = function(jenis) {
         var jabatan = that.jabatan;
-        modalRumusGajiFactory.open(jabatan).then(function(result) {
+        modalRumusGajiFactory.open(jenis, jabatan).then(function(result) {
             console.log(result);
             rumusGajiFactory.add(result).then(function(success) {
                 console.log(success);
@@ -42,12 +43,13 @@ angular.module('jayaMekarApp')
         });
     };
 
-    this.edit = function(obj) {
+    this.edit = function(jenis, obj) {
         var jabatan = that.jabatan;
-        modalRumusGajiFactory.open(jabatan, obj).then(function(result) {
+        modalRumusGajiFactory.open(jenis, jabatan, obj).then(function(result) {
             console.log(result);
             rumusGajiFactory.edit(result).then(function(success) {
                 console.log(success);
+                console.log('that.rumusgaji', that.rumusgaji);
                 getRumusGaji();
             });
         });
@@ -59,4 +61,4 @@ angular.module('jayaMekarApp')
         });
     };
 
-});
+}]);

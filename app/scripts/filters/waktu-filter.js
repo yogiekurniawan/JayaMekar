@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .filter('waktu', function($filter) {
+    .filter('waktu', ['$filter',function($filter) {
         return function(input) {
             var waktuTerakhir,
                 formatTgl = 'd MMM yyyy',
@@ -19,4 +19,4 @@ angular.module('jayaMekarApp')
 
             return waktuTerakhir;
         };
-    });
+    }]);

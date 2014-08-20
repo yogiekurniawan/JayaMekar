@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-  .factory('modalRumusGajiFactory', function ($q, $log, $modal) {
+  .factory('modalRumusGajiFactory',['$q', '$log', '$modal', function ($q, $log, $modal) {
     
-    var open = function(jabatan, obj) {
+    var open = function(jenis, jabatan, obj) {
             var defer = $q.defer();
 
             var modalRumusGaji = $modal.open({
@@ -16,8 +16,9 @@ angular.module('jayaMekarApp')
                     this.obj = angular.copy(obj) || {};
                     this.obj.waktu = this.obj.waktu || {};
                     this.arrayJabatan = jabatan;
-                    this.objectJabatan = that.obj.detailJabatan;
+                    this.objectJabatan = that.obj.rincianJabatan;
                     this.shift = ['Siang', 'Malam'];
+                    this.jenis = jenis;
 
 
                     this.save = function(objJabatan) {
@@ -53,4 +54,4 @@ angular.module('jayaMekarApp')
         return {
             open: open
         };
-  });
+  }]);

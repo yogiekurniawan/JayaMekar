@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .factory('jabatanFactory', function($q, $log, $indexedDB, $id) {
+    .factory('jabatanFactory',['$q', '$log', '$indexedDB', '$id', function($q, $log, $indexedDB, $id) {
 
         var updateSchema = function(obj) {
             var defer = $q.defer();
@@ -129,4 +129,4 @@ angular.module('jayaMekarApp')
             edit: edit,
             del: del
         };
-    });
+    }]);

@@ -1,5 +1,4 @@
 [{
-    "nip": "P105",
     "namaDepan": "Ryan",
     "namaBelakang": "Hodgin",
     "idJabatan": "J001",
@@ -12,7 +11,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P106",
     "namaDepan": "Gueorgui",
     "namaBelakang": "Deno",
     "idJabatan": "J001",
@@ -25,7 +23,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P113",
     "namaDepan": "Neil",
     "namaBelakang": "Robinson",
     "idJabatan": "J001",
@@ -38,7 +35,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P120",
     "namaDepan": "Al",
     "namaBelakang": "Broas",
     "idJabatan": "J001",
@@ -51,7 +47,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P132",
     "namaDepan": "Guinka",
     "namaBelakang": "Lafaye",
     "idJabatan": "J001",
@@ -64,7 +59,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P136",
     "namaDepan": "Kim",
     "namaBelakang": "Bunge",
     "idJabatan": "J001",
@@ -77,7 +71,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P143",
     "namaDepan": "Miroslava",
     "namaBelakang": "Bastian",
     "idJabatan": "J001",
@@ -90,7 +83,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P15",
     "namaDepan": "Geoffrey",
     "namaBelakang": "Gram",
     "idJabatan": "J001",
@@ -103,7 +95,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P156",
     "namaDepan": "Shelley",
     "namaBelakang": "Burkholder",
     "idJabatan": "J001",
@@ -116,7 +107,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P158",
     "namaDepan": "Holli",
     "namaBelakang": "Choate",
     "idJabatan": "J001",
@@ -129,7 +119,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P163",
     "namaDepan": "Clint",
     "namaBelakang": "Coopr",
     "idJabatan": "J001",
@@ -142,7 +131,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P164",
     "namaDepan": "Wenjie",
     "namaBelakang": "Manteuffel",
     "idJabatan": "J001",
@@ -155,7 +143,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P169",
     "namaDepan": "Vida",
     "namaBelakang": "Hencmann",
     "idJabatan": "J001",
@@ -168,7 +155,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P17",
     "namaDepan": "Esmeralda",
     "namaBelakang": "Matros",
     "idJabatan": "J001",
@@ -181,7 +167,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P171",
     "namaDepan": "Verlene",
     "namaBelakang": "Nelson",
     "idJabatan": "J001",
@@ -194,7 +179,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P180",
     "namaDepan": "Bobby",
     "namaBelakang": "Chapman",
     "idJabatan": "J001",
@@ -207,7 +191,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P192",
     "namaDepan": "Natilee",
     "namaBelakang": "Band",
     "idJabatan": "J001",
@@ -220,7 +203,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P196",
     "namaDepan": "Joanne",
     "namaBelakang": "Rubiano",
     "idJabatan": "J001",
@@ -233,7 +215,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P198",
     "namaDepan": "Tracy",
     "namaBelakang": "Peacock",
     "idJabatan": "J001",
@@ -246,7 +227,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P21",
     "namaDepan": "Teri",
     "namaBelakang": "Bodily",
     "idJabatan": "J001",
@@ -259,7 +239,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P211",
     "namaDepan": "Sonja",
     "namaBelakang": "Clore",
     "idJabatan": "J001",
@@ -272,7 +251,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P216",
     "namaDepan": "Jim",
     "namaBelakang": "Chavez",
     "idJabatan": "J001",
@@ -285,7 +263,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P217",
     "namaDepan": "Marlene",
     "namaBelakang": "Gates",
     "idJabatan": "J001",
@@ -298,7 +275,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P221",
     "namaDepan": "Latisha",
     "namaBelakang": "Dieli",
     "idJabatan": "J001",
@@ -311,7 +287,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P222",
     "namaDepan": "Cathryn",
     "namaBelakang": "Nicols",
     "idJabatan": "J001",
@@ -324,7 +299,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P228",
     "namaDepan": "LaShonda",
     "namaBelakang": "Liso",
     "idJabatan": "J001",
@@ -337,7 +311,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P230",
     "namaDepan": "Furdella",
     "namaBelakang": "Mills",
     "idJabatan": "J001",
@@ -350,7 +323,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P231",
     "namaDepan": "Sukanya",
     "namaBelakang": "Pick",
     "idJabatan": "J001",
@@ -363,7 +335,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P233",
     "namaDepan": "Arun",
     "namaBelakang": "Wurttemberg",
     "idJabatan": "J001",
@@ -376,7 +347,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P239",
     "namaDepan": "Marina",
     "namaBelakang": "Park",
     "idJabatan": "J001",
@@ -389,7 +359,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P244",
     "namaDepan": "Joyce",
     "namaBelakang": "Compton",
     "idJabatan": "J001",
@@ -402,7 +371,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P246",
     "namaDepan": "Suanne",
     "namaBelakang": "Wilcox",
     "idJabatan": "J001",
@@ -415,7 +383,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P247",
     "namaDepan": "Laura",
     "namaBelakang": "Post",
     "idJabatan": "J001",
@@ -428,7 +395,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P249",
     "namaDepan": "Jennifer",
     "namaBelakang": "Gipple",
     "idJabatan": "J001",
@@ -441,7 +407,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P25",
     "namaDepan": "Val",
     "namaBelakang": "Vasquez",
     "idJabatan": "J001",
@@ -454,7 +419,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P251",
     "namaDepan": "Derrick",
     "namaBelakang": "Chang",
     "idJabatan": "J001",
@@ -467,7 +431,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P255",
     "namaDepan": "Talatha",
     "namaBelakang": "Masson",
     "idJabatan": "J001",
@@ -480,7 +443,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P257",
     "namaDepan": "Barbara",
     "namaBelakang": "Bryant",
     "idJabatan": "J001",
@@ -493,7 +455,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P262",
     "namaDepan": "Farzana",
     "namaBelakang": "Bernauer",
     "idJabatan": "J001",
@@ -506,7 +467,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P263",
     "namaDepan": "Deena",
     "namaBelakang": "Woolverton",
     "idJabatan": "J001",
@@ -519,7 +479,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P266",
     "namaDepan": "Jacob",
     "namaBelakang": "Avila",
     "idJabatan": "J001",
@@ -532,7 +491,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P267",
     "namaDepan": "Myradaisy",
     "namaBelakang": "Thomason",
     "idJabatan": "J001",
@@ -545,7 +503,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P27",
     "namaDepan": "Geeta",
     "namaBelakang": "Burkland",
     "idJabatan": "J001",
@@ -558,7 +515,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P270",
     "namaDepan": "Bonnie",
     "namaBelakang": "Greaves",
     "idJabatan": "J001",
@@ -571,7 +527,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P272",
     "namaDepan": "Shirley",
     "namaBelakang": "Leon",
     "idJabatan": "J001",
@@ -584,7 +539,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P275",
     "namaDepan": "Valerie",
     "namaBelakang": "Hackman",
     "idJabatan": "J001",
@@ -597,7 +551,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P281",
     "namaDepan": "Corretta",
     "namaBelakang": "Gergely",
     "idJabatan": "J001",
@@ -610,7 +563,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P284",
     "namaDepan": "Manish",
     "namaBelakang": "Trrenkler",
     "idJabatan": "J001",
@@ -623,7 +575,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P286",
     "namaDepan": "Jayne",
     "namaBelakang": "Salguero",
     "idJabatan": "J001",
@@ -636,7 +587,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P287",
     "namaDepan": "Jose",
     "namaBelakang": "Dech",
     "idJabatan": "J001",
@@ -649,7 +599,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P289",
     "namaDepan": "Charisse",
     "namaBelakang": "Bunker",
     "idJabatan": "J001",
@@ -662,7 +611,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P290",
     "namaDepan": "Rossana",
     "namaBelakang": "Donaldson",
     "idJabatan": "J001",
@@ -675,7 +623,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P291",
     "namaDepan": "Salman",
     "namaBelakang": "Frederick",
     "idJabatan": "J001",
@@ -688,7 +635,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P307",
     "namaDepan": "Jennifer",
     "namaBelakang": "Richardson",
     "idJabatan": "J001",
@@ -701,7 +647,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P310",
     "namaDepan": "Lynda",
     "namaBelakang": "Roy",
     "idJabatan": "J001",
@@ -714,7 +659,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P313",
     "namaDepan": "Dmitry",
     "namaBelakang": "Brenner",
     "idJabatan": "J001",
@@ -727,7 +671,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P331",
     "namaDepan": "Cerelia",
     "namaBelakang": "Katz",
     "idJabatan": "J001",
@@ -740,7 +683,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P334",
     "namaDepan": "Rania",
     "namaBelakang": "Barrick",
     "idJabatan": "J001",
@@ -753,7 +695,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P34",
     "namaDepan": "Kofi",
     "namaBelakang": "Mcalevey",
     "idJabatan": "J001",
@@ -766,7 +707,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P344",
     "namaDepan": "Vaibhavi",
     "namaBelakang": "Pyle",
     "idJabatan": "J001",
@@ -779,7 +719,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P358",
     "namaDepan": "Chari",
     "namaBelakang": "Boudreau",
     "idJabatan": "J001",
@@ -792,7 +731,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P359",
     "namaDepan": "Luzinda",
     "namaBelakang": "Leavitt",
     "idJabatan": "J001",
@@ -805,7 +743,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P36",
     "namaDepan": "Carla",
     "namaBelakang": "Mel",
     "idJabatan": "J001",
@@ -818,7 +755,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P361",
     "namaDepan": "Ben",
     "namaBelakang": "Wolz",
     "idJabatan": "J001",
@@ -831,7 +767,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P362",
     "namaDepan": "Darryl",
     "namaBelakang": "Terfloth",
     "idJabatan": "J001",
@@ -844,7 +779,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P366",
     "namaDepan": "Paula",
     "namaBelakang": "Pomykala",
     "idJabatan": "J001",
@@ -857,7 +791,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P373",
     "namaDepan": "Jerline",
     "namaBelakang": "Feldman",
     "idJabatan": "J001",
@@ -870,7 +803,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P375",
     "namaDepan": "Tracy",
     "namaBelakang": "Chester",
     "idJabatan": "J001",
@@ -883,7 +815,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P376",
     "namaDepan": "Rajesh",
     "namaBelakang": "Velasco",
     "idJabatan": "J001",
@@ -896,7 +827,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P389",
     "namaDepan": "Humayun",
     "namaBelakang": "Jun",
     "idJabatan": "J001",
@@ -909,7 +839,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P393",
     "namaDepan": "Patrick",
     "namaBelakang": "Eschenbacher",
     "idJabatan": "J001",
@@ -922,7 +851,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P398",
     "namaDepan": "Alana",
     "namaBelakang": "Gutsteinberg",
     "idJabatan": "J001",
@@ -935,7 +863,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P4",
     "namaDepan": "Terra",
     "namaBelakang": "Coffell",
     "idJabatan": "J001",
@@ -948,7 +875,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P400",
     "namaDepan": "Seth",
     "namaBelakang": "Partin",
     "idJabatan": "J001",
@@ -961,7 +887,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P402",
     "namaDepan": "Ernie",
     "namaBelakang": "Pollard",
     "idJabatan": "J001",
@@ -974,7 +899,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P406",
     "namaDepan": "Edward",
     "namaBelakang": "Shaffer",
     "idJabatan": "J001",
@@ -987,7 +911,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P409",
     "namaDepan": "Yauma",
     "namaBelakang": "Gardana",
     "idJabatan": "J001",
@@ -1000,7 +923,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P411",
     "namaDepan": "April",
     "namaBelakang": "Wittcop",
     "idJabatan": "J001",
@@ -1013,7 +935,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P413",
     "namaDepan": "Furdella",
     "namaBelakang": "Schnell",
     "idJabatan": "J001",
@@ -1026,7 +947,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P426",
     "namaDepan": "Melanciaa",
     "namaBelakang": "Rossi",
     "idJabatan": "J001",
@@ -1039,7 +959,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P427",
     "namaDepan": "Bingmei",
     "namaBelakang": "Cookson",
     "idJabatan": "J001",
@@ -1052,7 +971,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P428",
     "namaDepan": "Chiquita",
     "namaBelakang": "Spataro",
     "idJabatan": "J001",
@@ -1065,7 +983,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P433",
     "namaDepan": "LaNisha",
     "namaBelakang": "Leblanc",
     "idJabatan": "J001",
@@ -1078,7 +995,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P436",
     "namaDepan": "Luis",
     "namaBelakang": "Holland",
     "idJabatan": "J001",
@@ -1091,7 +1007,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P442",
     "namaDepan": "Arzak",
     "namaBelakang": "Joslin",
     "idJabatan": "J001",
@@ -1104,7 +1019,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P445",
     "namaDepan": "Norman",
     "namaBelakang": "Schuster",
     "idJabatan": "J001",
@@ -1117,7 +1031,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P453",
     "namaDepan": "Latisha",
     "namaBelakang": "Kaspar",
     "idJabatan": "J001",
@@ -1130,7 +1043,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P454",
     "namaDepan": "Vernita",
     "namaBelakang": "Hatter",
     "idJabatan": "J001",
@@ -1143,7 +1055,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P455",
     "namaDepan": "Waleska",
     "namaBelakang": "Star",
     "idJabatan": "J001",
@@ -1156,7 +1067,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P459",
     "namaDepan": "Tefera",
     "namaBelakang": "Knaus",
     "idJabatan": "J001",
@@ -1169,7 +1079,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P461",
     "namaDepan": "Stacey",
     "namaBelakang": "Deskins",
     "idJabatan": "J001",
@@ -1182,7 +1091,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P464",
     "namaDepan": "Luping",
     "namaBelakang": "Flint",
     "idJabatan": "J001",
@@ -1195,7 +1103,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P474",
     "namaDepan": "Jan",
     "namaBelakang": "Szewczuk",
     "idJabatan": "J001",
@@ -1208,7 +1115,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P476",
     "namaDepan": "Weibin",
     "namaBelakang": "Vinsant",
     "idJabatan": "J001",
@@ -1221,7 +1127,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P478",
     "namaDepan": "Kadie",
     "namaBelakang": "Myers",
     "idJabatan": "J001",
@@ -1234,7 +1139,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P488",
     "namaDepan": "Mohamed",
     "namaBelakang": "Orellana",
     "idJabatan": "J001",
@@ -1247,7 +1151,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P491",
     "namaDepan": "Brien",
     "namaBelakang": "Whetstone",
     "idJabatan": "J001",
@@ -1260,7 +1163,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P492",
     "namaDepan": "Dante'",
     "namaBelakang": "Salval",
     "idJabatan": "J001",
@@ -1273,7 +1175,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P493",
     "namaDepan": "Kasey",
     "namaBelakang": "Easterly",
     "idJabatan": "J001",
@@ -1286,7 +1187,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P498",
     "namaDepan": "Phyllis",
     "namaBelakang": "Ast",
     "idJabatan": "J001",
@@ -1299,7 +1199,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P501",
     "namaDepan": "Regine",
     "namaBelakang": "Laiuppa",
     "idJabatan": "J001",
@@ -1312,7 +1211,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P52",
     "namaDepan": "Isabel",
     "namaBelakang": "Hansen",
     "idJabatan": "J001",
@@ -1325,7 +1223,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P525",
     "namaDepan": "Drew",
     "namaBelakang": "Abrahams",
     "idJabatan": "J001",
@@ -1338,7 +1235,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P540",
     "namaDepan": "Brad",
     "namaBelakang": "Green",
     "idJabatan": "J001",
@@ -1351,7 +1247,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P543",
     "namaDepan": "Joan",
     "namaBelakang": "Lindsay",
     "idJabatan": "J001",
@@ -1364,7 +1259,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P545",
     "namaDepan": "Shannon",
     "namaBelakang": "Colin",
     "idJabatan": "J001",
@@ -1377,7 +1271,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P550",
     "namaDepan": "Dwayne",
     "namaBelakang": "Clore",
     "idJabatan": "J001",
@@ -1390,7 +1283,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P551",
     "namaDepan": "Kenyatta",
     "namaBelakang": "Chenoweth",
     "idJabatan": "J001",
@@ -1403,7 +1295,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P56",
     "namaDepan": "Randy",
     "namaBelakang": "Langfeldt",
     "idJabatan": "J001",
@@ -1416,7 +1307,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P560",
     "namaDepan": "Ratikorn",
     "namaBelakang": "Gates",
     "idJabatan": "J001",
@@ -1429,7 +1319,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P562",
     "namaDepan": "Pedro",
     "namaBelakang": "Difrancesco",
     "idJabatan": "J001",
@@ -1442,7 +1331,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P576",
     "namaDepan": "Ammon",
     "namaBelakang": "Quintana",
     "idJabatan": "J001",
@@ -1455,7 +1343,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P577",
     "namaDepan": "Victoria",
     "namaBelakang": "Sutton",
     "idJabatan": "J001",
@@ -1468,7 +1355,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P579",
     "namaDepan": "Furness",
     "namaBelakang": "Brill",
     "idJabatan": "J001",
@@ -1481,7 +1367,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P58",
     "namaDepan": "Laurie",
     "namaBelakang": "Prezzavento",
     "idJabatan": "J001",
@@ -1494,7 +1379,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P583",
     "namaDepan": "Cecelia",
     "namaBelakang": "Glean",
     "idJabatan": "J001",
@@ -1507,7 +1391,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P586",
     "namaDepan": "Carmen",
     "namaBelakang": "Googleanalytics",
     "idJabatan": "J001",
@@ -1520,7 +1403,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P602",
     "namaDepan": "Birbal",
     "namaBelakang": "Tinker",
     "idJabatan": "J001",
@@ -1533,7 +1415,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P604",
     "namaDepan": "Jose",
     "namaBelakang": "Friend",
     "idJabatan": "J001",
@@ -1546,7 +1427,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P612",
     "namaDepan": "Kathleen",
     "namaBelakang": "Mccollum",
     "idJabatan": "J001",
@@ -1559,7 +1439,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P616",
     "namaDepan": "Douglass",
     "namaBelakang": "Carnu",
     "idJabatan": "J001",
@@ -1572,7 +1451,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P618",
     "namaDepan": "Keesha",
     "namaBelakang": "Nabors",
     "idJabatan": "J001",
@@ -1585,7 +1463,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P620",
     "namaDepan": "Clarence",
     "namaBelakang": "Creason",
     "idJabatan": "J001",
@@ -1598,7 +1475,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P622",
     "namaDepan": "Victoria",
     "namaBelakang": "Underwood",
     "idJabatan": "J001",
@@ -1611,7 +1487,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P624",
     "namaDepan": "Betty",
     "namaBelakang": "Santos",
     "idJabatan": "J001",
@@ -1624,7 +1499,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P625",
     "namaDepan": "Dainius",
     "namaBelakang": "Mungillo",
     "idJabatan": "J001",
@@ -1637,7 +1511,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P628",
     "namaDepan": "Alice",
     "namaBelakang": "Renzi",
     "idJabatan": "J001",
@@ -1650,7 +1523,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P629",
     "namaDepan": "Nadirah",
     "namaBelakang": "Koch",
     "idJabatan": "J001",
@@ -1663,7 +1535,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P632",
     "namaDepan": "May",
     "namaBelakang": "Comfort",
     "idJabatan": "J001",
@@ -1676,7 +1547,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P633",
     "namaDepan": "Valoria",
     "namaBelakang": "Pointelin",
     "idJabatan": "J001",
@@ -1689,7 +1559,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P635",
     "namaDepan": "Teea",
     "namaBelakang": "Lazier",
     "idJabatan": "J001",
@@ -1702,7 +1571,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P637",
     "namaDepan": "Danyell",
     "namaBelakang": "Kleb",
     "idJabatan": "J001",
@@ -1715,7 +1583,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P638",
     "namaDepan": "Saowalak",
     "namaBelakang": "Evert",
     "idJabatan": "J001",
@@ -1728,7 +1595,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P640",
     "namaDepan": "Lei",
     "namaBelakang": "Finn",
     "idJabatan": "J001",
@@ -1741,7 +1607,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P644",
     "namaDepan": "Roberto",
     "namaBelakang": "Meyers",
     "idJabatan": "J001",
@@ -1754,7 +1619,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P649",
     "namaDepan": "Nicholas",
     "namaBelakang": "Alunde",
     "idJabatan": "J001",
@@ -1767,7 +1631,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P650",
     "namaDepan": "Curtis",
     "namaBelakang": "Masson",
     "idJabatan": "J001",
@@ -1780,7 +1643,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P651",
     "namaDepan": "Braulio",
     "namaBelakang": "Arbeli",
     "idJabatan": "J001",
@@ -1793,7 +1655,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P652",
     "namaDepan": "Carol",
     "namaBelakang": "Ong",
     "idJabatan": "J001",
@@ -1806,7 +1667,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P660",
     "namaDepan": "Tamika",
     "namaBelakang": "Smoaks",
     "idJabatan": "J001",
@@ -1819,7 +1679,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P666",
     "namaDepan": "Rahul",
     "namaBelakang": "Newell",
     "idJabatan": "J001",
@@ -1832,7 +1691,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P67",
     "namaDepan": "Natilee",
     "namaBelakang": "Gullion",
     "idJabatan": "J001",
@@ -1845,7 +1703,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P676",
     "namaDepan": "Roslyn",
     "namaBelakang": "Saur",
     "idJabatan": "J001",
@@ -1858,7 +1715,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P682",
     "namaDepan": "Jeannine",
     "namaBelakang": "Wooten",
     "idJabatan": "J001",
@@ -1871,7 +1727,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P686",
     "namaDepan": "Mariola",
     "namaBelakang": "Harvey",
     "idJabatan": "J001",
@@ -1884,7 +1739,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P688",
     "namaDepan": "Vanita",
     "namaBelakang": "Schneider",
     "idJabatan": "J001",
@@ -1897,7 +1751,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P689",
     "namaDepan": "Dwight",
     "namaBelakang": "Grubbs",
     "idJabatan": "J001",
@@ -1910,7 +1763,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P69",
     "namaDepan": "Janine",
     "namaBelakang": "Jayn",
     "idJabatan": "J001",
@@ -1923,7 +1775,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P692",
     "namaDepan": "Lowell",
     "namaBelakang": "Graham",
     "idJabatan": "J001",
@@ -1936,7 +1787,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P696",
     "namaDepan": "Miguel",
     "namaBelakang": "Porter",
     "idJabatan": "J001",
@@ -1949,7 +1799,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P698",
     "namaDepan": "Nauman",
     "namaBelakang": "Ward",
     "idJabatan": "J001",
@@ -1962,7 +1811,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P699",
     "namaDepan": "Veronica",
     "namaBelakang": "Levey",
     "idJabatan": "J001",
@@ -1975,7 +1823,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P700",
     "namaDepan": "Doug",
     "namaBelakang": "Ryan",
     "idJabatan": "J001",
@@ -1988,7 +1835,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P705",
     "namaDepan": "Isabel",
     "namaBelakang": "Yarber",
     "idJabatan": "J001",
@@ -2001,7 +1847,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P71",
     "namaDepan": "Annabelle",
     "namaBelakang": "Pace",
     "idJabatan": "J001",
@@ -2014,7 +1859,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P72",
     "namaDepan": "Lee",
     "namaBelakang": "Jellison",
     "idJabatan": "J001",
@@ -2027,7 +1871,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P724",
     "namaDepan": "Bridgett",
     "namaBelakang": "Krout",
     "idJabatan": "J001",
@@ -2040,7 +1883,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P73",
     "namaDepan": "Toya",
     "namaBelakang": "Guilfoyle",
     "idJabatan": "J001",
@@ -2053,7 +1895,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P730",
     "namaDepan": "Ayanna",
     "namaBelakang": "Muroski",
     "idJabatan": "J001",
@@ -2066,7 +1907,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P733",
     "namaDepan": "Terrell",
     "namaBelakang": "Chambers",
     "idJabatan": "J001",
@@ -2079,7 +1919,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P736",
     "namaDepan": "Hasan",
     "namaBelakang": "Primavera",
     "idJabatan": "J001",
@@ -2092,7 +1931,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P738",
     "namaDepan": "Felicia",
     "namaBelakang": "Googleanalytics",
     "idJabatan": "J001",
@@ -2105,7 +1943,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P74",
     "namaDepan": "Larry",
     "namaBelakang": "Moser",
     "idJabatan": "J001",
@@ -2118,7 +1955,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P745",
     "namaDepan": "Narendra",
     "namaBelakang": "Campbell",
     "idJabatan": "J001",
@@ -2131,7 +1967,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P746",
     "namaDepan": "Jolene",
     "namaBelakang": "Bubel",
     "idJabatan": "J001",
@@ -2144,7 +1979,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P762",
     "namaDepan": "Juan",
     "namaBelakang": "Dayton",
     "idJabatan": "J001",
@@ -2157,7 +1991,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P770",
     "namaDepan": "Lora",
     "namaBelakang": "Terrill",
     "idJabatan": "J001",
@@ -2170,7 +2003,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P772",
     "namaDepan": "Dwight",
     "namaBelakang": "Bryant",
     "idJabatan": "J001",
@@ -2183,7 +2015,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P778",
     "namaDepan": "Canzady",
     "namaBelakang": "Presas",
     "idJabatan": "J001",
@@ -2196,7 +2027,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P784",
     "namaDepan": "Prince",
     "namaBelakang": "Severson",
     "idJabatan": "J001",
@@ -2209,7 +2039,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P793",
     "namaDepan": "Tina",
     "namaBelakang": "Lawrence",
     "idJabatan": "J001",
@@ -2222,7 +2051,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P798",
     "namaDepan": "Edwin",
     "namaBelakang": "Ciborowski",
     "idJabatan": "J001",
@@ -2235,7 +2063,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P800",
     "namaDepan": "Constance",
     "namaBelakang": "Bombulie",
     "idJabatan": "J001",
@@ -2248,7 +2075,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P801",
     "namaDepan": "Deitric",
     "namaBelakang": "Silva",
     "idJabatan": "J001",
@@ -2261,7 +2087,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P807",
     "namaDepan": "Emilia",
     "namaBelakang": "Pfaff",
     "idJabatan": "J001",
@@ -2274,7 +2099,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P811",
     "namaDepan": "Micheal",
     "namaBelakang": "Mcnamee",
     "idJabatan": "J001",
@@ -2287,7 +2111,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P822",
     "namaDepan": "Deborah",
     "namaBelakang": "Pfaff",
     "idJabatan": "J001",
@@ -2300,7 +2123,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P824",
     "namaDepan": "Ashwin",
     "namaBelakang": "Dees",
     "idJabatan": "J001",
@@ -2313,7 +2135,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P829",
     "namaDepan": "Roderic",
     "namaBelakang": "Shaffer",
     "idJabatan": "J001",
@@ -2326,7 +2147,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P83",
     "namaDepan": "Maria",
     "namaBelakang": "Kirk",
     "idJabatan": "J001",
@@ -2339,7 +2159,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P833",
     "namaDepan": "Amani",
     "namaBelakang": "Humphrey",
     "idJabatan": "J001",
@@ -2352,7 +2171,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P837",
     "namaDepan": "Romeo",
     "namaBelakang": "Rizk",
     "idJabatan": "J001",
@@ -2365,7 +2183,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P839",
     "namaDepan": "Gene",
     "namaBelakang": "Abrahams",
     "idJabatan": "J001",
@@ -2378,7 +2195,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P857",
     "namaDepan": "Audrey",
     "namaBelakang": "Bean",
     "idJabatan": "J001",
@@ -2391,7 +2207,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P868",
     "namaDepan": "Mikel",
     "namaBelakang": "Partin",
     "idJabatan": "J001",
@@ -2404,7 +2219,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P873",
     "namaDepan": "Nick",
     "namaBelakang": "Lavallee",
     "idJabatan": "J001",
@@ -2417,7 +2231,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P884",
     "namaDepan": "Sheila",
     "namaBelakang": "Terry",
     "idJabatan": "J001",
@@ -2430,7 +2243,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P887",
     "namaDepan": "Anna",
     "namaBelakang": "Gunn",
     "idJabatan": "J001",
@@ -2443,7 +2255,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P888",
     "namaDepan": "Arti",
     "namaBelakang": "Glean",
     "idJabatan": "J001",
@@ -2456,7 +2267,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P892",
     "namaDepan": "Johnathan",
     "namaBelakang": "Knowlton",
     "idJabatan": "J001",
@@ -2469,7 +2279,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P895",
     "namaDepan": "James",
     "namaBelakang": "Whisler",
     "idJabatan": "J001",
@@ -2482,7 +2291,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P898",
     "namaDepan": "Aylesa",
     "namaBelakang": "Carrothers",
     "idJabatan": "J001",
@@ -2495,7 +2303,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P9",
     "namaDepan": "Charisse",
     "namaBelakang": "Troy",
     "idJabatan": "J001",
@@ -2508,7 +2315,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P906",
     "namaDepan": "Xiaoyan",
     "namaBelakang": "Dunn",
     "idJabatan": "J001",
@@ -2521,7 +2327,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P915",
     "namaDepan": "Guy",
     "namaBelakang": "Peacock",
     "idJabatan": "J001",
@@ -2534,7 +2339,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P927",
     "namaDepan": "Gateri",
     "namaBelakang": "Holt",
     "idJabatan": "J001",
@@ -2547,7 +2351,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P93",
     "namaDepan": "Herman",
     "namaBelakang": "Hadley",
     "idJabatan": "J001",
@@ -2560,7 +2363,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P933",
     "namaDepan": "Gina",
     "namaBelakang": "Wray",
     "idJabatan": "J001",
@@ -2573,7 +2375,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P934",
     "namaDepan": "Tanita",
     "namaBelakang": "Bechtold",
     "idJabatan": "J001",
@@ -2586,7 +2387,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P935",
     "namaDepan": "Julie",
     "namaBelakang": "Rydinsky",
     "idJabatan": "J001",
@@ -2599,7 +2399,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P940",
     "namaDepan": "Emir",
     "namaBelakang": "Gilberto",
     "idJabatan": "J001",
@@ -2612,7 +2411,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P944",
     "namaDepan": "Vernon",
     "namaBelakang": "Schemanski",
     "idJabatan": "J001",
@@ -2625,7 +2423,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P947",
     "namaDepan": "Terry",
     "namaBelakang": "Murphy",
     "idJabatan": "J001",
@@ -2638,7 +2435,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P954",
     "namaDepan": "Gene",
     "namaBelakang": "Carson",
     "idJabatan": "J001",
@@ -2651,7 +2447,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P956",
     "namaDepan": "Marsha",
     "namaBelakang": "Feldman",
     "idJabatan": "J001",
@@ -2664,7 +2459,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P958",
     "namaDepan": "Christine",
     "namaBelakang": "Roth",
     "idJabatan": "J001",
@@ -2677,7 +2471,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P96",
     "namaDepan": "Kingi",
     "namaBelakang": "Hutchings",
     "idJabatan": "J001",
@@ -2690,7 +2483,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P966",
     "namaDepan": "Vickie",
     "namaBelakang": "Wollf",
     "idJabatan": "J001",
@@ -2703,7 +2495,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P970",
     "namaDepan": "Ilona",
     "namaBelakang": "Manteuffel",
     "idJabatan": "J001",
@@ -2716,7 +2507,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P978",
     "namaDepan": "Esperanza",
     "namaBelakang": "Anderson",
     "idJabatan": "J001",
@@ -2729,7 +2519,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P982",
     "namaDepan": "Jireh",
     "namaBelakang": "Lallemont",
     "idJabatan": "J001",
@@ -2742,7 +2531,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P987",
     "namaDepan": "Dave",
     "namaBelakang": "Bombulie",
     "idJabatan": "J001",
@@ -2755,7 +2543,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P989",
     "namaDepan": "Hanne",
     "namaBelakang": "Nimick",
     "idJabatan": "J001",
@@ -2768,7 +2555,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P99",
     "namaDepan": "Willie",
     "namaBelakang": "Frederick",
     "idJabatan": "J001",
@@ -2781,7 +2567,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P990",
     "namaDepan": "Koweta",
     "namaBelakang": "Siecke",
     "idJabatan": "J001",
@@ -2794,7 +2579,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P998",
     "namaDepan": "Wayne",
     "namaBelakang": "Ritchie",
     "idJabatan": "J001",
@@ -2807,7 +2591,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P999",
     "namaDepan": "Humayun",
     "namaBelakang": "Levickis",
     "idJabatan": "J001",
@@ -2820,7 +2603,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P1",
     "namaDepan": "Mary",
     "namaBelakang": "Nacita",
     "idJabatan": "J002",
@@ -2845,7 +2627,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P10",
     "namaDepan": "Kelly",
     "namaBelakang": "Darnley",
     "idJabatan": "J002",
@@ -2870,7 +2651,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P107",
     "namaDepan": "Milanka",
     "namaBelakang": "Camiling",
     "idJabatan": "J002",
@@ -2895,7 +2675,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P108",
     "namaDepan": "Hathor",
     "namaBelakang": "Wolz",
     "idJabatan": "J002",
@@ -2920,7 +2699,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P111",
     "namaDepan": "Diana",
     "namaBelakang": "Lavallee",
     "idJabatan": "J002",
@@ -2945,7 +2723,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P117",
     "namaDepan": "Geoffrey",
     "namaBelakang": "Hafford",
     "idJabatan": "J002",
@@ -2970,7 +2747,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P124",
     "namaDepan": "Walter",
     "namaBelakang": "Kelley",
     "idJabatan": "J002",
@@ -2995,7 +2771,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P126",
     "namaDepan": "Nudret",
     "namaBelakang": "Gergely",
     "idJabatan": "J002",
@@ -3020,7 +2795,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P139",
     "namaDepan": "Alana",
     "namaBelakang": "Huseyin",
     "idJabatan": "J002",
@@ -3045,7 +2819,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P141",
     "namaDepan": "Hathor",
     "namaBelakang": "Brenner",
     "idJabatan": "J002",
@@ -3070,7 +2843,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P147",
     "namaDepan": "Erickson",
     "namaBelakang": "Curtis",
     "idJabatan": "J002",
@@ -3095,7 +2867,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P152",
     "namaDepan": "Debbie",
     "namaBelakang": "Vinsant",
     "idJabatan": "J002",
@@ -3120,7 +2891,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P170",
     "namaDepan": "Francine",
     "namaBelakang": "Grunert",
     "idJabatan": "J002",
@@ -3145,7 +2915,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P173",
     "namaDepan": "Mirza",
     "namaBelakang": "Levin",
     "idJabatan": "J002",
@@ -3170,7 +2939,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P174",
     "namaDepan": "Dora",
     "namaBelakang": "Bristow",
     "idJabatan": "J002",
@@ -3195,7 +2963,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P177",
     "namaDepan": "Cleola",
     "namaBelakang": "Marcks",
     "idJabatan": "J002",
@@ -3220,7 +2987,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P18",
     "namaDepan": "Cathryn",
     "namaBelakang": "Sueri",
     "idJabatan": "J002",
@@ -3245,7 +3011,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P19",
     "namaDepan": "Shelley",
     "namaBelakang": "Mulvehill",
     "idJabatan": "J002",
@@ -3270,7 +3035,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P193",
     "namaDepan": "Minxue",
     "namaBelakang": "Shanafelt",
     "idJabatan": "J002",
@@ -3295,7 +3059,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P194",
     "namaDepan": "Marc",
     "namaBelakang": "Franklin",
     "idJabatan": "J002",
@@ -3320,7 +3083,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P197",
     "namaDepan": "Gayle",
     "namaBelakang": "Boyle",
     "idJabatan": "J002",
@@ -3345,7 +3107,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P204",
     "namaDepan": "Grady",
     "namaBelakang": "Shofstahl",
     "idJabatan": "J002",
@@ -3370,7 +3131,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P210",
     "namaDepan": "Sandro",
     "namaBelakang": "Kraenzle",
     "idJabatan": "J002",
@@ -3395,7 +3155,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P218",
     "namaDepan": "Kerry",
     "namaBelakang": "Kamradt",
     "idJabatan": "J002",
@@ -3420,7 +3179,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P24",
     "namaDepan": "Haile",
     "namaBelakang": "Shrestha",
     "idJabatan": "J002",
@@ -3445,7 +3203,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P243",
     "namaDepan": "Aubrey",
     "namaBelakang": "Melvin",
     "idJabatan": "J002",
@@ -3470,7 +3227,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P258",
     "namaDepan": "Majeed",
     "namaBelakang": "Plourde",
     "idJabatan": "J002",
@@ -3495,7 +3251,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P259",
     "namaDepan": "Kehinde",
     "namaBelakang": "Ramsey",
     "idJabatan": "J002",
@@ -3520,7 +3275,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P26",
     "namaDepan": "Dwight",
     "namaBelakang": "Weeks",
     "idJabatan": "J002",
@@ -3545,7 +3299,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P268",
     "namaDepan": "Latisha",
     "namaBelakang": "Penty",
     "idJabatan": "J002",
@@ -3570,7 +3323,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P277",
     "namaDepan": "Sherrye",
     "namaBelakang": "Hayes",
     "idJabatan": "J002",
@@ -3595,7 +3347,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P279",
     "namaDepan": "Mila",
     "namaBelakang": "Brinkley",
     "idJabatan": "J002",
@@ -3620,7 +3371,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P280",
     "namaDepan": "Ty",
     "namaBelakang": "Caffrey",
     "idJabatan": "J002",
@@ -3645,7 +3395,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P285",
     "namaDepan": "Krystal",
     "namaBelakang": "Goodwin",
     "idJabatan": "J002",
@@ -3670,7 +3419,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P29",
     "namaDepan": "Vijayakumar",
     "namaBelakang": "Miyaki",
     "idJabatan": "J002",
@@ -3695,7 +3443,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P294",
     "namaDepan": "Ana",
     "namaBelakang": "Raslich",
     "idJabatan": "J002",
@@ -3720,7 +3467,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P298",
     "namaDepan": "Rachelle",
     "namaBelakang": "Struble",
     "idJabatan": "J002",
@@ -3745,7 +3491,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P30",
     "namaDepan": "Maribel",
     "namaBelakang": "Nadaraja",
     "idJabatan": "J002",
@@ -3770,7 +3515,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P303",
     "namaDepan": "Alex",
     "namaBelakang": "Lenze",
     "idJabatan": "J002",
@@ -3795,7 +3539,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P308",
     "namaDepan": "Gueorgui",
     "namaBelakang": "Hauler",
     "idJabatan": "J002",
@@ -3820,7 +3563,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P309",
     "namaDepan": "Sharmistha",
     "namaBelakang": "Oliver",
     "idJabatan": "J002",
@@ -3845,7 +3587,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P320",
     "namaDepan": "Antionette",
     "namaBelakang": "Hist",
     "idJabatan": "J002",
@@ -3870,7 +3611,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P322",
     "namaDepan": "Brandon",
     "namaBelakang": "Franzin",
     "idJabatan": "J002",
@@ -3895,7 +3635,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P327",
     "namaDepan": "Ann",
     "namaBelakang": "Cobb",
     "idJabatan": "J002",
@@ -3920,7 +3659,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P330",
     "namaDepan": "Munazza",
     "namaBelakang": "Deluca",
     "idJabatan": "J002",
@@ -3945,7 +3683,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P347",
     "namaDepan": "Corrine",
     "namaBelakang": "Westrate",
     "idJabatan": "J002",
@@ -3970,7 +3707,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P348",
     "namaDepan": "Martie",
     "namaBelakang": "Schatz",
     "idJabatan": "J002",
@@ -3995,7 +3731,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P35",
     "namaDepan": "Raquel",
     "namaBelakang": "Monuteaux",
     "idJabatan": "J002",
@@ -4020,7 +3755,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P351",
     "namaDepan": "Marzee",
     "namaBelakang": "Hutchinson",
     "idJabatan": "J002",
@@ -4045,7 +3779,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P353",
     "namaDepan": "Ophelia",
     "namaBelakang": "Wing",
     "idJabatan": "J002",
@@ -4070,7 +3803,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P382",
     "namaDepan": "Scort",
     "namaBelakang": "Swift",
     "idJabatan": "J002",
@@ -4095,7 +3827,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P392",
     "namaDepan": "Gilbert",
     "namaBelakang": "Komppa",
     "idJabatan": "J002",
@@ -4120,7 +3851,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P394",
     "namaDepan": "Marlon",
     "namaBelakang": "Rager",
     "idJabatan": "J002",
@@ -4145,7 +3875,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P399",
     "namaDepan": "Valesa",
     "namaBelakang": "Hellman",
     "idJabatan": "J002",
@@ -4170,7 +3899,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P404",
     "namaDepan": "Ahila",
     "namaBelakang": "Mcmullin",
     "idJabatan": "J002",
@@ -4195,7 +3923,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P408",
     "namaDepan": "Anuj",
     "namaBelakang": "Newell",
     "idJabatan": "J002",
@@ -4220,7 +3947,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P410",
     "namaDepan": "Jeremiah",
     "namaBelakang": "Jackson",
     "idJabatan": "J002",
@@ -4245,7 +3971,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P414",
     "namaDepan": "Wanda",
     "namaBelakang": "Gould",
     "idJabatan": "J002",
@@ -4270,7 +3995,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P418",
     "namaDepan": "Latina",
     "namaBelakang": "Covel",
     "idJabatan": "J002",
@@ -4295,7 +4019,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P419",
     "namaDepan": "Kurtis",
     "namaBelakang": "Derryberry",
     "idJabatan": "J002",
@@ -4320,7 +4043,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P42",
     "namaDepan": "Andrey",
     "namaBelakang": "Partin",
     "idJabatan": "J002",
@@ -4345,7 +4067,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P423",
     "namaDepan": "Carlo",
     "namaBelakang": "Guanzon",
     "idJabatan": "J002",
@@ -4370,7 +4091,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P424",
     "namaDepan": "Culveretta",
     "namaBelakang": "Pointelin",
     "idJabatan": "J002",
@@ -4395,7 +4115,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P43",
     "namaDepan": "Stephan",
     "namaBelakang": "Lill",
     "idJabatan": "J002",
@@ -4420,7 +4139,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P430",
     "namaDepan": "Carmerlina",
     "namaBelakang": "Gorski",
     "idJabatan": "J002",
@@ -4445,7 +4163,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P431",
     "namaDepan": "Tasha",
     "namaBelakang": "Hobbs",
     "idJabatan": "J002",
@@ -4470,7 +4187,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P441",
     "namaDepan": "Marva",
     "namaBelakang": "Bettencourt",
     "idJabatan": "J002",
@@ -4495,7 +4211,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P448",
     "namaDepan": "Tighe",
     "namaBelakang": "Cozad",
     "idJabatan": "J002",
@@ -4520,7 +4235,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P451",
     "namaDepan": "Xiumei",
     "namaBelakang": "Michaels",
     "idJabatan": "J002",
@@ -4545,7 +4259,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P456",
     "namaDepan": "Kash",
     "namaBelakang": "Hickey",
     "idJabatan": "J002",
@@ -4570,7 +4283,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P468",
     "namaDepan": "Kathryn",
     "namaBelakang": "Carnevale",
     "idJabatan": "J002",
@@ -4595,7 +4307,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P472",
     "namaDepan": "May",
     "namaBelakang": "Jessica",
     "idJabatan": "J002",
@@ -4620,7 +4331,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P482",
     "namaDepan": "Gregg",
     "namaBelakang": "Laiuppa",
     "idJabatan": "J002",
@@ -4645,7 +4355,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P487",
     "namaDepan": "Anteria",
     "namaBelakang": "Trrenkler",
     "idJabatan": "J002",
@@ -4670,7 +4379,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P489",
     "namaDepan": "Georgina",
     "namaBelakang": "Michaels",
     "idJabatan": "J002",
@@ -4695,7 +4403,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P495",
     "namaDepan": "Megan",
     "namaBelakang": "Woods",
     "idJabatan": "J002",
@@ -4720,7 +4427,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P50",
     "namaDepan": "Tiziana",
     "namaBelakang": "Mcgarity",
     "idJabatan": "J002",
@@ -4745,7 +4451,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P505",
     "namaDepan": "James",
     "namaBelakang": "Flanigan",
     "idJabatan": "J002",
@@ -4770,7 +4475,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P509",
     "namaDepan": "Evelyn",
     "namaBelakang": "Krynsky",
     "idJabatan": "J002",
@@ -4795,7 +4499,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P511",
     "namaDepan": "Constance",
     "namaBelakang": "Glean",
     "idJabatan": "J002",
@@ -4820,7 +4523,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P517",
     "namaDepan": "Lois",
     "namaBelakang": "Douglass",
     "idJabatan": "J002",
@@ -4845,7 +4547,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P528",
     "namaDepan": "Anuraag",
     "namaBelakang": "Gray",
     "idJabatan": "J002",
@@ -4870,7 +4571,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P534",
     "namaDepan": "Amatullah",
     "namaBelakang": "Neilson",
     "idJabatan": "J002",
@@ -4895,7 +4595,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P538",
     "namaDepan": "Farzana",
     "namaBelakang": "Kasnow",
     "idJabatan": "J002",
@@ -4920,7 +4619,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P54",
     "namaDepan": "Adrienne",
     "namaBelakang": "Noriega",
     "idJabatan": "J002",
@@ -4945,7 +4643,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P548",
     "namaDepan": "Latia",
     "namaBelakang": "Bjurback",
     "idJabatan": "J002",
@@ -4970,7 +4667,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P55",
     "namaDepan": "Anissia",
     "namaBelakang": "Amacker",
     "idJabatan": "J002",
@@ -4995,7 +4691,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P553",
     "namaDepan": "Sherrell",
     "namaBelakang": "Koprowski",
     "idJabatan": "J002",
@@ -5020,7 +4715,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P555",
     "namaDepan": "Anthony",
     "namaBelakang": "Haag",
     "idJabatan": "J002",
@@ -5045,7 +4739,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P558",
     "namaDepan": "Tracie",
     "namaBelakang": "Harrison",
     "idJabatan": "J002",
@@ -5070,7 +4763,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P563",
     "namaDepan": "Emir",
     "namaBelakang": "Walters",
     "idJabatan": "J002",
@@ -5095,7 +4787,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P565",
     "namaDepan": "Benika",
     "namaBelakang": "Rios",
     "idJabatan": "J002",
@@ -5120,7 +4811,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P566",
     "namaDepan": "Milanka",
     "namaBelakang": "Hopkins",
     "idJabatan": "J002",
@@ -5145,7 +4835,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P571",
     "namaDepan": "Oscar",
     "namaBelakang": "Tisi",
     "idJabatan": "J002",
@@ -5170,7 +4859,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P578",
     "namaDepan": "Andy",
     "namaBelakang": "Mahajan",
     "idJabatan": "J002",
@@ -5195,7 +4883,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P581",
     "namaDepan": "Erika",
     "namaBelakang": "Meier",
     "idJabatan": "J002",
@@ -5220,7 +4907,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P585",
     "namaDepan": "Dina",
     "namaBelakang": "Suchland",
     "idJabatan": "J002",
@@ -5245,7 +4931,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P587",
     "namaDepan": "Gueorgui",
     "namaBelakang": "Rooprai",
     "idJabatan": "J002",
@@ -5270,7 +4955,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P595",
     "namaDepan": "Jaroslava",
     "namaBelakang": "Shute",
     "idJabatan": "J002",
@@ -5295,7 +4979,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P596",
     "namaDepan": "Brent",
     "namaBelakang": "Carstens",
     "idJabatan": "J002",
@@ -5320,7 +5003,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P603",
     "namaDepan": "Chunlei",
     "namaBelakang": "Jouglard",
     "idJabatan": "J002",
@@ -5345,7 +5027,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P606",
     "namaDepan": "Bharat",
     "namaBelakang": "Chadwick",
     "idJabatan": "J002",
@@ -5370,7 +5051,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P61",
     "namaDepan": "Frederick",
     "namaBelakang": "Shrestha",
     "idJabatan": "J002",
@@ -5395,7 +5075,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P610",
     "namaDepan": "Thelma",
     "namaBelakang": "Cullen",
     "idJabatan": "J002",
@@ -5420,7 +5099,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P613",
     "namaDepan": "Veneta",
     "namaBelakang": "Crete",
     "idJabatan": "J002",
@@ -5445,7 +5123,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P615",
     "namaDepan": "Suanne",
     "namaBelakang": "Stone",
     "idJabatan": "J002",
@@ -5470,7 +5147,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P627",
     "namaDepan": "Ida",
     "namaBelakang": "Proctor",
     "idJabatan": "J002",
@@ -5495,7 +5171,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P64",
     "namaDepan": "Terry",
     "namaBelakang": "Mize",
     "idJabatan": "J002",
@@ -5520,7 +5195,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P646",
     "namaDepan": "Jasmine",
     "namaBelakang": "Hambrick",
     "idJabatan": "J002",
@@ -5545,7 +5219,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P648",
     "namaDepan": "Kimberly",
     "namaBelakang": "Moser",
     "idJabatan": "J002",
@@ -5570,7 +5243,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P653",
     "namaDepan": "Carlos",
     "namaBelakang": "Wray",
     "idJabatan": "J002",
@@ -5595,7 +5267,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P655",
     "namaDepan": "Forest",
     "namaBelakang": "Parker",
     "idJabatan": "J002",
@@ -5620,7 +5291,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P656",
     "namaDepan": "Joel",
     "namaBelakang": "Birnstill",
     "idJabatan": "J002",
@@ -5645,7 +5315,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P657",
     "namaDepan": "Jess",
     "namaBelakang": "Gill",
     "idJabatan": "J002",
@@ -5670,7 +5339,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P668",
     "namaDepan": "Shannon",
     "namaBelakang": "Velazco",
     "idJabatan": "J002",
@@ -5695,7 +5363,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P681",
     "namaDepan": "Cynthia",
     "namaBelakang": "Bowers",
     "idJabatan": "J002",
@@ -5720,7 +5387,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P691",
     "namaDepan": "Jerrod",
     "namaBelakang": "Wray",
     "idJabatan": "J002",
@@ -5745,7 +5411,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P695",
     "namaDepan": "Jenny",
     "namaBelakang": "Kessel",
     "idJabatan": "J002",
@@ -5770,7 +5435,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P697",
     "namaDepan": "Shaun",
     "namaBelakang": "Loria",
     "idJabatan": "J002",
@@ -5795,7 +5459,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P701",
     "namaDepan": "Sarahlynn",
     "namaBelakang": "Frazee",
     "idJabatan": "J002",
@@ -5820,7 +5483,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P715",
     "namaDepan": "Travis",
     "namaBelakang": "Maas",
     "idJabatan": "J002",
@@ -5845,7 +5507,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P716",
     "namaDepan": "Aristotle",
     "namaBelakang": "Woolverton",
     "idJabatan": "J002",
@@ -5870,7 +5531,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P722",
     "namaDepan": "Marita",
     "namaBelakang": "Haga",
     "idJabatan": "J002",
@@ -5895,7 +5555,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P725",
     "namaDepan": "Carman",
     "namaBelakang": "Mashburn",
     "idJabatan": "J002",
@@ -5920,7 +5579,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P726",
     "namaDepan": "Alana",
     "namaBelakang": "Faust",
     "idJabatan": "J002",
@@ -5945,7 +5603,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P734",
     "namaDepan": "Arif",
     "namaBelakang": "Woods",
     "idJabatan": "J002",
@@ -5970,7 +5627,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P739",
     "namaDepan": "Gabriela",
     "namaBelakang": "Brady",
     "idJabatan": "J002",
@@ -5995,7 +5651,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P742",
     "namaDepan": "Manolo",
     "namaBelakang": "Welle",
     "idJabatan": "J002",
@@ -6020,7 +5675,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P749",
     "namaDepan": "Priscilla",
     "namaBelakang": "Hoepner",
     "idJabatan": "J002",
@@ -6045,7 +5699,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P751",
     "namaDepan": "Patricia",
     "namaBelakang": "Cary",
     "idJabatan": "J002",
@@ -6070,7 +5723,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P753",
     "namaDepan": "Chandra",
     "namaBelakang": "Red",
     "idJabatan": "J002",
@@ -6095,7 +5747,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P756",
     "namaDepan": "Rene",
     "namaBelakang": "Koskovich",
     "idJabatan": "J002",
@@ -6120,7 +5771,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P765",
     "namaDepan": "Vivian",
     "namaBelakang": "Wing",
     "idJabatan": "J002",
@@ -6145,7 +5795,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P769",
     "namaDepan": "Peggy",
     "namaBelakang": "Couturier",
     "idJabatan": "J002",
@@ -6170,7 +5819,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P773",
     "namaDepan": "Cavanaugh",
     "namaBelakang": "Theobald",
     "idJabatan": "J002",
@@ -6195,7 +5843,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P774",
     "namaDepan": "Kate",
     "namaBelakang": "Chandler",
     "idJabatan": "J002",
@@ -6220,7 +5867,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P775",
     "namaDepan": "Daisy",
     "namaBelakang": "Kimmel",
     "idJabatan": "J002",
@@ -6245,7 +5891,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P780",
     "namaDepan": "Gayle",
     "namaBelakang": "Llc",
     "idJabatan": "J002",
@@ -6270,7 +5915,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P781",
     "namaDepan": "Doug",
     "namaBelakang": "Kachelmuss",
     "idJabatan": "J002",
@@ -6295,7 +5939,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P796",
     "namaDepan": "LaDagea",
     "namaBelakang": "Rossi",
     "idJabatan": "J002",
@@ -6320,7 +5963,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P799",
     "namaDepan": "Maribel",
     "namaBelakang": "Howard",
     "idJabatan": "J002",
@@ -6345,7 +5987,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P812",
     "namaDepan": "Verna",
     "namaBelakang": "Fuller",
     "idJabatan": "J002",
@@ -6370,7 +6011,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P817",
     "namaDepan": "Farzana",
     "namaBelakang": "Carlsen",
     "idJabatan": "J002",
@@ -6395,7 +6035,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P819",
     "namaDepan": "Dorci'A",
     "namaBelakang": "Finlay",
     "idJabatan": "J002",
@@ -6420,7 +6059,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P82",
     "namaDepan": "Gill",
     "namaBelakang": "Romero",
     "idJabatan": "J002",
@@ -6445,7 +6083,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P820",
     "namaDepan": "Kristy",
     "namaBelakang": "Reddick",
     "idJabatan": "J002",
@@ -6470,7 +6107,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P821",
     "namaDepan": "Candelaria",
     "namaBelakang": "Hatter",
     "idJabatan": "J002",
@@ -6495,7 +6131,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P826",
     "namaDepan": "Ning",
     "namaBelakang": "Delaura",
     "idJabatan": "J002",
@@ -6520,7 +6155,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P827",
     "namaDepan": "Natalie",
     "namaBelakang": "Kandray",
     "idJabatan": "J002",
@@ -6545,7 +6179,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P832",
     "namaDepan": "Neha",
     "namaBelakang": "Nesbitt",
     "idJabatan": "J002",
@@ -6570,7 +6203,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P836",
     "namaDepan": "Shanita",
     "namaBelakang": "Lynn",
     "idJabatan": "J002",
@@ -6595,7 +6227,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P838",
     "namaDepan": "Javier",
     "namaBelakang": "Ray",
     "idJabatan": "J002",
@@ -6620,7 +6251,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P84",
     "namaDepan": "KaShaun",
     "namaBelakang": "Mcmyne",
     "idJabatan": "J002",
@@ -6645,7 +6275,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P840",
     "namaDepan": "KaShaun",
     "namaBelakang": "Rager",
     "idJabatan": "J002",
@@ -6670,7 +6299,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P844",
     "namaDepan": "Josefina",
     "namaBelakang": "Moghadam",
     "idJabatan": "J002",
@@ -6695,7 +6323,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P860",
     "namaDepan": "Vicky",
     "namaBelakang": "Pillai",
     "idJabatan": "J002",
@@ -6720,7 +6347,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P862",
     "namaDepan": "Shailesh",
     "namaBelakang": "Worden",
     "idJabatan": "J002",
@@ -6745,7 +6371,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P863",
     "namaDepan": "Stephan",
     "namaBelakang": "Carrera",
     "idJabatan": "J002",
@@ -6770,7 +6395,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P879",
     "namaDepan": "Earnest",
     "namaBelakang": "Heilman",
     "idJabatan": "J002",
@@ -6795,7 +6419,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P880",
     "namaDepan": "Amir",
     "namaBelakang": "Mcinerney",
     "idJabatan": "J002",
@@ -6820,7 +6443,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P885",
     "namaDepan": "Dawn",
     "namaBelakang": "Hawkins",
     "idJabatan": "J002",
@@ -6845,7 +6467,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P886",
     "namaDepan": "Elaine",
     "namaBelakang": "Geouque",
     "idJabatan": "J002",
@@ -6870,7 +6491,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P889",
     "namaDepan": "Russell",
     "namaBelakang": "Casariego",
     "idJabatan": "J002",
@@ -6895,7 +6515,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P894",
     "namaDepan": "Tasheis",
     "namaBelakang": "Derryberry",
     "idJabatan": "J002",
@@ -6920,7 +6539,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P90",
     "namaDepan": "Judith",
     "namaBelakang": "Rosenberg",
     "idJabatan": "J002",
@@ -6945,7 +6563,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P904",
     "namaDepan": "Helen",
     "namaBelakang": "Hatton",
     "idJabatan": "J002",
@@ -6970,7 +6587,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P907",
     "namaDepan": "Howard",
     "namaBelakang": "Worden",
     "idJabatan": "J002",
@@ -6995,7 +6611,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P908",
     "namaDepan": "Bertha",
     "namaBelakang": "Millegan",
     "idJabatan": "J002",
@@ -7020,7 +6635,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P913",
     "namaDepan": "Geoff",
     "namaBelakang": "Chase",
     "idJabatan": "J002",
@@ -7045,7 +6659,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P914",
     "namaDepan": "Arti",
     "namaBelakang": "Lavallee",
     "idJabatan": "J002",
@@ -7070,7 +6683,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P916",
     "namaDepan": "Patricia",
     "namaBelakang": "Harrington",
     "idJabatan": "J002",
@@ -7095,7 +6707,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P928",
     "namaDepan": "Guinka",
     "namaBelakang": "Fielack",
     "idJabatan": "J002",
@@ -7120,7 +6731,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P929",
     "namaDepan": "Theodora",
     "namaBelakang": "Grant",
     "idJabatan": "J002",
@@ -7145,7 +6755,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P937",
     "namaDepan": "Freddy",
     "namaBelakang": "Glynn",
     "idJabatan": "J002",
@@ -7170,7 +6779,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P946",
     "namaDepan": "Gordon",
     "namaBelakang": "Suzanne",
     "idJabatan": "J002",
@@ -7195,7 +6803,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P962",
     "namaDepan": "Oscar",
     "namaBelakang": "Newby",
     "idJabatan": "J002",
@@ -7220,7 +6827,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P969",
     "namaDepan": "Dwarika",
     "namaBelakang": "Campos",
     "idJabatan": "J002",
@@ -7245,7 +6851,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P973",
     "namaDepan": "Melanie",
     "namaBelakang": "Imholtz",
     "idJabatan": "J002",
@@ -7270,7 +6875,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P980",
     "namaDepan": "Val",
     "namaBelakang": "Jordan",
     "idJabatan": "J002",
@@ -7295,7 +6899,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P996",
     "namaDepan": "Irina",
     "namaBelakang": "Caffrey",
     "idJabatan": "J002",
@@ -7320,7 +6923,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P1000",
     "namaDepan": "Roosevelt",
     "namaBelakang": "Bunker",
     "idJabatan": "J003",
@@ -7345,7 +6947,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P103",
     "namaDepan": "Teresita",
     "namaBelakang": "Gill",
     "idJabatan": "J003",
@@ -7370,7 +6971,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P109",
     "namaDepan": "Donovan",
     "namaBelakang": "Braswell",
     "idJabatan": "J003",
@@ -7395,7 +6995,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P114",
     "namaDepan": "Dean",
     "namaBelakang": "Velazco",
     "idJabatan": "J003",
@@ -7420,7 +7019,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P119",
     "namaDepan": "Emiliano",
     "namaBelakang": "Walls",
     "idJabatan": "J003",
@@ -7445,7 +7043,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P122",
     "namaDepan": "Victor",
     "namaBelakang": "Almanza",
     "idJabatan": "J003",
@@ -7470,7 +7067,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P127",
     "namaDepan": "Alina",
     "namaBelakang": "Palterman",
     "idJabatan": "J003",
@@ -7495,7 +7091,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P131",
     "namaDepan": "Alla",
     "namaBelakang": "Baligian",
     "idJabatan": "J003",
@@ -7520,7 +7115,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P133",
     "namaDepan": "Renardo",
     "namaBelakang": "Aunkst",
     "idJabatan": "J003",
@@ -7545,7 +7139,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P14",
     "namaDepan": "Imelda",
     "namaBelakang": "Zachary",
     "idJabatan": "J003",
@@ -7570,7 +7163,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P142",
     "namaDepan": "Jasper",
     "namaBelakang": "Lill",
     "idJabatan": "J003",
@@ -7595,7 +7187,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P150",
     "namaDepan": "Dominic",
     "namaBelakang": "Chow",
     "idJabatan": "J003",
@@ -7620,7 +7211,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P155",
     "namaDepan": "Saim",
     "namaBelakang": "Paderanga",
     "idJabatan": "J003",
@@ -7645,7 +7235,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P165",
     "namaDepan": "Whitney",
     "namaBelakang": "Carstens",
     "idJabatan": "J003",
@@ -7670,7 +7259,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P166",
     "namaDepan": "Arthur",
     "namaBelakang": "Lyden",
     "idJabatan": "J003",
@@ -7695,7 +7283,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P167",
     "namaDepan": "Sritharan",
     "namaBelakang": "Kasnow",
     "idJabatan": "J003",
@@ -7720,7 +7307,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P175",
     "namaDepan": "Ruth",
     "namaBelakang": "Gaby",
     "idJabatan": "J003",
@@ -7745,7 +7331,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P178",
     "namaDepan": "Demetrius",
     "namaBelakang": "Demerath",
     "idJabatan": "J003",
@@ -7770,7 +7355,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P181",
     "namaDepan": "Shivkumar",
     "namaBelakang": "Mize",
     "idJabatan": "J003",
@@ -7795,7 +7379,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P184",
     "namaDepan": "Jeannine",
     "namaBelakang": "Mcinvale",
     "idJabatan": "J003",
@@ -7820,7 +7403,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P186",
     "namaDepan": "Janet",
     "namaBelakang": "Tobin",
     "idJabatan": "J003",
@@ -7845,7 +7427,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P199",
     "namaDepan": "Beth",
     "namaBelakang": "Treptow",
     "idJabatan": "J003",
@@ -7870,7 +7451,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P2",
     "namaDepan": "Magdalena",
     "namaBelakang": "Ventura",
     "idJabatan": "J003",
@@ -7895,7 +7475,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P20",
     "namaDepan": "Fang",
     "namaBelakang": "Googleanalytics",
     "idJabatan": "J003",
@@ -7920,7 +7499,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P203",
     "namaDepan": "Cecilia",
     "namaBelakang": "Baker",
     "idJabatan": "J003",
@@ -7945,7 +7523,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P205",
     "namaDepan": "Angelo",
     "namaBelakang": "Batson",
     "idJabatan": "J003",
@@ -7970,7 +7547,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P208",
     "namaDepan": "Arvid",
     "namaBelakang": "Mcnally",
     "idJabatan": "J003",
@@ -7995,7 +7571,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P212",
     "namaDepan": "Dalton",
     "namaBelakang": "Barrow",
     "idJabatan": "J003",
@@ -8020,7 +7595,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P213",
     "namaDepan": "Theresia",
     "namaBelakang": "Granger",
     "idJabatan": "J003",
@@ -8045,7 +7619,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P219",
     "namaDepan": "Dina",
     "namaBelakang": "Lilly",
     "idJabatan": "J003",
@@ -8070,7 +7643,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P22",
     "namaDepan": "Stephen",
     "namaBelakang": "Zensen",
     "idJabatan": "J003",
@@ -8095,7 +7667,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P220",
     "namaDepan": "Elmer",
     "namaBelakang": "Flanagan",
     "idJabatan": "J003",
@@ -8120,7 +7691,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P223",
     "namaDepan": "Timothy",
     "namaBelakang": "Pervaiz",
     "idJabatan": "J003",
@@ -8145,7 +7715,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P227",
     "namaDepan": "Diane",
     "namaBelakang": "Malstrom",
     "idJabatan": "J003",
@@ -8170,7 +7739,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P234",
     "namaDepan": "Vacharapol",
     "namaBelakang": "Casariego",
     "idJabatan": "J003",
@@ -8195,7 +7763,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P238",
     "namaDepan": "Charlene",
     "namaBelakang": "Mcmyne",
     "idJabatan": "J003",
@@ -8220,7 +7787,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P241",
     "namaDepan": "Mosharraf",
     "namaBelakang": "Dupuy",
     "idJabatan": "J003",
@@ -8245,7 +7811,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P248",
     "namaDepan": "Joann",
     "namaBelakang": "Gaby",
     "idJabatan": "J003",
@@ -8270,7 +7835,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P250",
     "namaDepan": "Tylene",
     "namaBelakang": "Franzin",
     "idJabatan": "J003",
@@ -8295,7 +7859,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P253",
     "namaDepan": "Nichole",
     "namaBelakang": "Leon",
     "idJabatan": "J003",
@@ -8320,7 +7883,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P265",
     "namaDepan": "Monthro",
     "namaBelakang": "Nesbitt",
     "idJabatan": "J003",
@@ -8345,7 +7907,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P269",
     "namaDepan": "Cleola",
     "namaBelakang": "Shanoski",
     "idJabatan": "J003",
@@ -8370,7 +7931,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P288",
     "namaDepan": "Amatullah",
     "namaBelakang": "Jackson",
     "idJabatan": "J003",
@@ -8395,7 +7955,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P292",
     "namaDepan": "Roslyn",
     "namaBelakang": "Price",
     "idJabatan": "J003",
@@ -8420,7 +7979,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P296",
     "namaDepan": "Suanne",
     "namaBelakang": "Shay",
     "idJabatan": "J003",
@@ -8445,7 +8003,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P299",
     "namaDepan": "Gazi",
     "namaBelakang": "Paluszek",
     "idJabatan": "J003",
@@ -8470,7 +8027,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P3",
     "namaDepan": "Shanna",
     "namaBelakang": "Rainwater",
     "idJabatan": "J003",
@@ -8495,7 +8051,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P300",
     "namaDepan": "Bernard",
     "namaBelakang": "Cappellini",
     "idJabatan": "J003",
@@ -8520,7 +8075,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P301",
     "namaDepan": "Atif",
     "namaBelakang": "Mccollum",
     "idJabatan": "J003",
@@ -8545,7 +8099,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P304",
     "namaDepan": "Felicia",
     "namaBelakang": "Bruintjes",
     "idJabatan": "J003",
@@ -8570,7 +8123,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P31",
     "namaDepan": "Denis",
     "namaBelakang": "Brenner",
     "idJabatan": "J003",
@@ -8595,7 +8147,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P315",
     "namaDepan": "Thursday",
     "namaBelakang": "Slate",
     "idJabatan": "J003",
@@ -8620,7 +8171,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P318",
     "namaDepan": "Kathryn",
     "namaBelakang": "Nordmark",
     "idJabatan": "J003",
@@ -8645,7 +8195,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P319",
     "namaDepan": "Mario",
     "namaBelakang": "Fisher",
     "idJabatan": "J003",
@@ -8670,7 +8219,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P323",
     "namaDepan": "Lloyd",
     "namaBelakang": "Boyle",
     "idJabatan": "J003",
@@ -8695,7 +8243,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P325",
     "namaDepan": "Barry",
     "namaBelakang": "Wallace",
     "idJabatan": "J003",
@@ -8720,7 +8267,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P326",
     "namaDepan": "Fritz",
     "namaBelakang": "Stabile",
     "idJabatan": "J003",
@@ -8745,7 +8291,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P328",
     "namaDepan": "Rodney",
     "namaBelakang": "Choate",
     "idJabatan": "J003",
@@ -8770,7 +8315,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P333",
     "namaDepan": "Dave",
     "namaBelakang": "Gerver",
     "idJabatan": "J003",
@@ -8795,7 +8339,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P336",
     "namaDepan": "Alla",
     "namaBelakang": "Cates",
     "idJabatan": "J003",
@@ -8820,7 +8363,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P340",
     "namaDepan": "Carlos",
     "namaBelakang": "Bommi",
     "idJabatan": "J003",
@@ -8845,7 +8387,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P345",
     "namaDepan": "Deirdre",
     "namaBelakang": "Patino",
     "idJabatan": "J003",
@@ -8870,7 +8411,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P350",
     "namaDepan": "Arlene",
     "namaBelakang": "Gorski",
     "idJabatan": "J003",
@@ -8895,7 +8435,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P354",
     "namaDepan": "Destinee",
     "namaBelakang": "Finke",
     "idJabatan": "J003",
@@ -8920,7 +8459,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P355",
     "namaDepan": "Leroy",
     "namaBelakang": "Sanvick",
     "idJabatan": "J003",
@@ -8945,7 +8483,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P357",
     "namaDepan": "Bertha",
     "namaBelakang": "Northrop",
     "idJabatan": "J003",
@@ -8970,7 +8507,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P364",
     "namaDepan": "Leatrice",
     "namaBelakang": "Rydinsky",
     "idJabatan": "J003",
@@ -8995,7 +8531,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P365",
     "namaDepan": "LaJeania",
     "namaBelakang": "Bert",
     "idJabatan": "J003",
@@ -9020,7 +8555,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P367",
     "namaDepan": "Dwayne",
     "namaBelakang": "Webster",
     "idJabatan": "J003",
@@ -9045,7 +8579,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P369",
     "namaDepan": "Esperanza",
     "namaBelakang": "Kleb",
     "idJabatan": "J003",
@@ -9070,7 +8603,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P37",
     "namaDepan": "Imelda",
     "namaBelakang": "Red",
     "idJabatan": "J003",
@@ -9095,7 +8627,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P371",
     "namaDepan": "Armando",
     "namaBelakang": "Sessa",
     "idJabatan": "J003",
@@ -9120,7 +8651,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P378",
     "namaDepan": "Joanne",
     "namaBelakang": "Gilbertson",
     "idJabatan": "J003",
@@ -9145,7 +8675,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P384",
     "namaDepan": "Latisha",
     "namaBelakang": "Leoon",
     "idJabatan": "J003",
@@ -9170,7 +8699,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P388",
     "namaDepan": "Monia",
     "namaBelakang": "Vlasses",
     "idJabatan": "J003",
@@ -9195,7 +8723,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P397",
     "namaDepan": "Waddie",
     "namaBelakang": "Raj",
     "idJabatan": "J003",
@@ -9220,7 +8747,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P403",
     "namaDepan": "Neil",
     "namaBelakang": "Roazen",
     "idJabatan": "J003",
@@ -9245,7 +8771,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P405",
     "namaDepan": "Mary",
     "namaBelakang": "Usgiveaway",
     "idJabatan": "J003",
@@ -9270,7 +8795,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P412",
     "namaDepan": "Grace",
     "namaBelakang": "Mauro",
     "idJabatan": "J003",
@@ -9295,7 +8819,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P415",
     "namaDepan": "Janet",
     "namaBelakang": "Paullin",
     "idJabatan": "J003",
@@ -9320,7 +8843,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P420",
     "namaDepan": "Helen",
     "namaBelakang": "Hmptn",
     "idJabatan": "J003",
@@ -9345,7 +8867,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P422",
     "namaDepan": "Paula",
     "namaBelakang": "Cavalier",
     "idJabatan": "J003",
@@ -9370,7 +8891,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P429",
     "namaDepan": "Ralph",
     "namaBelakang": "Burkholder",
     "idJabatan": "J003",
@@ -9395,7 +8915,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P434",
     "namaDepan": "Josh",
     "namaBelakang": "Ticona",
     "idJabatan": "J003",
@@ -9420,7 +8939,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P439",
     "namaDepan": "Susen",
     "namaBelakang": "Berger",
     "idJabatan": "J003",
@@ -9445,7 +8963,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P44",
     "namaDepan": "Bradley",
     "namaBelakang": "Platt",
     "idJabatan": "J003",
@@ -9470,7 +8987,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P446",
     "namaDepan": "Chad",
     "namaBelakang": "Sergent",
     "idJabatan": "J003",
@@ -9495,7 +9011,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P46",
     "namaDepan": "Javier",
     "namaBelakang": "Poe",
     "idJabatan": "J003",
@@ -9520,7 +9035,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P463",
     "namaDepan": "Ruben",
     "namaBelakang": "Culin",
     "idJabatan": "J003",
@@ -9545,7 +9059,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P465",
     "namaDepan": "Jodene",
     "namaBelakang": "Vaimauga",
     "idJabatan": "J003",
@@ -9570,7 +9083,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P470",
     "namaDepan": "Jeffrey",
     "namaBelakang": "Robertd",
     "idJabatan": "J003",
@@ -9595,7 +9107,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P475",
     "namaDepan": "Truefelia",
     "namaBelakang": "Choate",
     "idJabatan": "J003",
@@ -9620,7 +9131,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P477",
     "namaDepan": "Gregg",
     "namaBelakang": "Kornation",
     "idJabatan": "J003",
@@ -9645,7 +9155,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P485",
     "namaDepan": "Hope",
     "namaBelakang": "Nguyen",
     "idJabatan": "J003",
@@ -9670,7 +9179,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P49",
     "namaDepan": "Arzak",
     "namaBelakang": "Mooney",
     "idJabatan": "J003",
@@ -9695,7 +9203,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P499",
     "namaDepan": "Corretta",
     "namaBelakang": "Gorski",
     "idJabatan": "J003",
@@ -9720,7 +9227,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P5",
     "namaDepan": "Nicolas",
     "namaBelakang": "Carlsen",
     "idJabatan": "J003",
@@ -9745,7 +9251,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P504",
     "namaDepan": "Gerarld",
     "namaBelakang": "Loehfelm",
     "idJabatan": "J003",
@@ -9770,7 +9275,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P51",
     "namaDepan": "Prakash",
     "namaBelakang": "Rodgers",
     "idJabatan": "J003",
@@ -9795,7 +9299,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P512",
     "namaDepan": "Maureen",
     "namaBelakang": "Ast",
     "idJabatan": "J003",
@@ -9820,7 +9323,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P513",
     "namaDepan": "Irmaa",
     "namaBelakang": "Turner",
     "idJabatan": "J003",
@@ -9845,7 +9347,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P514",
     "namaDepan": "Wyatra",
     "namaBelakang": "Harrison",
     "idJabatan": "J003",
@@ -9870,7 +9371,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P518",
     "namaDepan": "Asher",
     "namaBelakang": "Kornation",
     "idJabatan": "J003",
@@ -9895,7 +9395,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P521",
     "namaDepan": "Lawrence",
     "namaBelakang": "Smallwood",
     "idJabatan": "J003",
@@ -9920,7 +9419,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P529",
     "namaDepan": "Jamie",
     "namaBelakang": "Mcdonough",
     "idJabatan": "J003",
@@ -9945,7 +9443,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P531",
     "namaDepan": "Deitric",
     "namaBelakang": "Lilly",
     "idJabatan": "J003",
@@ -9970,7 +9467,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P536",
     "namaDepan": "Angelique",
     "namaBelakang": "Kvasnak",
     "idJabatan": "J003",
@@ -9995,7 +9491,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P541",
     "namaDepan": "Olena",
     "namaBelakang": "Pointelin",
     "idJabatan": "J003",
@@ -10020,7 +9515,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P547",
     "namaDepan": "Jess",
     "namaBelakang": "Jeschke",
     "idJabatan": "J003",
@@ -10045,7 +9539,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P549",
     "namaDepan": "Cheryl",
     "namaBelakang": "Warrenfeltz",
     "idJabatan": "J003",
@@ -10070,7 +9563,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P556",
     "namaDepan": "Shirley",
     "namaBelakang": "Baligian",
     "idJabatan": "J003",
@@ -10095,7 +9587,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P557",
     "namaDepan": "Bradford",
     "namaBelakang": "Bastian",
     "idJabatan": "J003",
@@ -10120,7 +9611,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P561",
     "namaDepan": "Kenya",
     "namaBelakang": "Cantu",
     "idJabatan": "J003",
@@ -10145,7 +9635,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P564",
     "namaDepan": "Joshua",
     "namaBelakang": "Richards",
     "idJabatan": "J003",
@@ -10170,7 +9659,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P57",
     "namaDepan": "Veneta",
     "namaBelakang": "Deitz",
     "idJabatan": "J003",
@@ -10195,7 +9683,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P582",
     "namaDepan": "Emil",
     "namaBelakang": "Lafaye",
     "idJabatan": "J003",
@@ -10220,7 +9707,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P584",
     "namaDepan": "Carol",
     "namaBelakang": "Tang",
     "idJabatan": "J003",
@@ -10245,7 +9731,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P588",
     "namaDepan": "Aroterick",
     "namaBelakang": "Hebert",
     "idJabatan": "J003",
@@ -10270,7 +9755,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P59",
     "namaDepan": "Siping",
     "namaBelakang": "Knowles",
     "idJabatan": "J003",
@@ -10295,7 +9779,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P591",
     "namaDepan": "Carla",
     "namaBelakang": "Girdner",
     "idJabatan": "J003",
@@ -10320,7 +9803,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P592",
     "namaDepan": "Christina",
     "namaBelakang": "Zazzara",
     "idJabatan": "J003",
@@ -10345,7 +9827,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P593",
     "namaDepan": "Joaquin",
     "namaBelakang": "Key",
     "idJabatan": "J003",
@@ -10370,7 +9851,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P594",
     "namaDepan": "Josefina",
     "namaBelakang": "Koskovich",
     "idJabatan": "J003",
@@ -10395,7 +9875,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P597",
     "namaDepan": "Rose",
     "namaBelakang": "Vera",
     "idJabatan": "J003",
@@ -10420,7 +9899,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P598",
     "namaDepan": "Nicolas",
     "namaBelakang": "Puckett",
     "idJabatan": "J003",
@@ -10445,7 +9923,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P599",
     "namaDepan": "John",
     "namaBelakang": "Crum",
     "idJabatan": "J003",
@@ -10470,7 +9947,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P60",
     "namaDepan": "Monthro",
     "namaBelakang": "Rizk",
     "idJabatan": "J003",
@@ -10495,7 +9971,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P607",
     "namaDepan": "Dmitry",
     "namaBelakang": "Berry",
     "idJabatan": "J003",
@@ -10520,7 +9995,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P608",
     "namaDepan": "Gueorgui",
     "namaBelakang": "Franklin",
     "idJabatan": "J003",
@@ -10545,7 +10019,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P609",
     "namaDepan": "Latasha",
     "namaBelakang": "Hutchings",
     "idJabatan": "J003",
@@ -10570,7 +10043,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P619",
     "namaDepan": "Arti",
     "namaBelakang": "Ziegler",
     "idJabatan": "J003",
@@ -10595,7 +10067,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P62",
     "namaDepan": "Isaiahretta",
     "namaBelakang": "Flanagan",
     "idJabatan": "J003",
@@ -10620,7 +10091,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P623",
     "namaDepan": "Tracie",
     "namaBelakang": "Polovich",
     "idJabatan": "J003",
@@ -10645,7 +10115,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P634",
     "namaDepan": "Yauma",
     "namaBelakang": "Knowles",
     "idJabatan": "J003",
@@ -10670,7 +10139,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P636",
     "namaDepan": "Ali",
     "namaBelakang": "Bozzalla",
     "idJabatan": "J003",
@@ -10695,7 +10163,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P639",
     "namaDepan": "Aida",
     "namaBelakang": "Wray",
     "idJabatan": "J003",
@@ -10720,7 +10187,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P643",
     "namaDepan": "Valoria",
     "namaBelakang": "Neff",
     "idJabatan": "J003",
@@ -10745,7 +10211,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P65",
     "namaDepan": "Angela",
     "namaBelakang": "Royer",
     "idJabatan": "J003",
@@ -10770,7 +10235,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P658",
     "namaDepan": "Mohamed",
     "namaBelakang": "Travis",
     "idJabatan": "J003",
@@ -10795,7 +10259,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P661",
     "namaDepan": "Jack",
     "namaBelakang": "Burkland",
     "idJabatan": "J003",
@@ -10820,7 +10283,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P664",
     "namaDepan": "Guinka",
     "namaBelakang": "Douglass",
     "idJabatan": "J003",
@@ -10845,7 +10307,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P667",
     "namaDepan": "Dorota",
     "namaBelakang": "Labrucherie",
     "idJabatan": "J003",
@@ -10870,7 +10331,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P670",
     "namaDepan": "Esperanza",
     "namaBelakang": "Garner",
     "idJabatan": "J003",
@@ -10895,7 +10355,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P672",
     "namaDepan": "Jane",
     "namaBelakang": "Sacks",
     "idJabatan": "J003",
@@ -10920,7 +10379,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P675",
     "namaDepan": "Gianfranco",
     "namaBelakang": "Brewer",
     "idJabatan": "J003",
@@ -10945,7 +10403,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P677",
     "namaDepan": "Sidney",
     "namaBelakang": "Stallings",
     "idJabatan": "J003",
@@ -10970,7 +10427,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P678",
     "namaDepan": "Melinda",
     "namaBelakang": "Park",
     "idJabatan": "J003",
@@ -10995,7 +10451,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P68",
     "namaDepan": "Teri",
     "namaBelakang": "Toothman",
     "idJabatan": "J003",
@@ -11020,7 +10475,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P693",
     "namaDepan": "Frank",
     "namaBelakang": "Tapia",
     "idJabatan": "J003",
@@ -11045,7 +10499,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P712",
     "namaDepan": "Tanny",
     "namaBelakang": "Dewolfe",
     "idJabatan": "J003",
@@ -11070,7 +10523,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P723",
     "namaDepan": "Gina",
     "namaBelakang": "Shelton",
     "idJabatan": "J003",
@@ -11095,7 +10547,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P727",
     "namaDepan": "Sergio",
     "namaBelakang": "Best",
     "idJabatan": "J003",
@@ -11120,7 +10571,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P729",
     "namaDepan": "Jeannine",
     "namaBelakang": "Chow",
     "idJabatan": "J003",
@@ -11145,7 +10595,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P731",
     "namaDepan": "Jackie",
     "namaBelakang": "Ayers",
     "idJabatan": "J003",
@@ -11170,7 +10619,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P732",
     "namaDepan": "Jennifer",
     "namaBelakang": "Malstrom",
     "idJabatan": "J003",
@@ -11195,7 +10643,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P735",
     "namaDepan": "Gerald",
     "namaBelakang": "Braswell",
     "idJabatan": "J003",
@@ -11220,7 +10667,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P737",
     "namaDepan": "Araceli",
     "namaBelakang": "Laggan",
     "idJabatan": "J003",
@@ -11245,7 +10691,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P747",
     "namaDepan": "LaFaye",
     "namaBelakang": "Amacker",
     "idJabatan": "J003",
@@ -11270,7 +10715,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P750",
     "namaDepan": "Usha",
     "namaBelakang": "Engel",
     "idJabatan": "J003",
@@ -11295,7 +10739,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P754",
     "namaDepan": "Devon",
     "namaBelakang": "Shafer",
     "idJabatan": "J003",
@@ -11320,7 +10763,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P755",
     "namaDepan": "Shanna",
     "namaBelakang": "Jacobs",
     "idJabatan": "J003",
@@ -11345,7 +10787,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P76",
     "namaDepan": "Jia",
     "namaBelakang": "Lill",
     "idJabatan": "J003",
@@ -11370,7 +10811,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P760",
     "namaDepan": "Alexandra",
     "namaBelakang": "Stevenson",
     "idJabatan": "J003",
@@ -11395,7 +10835,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P764",
     "namaDepan": "Rabiah",
     "namaBelakang": "Tubbytelly",
     "idJabatan": "J003",
@@ -11420,7 +10859,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P767",
     "namaDepan": "Xiumei",
     "namaBelakang": "Miljour",
     "idJabatan": "J003",
@@ -11445,7 +10883,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P768",
     "namaDepan": "Randall",
     "namaBelakang": "Wittcop",
     "idJabatan": "J003",
@@ -11470,7 +10907,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P779",
     "namaDepan": "Michelamone",
     "namaBelakang": "Chang",
     "idJabatan": "J003",
@@ -11495,7 +10931,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P783",
     "namaDepan": "Melody",
     "namaBelakang": "Troy",
     "idJabatan": "J003",
@@ -11520,7 +10955,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P785",
     "namaDepan": "Kameko",
     "namaBelakang": "Knaus",
     "idJabatan": "J003",
@@ -11545,7 +10979,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P786",
     "namaDepan": "Richmond",
     "namaBelakang": "Habib",
     "idJabatan": "J003",
@@ -11570,7 +11003,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P788",
     "namaDepan": "Karl",
     "namaBelakang": "Heilman",
     "idJabatan": "J003",
@@ -11595,7 +11027,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P795",
     "namaDepan": "Yvonne",
     "namaBelakang": "Barowsky",
     "idJabatan": "J003",
@@ -11620,7 +11051,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P797",
     "namaDepan": "Andy",
     "namaBelakang": "Carnu",
     "idJabatan": "J003",
@@ -11645,7 +11075,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P80",
     "namaDepan": "Jiby",
     "namaBelakang": "Newell",
     "idJabatan": "J003",
@@ -11670,7 +11099,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P806",
     "namaDepan": "Christa",
     "namaBelakang": "Denton",
     "idJabatan": "J003",
@@ -11695,7 +11123,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P81",
     "namaDepan": "Tim",
     "namaBelakang": "Peters",
     "idJabatan": "J003",
@@ -11720,7 +11147,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P814",
     "namaDepan": "Pele",
     "namaBelakang": "Wyatt",
     "idJabatan": "J003",
@@ -11745,7 +11171,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P823",
     "namaDepan": "KaShaun",
     "namaBelakang": "Robertd",
     "idJabatan": "J003",
@@ -11770,7 +11195,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P828",
     "namaDepan": "Talatha",
     "namaBelakang": "Chenoweth",
     "idJabatan": "J003",
@@ -11795,7 +11219,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P831",
     "namaDepan": "Rick",
     "namaBelakang": "Cobb",
     "idJabatan": "J003",
@@ -11820,7 +11243,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P834",
     "namaDepan": "Tobias",
     "namaBelakang": "Eckhart",
     "idJabatan": "J003",
@@ -11845,7 +11267,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P842",
     "namaDepan": "Tracey",
     "namaBelakang": "Sturm",
     "idJabatan": "J003",
@@ -11870,7 +11291,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P847",
     "namaDepan": "Yewawde",
     "namaBelakang": "Boblett",
     "idJabatan": "J003",
@@ -11895,7 +11315,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P849",
     "namaDepan": "Deirdre",
     "namaBelakang": "Mcintyre",
     "idJabatan": "J003",
@@ -11920,7 +11339,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P854",
     "namaDepan": "Joel",
     "namaBelakang": "Pointelin",
     "idJabatan": "J003",
@@ -11945,7 +11363,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P855",
     "namaDepan": "Susen",
     "namaBelakang": "Ivanoski",
     "idJabatan": "J003",
@@ -11970,7 +11387,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P856",
     "namaDepan": "Clayton",
     "namaBelakang": "Ghiselli",
     "idJabatan": "J003",
@@ -11995,7 +11411,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P858",
     "namaDepan": "Toya",
     "namaBelakang": "Douglas",
     "idJabatan": "J003",
@@ -12020,7 +11435,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P864",
     "namaDepan": "Segun",
     "namaBelakang": "Mazza",
     "idJabatan": "J003",
@@ -12045,7 +11459,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P866",
     "namaDepan": "Alexandra",
     "namaBelakang": "Marshall",
     "idJabatan": "J003",
@@ -12070,7 +11483,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P87",
     "namaDepan": "Jackie",
     "namaBelakang": "Chang",
     "idJabatan": "J003",
@@ -12095,7 +11507,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P874",
     "namaDepan": "Cynthia",
     "namaBelakang": "Nordmark",
     "idJabatan": "J003",
@@ -12120,7 +11531,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P882",
     "namaDepan": "Sandro",
     "namaBelakang": "Lehman",
     "idJabatan": "J003",
@@ -12145,7 +11555,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P890",
     "namaDepan": "Nitin",
     "namaBelakang": "Kelley",
     "idJabatan": "J003",
@@ -12170,7 +11579,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P891",
     "namaDepan": "Tricia",
     "namaBelakang": "Lubold",
     "idJabatan": "J003",
@@ -12195,7 +11603,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P899",
     "namaDepan": "Tanita",
     "namaBelakang": "Knoepfel",
     "idJabatan": "J003",
@@ -12220,7 +11627,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P902",
     "namaDepan": "Charlene",
     "namaBelakang": "Farrell",
     "idJabatan": "J003",
@@ -12245,7 +11651,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P909",
     "namaDepan": "Winnie",
     "namaBelakang": "Burkhardt",
     "idJabatan": "J003",
@@ -12270,7 +11675,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P91",
     "namaDepan": "Vincent",
     "namaBelakang": "Lyman",
     "idJabatan": "J003",
@@ -12295,7 +11699,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P912",
     "namaDepan": "Sean",
     "namaBelakang": "Mahan",
     "idJabatan": "J003",
@@ -12320,7 +11723,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P918",
     "namaDepan": "Jephter",
     "namaBelakang": "Burkholder",
     "idJabatan": "J003",
@@ -12345,7 +11747,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P920",
     "namaDepan": "Salman",
     "namaBelakang": "Sjaardema",
     "idJabatan": "J003",
@@ -12370,7 +11771,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P922",
     "namaDepan": "Annie",
     "namaBelakang": "Bowers",
     "idJabatan": "J003",
@@ -12395,7 +11795,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P930",
     "namaDepan": "Arti",
     "namaBelakang": "Elmer",
     "idJabatan": "J003",
@@ -12420,7 +11819,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P938",
     "namaDepan": "Lauri",
     "namaBelakang": "Dibernardinis",
     "idJabatan": "J003",
@@ -12445,7 +11843,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P941",
     "namaDepan": "Tylene",
     "namaBelakang": "Lund",
     "idJabatan": "J003",
@@ -12470,7 +11867,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P943",
     "namaDepan": "Sukanya",
     "namaBelakang": "Mcnally",
     "idJabatan": "J003",
@@ -12495,7 +11891,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P950",
     "namaDepan": "Nerissa",
     "namaBelakang": "Walstead",
     "idJabatan": "J003",
@@ -12520,7 +11915,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P953",
     "namaDepan": "Janet",
     "namaBelakang": "Devereaux",
     "idJabatan": "J003",
@@ -12545,7 +11939,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P955",
     "namaDepan": "Gianfranco",
     "namaBelakang": "Posen",
     "idJabatan": "J003",
@@ -12570,7 +11963,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P957",
     "namaDepan": "Alex",
     "namaBelakang": "Leonard",
     "idJabatan": "J003",
@@ -12595,7 +11987,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P960",
     "namaDepan": "Holley",
     "namaBelakang": "Ransom",
     "idJabatan": "J003",
@@ -12620,7 +12011,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P961",
     "namaDepan": "Marcus",
     "namaBelakang": "Formo",
     "idJabatan": "J003",
@@ -12645,7 +12035,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P964",
     "namaDepan": "Darius",
     "namaBelakang": "Elbattah",
     "idJabatan": "J003",
@@ -12670,7 +12059,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P965",
     "namaDepan": "Carmerlina",
     "namaBelakang": "Kovich",
     "idJabatan": "J003",
@@ -12695,7 +12083,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P967",
     "namaDepan": "Shoba",
     "namaBelakang": "Lencowski",
     "idJabatan": "J003",
@@ -12720,7 +12107,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P971",
     "namaDepan": "Elmer",
     "namaBelakang": "Spellicy",
     "idJabatan": "J003",
@@ -12745,7 +12131,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P974",
     "namaDepan": "Ahila",
     "namaBelakang": "Entinger",
     "idJabatan": "J003",
@@ -12770,7 +12155,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P976",
     "namaDepan": "Keesha",
     "namaBelakang": "Frutos",
     "idJabatan": "J003",
@@ -12795,7 +12179,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P981",
     "namaDepan": "Richelle",
     "namaBelakang": "Montemer",
     "idJabatan": "J003",
@@ -12820,7 +12203,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P983",
     "namaDepan": "Yelena",
     "namaBelakang": "Hancock",
     "idJabatan": "J003",
@@ -12845,7 +12227,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P986",
     "namaDepan": "Miriam",
     "namaBelakang": "Lindsey",
     "idJabatan": "J003",
@@ -12870,7 +12251,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P991",
     "namaDepan": "Percy",
     "namaBelakang": "Kamdar",
     "idJabatan": "J003",
@@ -12895,7 +12275,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P100",
     "namaDepan": "Ora",
     "namaBelakang": "Sam",
     "idJabatan": "J004",
@@ -12920,7 +12299,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P101",
     "namaDepan": "Gill",
     "namaBelakang": "Cummins",
     "idJabatan": "J004",
@@ -12945,7 +12323,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P11",
     "namaDepan": "Marlon",
     "namaBelakang": "Lannatewitz",
     "idJabatan": "J004",
@@ -12970,7 +12347,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P110",
     "namaDepan": "Connie",
     "namaBelakang": "Boyd",
     "idJabatan": "J004",
@@ -12995,7 +12371,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P112",
     "namaDepan": "Winston",
     "namaBelakang": "Dubrow",
     "idJabatan": "J004",
@@ -13020,7 +12395,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P115",
     "namaDepan": "Vijayakumar",
     "namaBelakang": "Decoster",
     "idJabatan": "J004",
@@ -13045,7 +12419,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P116",
     "namaDepan": "Tanya",
     "namaBelakang": "Garascia",
     "idJabatan": "J004",
@@ -13070,7 +12443,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P118",
     "namaDepan": "Adom",
     "namaBelakang": "Poer",
     "idJabatan": "J004",
@@ -13095,7 +12467,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P12",
     "namaDepan": "Shane",
     "namaBelakang": "Mcnamee",
     "idJabatan": "J004",
@@ -13120,7 +12491,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P121",
     "namaDepan": "Christa",
     "namaBelakang": "Jantz",
     "idJabatan": "J004",
@@ -13145,7 +12515,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P123",
     "namaDepan": "Cary",
     "namaBelakang": "Delellis",
     "idJabatan": "J004",
@@ -13170,7 +12539,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P129",
     "namaDepan": "Val",
     "namaBelakang": "Murphy",
     "idJabatan": "J004",
@@ -13195,7 +12563,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P130",
     "namaDepan": "Venus",
     "namaBelakang": "Dykstra",
     "idJabatan": "J004",
@@ -13220,7 +12587,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P137",
     "namaDepan": "Farzana",
     "namaBelakang": "Reith",
     "idJabatan": "J004",
@@ -13245,7 +12611,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P140",
     "namaDepan": "Michele",
     "namaBelakang": "Horowitz",
     "idJabatan": "J004",
@@ -13270,7 +12635,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P148",
     "namaDepan": "Alfonso",
     "namaBelakang": "Poer",
     "idJabatan": "J004",
@@ -13295,7 +12659,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P153",
     "namaDepan": "Chaiporn",
     "namaBelakang": "Whisler",
     "idJabatan": "J004",
@@ -13320,7 +12683,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P154",
     "namaDepan": "Corazon",
     "namaBelakang": "Gutsteinberg",
     "idJabatan": "J004",
@@ -13345,7 +12707,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P157",
     "namaDepan": "Deitric",
     "namaBelakang": "Hruska",
     "idJabatan": "J004",
@@ -13370,7 +12731,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P159",
     "namaDepan": "Rabiah",
     "namaBelakang": "Ryan",
     "idJabatan": "J004",
@@ -13395,7 +12755,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P162",
     "namaDepan": "Courtney",
     "namaBelakang": "Mcmullin",
     "idJabatan": "J004",
@@ -13420,7 +12779,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P168",
     "namaDepan": "Joe",
     "namaBelakang": "Ramirez",
     "idJabatan": "J004",
@@ -13445,7 +12803,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P172",
     "namaDepan": "Veneta",
     "namaBelakang": "Lester",
     "idJabatan": "J004",
@@ -13470,7 +12827,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P182",
     "namaDepan": "Isaiahretta",
     "namaBelakang": "Chase",
     "idJabatan": "J004",
@@ -13495,7 +12851,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P183",
     "namaDepan": "Suzanne",
     "namaBelakang": "Bjurback",
     "idJabatan": "J004",
@@ -13520,7 +12875,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P185",
     "namaDepan": "Raquel",
     "namaBelakang": "Sabol",
     "idJabatan": "J004",
@@ -13545,7 +12899,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P187",
     "namaDepan": "Sheng",
     "namaBelakang": "Brinkley",
     "idJabatan": "J004",
@@ -13570,7 +12923,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P188",
     "namaDepan": "Kristie",
     "namaBelakang": "Hernandez",
     "idJabatan": "J004",
@@ -13595,7 +12947,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P191",
     "namaDepan": "Rabiah",
     "namaBelakang": "Speer",
     "idJabatan": "J004",
@@ -13620,7 +12971,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P201",
     "namaDepan": "Ahmad",
     "namaBelakang": "Kelly",
     "idJabatan": "J004",
@@ -13645,7 +12995,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P207",
     "namaDepan": "Kent",
     "namaBelakang": "Szymanski",
     "idJabatan": "J004",
@@ -13670,7 +13019,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P209",
     "namaDepan": "Koweta",
     "namaBelakang": "Kentro",
     "idJabatan": "J004",
@@ -13695,7 +13043,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P214",
     "namaDepan": "Verlinda",
     "namaBelakang": "Rogers",
     "idJabatan": "J004",
@@ -13720,7 +13067,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P215",
     "namaDepan": "Iris",
     "namaBelakang": "Siegel",
     "idJabatan": "J004",
@@ -13745,7 +13091,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P225",
     "namaDepan": "Justin",
     "namaBelakang": "Mcnally",
     "idJabatan": "J004",
@@ -13770,7 +13115,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P226",
     "namaDepan": "Veneta",
     "namaBelakang": "Colon",
     "idJabatan": "J004",
@@ -13795,7 +13139,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P229",
     "namaDepan": "Ruben",
     "namaBelakang": "Mendiola",
     "idJabatan": "J004",
@@ -13820,7 +13163,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P23",
     "namaDepan": "Marlissa",
     "namaBelakang": "Arrington",
     "idJabatan": "J004",
@@ -13845,7 +13187,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P235",
     "namaDepan": "Erickson",
     "namaBelakang": "Northrop",
     "idJabatan": "J004",
@@ -13870,7 +13211,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P236",
     "namaDepan": "Lorenz",
     "namaBelakang": "Vidales",
     "idJabatan": "J004",
@@ -13895,7 +13235,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P242",
     "namaDepan": "Sherese",
     "namaBelakang": "Silverio",
     "idJabatan": "J004",
@@ -13920,7 +13259,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P245",
     "namaDepan": "Joseph",
     "namaBelakang": "Steuernagel",
     "idJabatan": "J004",
@@ -13945,7 +13283,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P260",
     "namaDepan": "Darryl",
     "namaBelakang": "Chamberlain",
     "idJabatan": "J004",
@@ -13970,7 +13307,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P264",
     "namaDepan": "Gayle",
     "namaBelakang": "Lyman",
     "idJabatan": "J004",
@@ -13995,7 +13331,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P271",
     "namaDepan": "Arthur",
     "namaBelakang": "Kenedy",
     "idJabatan": "J004",
@@ -14020,7 +13355,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P273",
     "namaDepan": "Petr",
     "namaBelakang": "Isham",
     "idJabatan": "J004",
@@ -14045,7 +13379,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P274",
     "namaDepan": "Elsuhaili",
     "namaBelakang": "Wilson",
     "idJabatan": "J004",
@@ -14070,7 +13403,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P28",
     "namaDepan": "Mike",
     "namaBelakang": "Vicari",
     "idJabatan": "J004",
@@ -14095,7 +13427,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P293",
     "namaDepan": "Melissa",
     "namaBelakang": "Arrington",
     "idJabatan": "J004",
@@ -14120,7 +13451,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P297",
     "namaDepan": "Candelaria",
     "namaBelakang": "Pilgrim",
     "idJabatan": "J004",
@@ -14145,7 +13475,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P302",
     "namaDepan": "Tanny",
     "namaBelakang": "Linden",
     "idJabatan": "J004",
@@ -14170,7 +13499,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P311",
     "namaDepan": "Sanjay",
     "namaBelakang": "Culp",
     "idJabatan": "J004",
@@ -14195,7 +13523,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P312",
     "namaDepan": "Victoria",
     "namaBelakang": "Trenkelbach",
     "idJabatan": "J004",
@@ -14220,7 +13547,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P316",
     "namaDepan": "Verna",
     "namaBelakang": "Hollis",
     "idJabatan": "J004",
@@ -14245,7 +13571,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P32",
     "namaDepan": "Melgema",
     "namaBelakang": "Arivett",
     "idJabatan": "J004",
@@ -14270,7 +13595,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P33",
     "namaDepan": "Luis",
     "namaBelakang": "Gunn",
     "idJabatan": "J004",
@@ -14295,7 +13619,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P337",
     "namaDepan": "Delia",
     "namaBelakang": "Ripley",
     "idJabatan": "J004",
@@ -14320,7 +13643,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P338",
     "namaDepan": "Takita",
     "namaBelakang": "Barrientos",
     "idJabatan": "J004",
@@ -14345,7 +13667,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P341",
     "namaDepan": "Yolunda",
     "namaBelakang": "Souther",
     "idJabatan": "J004",
@@ -14370,7 +13691,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P342",
     "namaDepan": "Eric",
     "namaBelakang": "Pacheco",
     "idJabatan": "J004",
@@ -14395,7 +13715,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P343",
     "namaDepan": "Rosalind",
     "namaBelakang": "Schade",
     "idJabatan": "J004",
@@ -14420,7 +13739,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P349",
     "namaDepan": "Joseph",
     "namaBelakang": "Hawthorne",
     "idJabatan": "J004",
@@ -14445,7 +13763,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P356",
     "namaDepan": "Yauma",
     "namaBelakang": "Dieli",
     "idJabatan": "J004",
@@ -14470,7 +13787,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P368",
     "namaDepan": "Stan",
     "namaBelakang": "Taverna",
     "idJabatan": "J004",
@@ -14495,7 +13811,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P372",
     "namaDepan": "Maxime",
     "namaBelakang": "Arreguin",
     "idJabatan": "J004",
@@ -14520,7 +13835,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P374",
     "namaDepan": "Krissy",
     "namaBelakang": "Nye",
     "idJabatan": "J004",
@@ -14545,7 +13859,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P377",
     "namaDepan": "Fred",
     "namaBelakang": "Glover",
     "idJabatan": "J004",
@@ -14570,7 +13883,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P379",
     "namaDepan": "Scort",
     "namaBelakang": "Llaneza",
     "idJabatan": "J004",
@@ -14595,7 +13907,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P38",
     "namaDepan": "Canzady",
     "namaBelakang": "Wullbrandt",
     "idJabatan": "J004",
@@ -14620,7 +13931,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P380",
     "namaDepan": "Haidi",
     "namaBelakang": "Malo",
     "idJabatan": "J004",
@@ -14645,7 +13955,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P381",
     "namaDepan": "Polina",
     "namaBelakang": "Tveter",
     "idJabatan": "J004",
@@ -14670,7 +13979,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P385",
     "namaDepan": "Takita",
     "namaBelakang": "Brazell",
     "idJabatan": "J004",
@@ -14695,7 +14003,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P386",
     "namaDepan": "Edwin",
     "namaBelakang": "Weissmann",
     "idJabatan": "J004",
@@ -14720,7 +14027,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P39",
     "namaDepan": "Shaun",
     "namaBelakang": "Gilby",
     "idJabatan": "J004",
@@ -14745,7 +14051,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P395",
     "namaDepan": "Latrese",
     "namaBelakang": "Kohn",
     "idJabatan": "J004",
@@ -14770,7 +14075,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P40",
     "namaDepan": "Suzanne",
     "namaBelakang": "Haga",
     "idJabatan": "J004",
@@ -14795,7 +14099,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P407",
     "namaDepan": "Abraham",
     "namaBelakang": "Arnold",
     "idJabatan": "J004",
@@ -14820,7 +14123,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P41",
     "namaDepan": "Agnes",
     "namaBelakang": "Broas",
     "idJabatan": "J004",
@@ -14845,7 +14147,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P417",
     "namaDepan": "Ernesto",
     "namaBelakang": "Nance",
     "idJabatan": "J004",
@@ -14870,7 +14171,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P421",
     "namaDepan": "Norman",
     "namaBelakang": "Holmes",
     "idJabatan": "J004",
@@ -14895,7 +14195,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P435",
     "namaDepan": "Matt",
     "namaBelakang": "Cory",
     "idJabatan": "J004",
@@ -14920,7 +14219,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P437",
     "namaDepan": "Deborah",
     "namaBelakang": "Wittcop",
     "idJabatan": "J004",
@@ -14945,7 +14243,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P438",
     "namaDepan": "Alonzo",
     "namaBelakang": "Schacher",
     "idJabatan": "J004",
@@ -14970,7 +14267,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P440",
     "namaDepan": "Ryan",
     "namaBelakang": "Flamme",
     "idJabatan": "J004",
@@ -14995,7 +14291,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P447",
     "namaDepan": "Eva",
     "namaBelakang": "Lompa",
     "idJabatan": "J004",
@@ -15020,7 +14315,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P449",
     "namaDepan": "Corey",
     "namaBelakang": "Arivett",
     "idJabatan": "J004",
@@ -15045,7 +14339,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P450",
     "namaDepan": "Norman",
     "namaBelakang": "Rollins",
     "idJabatan": "J004",
@@ -15070,7 +14363,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P457",
     "namaDepan": "Aminata",
     "namaBelakang": "Caruso",
     "idJabatan": "J004",
@@ -15095,7 +14387,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P458",
     "namaDepan": "Corey",
     "namaBelakang": "Wurttemberg",
     "idJabatan": "J004",
@@ -15120,7 +14411,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P460",
     "namaDepan": "Colette",
     "namaBelakang": "Sueri",
     "idJabatan": "J004",
@@ -15145,7 +14435,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P462",
     "namaDepan": "Leticia",
     "namaBelakang": "Sanvick",
     "idJabatan": "J004",
@@ -15170,7 +14459,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P466",
     "namaDepan": "Meera",
     "namaBelakang": "Kurtenbach",
     "idJabatan": "J004",
@@ -15195,7 +14483,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P467",
     "namaDepan": "Kingi",
     "namaBelakang": "Odonoghue",
     "idJabatan": "J004",
@@ -15220,7 +14507,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P471",
     "namaDepan": "Clint",
     "namaBelakang": "Lyman",
     "idJabatan": "J004",
@@ -15245,7 +14531,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P473",
     "namaDepan": "Wesley",
     "namaBelakang": "Neff",
     "idJabatan": "J004",
@@ -15270,7 +14555,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P479",
     "namaDepan": "Gale",
     "namaBelakang": "Houston",
     "idJabatan": "J004",
@@ -15295,7 +14579,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P48",
     "namaDepan": "Heather",
     "namaBelakang": "Shiffman",
     "idJabatan": "J004",
@@ -15320,7 +14603,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P494",
     "namaDepan": "Tanya",
     "namaBelakang": "Dibernardinis",
     "idJabatan": "J004",
@@ -15345,7 +14627,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P496",
     "namaDepan": "Denis",
     "namaBelakang": "Knoepfel",
     "idJabatan": "J004",
@@ -15370,7 +14651,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P497",
     "namaDepan": "Sergio",
     "namaBelakang": "Liao",
     "idJabatan": "J004",
@@ -15395,7 +14675,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P507",
     "namaDepan": "Henry",
     "namaBelakang": "Burkholder",
     "idJabatan": "J004",
@@ -15420,7 +14699,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P508",
     "namaDepan": "Devon",
     "namaBelakang": "Ward",
     "idJabatan": "J004",
@@ -15445,7 +14723,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P510",
     "namaDepan": "Terrell",
     "namaBelakang": "Hall",
     "idJabatan": "J004",
@@ -15470,7 +14747,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P515",
     "namaDepan": "Ritalerae",
     "namaBelakang": "Seguin",
     "idJabatan": "J004",
@@ -15495,7 +14771,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P520",
     "namaDepan": "Tylene",
     "namaBelakang": "Hopkins",
     "idJabatan": "J004",
@@ -15520,7 +14795,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P524",
     "namaDepan": "Crystal",
     "namaBelakang": "Galvez",
     "idJabatan": "J004",
@@ -15545,7 +14819,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P526",
     "namaDepan": "Teriah",
     "namaBelakang": "Hiles",
     "idJabatan": "J004",
@@ -15570,7 +14843,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P527",
     "namaDepan": "Corrine",
     "namaBelakang": "Amick",
     "idJabatan": "J004",
@@ -15595,7 +14867,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P530",
     "namaDepan": "Jiby",
     "namaBelakang": "Stevenson",
     "idJabatan": "J004",
@@ -15620,7 +14891,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P532",
     "namaDepan": "Antionette",
     "namaBelakang": "Mcmillan",
     "idJabatan": "J004",
@@ -15645,7 +14915,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P535",
     "namaDepan": "Ning",
     "namaBelakang": "Kasprzak",
     "idJabatan": "J004",
@@ -15670,7 +14939,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P539",
     "namaDepan": "Bradley",
     "namaBelakang": "Deskins",
     "idJabatan": "J004",
@@ -15695,7 +14963,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P546",
     "namaDepan": "Lowell",
     "namaBelakang": "Jeschke",
     "idJabatan": "J004",
@@ -15720,7 +14987,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P559",
     "namaDepan": "Reginald",
     "namaBelakang": "Ringling",
     "idJabatan": "J004",
@@ -15745,7 +15011,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P567",
     "namaDepan": "Joy",
     "namaBelakang": "Delellis",
     "idJabatan": "J004",
@@ -15770,7 +15035,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P570",
     "namaDepan": "Mihai",
     "namaBelakang": "Snow",
     "idJabatan": "J004",
@@ -15795,7 +15059,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P572",
     "namaDepan": "Shahriar",
     "namaBelakang": "Rich",
     "idJabatan": "J004",
@@ -15820,7 +15083,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P574",
     "namaDepan": "Ruth",
     "namaBelakang": "Diaz",
     "idJabatan": "J004",
@@ -15845,7 +15107,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P575",
     "namaDepan": "Bharat",
     "namaBelakang": "Altermatt",
     "idJabatan": "J004",
@@ -15870,7 +15131,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P589",
     "namaDepan": "Grace",
     "namaBelakang": "Robertd",
     "idJabatan": "J004",
@@ -15895,7 +15155,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P605",
     "namaDepan": "Deena",
     "namaBelakang": "Amick",
     "idJabatan": "J004",
@@ -15920,7 +15179,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P611",
     "namaDepan": "Lenora",
     "namaBelakang": "Avery",
     "idJabatan": "J004",
@@ -15945,7 +15203,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P626",
     "namaDepan": "Rena",
     "namaBelakang": "Strickland",
     "idJabatan": "J004",
@@ -15970,7 +15227,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P641",
     "namaDepan": "Rachmat",
     "namaBelakang": "Sam",
     "idJabatan": "J004",
@@ -15995,7 +15251,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P647",
     "namaDepan": "Joslyn",
     "namaBelakang": "Barazi",
     "idJabatan": "J004",
@@ -16020,7 +15275,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P654",
     "namaDepan": "Lorena",
     "namaBelakang": "Dech",
     "idJabatan": "J004",
@@ -16045,7 +15299,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P659",
     "namaDepan": "Nikko",
     "namaBelakang": "Levey",
     "idJabatan": "J004",
@@ -16070,7 +15323,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P671",
     "namaDepan": "Minsoo",
     "namaBelakang": "Lopez",
     "idJabatan": "J004",
@@ -16095,7 +15347,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P673",
     "namaDepan": "Danyell",
     "namaBelakang": "Gallant",
     "idJabatan": "J004",
@@ -16120,7 +15371,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P674",
     "namaDepan": "Leonard",
     "namaBelakang": "Beringer",
     "idJabatan": "J004",
@@ -16145,7 +15395,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P679",
     "namaDepan": "Thresa",
     "namaBelakang": "Holland",
     "idJabatan": "J004",
@@ -16170,7 +15419,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P680",
     "namaDepan": "Joanna",
     "namaBelakang": "Osborne",
     "idJabatan": "J004",
@@ -16195,7 +15443,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P683",
     "namaDepan": "Miguel",
     "namaBelakang": "Girdner",
     "idJabatan": "J004",
@@ -16220,7 +15467,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P684",
     "namaDepan": "Bonnie",
     "namaBelakang": "Leoon",
     "idJabatan": "J004",
@@ -16245,7 +15491,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P685",
     "namaDepan": "Lois",
     "namaBelakang": "Newby",
     "idJabatan": "J004",
@@ -16270,7 +15515,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P687",
     "namaDepan": "Kathy",
     "namaBelakang": "Langille",
     "idJabatan": "J004",
@@ -16295,7 +15539,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P690",
     "namaDepan": "Joan",
     "namaBelakang": "Clements",
     "idJabatan": "J004",
@@ -16320,7 +15563,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P694",
     "namaDepan": "Winston",
     "namaBelakang": "Wittek",
     "idJabatan": "J004",
@@ -16345,7 +15587,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P702",
     "namaDepan": "Song",
     "namaBelakang": "Kem",
     "idJabatan": "J004",
@@ -16370,7 +15611,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P703",
     "namaDepan": "Clint",
     "namaBelakang": "Elbattah",
     "idJabatan": "J004",
@@ -16395,7 +15635,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P704",
     "namaDepan": "Mason",
     "namaBelakang": "Parsons",
     "idJabatan": "J004",
@@ -16420,7 +15659,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P706",
     "namaDepan": "Mihai",
     "namaBelakang": "Fielack",
     "idJabatan": "J004",
@@ -16445,7 +15683,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P708",
     "namaDepan": "Georgia",
     "namaBelakang": "Mashburn",
     "idJabatan": "J004",
@@ -16470,7 +15707,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P710",
     "namaDepan": "Wattis",
     "namaBelakang": "Bullock",
     "idJabatan": "J004",
@@ -16495,7 +15731,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P718",
     "namaDepan": "Neil",
     "namaBelakang": "Elbattah",
     "idJabatan": "J004",
@@ -16520,7 +15755,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P719",
     "namaDepan": "Teresita",
     "namaBelakang": "Baker",
     "idJabatan": "J004",
@@ -16545,7 +15779,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P720",
     "namaDepan": "Arnisa",
     "namaBelakang": "Robertd",
     "idJabatan": "J004",
@@ -16570,7 +15803,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P741",
     "namaDepan": "Dale",
     "namaBelakang": "Hafford",
     "idJabatan": "J004",
@@ -16595,7 +15827,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P758",
     "namaDepan": "Meribeth",
     "namaBelakang": "Koehn",
     "idJabatan": "J004",
@@ -16620,7 +15851,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P761",
     "namaDepan": "Tonya",
     "namaBelakang": "Masek",
     "idJabatan": "J004",
@@ -16645,7 +15875,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P766",
     "namaDepan": "Camelyn",
     "namaBelakang": "Theobald",
     "idJabatan": "J004",
@@ -16670,7 +15899,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P77",
     "namaDepan": "Pele",
     "namaBelakang": "Medeiros",
     "idJabatan": "J004",
@@ -16695,7 +15923,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P776",
     "namaDepan": "Kristina",
     "namaBelakang": "Partridge",
     "idJabatan": "J004",
@@ -16720,7 +15947,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P78",
     "namaDepan": "Nichelle",
     "namaBelakang": "Mosher",
     "idJabatan": "J004",
@@ -16745,7 +15971,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P787",
     "namaDepan": "Markella",
     "namaBelakang": "Band",
     "idJabatan": "J004",
@@ -16770,7 +15995,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P789",
     "namaDepan": "Candice",
     "namaBelakang": "Bunker",
     "idJabatan": "J004",
@@ -16795,7 +16019,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P79",
     "namaDepan": "Yan",
     "namaBelakang": "Comfort",
     "idJabatan": "J004",
@@ -16820,7 +16043,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P802",
     "namaDepan": "Carolyn",
     "namaBelakang": "Sovine",
     "idJabatan": "J004",
@@ -16845,7 +16067,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P803",
     "namaDepan": "Virgis",
     "namaBelakang": "Nitzky",
     "idJabatan": "J004",
@@ -16870,7 +16091,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P805",
     "namaDepan": "Bridgette",
     "namaBelakang": "Rehnke",
     "idJabatan": "J004",
@@ -16895,7 +16115,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P813",
     "namaDepan": "Bradford",
     "namaBelakang": "Butterfield",
     "idJabatan": "J004",
@@ -16920,7 +16139,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P835",
     "namaDepan": "Gazi",
     "namaBelakang": "Stokes",
     "idJabatan": "J004",
@@ -16945,7 +16163,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P841",
     "namaDepan": "Olena",
     "namaBelakang": "Bothun",
     "idJabatan": "J004",
@@ -16970,7 +16187,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P843",
     "namaDepan": "Teresita",
     "namaBelakang": "Mendiola",
     "idJabatan": "J004",
@@ -16995,7 +16211,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P845",
     "namaDepan": "Emi",
     "namaBelakang": "Speer",
     "idJabatan": "J004",
@@ -17020,7 +16235,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P846",
     "namaDepan": "Yewawde",
     "namaBelakang": "Mendiola",
     "idJabatan": "J004",
@@ -17045,7 +16259,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P85",
     "namaDepan": "Connie",
     "namaBelakang": "Weiler",
     "idJabatan": "J004",
@@ -17070,7 +16283,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P851",
     "namaDepan": "Bingmei",
     "namaBelakang": "Leavitt",
     "idJabatan": "J004",
@@ -17095,7 +16307,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P852",
     "namaDepan": "Gill",
     "namaBelakang": "Vickers",
     "idJabatan": "J004",
@@ -17120,7 +16331,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P853",
     "namaDepan": "Cayla",
     "namaBelakang": "Yuan",
     "idJabatan": "J004",
@@ -17145,7 +16355,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P859",
     "namaDepan": "Mike",
     "namaBelakang": "Crewell",
     "idJabatan": "J004",
@@ -17170,7 +16379,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P865",
     "namaDepan": "Guadelupe",
     "namaBelakang": "Conk",
     "idJabatan": "J004",
@@ -17195,7 +16403,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P867",
     "namaDepan": "Shahriar",
     "namaBelakang": "Billanti",
     "idJabatan": "J004",
@@ -17220,7 +16427,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P869",
     "namaDepan": "Ted",
     "namaBelakang": "Nimon",
     "idJabatan": "J004",
@@ -17245,7 +16451,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P871",
     "namaDepan": "Vonnie",
     "namaBelakang": "Arnold",
     "idJabatan": "J004",
@@ -17270,7 +16475,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P872",
     "namaDepan": "Dwight",
     "namaBelakang": "Grimsley",
     "idJabatan": "J004",
@@ -17295,7 +16499,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P875",
     "namaDepan": "Greg",
     "namaBelakang": "Jokisch",
     "idJabatan": "J004",
@@ -17320,7 +16523,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P88",
     "namaDepan": "Humayun",
     "namaBelakang": "Templeman",
     "idJabatan": "J004",
@@ -17345,7 +16547,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P897",
     "namaDepan": "Olena",
     "namaBelakang": "Kramarsky",
     "idJabatan": "J004",
@@ -17370,7 +16571,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P900",
     "namaDepan": "Gail",
     "namaBelakang": "Elkins",
     "idJabatan": "J004",
@@ -17395,7 +16595,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P919",
     "namaDepan": "Chun",
     "namaBelakang": "Horman",
     "idJabatan": "J004",
@@ -17420,7 +16619,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P921",
     "namaDepan": "Debbie",
     "namaBelakang": "Wright",
     "idJabatan": "J004",
@@ -17445,7 +16643,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P931",
     "namaDepan": "Eden",
     "namaBelakang": "Odle",
     "idJabatan": "J004",
@@ -17470,7 +16667,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P932",
     "namaDepan": "Thresa",
     "namaBelakang": "Shute",
     "idJabatan": "J004",
@@ -17495,7 +16691,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P939",
     "namaDepan": "Delia",
     "namaBelakang": "Belleque",
     "idJabatan": "J004",
@@ -17520,7 +16715,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P942",
     "namaDepan": "Bill",
     "namaBelakang": "Obermann",
     "idJabatan": "J004",
@@ -17545,7 +16739,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P949",
     "namaDepan": "Bernard",
     "namaBelakang": "Millegan",
     "idJabatan": "J004",
@@ -17570,7 +16763,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P95",
     "namaDepan": "Krystal",
     "namaBelakang": "Saur",
     "idJabatan": "J004",
@@ -17595,7 +16787,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P952",
     "namaDepan": "Nattakarn",
     "namaBelakang": "Hmptn",
     "idJabatan": "J004",
@@ -17620,7 +16811,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P959",
     "namaDepan": "Gus",
     "namaBelakang": "Jacobs",
     "idJabatan": "J004",
@@ -17645,7 +16835,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P963",
     "namaDepan": "Marshall",
     "namaBelakang": "Holland",
     "idJabatan": "J004",
@@ -17670,7 +16859,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P968",
     "namaDepan": "Ilze",
     "namaBelakang": "Peacock",
     "idJabatan": "J004",
@@ -17695,7 +16883,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P97",
     "namaDepan": "Austin",
     "namaBelakang": "Boudreaux",
     "idJabatan": "J004",
@@ -17720,7 +16907,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P972",
     "namaDepan": "Mitchell",
     "namaBelakang": "Voss",
     "idJabatan": "J004",
@@ -17745,7 +16931,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P975",
     "namaDepan": "Roberto",
     "namaBelakang": "Ryan",
     "idJabatan": "J004",
@@ -17770,7 +16955,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P977",
     "namaDepan": "Jaqueline",
     "namaBelakang": "Shebish",
     "idJabatan": "J004",
@@ -17795,7 +16979,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P979",
     "namaDepan": "Diane",
     "namaBelakang": "Smoaks",
     "idJabatan": "J004",
@@ -17820,7 +17003,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P102",
     "namaDepan": "Veena",
     "namaBelakang": "Llaneza",
     "idJabatan": "J005",
@@ -17833,7 +17015,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P104",
     "namaDepan": "Ross",
     "namaBelakang": "Lindsey",
     "idJabatan": "J005",
@@ -17846,7 +17027,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P125",
     "namaDepan": "Betty",
     "namaBelakang": "Partridge",
     "idJabatan": "J005",
@@ -17859,7 +17039,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P128",
     "namaDepan": "Gina",
     "namaBelakang": "Mundie",
     "idJabatan": "J005",
@@ -17872,7 +17051,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P13",
     "namaDepan": "Helena",
     "namaBelakang": "Gunn",
     "idJabatan": "J005",
@@ -17885,7 +17063,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P134",
     "namaDepan": "Annette",
     "namaBelakang": "Gage",
     "idJabatan": "J005",
@@ -17898,7 +17075,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P135",
     "namaDepan": "Larry",
     "namaBelakang": "Stutzman",
     "idJabatan": "J005",
@@ -17911,7 +17087,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P138",
     "namaDepan": "Segun",
     "namaBelakang": "Chavez",
     "idJabatan": "J005",
@@ -17924,7 +17099,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P144",
     "namaDepan": "Prakash",
     "namaBelakang": "Mccollum",
     "idJabatan": "J005",
@@ -17937,7 +17111,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P145",
     "namaDepan": "Adam",
     "namaBelakang": "Monyer",
     "idJabatan": "J005",
@@ -17950,7 +17123,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P146",
     "namaDepan": "Lorena",
     "namaBelakang": "Everly",
     "idJabatan": "J005",
@@ -17963,7 +17135,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P149",
     "namaDepan": "Nirmal",
     "namaBelakang": "Petrie",
     "idJabatan": "J005",
@@ -17976,7 +17147,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P151",
     "namaDepan": "Daniel",
     "namaBelakang": "Deliu",
     "idJabatan": "J005",
@@ -17989,7 +17159,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P16",
     "namaDepan": "Ophelia",
     "namaBelakang": "Mahan",
     "idJabatan": "J005",
@@ -18002,7 +17171,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P160",
     "namaDepan": "Gazi",
     "namaBelakang": "Sjaardema",
     "idJabatan": "J005",
@@ -18015,7 +17183,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P161",
     "namaDepan": "Terra",
     "namaBelakang": "Obara",
     "idJabatan": "J005",
@@ -18028,7 +17195,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P176",
     "namaDepan": "Harry",
     "namaBelakang": "Jouglard",
     "idJabatan": "J005",
@@ -18041,7 +17207,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P179",
     "namaDepan": "Janise",
     "namaBelakang": "Diramio",
     "idJabatan": "J005",
@@ -18054,7 +17219,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P189",
     "namaDepan": "Tighe",
     "namaBelakang": "Dobbins",
     "idJabatan": "J005",
@@ -18067,7 +17231,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P190",
     "namaDepan": "Luciana",
     "namaBelakang": "Spataro",
     "idJabatan": "J005",
@@ -18080,7 +17243,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P195",
     "namaDepan": "Janis",
     "namaBelakang": "Snow",
     "idJabatan": "J005",
@@ -18093,7 +17255,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P200",
     "namaDepan": "Soledad",
     "namaBelakang": "Kluger",
     "idJabatan": "J005",
@@ -18106,7 +17267,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P202",
     "namaDepan": "Cerelia",
     "namaBelakang": "Marzolf",
     "idJabatan": "J005",
@@ -18119,7 +17279,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P206",
     "namaDepan": "Tyetha",
     "namaBelakang": "Camire",
     "idJabatan": "J005",
@@ -18132,7 +17291,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P224",
     "namaDepan": "Luis",
     "namaBelakang": "Neilson",
     "idJabatan": "J005",
@@ -18145,7 +17303,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P232",
     "namaDepan": "Shaun",
     "namaBelakang": "Moghadam",
     "idJabatan": "J005",
@@ -18158,7 +17315,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P237",
     "namaDepan": "Vasilis",
     "namaBelakang": "Bruce",
     "idJabatan": "J005",
@@ -18171,7 +17327,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P240",
     "namaDepan": "Georgina",
     "namaBelakang": "Heppelmann",
     "idJabatan": "J005",
@@ -18184,7 +17339,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P252",
     "namaDepan": "Aroterick",
     "namaBelakang": "Wild",
     "idJabatan": "J005",
@@ -18197,7 +17351,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P254",
     "namaDepan": "Antoinette",
     "namaBelakang": "Noriega",
     "idJabatan": "J005",
@@ -18210,7 +17363,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P256",
     "namaDepan": "Gladys",
     "namaBelakang": "Bartleson",
     "idJabatan": "J005",
@@ -18223,7 +17375,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P261",
     "namaDepan": "Erickson",
     "namaBelakang": "Kailin",
     "idJabatan": "J005",
@@ -18236,7 +17387,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P276",
     "namaDepan": "Marlissa",
     "namaBelakang": "Oshins",
     "idJabatan": "J005",
@@ -18249,7 +17399,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P278",
     "namaDepan": "janie",
     "namaBelakang": "Marrinson",
     "idJabatan": "J005",
@@ -18262,7 +17411,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P282",
     "namaDepan": "Linnette",
     "namaBelakang": "Russell",
     "idJabatan": "J005",
@@ -18275,7 +17423,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P283",
     "namaDepan": "Morticia",
     "namaBelakang": "Vanessen",
     "idJabatan": "J005",
@@ -18288,7 +17435,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P295",
     "namaDepan": "Saima",
     "namaBelakang": "Palterman",
     "idJabatan": "J005",
@@ -18301,7 +17447,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P305",
     "namaDepan": "Narendra",
     "namaBelakang": "Tadeu",
     "idJabatan": "J005",
@@ -18314,7 +17459,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P306",
     "namaDepan": "Melody",
     "namaBelakang": "Scott",
     "idJabatan": "J005",
@@ -18327,7 +17471,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P314",
     "namaDepan": "Alonzo",
     "namaBelakang": "Mccarley",
     "idJabatan": "J005",
@@ -18340,7 +17483,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P317",
     "namaDepan": "Karolis",
     "namaBelakang": "Smallwood",
     "idJabatan": "J005",
@@ -18353,7 +17495,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P321",
     "namaDepan": "Austin",
     "namaBelakang": "Mcnally",
     "idJabatan": "J005",
@@ -18366,7 +17507,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P324",
     "namaDepan": "Veronica",
     "namaBelakang": "Allison",
     "idJabatan": "J005",
@@ -18379,7 +17519,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P329",
     "namaDepan": "Kantanzia",
     "namaBelakang": "Kohn",
     "idJabatan": "J005",
@@ -18392,7 +17531,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P332",
     "namaDepan": "Misty",
     "namaBelakang": "Garrod",
     "idJabatan": "J005",
@@ -18405,7 +17543,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P335",
     "namaDepan": "Wei",
     "namaBelakang": "Grimm",
     "idJabatan": "J005",
@@ -18418,7 +17555,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P339",
     "namaDepan": "Dante",
     "namaBelakang": "Goodman",
     "idJabatan": "J005",
@@ -18431,7 +17567,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P346",
     "namaDepan": "Clare",
     "namaBelakang": "Start",
     "idJabatan": "J005",
@@ -18444,7 +17579,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P352",
     "namaDepan": "Mason",
     "namaBelakang": "Speth",
     "idJabatan": "J005",
@@ -18457,7 +17591,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P360",
     "namaDepan": "Marek",
     "namaBelakang": "Szewczuk",
     "idJabatan": "J005",
@@ -18470,7 +17603,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P363",
     "namaDepan": "Ying",
     "namaBelakang": "Laiuppa",
     "idJabatan": "J005",
@@ -18483,7 +17615,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P370",
     "namaDepan": "Maurice",
     "namaBelakang": "Guilfoyle",
     "idJabatan": "J005",
@@ -18496,7 +17627,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P383",
     "namaDepan": "Leon",
     "namaBelakang": "Zinnow",
     "idJabatan": "J005",
@@ -18509,7 +17639,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P387",
     "namaDepan": "Tiffany",
     "namaBelakang": "Beckmann",
     "idJabatan": "J005",
@@ -18522,7 +17651,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P390",
     "namaDepan": "Toya",
     "namaBelakang": "Flores",
     "idJabatan": "J005",
@@ -18535,7 +17663,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P391",
     "namaDepan": "Dung",
     "namaBelakang": "Vanatta",
     "idJabatan": "J005",
@@ -18548,7 +17675,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P396",
     "namaDepan": "Salomon",
     "namaBelakang": "Aubut",
     "idJabatan": "J005",
@@ -18561,7 +17687,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P401",
     "namaDepan": "Janice",
     "namaBelakang": "Deals",
     "idJabatan": "J005",
@@ -18574,7 +17699,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P416",
     "namaDepan": "Cameron",
     "namaBelakang": "Belched",
     "idJabatan": "J005",
@@ -18587,7 +17711,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P425",
     "namaDepan": "Daydria",
     "namaBelakang": "Burton",
     "idJabatan": "J005",
@@ -18600,7 +17723,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P432",
     "namaDepan": "Jerry",
     "namaBelakang": "Pyle",
     "idJabatan": "J005",
@@ -18613,7 +17735,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P443",
     "namaDepan": "Cerelia",
     "namaBelakang": "Obermann",
     "idJabatan": "J005",
@@ -18626,7 +17747,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P444",
     "namaDepan": "Farzana",
     "namaBelakang": "Bergin",
     "idJabatan": "J005",
@@ -18639,7 +17759,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P45",
     "namaDepan": "Ilona",
     "namaBelakang": "More",
     "idJabatan": "J005",
@@ -18652,7 +17771,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P452",
     "namaDepan": "Meiyin",
     "namaBelakang": "Barrick",
     "idJabatan": "J005",
@@ -18665,7 +17783,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P469",
     "namaDepan": "Emi",
     "namaBelakang": "Fitzgerald",
     "idJabatan": "J005",
@@ -18678,7 +17795,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P47",
     "namaDepan": "Joanna",
     "namaBelakang": "Hafford",
     "idJabatan": "J005",
@@ -18691,7 +17807,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P480",
     "namaDepan": "Aubre",
     "namaBelakang": "Wing",
     "idJabatan": "J005",
@@ -18704,7 +17819,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P481",
     "namaDepan": "Graeme",
     "namaBelakang": "Girdner",
     "idJabatan": "J005",
@@ -18717,7 +17831,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P483",
     "namaDepan": "Geoffrey",
     "namaBelakang": "Lieb",
     "idJabatan": "J005",
@@ -18730,7 +17843,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P484",
     "namaDepan": "Richmond",
     "namaBelakang": "Angell",
     "idJabatan": "J005",
@@ -18743,7 +17855,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P486",
     "namaDepan": "Gateri",
     "namaBelakang": "Klug",
     "idJabatan": "J005",
@@ -18756,7 +17867,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P490",
     "namaDepan": "Gerald",
     "namaBelakang": "Rich",
     "idJabatan": "J005",
@@ -18769,7 +17879,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P500",
     "namaDepan": "Tighe",
     "namaBelakang": "Nimick",
     "idJabatan": "J005",
@@ -18782,7 +17891,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P502",
     "namaDepan": "Luping",
     "namaBelakang": "Mueske",
     "idJabatan": "J005",
@@ -18795,7 +17903,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P503",
     "namaDepan": "Abraham",
     "namaBelakang": "Barazi",
     "idJabatan": "J005",
@@ -18808,7 +17915,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P506",
     "namaDepan": "Anwar",
     "namaBelakang": "Ventura",
     "idJabatan": "J005",
@@ -18821,7 +17927,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P516",
     "namaDepan": "Chun",
     "namaBelakang": "Brabant",
     "idJabatan": "J005",
@@ -18834,7 +17939,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P519",
     "namaDepan": "Luping",
     "namaBelakang": "Eseltine",
     "idJabatan": "J005",
@@ -18847,7 +17951,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P522",
     "namaDepan": "Glenderee",
     "namaBelakang": "Amick",
     "idJabatan": "J005",
@@ -18860,7 +17963,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P523",
     "namaDepan": "Atif",
     "namaBelakang": "Salguero",
     "idJabatan": "J005",
@@ -18873,7 +17975,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P53",
     "namaDepan": "Janelle",
     "namaBelakang": "Bias",
     "idJabatan": "J005",
@@ -18886,7 +17987,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P533",
     "namaDepan": "Blair",
     "namaBelakang": "Abundo",
     "idJabatan": "J005",
@@ -18899,7 +17999,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P537",
     "namaDepan": "Keisha",
     "namaBelakang": "Corkett",
     "idJabatan": "J005",
@@ -18912,7 +18011,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P542",
     "namaDepan": "Holli",
     "namaBelakang": "Park",
     "idJabatan": "J005",
@@ -18925,7 +18023,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P544",
     "namaDepan": "Emced",
     "namaBelakang": "Tadeu",
     "idJabatan": "J005",
@@ -18938,7 +18035,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P552",
     "namaDepan": "Gail",
     "namaBelakang": "Turich",
     "idJabatan": "J005",
@@ -18951,7 +18047,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P554",
     "namaDepan": "Susan",
     "namaBelakang": "Morrison",
     "idJabatan": "J005",
@@ -18964,7 +18059,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P568",
     "namaDepan": "Ade",
     "namaBelakang": "Toothman",
     "idJabatan": "J005",
@@ -18977,7 +18071,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P569",
     "namaDepan": "Brittany",
     "namaBelakang": "Kinder",
     "idJabatan": "J005",
@@ -18990,7 +18083,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P573",
     "namaDepan": "Patrick",
     "namaBelakang": "Lencowski",
     "idJabatan": "J005",
@@ -19003,7 +18095,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P580",
     "namaDepan": "Wesley",
     "namaBelakang": "Mortimore",
     "idJabatan": "J005",
@@ -19016,7 +18107,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P590",
     "namaDepan": "Roderic",
     "namaBelakang": "Kennedy",
     "idJabatan": "J005",
@@ -19029,7 +18119,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P6",
     "namaDepan": "Sudershan",
     "namaBelakang": "Elliott",
     "idJabatan": "J005",
@@ -19042,7 +18131,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P600",
     "namaDepan": "Sunghoon",
     "namaBelakang": "Waters",
     "idJabatan": "J005",
@@ -19055,7 +18143,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P601",
     "namaDepan": "Bryan",
     "namaBelakang": "Lenze",
     "idJabatan": "J005",
@@ -19068,7 +18155,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P614",
     "namaDepan": "Fiaze",
     "namaBelakang": "Wathen",
     "idJabatan": "J005",
@@ -19081,7 +18167,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P617",
     "namaDepan": "Danka",
     "namaBelakang": "Chan",
     "idJabatan": "J005",
@@ -19094,7 +18179,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P621",
     "namaDepan": "Georgia",
     "namaBelakang": "Kinder",
     "idJabatan": "J005",
@@ -19107,7 +18191,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P63",
     "namaDepan": "Dung",
     "namaBelakang": "Cobb",
     "idJabatan": "J005",
@@ -19120,7 +18203,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P630",
     "namaDepan": "Magdalena",
     "namaBelakang": "Heitert",
     "idJabatan": "J005",
@@ -19133,7 +18215,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P631",
     "namaDepan": "Johanan",
     "namaBelakang": "Ney",
     "idJabatan": "J005",
@@ -19146,7 +18227,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P642",
     "namaDepan": "Maki",
     "namaBelakang": "Bélanger",
     "idJabatan": "J005",
@@ -19159,7 +18239,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P645",
     "namaDepan": "Camelyn",
     "namaBelakang": "Hutchison",
     "idJabatan": "J005",
@@ -19172,7 +18251,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P66",
     "namaDepan": "Jon",
     "namaBelakang": "Dibernardinis",
     "idJabatan": "J005",
@@ -19185,7 +18263,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P662",
     "namaDepan": "Aman",
     "namaBelakang": "Welch",
     "idJabatan": "J005",
@@ -19198,7 +18275,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P663",
     "namaDepan": "Jane",
     "namaBelakang": "Campos",
     "idJabatan": "J005",
@@ -19211,7 +18287,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P665",
     "namaDepan": "Colette",
     "namaBelakang": "Collins",
     "idJabatan": "J005",
@@ -19224,7 +18299,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P669",
     "namaDepan": "Nicole",
     "namaBelakang": "Blackwell",
     "idJabatan": "J005",
@@ -19237,7 +18311,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P7",
     "namaDepan": "Stella",
     "namaBelakang": "Ivanoski",
     "idJabatan": "J005",
@@ -19250,7 +18323,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P70",
     "namaDepan": "Loknath",
     "namaBelakang": "Star",
     "idJabatan": "J005",
@@ -19263,7 +18335,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P707",
     "namaDepan": "Noriess",
     "namaBelakang": "Ulvestad",
     "idJabatan": "J005",
@@ -19276,7 +18347,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P709",
     "namaDepan": "Rupa",
     "namaBelakang": "Barazi",
     "idJabatan": "J005",
@@ -19289,7 +18359,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P711",
     "namaDepan": "Anissia",
     "namaBelakang": "Mclaurin",
     "idJabatan": "J005",
@@ -19302,7 +18371,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P713",
     "namaDepan": "Myra",
     "namaBelakang": "Lau",
     "idJabatan": "J005",
@@ -19315,7 +18383,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P714",
     "namaDepan": "Phyllis",
     "namaBelakang": "Mccracken",
     "idJabatan": "J005",
@@ -19328,7 +18395,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P717",
     "namaDepan": "Gerard",
     "namaBelakang": "Carey",
     "idJabatan": "J005",
@@ -19341,7 +18407,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P721",
     "namaDepan": "Eric",
     "namaBelakang": "Bodily",
     "idJabatan": "J005",
@@ -19354,7 +18419,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P728",
     "namaDepan": "Ghaffar",
     "namaBelakang": "Mixon",
     "idJabatan": "J005",
@@ -19367,7 +18431,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P740",
     "namaDepan": "Beverly",
     "namaBelakang": "Moudry",
     "idJabatan": "J005",
@@ -19380,7 +18443,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P743",
     "namaDepan": "Brad",
     "namaBelakang": "Ward",
     "idJabatan": "J005",
@@ -19393,7 +18455,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P744",
     "namaDepan": "David",
     "namaBelakang": "Stilwell",
     "idJabatan": "J005",
@@ -19406,7 +18467,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P748",
     "namaDepan": "Lisbeth",
     "namaBelakang": "Humphrey",
     "idJabatan": "J005",
@@ -19419,7 +18479,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P75",
     "namaDepan": "Kamaniee",
     "namaBelakang": "Mungillo",
     "idJabatan": "J005",
@@ -19432,7 +18491,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P752",
     "namaDepan": "Canzady",
     "namaBelakang": "Kachelmuss",
     "idJabatan": "J005",
@@ -19445,7 +18503,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P757",
     "namaDepan": "LaNisha",
     "namaBelakang": "Pitts",
     "idJabatan": "J005",
@@ -19458,7 +18515,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P759",
     "namaDepan": "Denys",
     "namaBelakang": "Delatorre",
     "idJabatan": "J005",
@@ -19471,7 +18527,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P763",
     "namaDepan": "Shirley",
     "namaBelakang": "Kesner",
     "idJabatan": "J005",
@@ -19484,7 +18539,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P771",
     "namaDepan": "LaFaye",
     "namaBelakang": "Lee",
     "idJabatan": "J005",
@@ -19497,7 +18551,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P777",
     "namaDepan": "Carl",
     "namaBelakang": "Lyden",
     "idJabatan": "J005",
@@ -19510,7 +18563,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P782",
     "namaDepan": "Lowell",
     "namaBelakang": "Leoon",
     "idJabatan": "J005",
@@ -19523,7 +18575,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P790",
     "namaDepan": "Jackie",
     "namaBelakang": "Hansen",
     "idJabatan": "J005",
@@ -19536,7 +18587,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P791",
     "namaDepan": "Takisha",
     "namaBelakang": "Galligan",
     "idJabatan": "J005",
@@ -19549,7 +18599,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P792",
     "namaDepan": "Kerrissa",
     "namaBelakang": "Debord",
     "idJabatan": "J005",
@@ -19562,7 +18611,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P794",
     "namaDepan": "Teresita",
     "namaBelakang": "Coe",
     "idJabatan": "J005",
@@ -19575,7 +18623,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P8",
     "namaDepan": "Jeannine",
     "namaBelakang": "Proctor",
     "idJabatan": "J005",
@@ -19588,7 +18635,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P804",
     "namaDepan": "Bilal",
     "namaBelakang": "Skiffington",
     "idJabatan": "J005",
@@ -19601,7 +18647,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P808",
     "namaDepan": "Jimmy",
     "namaBelakang": "Robison",
     "idJabatan": "J005",
@@ -19614,7 +18659,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P809",
     "namaDepan": "Samuel",
     "namaBelakang": "Haft",
     "idJabatan": "J005",
@@ -19627,7 +18671,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P810",
     "namaDepan": "Inho",
     "namaBelakang": "North",
     "idJabatan": "J005",
@@ -19640,7 +18683,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P815",
     "namaDepan": "Markella",
     "namaBelakang": "Humphrey",
     "idJabatan": "J005",
@@ -19653,7 +18695,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P816",
     "namaDepan": "Liang",
     "namaBelakang": "Krugel",
     "idJabatan": "J005",
@@ -19666,7 +18707,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P818",
     "namaDepan": "Graeme",
     "namaBelakang": "Reeder",
     "idJabatan": "J005",
@@ -19679,7 +18719,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P825",
     "namaDepan": "Jesus",
     "namaBelakang": "Vollrath",
     "idJabatan": "J005",
@@ -19692,7 +18731,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P830",
     "namaDepan": "Ryan",
     "namaBelakang": "Lilly",
     "idJabatan": "J005",
@@ -19705,7 +18743,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P848",
     "namaDepan": "Melgema",
     "namaBelakang": "Beonde",
     "idJabatan": "J005",
@@ -19718,7 +18755,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P850",
     "namaDepan": "Nancy",
     "namaBelakang": "Tan",
     "idJabatan": "J005",
@@ -19731,7 +18767,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P86",
     "namaDepan": "Tania",
     "namaBelakang": "Melendez",
     "idJabatan": "J005",
@@ -19744,7 +18779,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P861",
     "namaDepan": "Maly",
     "namaBelakang": "Dover",
     "idJabatan": "J005",
@@ -19757,7 +18791,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P870",
     "namaDepan": "Sritharan",
     "namaBelakang": "Kenedy",
     "idJabatan": "J005",
@@ -19770,7 +18803,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P876",
     "namaDepan": "Alana",
     "namaBelakang": "Ong",
     "idJabatan": "J005",
@@ -19783,7 +18815,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P877",
     "namaDepan": "Dwight",
     "namaBelakang": "Hesters",
     "idJabatan": "J005",
@@ -19796,7 +18827,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P878",
     "namaDepan": "Wenjie",
     "namaBelakang": "Mundie",
     "idJabatan": "J005",
@@ -19809,7 +18839,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P881",
     "namaDepan": "Harrietta",
     "namaBelakang": "Traverse",
     "idJabatan": "J005",
@@ -19822,7 +18851,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P883",
     "namaDepan": "Roderic",
     "namaBelakang": "Abrahams",
     "idJabatan": "J005",
@@ -19835,7 +18863,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P89",
     "namaDepan": "Elizabeth",
     "namaBelakang": "Schaffer",
     "idJabatan": "J005",
@@ -19848,7 +18875,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P893",
     "namaDepan": "Marlene",
     "namaBelakang": "Weeks",
     "idJabatan": "J005",
@@ -19861,7 +18887,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P896",
     "namaDepan": "Sharmistha",
     "namaBelakang": "Staley",
     "idJabatan": "J005",
@@ -19874,7 +18899,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P901",
     "namaDepan": "Lei",
     "namaBelakang": "Davis",
     "idJabatan": "J005",
@@ -19887,7 +18911,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P903",
     "namaDepan": "Clyde",
     "namaBelakang": "Kesner",
     "idJabatan": "J005",
@@ -19900,7 +18923,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P905",
     "namaDepan": "Emily",
     "namaBelakang": "Murphy",
     "idJabatan": "J005",
@@ -19913,7 +18935,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P910",
     "namaDepan": "Khosrow",
     "namaBelakang": "Bowers",
     "idJabatan": "J005",
@@ -19926,7 +18947,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P911",
     "namaDepan": "Jerome",
     "namaBelakang": "Judy",
     "idJabatan": "J005",
@@ -19939,7 +18959,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P917",
     "namaDepan": "Anissia",
     "namaBelakang": "Acosta",
     "idJabatan": "J005",
@@ -19952,7 +18971,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P92",
     "namaDepan": "Krissy",
     "namaBelakang": "Yuan",
     "idJabatan": "J005",
@@ -19965,7 +18983,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P923",
     "namaDepan": "Annette",
     "namaBelakang": "Pereyra",
     "idJabatan": "J005",
@@ -19978,7 +18995,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P924",
     "namaDepan": "Desmond",
     "namaBelakang": "Elbattah",
     "idJabatan": "J005",
@@ -19991,7 +19007,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P925",
     "namaDepan": "Vickie",
     "namaBelakang": "Fielack",
     "idJabatan": "J005",
@@ -20004,7 +19019,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P926",
     "namaDepan": "Sritharan",
     "namaBelakang": "Petroski",
     "idJabatan": "J005",
@@ -20017,7 +19031,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P936",
     "namaDepan": "KaShaun",
     "namaBelakang": "Lightner",
     "idJabatan": "J005",
@@ -20030,7 +19043,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P94",
     "namaDepan": "Stacy",
     "namaBelakang": "Petitti",
     "idJabatan": "J005",
@@ -20043,7 +19055,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P945",
     "namaDepan": "Sherrell",
     "namaBelakang": "Michaels",
     "idJabatan": "J005",
@@ -20056,7 +19067,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P948",
     "namaDepan": "Elzbieta",
     "namaBelakang": "Thomason",
     "idJabatan": "J005",
@@ -20069,7 +19079,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P951",
     "namaDepan": "Gabriela",
     "namaBelakang": "Flavin",
     "idJabatan": "J005",
@@ -20082,7 +19091,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P98",
     "namaDepan": "Tilena",
     "namaBelakang": "Alunde",
     "idJabatan": "J005",
@@ -20095,7 +19103,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P984",
     "namaDepan": "Nerissa",
     "namaBelakang": "Clements",
     "idJabatan": "J005",
@@ -20108,7 +19115,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P985",
     "namaDepan": "Angelo",
     "namaBelakang": "Dawn",
     "idJabatan": "J005",
@@ -20121,7 +19127,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P988",
     "namaDepan": "Jerrod",
     "namaBelakang": "Logue",
     "idJabatan": "J005",
@@ -20134,7 +19139,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P992",
     "namaDepan": "Hsiao-Shan",
     "namaBelakang": "Laiuppa",
     "idJabatan": "J005",
@@ -20147,7 +19151,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P993",
     "namaDepan": "Verna",
     "namaBelakang": "Wallace",
     "idJabatan": "J005",
@@ -20160,7 +19163,6 @@
     "statusKaryawan": "Kerja",
     "versi": 0
 }, {
-    "nip": "P994",
     "namaDepan": "Christopher",
     "namaBelakang": "Duerksen",
     "idJabatan": "J005",
@@ -20173,7 +19175,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P995",
     "namaDepan": "Elissa",
     "namaBelakang": "Richard",
     "idJabatan": "J005",
@@ -20186,7 +19187,6 @@
     "statusKaryawan": "Keluar",
     "versi": 0
 }, {
-    "nip": "P997",
     "namaDepan": "Emilia",
     "namaBelakang": "Harmati",
     "idJabatan": "J005",

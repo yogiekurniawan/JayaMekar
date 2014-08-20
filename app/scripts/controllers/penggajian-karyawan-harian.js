@@ -1,37 +1,40 @@
 'use strict';
 
-/**********************************************************************************
-* 
-* @author : Yogie Kurniawan - yogie.jm@gmail.com
-* @url    : 
-*
-***********************************************************************************/
 
 angular.module('jayaMekarApp')
 
-/**********************************************************************************
-* 
-* Name      : TransaksiKaryawanHarianCtrl
-* Deskripsi : Semua control untuk main transaksi karyawan harian
-*
-***********************************************************************************/
-
-  .controller('PenggajianKaryawanHarianCtrl', function ($scope) {
-
-/*********************************** S:StokKomen ***********************************/
-/*********************************** E:StokKomen ***********************************/
+.controller('PenggajianKaryawanHarianCtrl', ['$scope', 'penggajianKaryawanHarianFactory',
+    function($scope, penggajianKaryawanHarianFactory) {
 
 
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+        var that = $scope.PenggajianKaryawanHarianCtrl = this;
+
+        this.sampleCallbackSucces = {};
+
+        this.add = function() {
+            var newSchema = {
+                    'idPenggajian': 'PG001',
+                    'nip': 'P001',
+                    'idJabatan': 'J001',
+                    'kelompokKerja': 'Operator Malet',
+                    'jenis': 'Harian',
+                    'shift': 'obj.shift',
+                    'detailRumusGaji': 'obj.detailRumusGaji',
+                    'bonus': 'obj.bonus',
+                    'gapok': 'obj.gapok',
+                    'totalGaji': 'obj.totalGaji',
+                    'waktu': {
+                        'dibuat': 'dibuat',
+                        'dirubah': 'dirubah',
+                    },
+                    'versi': 'versi'
+                };
+            penggajianKaryawanHarianFactory.addSample(newSchema).then(function(success) {
+                that.sampleCallbackSucces = success;
+            });
+        };
+        this.add();
 
 
-  });
-/**********************************************************************************
-* 
-* @ E:TransaksiKaryawanHarianCtrl
-*
-***********************************************************************************/
+    }
+]);

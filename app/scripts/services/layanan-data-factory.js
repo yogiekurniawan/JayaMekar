@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .factory('layananData', function($q, $http, $templateCache) {
+    .factory('layananData', ['$q', '$http', '$templateCache', function($q, $http, $templateCache) {
 
         var getJabatan = function() {
 
@@ -124,4 +124,4 @@ angular.module('jayaMekarApp')
             getKaryawanFillText: getKaryawanFillText
         };
 
-    });
+    }]);

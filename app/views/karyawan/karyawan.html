@@ -5,13 +5,6 @@
 </div>
 <div class="body" ng-show="KaryawanCtrl.jabatan.length > 0">
   <div class="row newline">
-    <div class="col-md-6" ng-show="KaryawanCtrl.karyawan.length > 0">
-      <div class="btn-group">
-        <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Kerja'">Kerja</label>
-        <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Semua Karyawan</label>
-        <label class="btn btn-sm btn-primary" ng-model="statusKerja" btn-radio="'Keluar'">Keluar</label>
-      </div>
-    </div>
     <div class="col-md-6 pull-right">
       <button ng-click="KaryawanCtrl.add()" class="btn btn-sm btn-primary pull-right">Tambah Karyawan</button>
     </div>
@@ -34,15 +27,14 @@
             <th class="text-center">
               <span tooltip-popup-delay='500' tooltip='Status Karyawan'>Status</span>
             </th>
-            <th class="text-center">Aksi</th>
           </tr>
         </thead>
         <tbody>
           <tr class="" ng-repeat="i in KaryawanCtrl.karyawan | filter:root.filter | orderBy:'+namaDepan':false | startArray:(KaryawanCtrl.numberPage - 1 )*KaryawanCtrl.limit | limitTo:KaryawanCtrl.limit track by i.nip">
             <td class="text-center" title="{{i.nip}}">{{(KaryawanCtrl.numberPage-1)*KaryawanCtrl.limit+$index+1}}</td>
             <td>{{i.namaDepan}} {{i.namaBelakang}}</td>
-            <td class="text-center" title="{{i.detailJabatan}}">{{i.jabatan}}</td>
-            <td class="text-center">{{i.detailJabatan.jenis}}</td>
+            <td class="text-center" title="{{i.rincianJabatan}}">{{i.jabatan}}</td>
+            <td class="text-center">{{i.rincianJabatan.jenis}}</td>
             <td class="text-center" title="{{i.kelompokKerja | kelompokKerja}}">{{i.kelompokKerja}}</td>
             <td class="text-center">
               <span class="glyphicon glyphicon glyphicon-time" tooltip-popup-delay='500' tooltip='Pertama kerja : {{i.waktu.pertamaKerja | date:"d MMMM yyyy"}}'></span>
