@@ -15,13 +15,6 @@ angular.module('jayaMekarApp')
             nama: 'Jaya Mekar'
         };
         APP_CONFIG.menuNavRightTop = [
-            /* Contoh untuk menu yang bukan dropdown
-            {
-                href: 'dashboard',
-                menu: 'Menu',
-                ngClass: 'fa fa-home'
-            },
-            */
             {
                 href: '#',
                 menu: 'Info',

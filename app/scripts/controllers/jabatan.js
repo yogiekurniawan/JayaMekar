@@ -23,6 +23,7 @@ angular.module('jayaMekarApp')
                 that.jabatan = result;
             });
         }
+        get();
 
         this.add = function(size){
             modalJabatanFactory.jabatan(size).then(function(sendObj) {
@@ -34,7 +35,6 @@ angular.module('jayaMekarApp')
 
         this.edit = function(size, obj) {
             modalJabatanFactory.jabatan(size, obj).then(function(sendObj) {
-                // parameter sendObj didapat dari modalJabatanFactory.jabatan
                 jabatanFactory.edit(sendObj).then(function() {
                     get();
                 });
@@ -47,5 +47,4 @@ angular.module('jayaMekarApp')
             });
         };
 
-        get();
     }]);

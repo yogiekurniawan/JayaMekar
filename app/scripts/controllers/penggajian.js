@@ -19,7 +19,6 @@ angular.module('jayaMekarApp')
         function getKaryawan() {
             karyawanFactory.get().then(function(result) {
                 that.karyawan = result;
-                // console.log(that.karyawan);
             });
         }
         getKaryawan();
@@ -27,20 +26,18 @@ angular.module('jayaMekarApp')
         function getRumusGaji() {
             rumusGajiFactory.get().then(function(result) {
                 that.rumusgaji = result;
-                // console.log(that.rumusgaji);
             });
         }
         getRumusGaji();
 
         function getPenggajianKaryawanHarian() {
             penggajianKaryawanHarianFactory.getAll().then(function(result) {
-                // that.rumusgaji = result;
                 that.penggajianKaryawanHarian = result;
             });
         }
         getPenggajianKaryawanHarian();
 
-        this.sampleCallbackSucces = {};
+        // this.sampleCallbackSucces = {};
 
         this.add = function(jenis) {
             var karyawan = that.karyawan;
@@ -58,10 +55,8 @@ angular.module('jayaMekarApp')
             var rumusgaji = that.rumusgaji;
             var aksi = 'Sunting data';
             modalPenggajianFactory.open(aksi, karyawan, rumusgaji, jenis, obj).then(function(result) {
-                console.log(result);
-                penggajianKaryawanHarianFactory.edit(result).then(function(success) {
-                    console.log(' this.edit penggjian', success);
-                    //console.log('that.rumusgaji', that.rumusgaji);
+                // console.log(result);
+                penggajianKaryawanHarianFactory.edit(result).then(function() {
                     getPenggajianKaryawanHarian();
                 });
             });
