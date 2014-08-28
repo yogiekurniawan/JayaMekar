@@ -2,8 +2,8 @@
 
 angular.module('jayaMekarApp')
 
-.controller('KaryawanCtrl', ['$scope', '$log', 'karyawanFactory', '$indexedDB', 'modalKaryawanFactory',
-    function($scope, $log, karyawanFactory, $indexedDB, modalKaryawanFactory) {
+.controller('KaryawanCtrl', ['$scope', 'karyawanFactory', '$indexedDB', 'modalKaryawanFactory',
+    function($scope, karyawanFactory, $indexedDB, modalKaryawanFactory) {
 
         var that = $scope.KaryawanCtrl = this;
 

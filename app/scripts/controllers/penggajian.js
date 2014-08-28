@@ -6,7 +6,6 @@ angular.module('jayaMekarApp')
 .controller('PenggajianCtrl', ['$scope', 'karyawanFactory', 'rumusGajiFactory', 'penggajianKaryawanHarianFactory', 'modalPenggajianFactory',
     function($scope, karyawanFactory, rumusGajiFactory, penggajianKaryawanHarianFactory, modalPenggajianFactory) {
 
-
         var that = $scope.PenggajianCtrl = this;
 
         this.karyawan = [];
@@ -36,8 +35,6 @@ angular.module('jayaMekarApp')
             });
         }
         getPenggajianKaryawanHarian();
-
-        // this.sampleCallbackSucces = {};
 
         this.add = function(jenis) {
             var karyawan = that.karyawan;

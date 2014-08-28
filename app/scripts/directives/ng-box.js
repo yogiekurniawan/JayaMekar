@@ -23,7 +23,9 @@ angular.module('jayaMekarApp')
       transclude: true,
       require: '^ngBox',
       link: function(scope, element, attrs, ngboxCtrl){
-      	scope.title = attrs.title;
+        attrs.$observe('title', function(newValue){
+        	scope.title = newValue;
+        });
       	scope.renderBoxFn = ngboxCtrl.renderBoxFn;
       }
     };

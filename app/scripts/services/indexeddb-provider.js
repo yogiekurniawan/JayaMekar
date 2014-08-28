@@ -28,7 +28,7 @@ angular.module('jayaMekarApp')
                 if (!db.objectStoreNames.contains('jabatan')) {
                     objectStore = db.createObjectStore('jabatan', {
                         keyPath: 'idJabatan',
-                        autoIncrement: true
+                        unique: true
                     });
                     objectStore.createIndex('idJabatan', 'idJabatan', {
                         unique: false
@@ -229,7 +229,7 @@ angular.module('jayaMekarApp')
                     $log.error(event.target.errorCode);
                 };
                 transaction.oncomplete = function() {
-                    defer.resolve('Data dengan ' + obj + ' berhasil dirubah.');
+                    defer.resolve(obj);
                 };
             });
 
@@ -249,7 +249,7 @@ angular.module('jayaMekarApp')
                 };
 
                 request.onsuccess = function() {
-                    defer.resolve('Data dengan ' + key + ' berhasil dihapus.');
+                    defer.resolve(key);
                 };
             });
 
