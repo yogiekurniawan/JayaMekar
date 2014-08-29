@@ -9,7 +9,7 @@ angular.module('jayaMekarApp')
         versiIdb: 1
     };
 
-    function GETTER($q, $log) {
+    function Getter($q, $log) {
 
         this.init = function() {
             var defer = $q.defer();
@@ -258,12 +258,12 @@ angular.module('jayaMekarApp')
 
     } // getter()
 
-    this.setConfig = function(value) {
-        idb.namaIdb = value.namaIdb || idb.namaIdb;
-        idb.versiIdb = value.versiIdb || idb.versiIdb;
+    this.setConfig = function(obj) {
+        idb.namaIdb = obj.namaIdb || idb.namaIdb;
+        idb.versiIdb = obj.versiIdb || idb.versiIdb;
     };
 
     this.$get = function($q, $log) {
-        return new GETTER($q, $log);
+        return new Getter($q, $log);
     };
 });

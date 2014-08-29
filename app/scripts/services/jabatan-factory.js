@@ -126,7 +126,6 @@ angular.module('jayaMekarApp')
                             });
 
                         result = data;
-                        // cursorJabatan.continue();
                     };
 
                     transaction.oncomplete = function() {
@@ -212,10 +211,10 @@ angular.module('jayaMekarApp')
             return {
                 jabatan: jabatan,
                 get: get,
+                openModal: openModal,
                 add: add,
                 edit: edit,
-                del: del,
-                openModal: openModal
+                del: del
             };
         }
     ]);

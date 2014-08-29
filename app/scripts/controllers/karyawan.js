@@ -2,58 +2,39 @@
 
 angular.module('jayaMekarApp')
 
-.controller('KaryawanCtrl', ['$scope', 'karyawanFactory', '$indexedDB', 'modalKaryawanFactory',
-    function($scope, karyawanFactory, $indexedDB, modalKaryawanFactory) {
+.controller('KaryawanCtrl', ['$scope', 'karyawanFactory', '$indexedDB',
+    function($scope, karyawanFactory, $indexedDB) {
 
         var that = $scope.KaryawanCtrl = this;
 
-        this.karyawan = [];
+        this.karyawan = karyawanFactory.karyawan;
         this.jabatan = [];
         this.maxSize = 7;
         this.numberPage = 1;
         this.limit = 10;
 
-        function getJabatan() {
-            var arrayObjectStore = ['jabatan'];
-            $indexedDB.getAll(arrayObjectStore).then(function(result) {
-                that.jabatan = result;
-            });
-        }
-        getJabatan();
+        var arrayObjectStore = ['jabatan'];
+        $indexedDB.getAll(arrayObjectStore).then(function(result) {
+            that.jabatan = result;
+        });
 
-        function getKaryawan() {
-            karyawanFactory.get().then(function(result) {
-                that.karyawan = result;
-            });
-        }
-        getKaryawan();
+        karyawanFactory.get().then(function(result) {
+            that.karyawan = result;
+        });
+
 
         this.add = function() {
             var jabatan = that.jabatan;
-            modalKaryawanFactory.open(jabatan).then(function(result) {
-                console.log(result);
-                karyawanFactory.add(result).then(function(success) {
-                    console.log(success);
-                    getKaryawan();
-                });
-            });
+            karyawanFactory.openModal(jabatan);
         };
 
         this.edit = function(obj) {
             var jabatan = that.jabatan;
-            modalKaryawanFactory.open(jabatan, obj).then(function(result) {
-                console.log(result);
-                karyawanFactory.edit(result).then(function(success) {
-                    console.log(success);
-                    getKaryawan();
-                });
-            });
+            karyawanFactory.openModal(jabatan, obj);
         };
 
         this.delete = function(obj) {
-            karyawanFactory.del(obj).then(function() {
-                getKaryawan();
-            });
+            karyawanFactory.del(obj);
         };
 
         this.totalPage = function() {
