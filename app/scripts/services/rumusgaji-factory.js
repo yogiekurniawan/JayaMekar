@@ -256,7 +256,7 @@ angular.module('jayaMekarApp')
 
             // Public API here
             return {
-                rumusgaji: rumusgaji,
+                rumusgaji: rumusgaji,   
                 get: get,
                 openModel: openModel,
                 add: add,
