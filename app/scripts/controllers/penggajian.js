@@ -3,66 +3,46 @@
 
 angular.module('jayaMekarApp')
 
-.controller('PenggajianCtrl', ['$scope', 'karyawanFactory', 'rumusGajiFactory', 'penggajianKaryawanHarianFactory', 'modalPenggajianFactory',
-    function($scope, karyawanFactory, rumusGajiFactory, penggajianKaryawanHarianFactory, modalPenggajianFactory) {
+.controller('PenggajianCtrl', ['$scope', 'karyawanFactory', 'rumusGajiFactory', 'penggajianKaryawanHarianFactory',
+    function($scope, karyawanFactory, rumusGajiFactory, penggajianKaryawanHarianFactory) {
 
         var that = $scope.PenggajianCtrl = this;
 
-        this.karyawan = [];
-        this.rumusgaji = [];
-        this.penggajianKaryawanHarian = [];
+        this.karyawan = karyawanFactory.karyawan;
+        this.rumusgaji = rumusGajiFactory.rumusgaji;
+        this.penggajianKaryawanHarian = penggajianKaryawanHarianFactory.penggajian;
         this.maxSize = 7;
         this.numberPage = 1;
         this.limit = 10;
 
-        function getKaryawan() {
-            karyawanFactory.get().then(function(result) {
-                that.karyawan = result;
-            });
-        }
-        getKaryawan();
+        karyawanFactory.get().then(function(result) {
+            that.karyawan = result;
+        });
 
-        function getRumusGaji() {
-            rumusGajiFactory.get().then(function(result) {
-                that.rumusgaji = result;
-            });
-        }
-        getRumusGaji();
+        rumusGajiFactory.get().then(function(result) {
+            that.rumusgaji = result;
+        });
 
-        function getPenggajianKaryawanHarian() {
-            penggajianKaryawanHarianFactory.getAll().then(function(result) {
-                that.penggajianKaryawanHarian = result;
-            });
-        }
-        getPenggajianKaryawanHarian();
+        penggajianKaryawanHarianFactory.getAll().then(function(result) {
+            that.penggajianKaryawanHarian = result;
+        });
 
         this.add = function(jenis) {
             var karyawan = that.karyawan;
             var rumusgaji = that.rumusgaji;
             var aksi = 'Tambah data';
-            modalPenggajianFactory.open(aksi, karyawan, rumusgaji, jenis).then(function(result) {
-                penggajianKaryawanHarianFactory.add(result).then(function() {
-                    getPenggajianKaryawanHarian();
-                });
-            });
+            penggajianKaryawanHarianFactory.openModal(aksi, karyawan, rumusgaji, jenis);
         };
 
         this.edit = function(jenis, obj) {
             var karyawan = that.karyawan;
             var rumusgaji = that.rumusgaji;
             var aksi = 'Sunting data';
-            modalPenggajianFactory.open(aksi, karyawan, rumusgaji, jenis, obj).then(function(result) {
-                // console.log(result);
-                penggajianKaryawanHarianFactory.edit(result).then(function() {
-                    getPenggajianKaryawanHarian();
-                });
-            });
+            penggajianKaryawanHarianFactory.openModal(aksi, karyawan, rumusgaji, jenis, obj);
         };
 
         this.delete = function(obj) {
-            penggajianKaryawanHarianFactory.del(obj).then(function() {
-                getPenggajianKaryawanHarian();
-            });
+            penggajianKaryawanHarianFactory.del(obj);
         };
 
     }
