@@ -6,59 +6,39 @@ angular.module('jayaMekarApp')
  * RumusGajiCtrl as rumusgaji
  */
 
-.controller('RumusGajiCtrl', ['$scope', '$indexedDB', 'rumusGajiFactory', 'modalRumusGajiFactory',
-    function($scope, $indexedDB, rumusGajiFactory, modalRumusGajiFactory) {
+.controller('RumusGajiCtrl', ['$scope', '$indexedDB', 'rumusGajiFactory',
+    function($scope, $indexedDB, rumusGajiFactory) {
 
-    var that = $scope.RumusGajiCtrl = this;
+        var that = $scope.RumusGajiCtrl = this;
 
-    this.rumusgaji = [];
-    this.jabatan = [];
-    this.maxSize = 7;
-    this.numberPage = 1;
-    this.limit = 10;
+        this.rumusgaji = rumusGajiFactory.rumusgaji;
+        this.jabatan = [];
+        this.maxSize = 7;
+        this.numberPage = 1;
+        this.limit = 10;
 
-    function getRumusGaji() {
         rumusGajiFactory.get().then(function(result) {
             that.rumusgaji = result;
         });
-    }
-    getRumusGaji();
 
-    function getJabatan() {
         var arrayObjectStore = ['jabatan'];
         $indexedDB.getAll(arrayObjectStore).then(function(result) {
             that.jabatan = result;
         });
+
+        this.add = function(jenis) {
+            var jabatan = that.jabatan;
+            rumusGajiFactory.openModel(jenis, jabatan);
+        };
+
+        this.edit = function(jenis, obj) {
+            var jabatan = that.jabatan;
+            rumusGajiFactory.openModel(jenis, jabatan, obj);
+        };
+
+        this.delete = function(obj) {
+            rumusGajiFactory.del(obj);
+        };
+
     }
-    getJabatan();
-
-    this.add = function(jenis) {
-        var jabatan = that.jabatan;
-        modalRumusGajiFactory.open(jenis, jabatan).then(function(result) {
-            console.log(result);
-            rumusGajiFactory.add(result).then(function(success) {
-                console.log(success);
-                getRumusGaji();
-            });
-        });
-    };
-
-    this.edit = function(jenis, obj) {
-        var jabatan = that.jabatan;
-        modalRumusGajiFactory.open(jenis, jabatan, obj).then(function(result) {
-            console.log(result);
-            rumusGajiFactory.edit(result).then(function(success) {
-                console.log(success);
-                console.log('that.rumusgaji', that.rumusgaji);
-                getRumusGaji();
-            });
-        });
-    };
-
-    this.delete = function(obj) {
-        rumusGajiFactory.del(obj).then(function() {
-            getRumusGaji();
-        });
-    };
-
-}]);
+]);
