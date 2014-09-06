@@ -80,13 +80,13 @@
     <div class="form-group form-group-sm" ng-class="{'has-success': formPenggajian.kehadiran.$valid, 'has-error': formPenggajian.kehadiran.$invalid}">
       <label class="col-sm-3 control-label">Kehadiran</label>
       <div class="col-sm-2">
-        <input name="kehadiran" ng-model="modalPenggajianCtrl.obj.kehadiran" class="form-control" type="text" placeholder="Nol" ng-maxlength="1" required>
+        <input name="kehadiran" ng-model="modalPenggajianCtrl.obj.kehadiran" class="form-control" type="number" placeholder="Nol" required>
 
       </div>
       <div class="col-sm-4">
         <div class="help-block" ng-messages="formPenggajian.kehadiran.$error">
           <small class="help-block" ng-message="required">* Minimal angka nol</small>
-          <small class="help-block" ng-message="maxlength">* Tidak masuk akal</small>
+          <!-- <small class="help-block" ng-message="maxlength">* Tidak masuk akal</small> -->
         </div>
       </div>
     </div>

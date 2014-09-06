@@ -1,15 +1,17 @@
 'use strict';
 
 angular.module('jayaMekarApp')
-    .controller('RootCtrl', ['APP_CONFIG',
-        function(APP_CONFIG) {
-            
-            this.brand = APP_CONFIG.brandTop;
-            this.menuNavRight = APP_CONFIG.menuNavRightTop;
+    .controller('RootCtrl', ['$scope', 'APP_CONFIG',
+        function($scope, APP_CONFIG) {
 
-            this.withSidebar = true;
-            this.toggleSidebar = function() {
-                this.withSidebar = !this.withSidebar;
+            var vm = $scope.RootCtrl = this;
+            
+            vm.brand = APP_CONFIG.brandTop;
+            vm.menuNavRight = APP_CONFIG.menuNavRightTop;
+
+            vm.withSidebar = true;
+            vm.toggleSidebar = function() {
+                vm.withSidebar = !vm.withSidebar;
             };
 
         }

@@ -2,10 +2,6 @@
 
 angular.module('jayaMekarApp')
 
-/*
- * RumusGajiCtrl as rumusgaji
- */
-
 .controller('RumusGajiCtrl', ['$scope', '$indexedDB', 'rumusGajiFactory',
     function($scope, $indexedDB, rumusGajiFactory) {
 
@@ -21,19 +17,18 @@ angular.module('jayaMekarApp')
             that.rumusgaji = result;
         });
 
-        var arrayObjectStore = ['jabatan'];
-        $indexedDB.getAll(arrayObjectStore).then(function(result) {
+        $indexedDB.getAll(['jabatan']).then(function(result) {
             that.jabatan = result;
         });
 
         this.add = function(jenis) {
             var jabatan = that.jabatan;
-            rumusGajiFactory.openModel(jenis, jabatan);
+            rumusGajiFactory.openModal(jenis, jabatan);
         };
 
         this.edit = function(jenis, obj) {
             var jabatan = that.jabatan;
-            rumusGajiFactory.openModel(jenis, jabatan, obj);
+            rumusGajiFactory.openModal(jenis, jabatan, obj);
         };
 
         this.delete = function(obj) {

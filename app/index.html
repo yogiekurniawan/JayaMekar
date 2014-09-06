@@ -1,12 +1,12 @@
 <!doctype html>
-<html ng-app="jayaMekarApp" ng-csp ng-controller="RootCtrl as root">
+<html ng-app="jayaMekarApp" ng-csp ng-controller="RootCtrl">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title ng-bind-template="{{RootCtrl.brand.nama}}"></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the RootCtrl directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
@@ -26,15 +26,15 @@
 
 <body yk-window>
     
-    <yk-navbar brand="root.brand" toggle-sidebar="root.toggleSidebar()" with-sidebar="root.withSidebar" fixed-top>
-        <yk-menu-list menu="root.menuNavRight" nav right></yk-menu-list>
+    <yk-navbar brand="RootCtrl.brand" toggle-sidebar="RootCtrl.toggleSidebar()" with-sidebar="RootCtrl.withSidebar" fixed-top>
+        <yk-menu-list menu="RootCtrl.menuNavRight" nav right></yk-menu-list>
     </yk-navbar>
 
     <!-- S:Sidebar -->
-    <yk-wrapper yk-toggle-sidebar="root.withSidebar" window-width="{{windowWidth}}">
-        <yk-sidebar filter="root.filter">
+    <yk-wrapper yk-toggle-sidebar="RootCtrl.withSidebar" window-width="{{windowWidth}}">
+        <yk-sidebar filter="RootCtrl.filter">
             <li ui-sref-active="active">
-                <a ui-sref="jabatan"><i class="fa fa-dashboard fa-fw"></i> Jabatan</a>
+                <a ui-sref="jabatan"><i class="glyphicon glyphicon-star"></i> Jabatan</a>
             </li>
             <li ui-sref-active="active">
                 <a ui-sref="karyawan"><i class="glyphicon glyphicon-user"></i> Karyawan</a>
@@ -74,6 +74,8 @@
     <script src="scripts/directives/yk-sidebar.js"></script>
     <script src="scripts/directives/yk-wrapper.js"></script>
     <script src="scripts/directives/yk-window.js"></script>
+    <script src="scripts/directives/ng-box.js"></script>
+    <script src="scripts/directives/ng-tabs.js"></script>
     <script src="scripts/controllers/root.js"></script>
     <script src="scripts/controllers/jabatan.js"></script>
     <script src="scripts/controllers/karyawan.js"></script>
@@ -87,20 +89,14 @@
     <script src="scripts/filters/length-filter.js"></script>
     <script src="scripts/filters/numberformat-filter.js"></script>
     <script src="scripts/filters/sumbykey-filter.js"></script>
-    <script src="scripts/services/indexeddb-provider.js"></script>
-    <script src="scripts/services/layanan-data-factory.js"></script>
     <script src="scripts/services/id-factory.js"></script>
+    <script src="scripts/services/jabatan-factory.js"></script>
     <script src="scripts/services/karyawan-factory.js"></script>
     <script src="scripts/services/rumusgaji-factory.js"></script>
-    <!-- <script src="scripts/services/modaljabatan-factory.js"></script> -->
-    <!-- <script src="scripts/services/modalkaryawan-factory.js"></script> -->
-    <script src="scripts/services/jabatan-factory.js"></script>
-    <script src="scripts/directives/ng-box.js"></script>
-    <script src="scripts/directives/ng-tabs.js"></script>
-    <!-- <script src="scripts/services/modalrumusgaji-factory.js"></script> -->
     <script src="scripts/services/penggajiankaryawanharian-factory.js"></script>
-    <!-- <script src="scripts/services/modalpenggajian-factory.js"></script> -->
     <script src="scripts/services/kalkulasipenggajian-factory.js"></script>
+    <script src="scripts/services/indexeddb-provider.js"></script>
+    <script src="scripts/services/layanan-data-factory.js"></script>
     <!-- endbuild -->
 </body>
 

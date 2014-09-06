@@ -25,11 +25,10 @@
                 <th class="text-center">
                   <span class="glyphicon glyphicon-calendar" tooltips-popup-delay='500' tooltip='Catatan waktu'></span>
                 </th>
-                <th class="text-center">Aksi</th>
               </tr>
             </thead>
             <tbody>
-              <tr ng-repeat="i in RumusGajiCtrl.rumusgaji | filter:'Harian' | filter:root.filter | orderBy:'+jabatan':false | startArray:(RumusGajiCtrl.numberPage - 1 )*RumusGajiCtrl.limit | limitTo:RumusGajiCtrl.limit track by i.idRumusGaji">
+              <tr ng-repeat="i in RumusGajiCtrl.rumusgaji | filter:'Harian' | filter:RootCtrl.filter | orderBy:'+jabatan':false | startArray:(RumusGajiCtrl.numberPage - 1 )*RumusGajiCtrl.limit | limitTo:RumusGajiCtrl.limit track by i.idRumusGaji">
                 <td class="text-center" title="{{i.idRumusGaji}}">{{(RumusGajiCtrl.numberPage-1)*RumusGajiCtrl.limit+$index+1}}</td>
                 <td class="text-center">{{i.jabatan}}</td>
                 <td class="text-center">{{i.jenis}}</td>

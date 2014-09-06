@@ -15,18 +15,18 @@ angular.module('jayaMekarApp')
                 var dibuat = obj.waktu.dibuat ? obj.waktu.dibuat : date;
                 var dirubah = date;
                 var versi = obj.versi ? obj.versi + 1 : 1;
-                var rincianJabatan = angular.copy(obj.rincianKaryawan.rincianJabatan);
-                delete obj.rincianKaryawan.rincianJabatan;
-                delete obj.rincianRumusGaji.rincianJabatan;
+                // var rincianJabatan = angular.copy(obj.rincianKaryawan.rincianJabatan);
+                // delete obj.rincianKaryawan.rincianJabatan;
+                // delete obj.rincianRumusGaji.rincianJabatan;
 
-                // normal schema untuk jenis jabatan harian
+                // normal schema untuk penggajian jenis jabatan harian
                 var newSchema = {
                     'idPenggajian': idPenggajian,
                     'nip': obj.nip,
                     'namaLengkap': obj.namaLengkap,
                     'jabatan': obj.rincianRumusGaji.jabatan,
                     'idRumusGaji': obj.rincianRumusGaji.idRumusGaji,
-                    'rincianJabatan': rincianJabatan,
+                    // 'rincianJabatan': rincianJabatan,
                     'rincianKaryawan': obj.rincianKaryawan,
                     'rincianRumusGaji': obj.rincianRumusGaji,
                     'kehadiran': obj.kehadiran,

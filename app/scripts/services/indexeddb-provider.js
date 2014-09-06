@@ -30,31 +30,15 @@ angular.module('jayaMekarApp')
                         keyPath: 'idJabatan',
                         unique: true
                     });
-                    objectStore.createIndex('idJabatan', 'idJabatan', {
-                        unique: false
-                    });
-                    objectStore.createIndex('jabatan', 'jabatan', {
-                        unique: false
-                    });
                 }
                 if (!db.objectStoreNames.contains('karyawan')) {
                     objectStore = db.createObjectStore('karyawan', {
                         keyPath: 'nip',
                         unique: true
                     });
-                    objectStore.createIndex('nip', 'nip', {
-                        unique: true
-                    });
-                    objectStore.createIndex('namaDepan', 'namaDepan', {
-                        unique: false
-                    });
+                    // parameter 1 = nama_index
+                    // parameter 2 = nama_properti_objek
                     objectStore.createIndex('idJabatan', 'idJabatan', {
-                        unique: false
-                    });
-                    objectStore.createIndex('kelompokKerja', 'kelompokKerja', {
-                        unique: false
-                    });
-                    objectStore.createIndex('statusKaryawan', 'statusKaryawan', {
                         unique: false
                     });
                 }
@@ -63,16 +47,7 @@ angular.module('jayaMekarApp')
                         keyPath: 'idRumusGaji',
                         unique: true
                     });
-                    objectStore.createIndex('idRumusGaji', 'idRumusGaji', {
-                        unique: true
-                    });
                     objectStore.createIndex('idJabatan', 'idJabatan', {
-                        unique: false
-                    });
-                    objectStore.createIndex('jenis', 'jenis', {
-                        unique: false
-                    });
-                    objectStore.createIndex('shift', 'shift', {
                         unique: false
                     });
                 }
@@ -81,23 +56,13 @@ angular.module('jayaMekarApp')
                         keyPath: 'idPenggajian',
                         unique: true
                     });
-                    objectStore.createIndex('idPenggajian', 'idPenggajian', {
-                        unique: true
-                    });
                     objectStore.createIndex('nip', 'nip', {
                         unique: false
                     });
                     objectStore.createIndex('idJabatan', 'idJabatan', {
                         unique: false
                     });
-                    objectStore.createIndex('jenis', 'jenis', {
-                        unique: false
-                    });
-                    objectStore.createIndex('shift', 'shift', {
-                        unique: false
-                    });
                 }
-
                 // E:Pembuatan ObjectStore
             };
 
@@ -257,11 +222,6 @@ angular.module('jayaMekarApp')
         }; // E:this.get()
 
     } // getter()
-
-    this.setConfig = function(obj) {
-        idb.namaIdb = obj.namaIdb || idb.namaIdb;
-        idb.versiIdb = obj.versiIdb || idb.versiIdb;
-    };
 
     this.$get = function($q, $log) {
         return new Getter($q, $log);

@@ -170,7 +170,7 @@ angular.module('jayaMekarApp')
                 return defer.promise;
             }; // E:this.getById()
 
-            var openModel = function(jenis, jabatan, obj) {
+            var openModal = function(jenis, jabatan, obj) {
 
                 $modal.open({
                     templateUrl: 'views/rumus-gaji/modal-rumus-gaji.html',
@@ -185,7 +185,6 @@ angular.module('jayaMekarApp')
                         this.objectJabatan = that.obj.rincianJabatan;
                         this.shift = ['Siang', 'Malam'];
                         this.jenis = jenis;
-
 
                         this.save = function(objJabatan) {
                             this.obj.idJabatan = objJabatan.idJabatan;
@@ -203,7 +202,6 @@ angular.module('jayaMekarApp')
                         this.cancel = function() {
                             $modalInstance.dismiss();
                         };
-
 
                     },
                     // size: size,
@@ -258,7 +256,7 @@ angular.module('jayaMekarApp')
             return {
                 rumusgaji: rumusgaji,   
                 get: get,
-                openModel: openModel,
+                openModal: openModal,
                 add: add,
                 edit: edit,
                 del: del

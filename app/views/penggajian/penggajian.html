@@ -26,7 +26,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr ng-repeat="i in PenggajianCtrl.penggajianKaryawanHarian | filter:'Harian' | filter:root.filter | orderBy:'+jabatan':false | startArray:(PenggajianCtrl.numberPage - 1 )*PenggajianCtrl.limit | limitTo:PenggajianCtrl.limit track by i.idPenggajian">
+              <tr ng-repeat="i in PenggajianCtrl.penggajianKaryawanHarian | filter:'Harian' | filter:RootCtrl.filter | orderBy:'+jabatan':false | startArray:(PenggajianCtrl.numberPage - 1 )*PenggajianCtrl.limit | limitTo:PenggajianCtrl.limit track by i.idPenggajian">
                 <td class="text-center" title="{{i.idPenggajian}}">{{(PenggajianCtrl.numberPage-1)*PenggajianCtrl.limit+$index+1}}</td>
                 <td class="text-center">{{i.namaLengkap}}</td>
                 <td class="text-center">{{i.jabatan}}</td>

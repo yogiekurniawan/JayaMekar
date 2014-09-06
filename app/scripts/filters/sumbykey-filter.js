@@ -6,7 +6,6 @@ angular.module('jayaMekarApp')
             if (typeof(data) === 'undefined' || typeof(key) === 'undefined') {
                 return 0;
             }
-
             var temp = 0;
             var i;
             if (key2) {
@@ -16,10 +15,8 @@ angular.module('jayaMekarApp')
             } else {
                 for ( i = data.length - 1; i >= 0; i--) {
                     temp += parseFloat(data[i][key]);
-
                 }
             }
-
             return temp;
         };
     });

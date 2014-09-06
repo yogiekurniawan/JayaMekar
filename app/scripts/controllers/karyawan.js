@@ -13,8 +13,7 @@ angular.module('jayaMekarApp')
         this.numberPage = 1;
         this.limit = 10;
 
-        var arrayObjectStore = ['jabatan'];
-        $indexedDB.getAll(arrayObjectStore).then(function(result) {
+        $indexedDB.getAll(['jabatan']).then(function(result) {
             that.jabatan = result;
         });
 
@@ -37,8 +36,5 @@ angular.module('jayaMekarApp')
             karyawanFactory.del(obj);
         };
 
-        this.totalPage = function() {
-            return Math.ceil(this.karyawan.length / this.limit);
-        };
     }
 ]);
